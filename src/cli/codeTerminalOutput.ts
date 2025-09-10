@@ -1,4 +1,4 @@
-import type { Plugin } from "../../.tsup/declaration/src/typeConfigPlugins";
+import type { Plugin } from "./types";
 import { packageNameToCamelCase } from "./utils/packageNameToCamelCase";
 import { findModuleImplementation } from "./utils/resolveDefaultExportPath";
 
