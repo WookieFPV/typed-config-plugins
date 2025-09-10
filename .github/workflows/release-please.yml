@@ -42,7 +42,7 @@ jobs:
       - name: Run build
         run: bun run build
 
-      - run: bunx pkg-pr-new publish --bin --binaryApplication
+      - run: bunx pkg-pr-new publish
         if: ${{ !steps.release.outputs.release_created && github.ref_type != 'tag' }}
 
       - name: Publish to npm
