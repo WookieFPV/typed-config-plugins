@@ -39,17 +39,13 @@
     "@expo/config-plugins": "54.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.4",
-    "@types/bun": "1.2.21",
-    "lefthook": "1.12.4",
-    "tsup": "8.5.0",
-    "typescript": "5.9.2",
     "@appandflow/expo-camera-characteristics": "*",
     "@azesmway/react-native-unity": "*",
     "@bacons/apple-colors": "*",
     "@bam.tech/react-native-batch": "*",
     "@batch.com/react-native-plugin": "*",
     "@beyondidentity/bi-sdk-react-native": "*",
+    "@biomejs/biome": "2.2.4",
     "@bittingz/expo-widgets": "*",
     "@bravemobile/react-native-code-push": "*",
     "@braze/expo-plugin": "*",
@@ -82,6 +78,8 @@
     "@sentry/react-native": "*",
     "@sparkfabrik/react-native-idfa-aaid": "*",
     "@stripe/stripe-react-native": "*",
+    "@types/bun": "1.2.21",
+    "@types/resolve": "1.20.6",
     "@vonovak/react-native-theme-control": "*",
     "@wwdrew/expo-android-account-manager": "*",
     "@wwdrew/expo-spotify-sdk": "*",
@@ -143,6 +141,7 @@
     "expo-web-browser": "*",
     "freerasp-react-native": "*",
     "instabug-reactnative": "*",
+    "lefthook": "1.12.4",
     "newrelic-react-native-agent": "*",
     "onesignal-expo-plugin": "*",
     "pushy-expo-plugin": "*",
@@ -208,6 +207,9 @@
     "react-native-vlc-media-player": "*",
     "react-native-whip-whep": "*",
     "react-native-wifi-reborn": "*",
-    "rn-fade-wrapper": "*"
+    "resolve": "1.22.10",
+    "rn-fade-wrapper": "*",
+    "tsup": "8.5.0",
+    "typescript": "5.9.2"
   }
 }

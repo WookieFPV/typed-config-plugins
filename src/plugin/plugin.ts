@@ -57,59 +57,59 @@ import type vonovakReactNativeThemeControl from "@vonovak/react-native-theme-con
 import type wwdrewExpoAndroidAccountManager from "@wwdrew/expo-android-account-manager/plugin/build/index";
 import type wwdrewExpoSpotifySdk from "@wwdrew/expo-spotify-sdk/plugin/build/index"; // @ts-expect-error
 import type xmartlabsReactNativeLine from "@xmartlabs/react-native-line/plugin/withLineSDK";
-import type expoAlternateAppIcons from "expo-alternate-app-icons/plugin/build/index"; // @ts-expect-error
+import type expoAlternateAppIcons from "expo-alternate-app-icons/plugin/build/index";
 import type expoAppleAuthentication from "expo-apple-authentication/plugin/build/withAppleAuth"; // @ts-expect-error
-import type expoAsset from "expo-asset/plugin/build/withAssets"; // @ts-expect-error
-import type expoAudio from "expo-audio/plugin/build/withAudio"; // @ts-expect-error
-import type expoAv from "expo-av/plugin/build/withAV"; // @ts-expect-error
-import type expoBackgroundFetch from "expo-background-fetch/plugin/build/withBackgroundFetch"; // @ts-expect-error
-import type expoBackgroundTask from "expo-background-task/plugin/build/withBackgroundTask"; // @ts-expect-error
+import type expoAsset from "expo-asset/plugin/build/withAssets";
+import type expoAudio from "expo-audio/plugin/build/withAudio";
+import type expoAv from "expo-av/plugin/build/withAV";
+import type expoBackgroundFetch from "expo-background-fetch/plugin/build/withBackgroundFetch";
+import type expoBackgroundTask from "expo-background-task/plugin/build/withBackgroundTask";
 import type expoBrightness from "expo-brightness/plugin/build/withBrightness";
-import type expoBuildProperties from "expo-build-properties/build/withBuildProperties"; // @ts-expect-error
-import type expoCalendar from "expo-calendar/plugin/build/withCalendar"; // @ts-expect-error
-import type expoCamera from "expo-camera/plugin/build/withCamera"; // @ts-expect-error
-import type expoCellular from "expo-cellular/plugin/build/withCellular"; // @ts-expect-error
+import type expoBuildProperties from "expo-build-properties/build/withBuildProperties";
+import type expoCalendar from "expo-calendar/plugin/build/withCalendar";
+import type expoCamera from "expo-camera/plugin/build/withCamera";
+import type expoCellular from "expo-cellular/plugin/build/withCellular";
 import type expoContacts from "expo-contacts/plugin/build/withContacts";
-import type expoCustomAssets from "expo-custom-assets/build/index"; // @ts-expect-error
-import type expoDevClient from "expo-dev-client/plugin/build/withDevClient"; // @ts-expect-error
+import type expoCustomAssets from "expo-custom-assets/build/index";
+import type expoDevClient from "expo-dev-client/plugin/build/withDevClient";
 import type expoDocumentPicker from "expo-document-picker/plugin/build/withDocumentPicker";
 import type expoDynamicAppIcon from "expo-dynamic-app-icon/plugin/build/withDynamicIcon";
 import type expoFileSystem from "expo-file-system/plugin/build/withFileSystem"; // @ts-expect-error
 import type expoFont from "expo-font/plugin/build/withFonts";
 import type expoHealthConnect from "expo-health-connect/build/withHealthConnect";
-import type expoIap from "expo-iap/plugin/build/withIAP"; // @ts-expect-error
+import type expoIap from "expo-iap/plugin/build/withIAP";
 import type expoImagePicker from "expo-image-picker/plugin/build/withImagePicker";
 import type expoLibvlcPlayer from "expo-libvlc-player/plugin/build/withExpoLibVlcPlayer";
-import type expoLiveActivity from "expo-live-activity/plugin/build/index"; // @ts-expect-error
-import type expoLocalAuthentication from "expo-local-authentication/plugin/build/withLocalAuthentication"; // @ts-expect-error
-import type expoLocalization from "expo-localization/plugin/build/withExpoLocalization"; // @ts-expect-error
-import type expoLocation from "expo-location/plugin/build/withLocation"; // @ts-expect-error
-import type expoMailComposer from "expo-mail-composer/plugin/build/withMailComposer"; // @ts-expect-error
-import type expoMaps from "expo-maps/plugin/build/withMapsLocation"; // @ts-expect-error
+import type expoLiveActivity from "expo-live-activity/plugin/build/index";
+import type expoLocalAuthentication from "expo-local-authentication/plugin/build/withLocalAuthentication";
+import type expoLocalization from "expo-localization/plugin/build/withExpoLocalization";
+import type expoLocation from "expo-location/plugin/build/withLocation";
+import type expoMailComposer from "expo-mail-composer/plugin/build/withMailComposer";
+import type expoMaps from "expo-maps/plugin/build/withMapsLocation";
 import type expoMediaLibrary from "expo-media-library/plugin/build/withMediaLibrary"; // @ts-expect-error
 import type expoMusicPicker from "expo-music-picker/app.plugin"; // @ts-expect-error
-import type expoNativeAlipay from "expo-native-alipay/app.plugin"; // @ts-expect-error
+import type expoNativeAlipay from "expo-native-alipay/app.plugin";
 import type expoNavigationBar from "expo-navigation-bar/plugin/build/withNavigationBar";
 import type expoNotifications from "expo-notifications/plugin/build/withNotifications";
 import type expoPip from "expo-pip/plugin/build/index";
 import type expoQuickActions from "expo-quick-actions/plugin/build/index"; // @ts-expect-error
-import type expoRoomplan from "expo-roomplan/app.plugin"; // @ts-expect-error
-import type expoRouter from "expo-router/plugin/build/index"; // @ts-expect-error
-import type expoScreenOrientation from "expo-screen-orientation/plugin/build/withScreenOrientation"; // @ts-expect-error
-import type expoSecureStore from "expo-secure-store/plugin/build/withSecureStore"; // @ts-expect-error
+import type expoRoomplan from "expo-roomplan/app.plugin";
+import type expoRouter from "expo-router/plugin/build/index";
+import type expoScreenOrientation from "expo-screen-orientation/plugin/build/withScreenOrientation";
+import type expoSecureStore from "expo-secure-store/plugin/build/withSecureStore";
 import type expoSensors from "expo-sensors/plugin/build/withSensors";
 import type expoShareExtension from "expo-share-extension/plugin/build/index";
 import type expoShareIntent from "expo-share-intent/plugin/build/index";
 import type expoShazamkit from "expo-shazamkit/plugin/build/withShazamKit"; // @ts-expect-error
-import type expoSpeechRecognition from "expo-speech-recognition/app.plugin"; // @ts-expect-error
+import type expoSpeechRecognition from "expo-speech-recognition/app.plugin";
 import type expoSplashScreen from "expo-splash-screen/plugin/build/withSplashScreen"; // @ts-expect-error
 import type expoSqlite from "expo-sqlite/plugin/build/withSQLite"; // @ts-expect-error
-import type expoSuperwall from "expo-superwall/plugin/build/index"; // @ts-expect-error
-import type expoSystemUi from "expo-system-ui/plugin/build/withSystemUI"; // @ts-expect-error
-import type expoTaskManager from "expo-task-manager/plugin/build/withTaskManager"; // @ts-expect-error
-import type expoTrackingTransparency from "expo-tracking-transparency/plugin/build/withTrackingTransparency"; // @ts-expect-error
-import type expoUpdates from "expo-updates/plugin/build/withUpdates"; // @ts-expect-error
-import type expoVideo from "expo-video/plugin/build/withExpoVideo"; // @ts-expect-error
+import type expoSuperwall from "expo-superwall/plugin/build/index";
+import type expoSystemUi from "expo-system-ui/plugin/build/withSystemUI";
+import type expoTaskManager from "expo-task-manager/plugin/build/withTaskManager";
+import type expoTrackingTransparency from "expo-tracking-transparency/plugin/build/withTrackingTransparency";
+import type expoUpdates from "expo-updates/plugin/build/withUpdates";
+import type expoVideo from "expo-video/plugin/build/withExpoVideo";
 import type expoWebBrowser from "expo-web-browser/plugin/build/withWebBrowser";
 import type freeraspReactNative from "freerasp-react-native/plugin/build/index"; // @ts-expect-error
 import type instabugReactnative from "instabug-reactnative/plugin/build/index";
