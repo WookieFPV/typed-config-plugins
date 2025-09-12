@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.0.1...v0.1.0) (2025-09-12)
+
+
+### Features
+
+* improve the return type of plugin plugin. Now correctly return ["plugin"] or ["plugin", options] if options are supplied ([2226eb8](https://github.com/WookieFPV/typed-config-plugins/commit/2226eb89d83d66666a05a99f79c68b41a6e39990))
+
+
+### Bug Fixes
+
+* loosen requirement of @expo/config-plugins version to use the already used version of consumers instead of the version of this package ([a170e49](https://github.com/WookieFPV/typed-config-plugins/commit/a170e491596ba043f16900def079685856e1d0de))
+
 ## 0.0.1 (2025-09-10)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "typed-config-plugins",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "adds types to expo config plugins, like @types but for expo config plugins",
   "author": {
     "name": "WookieFPV (Lukas Müller)",
