@@ -336,10 +336,17 @@ export interface ThirdPartyPlugins {
 
 interface FuncOptionMap extends ThirdPartyPlugins {}
 
-export function plugin<Options extends FuncOptionMap[Name], Name extends keyof FuncOptionMap>(
+export function plugin<Name extends keyof FuncOptionMap>(name: Name): [Name];
+
+export function plugin<Name extends keyof FuncOptionMap, Options extends FuncOptionMap[Name]>(
     name: Name,
     options?: Options,
-): [Name, Options] | [Name] {
+): [Name, Options];
+
+export function plugin<Name extends keyof FuncOptionMap, Options extends FuncOptionMap[Name]>(
+    name: Name,
+    options?: Options,
+) {
     return options ? [name, options] : [name];
 }
 
