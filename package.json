@@ -35,8 +35,8 @@
     "typecheck": "tsc",
     "prepublishOnly": "bun i && bun run lint:CI && tsc  && bun run build"
   },
-  "dependencies": {
-    "@expo/config-plugins": "54.0.0"
+  "peerDependencies": {
+    "@expo/config-plugins": "*"
   },
   "devDependencies": {
     "@appandflow/expo-camera-characteristics": "*",
@@ -53,6 +53,7 @@
     "@config-plugins/react-native-pdf": "*",
     "@corasan/image-compressor": "*",
     "@datadog/mobile-react-native": "*",
+    "@expo/config-plugins": "54.0.1",
     "@fishjam-cloud/react-native-client": "*",
     "@giphy/react-native-sdk": "*",
     "@hot-updater/react-native": "*",

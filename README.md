@@ -1,4 +1,4 @@
-# typed-config-plugins
+# typed-config-plugins [![npm][npm-image]][npm-url]
 
 **Type Safety for Your Expo Config Plugins.**
 
@@ -71,3 +71,6 @@ declare module "typed-config-plugins" {
 ```
 
 Now, when you use `plugin("my-custom-plugin", { /* ... */ })` in your `app.config.ts`, TypeScript will provide autocompletion and validate the options against the types you've defined.
+
+[npm-image]: https://img.shields.io/npm/v/typed-config-plugins
+[npm-url]: https://www.npmjs.com/package/typed-config-plugins
