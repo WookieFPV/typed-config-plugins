@@ -28,8 +28,6 @@ describe("packageNameToCamelCase", () => {
     });
 
     it("should handle package names with mixed separators", () => {
-        expect(packageNameToCamelCase("@scope/component.with-mixed.separators")).toBe(
-            "scopeComponentWithMixedSeparators",
-        );
+        expect(packageNameToCamelCase("@scope/component.with-mixed.separators")).toBe("scopeComponentWithMixedSeparators");
     });
 });

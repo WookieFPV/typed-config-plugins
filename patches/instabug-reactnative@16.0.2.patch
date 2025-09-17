@@ -1,0 +1,43 @@
+diff --git a/plugin/src/withInstabug.ts b/plugin/src/withInstabug.ts
+index 3eaa8ac3e5f75737f3dcda2c806b6f9f1e45e016..d39874da8037cb8b3fbfe2c99befc19a3e4d3340 100644
+--- a/plugin/src/withInstabug.ts
++++ b/plugin/src/withInstabug.ts
+@@ -3,7 +3,7 @@ import { createRunOncePlugin } from 'expo/config-plugins';
+ 
+ import { withInstabugAndroid } from './withInstabugAndroid';
+ import { withInstabugIOS } from './withInstabugIOS';
+-import { PluginProps } from './pluginProps';
++import type { PluginProps } from './pluginProps';
+ 
+ const instabugPackage = require('../../package.json') as {
+   name: string;
+diff --git a/plugin/src/withInstabugIOS.ts b/plugin/src/withInstabugIOS.ts
+index ce270ad2bae9559fcc652f68a05cf527ff251a9c..b90ce5f91da6a489a14b7640937f0469c952aa27 100644
+--- a/plugin/src/withInstabugIOS.ts
++++ b/plugin/src/withInstabugIOS.ts
+@@ -22,7 +22,7 @@ export const withInstabugIOS: ConfigPlugin<PluginProps> = (config, props) => {
+     const hasInstabugPhase = Boolean(findBuildPhase(buildPhases, INSTABUG_BUILD_PHASE));
+ 
+     if (!hasInstabugPhase && props.forceUploadSourceMaps) {
+-      addInstabugBuildPhase(xcodeProject, props.name);
++      addInstabugBuildPhase(xcodeProject, props.name!);
+     }
+ 
+     // Patch bundle React Native phase with source map export
+@@ -47,6 +47,7 @@ export const withInstabugIOS: ConfigPlugin<PluginProps> = (config, props) => {
+       'This needs access to your photo library so you can attach images.';
+ 
+     updatedConfig = withInfoPlist(updatedConfig, (configXcode) => {
++      // @ts-ignore
+       const plist = configXcode.ios.infoPlist ?? {};
+ 
+       if (!plist.NSMicrophoneUsageDescription) {
+@@ -56,7 +57,7 @@ export const withInstabugIOS: ConfigPlugin<PluginProps> = (config, props) => {
+       if (!plist.NSPhotoLibraryUsageDescription) {
+         plist.NSPhotoLibraryUsageDescription = photoLibraryPermission;
+       }
+-
++      // @ts-ignore
+       configXcode.ios.infoPlist = plist;
+       return configXcode;
+     });

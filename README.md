@@ -29,23 +29,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ...config,
     // ... other config
     plugins: [
+        // typed syntax by this package (with type checking/autocompletion):
         plugin("expo-build-properties", { android: { minSdkVersion: 26 } }),
-        plugin("demo-package", { bar: "example", baz: 42 }),
-        // This will generate the traditional ["demo-package", { bar: "example", baz: 42 }]
-        // array at runtime while providing type safety during development.
-
-        /*
-        The `plugin` function replaces the traditional array syntax, providing
-        type checking and autocompletion for your plugin options:
-
-        // Old syntax (no type checking):
+        
+        // normal syntax (no type checking/autocompletion):
         ["expo-build-properties", { android: { minSdkVersion: 26 } }],
-        ["demo-package", { bar: "example", baz: 42 }],
-
-        You can still use the old syntax for plugins without defined types or
-        for local file-based plugins:
-        "./path/to/my-local-plugin.js",
-        */
     ],
 });
 ```

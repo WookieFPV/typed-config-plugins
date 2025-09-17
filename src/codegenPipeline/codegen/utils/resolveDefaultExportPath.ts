@@ -39,7 +39,7 @@ export async function findModuleImplementation(packageName: string): Promise<str
         return relativePath.replace(/\.js$/, "");
     } catch (error: unknown) {
         const errorMessage = error instanceof Error ? error.message : String(error);
-        throw new Error(`Failed to find implementation for ${packageName}: ${errorMessage}`);
+        throw new Error(`[${packageName}] Failed to find implementation: ${errorMessage}`);
     }
 }
 
@@ -50,11 +50,7 @@ export async function findModuleImplementation(packageName: string): Promise<str
  * @param visited Set of already visited files to prevent circular dependencies
  * @returns The absolute path to the implementation file
  */
-async function traceImplementation(
-    filePath: string,
-    packageRoot: string,
-    visited: Set<string> = new Set(),
-): Promise<string> {
+async function traceImplementation(filePath: string, packageRoot: string, visited: Set<string> = new Set()): Promise<string> {
     // Prevent circular dependencies
     if (visited.has(filePath)) {
         throw new Error(`Circular dependency detected at ${filePath}`);
@@ -96,11 +92,7 @@ async function traceImplementation(
             if (nodePath.node.source) {
                 const exportSpecifiers = nodePath.node.specifiers;
                 for (const specifier of exportSpecifiers) {
-                    if (
-                        t.isExportSpecifier(specifier) &&
-                        (t.isIdentifier(specifier.exported, { name: "default" }) ||
-                            t.isIdentifier(specifier.local, { name: "default" }))
-                    ) {
+                    if (t.isExportSpecifier(specifier) && (t.isIdentifier(specifier.exported, { name: "default" }) || t.isIdentifier(specifier.local, { name: "default" }))) {
                         nextFile = nodePath.node.source.value;
                         isImplementation = false;
                         break;
