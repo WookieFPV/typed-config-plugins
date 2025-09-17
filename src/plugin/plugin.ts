@@ -17,190 +17,214 @@ const _missingPluginTypes: ConfigPlugin<any> = () => ({ name: "", slug: "" });
 // Could not find file of  react-native-quick-crypto error: Failed to find implementation for react-native-quick-crypto: ENOENT: no such file or directory, open 'node_modules/react-native-quick-crypto/app.plugin.js'
 // Could not find file of  react-native-whip-whep error: Failed to find implementation for react-native-whip-whep: ENOENT: no such file or directory, open 'node_modules/react-native-whip-whep/app.plugin.js'
 // Could not find file of  rn-fade-wrapper error: Failed to find implementation for rn-fade-wrapper: ENOENT: no such file or directory, open 'node_modules/rn-fade-wrapper/app.plugin.js'
-/*
-import type appandflowExpoCameraCharacteristics from "@appandflow/expo-camera-characteristics/plugin/build/index";
-import type baconsAppleColors from "@bacons/apple-colors/plugin/build/withAndroidColors";
-import type bamTechReactNativeBatch from "@bam.tech/react-native-batch/plugin/build/withReactNativeBatch";
-import type batchComReactNativePlugin from "@batch.com/react-native-plugin/plugin/build/withReactNativeBatch"; // @ts-expect-error
-import type beyondidentityBiSdkReactNative from "@beyondidentity/bi-sdk-react-native/app.plugin";
-import type bittingzExpoWidgets from "@bittingz/expo-widgets/plugin/build/index"; // @ts-expect-error
-import type bravemobileReactNativeCodePush from "@bravemobile/react-native-code-push/expo/plugin/withCodePush";
-import type brazeExpoPlugin from "@braze/expo-plugin/build/withBraze";
-import type configPluginsReactNativeBlobUtil from "@config-plugins/react-native-blob-util/build/withReactNativeBlobUtil";
-import type configPluginsReactNativePdf from "@config-plugins/react-native-pdf/build/withPdf"; // @ts-expect-error
-import type corasanImageCompressor from "@corasan/image-compressor/app.plugin";
-import type fishjamCloudReactNativeClient from "@fishjam-cloud/react-native-client/plugin/build/withFishjam"; // @ts-expect-error
-import type giphyReactNativeSdk from "@giphy/react-native-sdk/app.plugin"; // @ts-expect-error
-import type hotUpdaterReactNative from "@hot-updater/react-native/plugin/build/withHotUpdater";
-import type intercomIntercomReactNative from "@intercom/intercom-react-native/app.plugin.js";
-import type iterableExpoPlugin from "@iterable/expo-plugin/plugin/build/withIterable"; // @ts-expect-error
-import type kingstinctReactNativeActivityKit from "@kingstinct/react-native-activity-kit/app.plugin"; // @ts-expect-error
-import type kingstinctReactNativeHealthkit from "@kingstinct/react-native-healthkit/app.plugin"; // @ts-expect-error
-import type maplibreMaplibreReactNative from "@maplibre/maplibre-react-native/lib/typescript/plugin/withMapLibre";
-import type prismaReactNative from "@prisma/react-native/plugin/build/index";
-import type reactNativeCommunityDatetimepicker from "@react-native-community/datetimepicker/plugin/build/withDateTimePickerStyles";
-import type reactNativeFirebaseApp from "@react-native-firebase/app/plugin/build/index";
-import type reactNativeFirebaseAppCheck from "@react-native-firebase/app-check/plugin/build/index";
-import type reactNativeFirebaseAppDistribution from "@react-native-firebase/app-distribution/plugin/build/index";
-import type reactNativeFirebaseAuth from "@react-native-firebase/auth/plugin/build/index";
-import type reactNativeFirebaseCrashlytics from "@react-native-firebase/crashlytics/plugin/build/index";
-import type reactNativeFirebaseMessaging from "@react-native-firebase/messaging/plugin/build/index";
-import type reactNativeFirebasePerf from "@react-native-firebase/perf/plugin/build/index"; // @ts-expect-error
-import type reactNativeGoogleSigninGoogleSignin from "@react-native-google-signin/google-signin/plugin/build/withGoogleSignIn";
-import type reactNativeSeoulNaverLogin from "@react-native-seoul/naver-login/plugin/build/index";
-import type reactNativeVoiceVoice from "@react-native-voice/voice/plugin/build/withVoice";
-import type reactvisionReactViro from "@reactvision/react-viro/dist/plugins/withViro";
-import type rnmapboxMaps from "@rnmapbox/maps/plugin/build/withMapbox";
-import type sentryReactNative from "@sentry/react-native/plugin/build/index"; // @ts-expect-error
-import type stripeStripeReactNative from "@stripe/stripe-react-native/lib/typescript/plugin/withStripe"; // @ts-expect-error
-import type vonovakReactNativeThemeControl from "@vonovak/react-native-theme-control/plugin/build/withThemeControl";
-import type wwdrewExpoAndroidAccountManager from "@wwdrew/expo-android-account-manager/plugin/build/index";
-import type wwdrewExpoSpotifySdk from "@wwdrew/expo-spotify-sdk/plugin/build/index"; // @ts-expect-error
-import type xmartlabsReactNativeLine from "@xmartlabs/react-native-line/plugin/withLineSDK";
-import type expoAlternateAppIcons from "expo-alternate-app-icons/plugin/build/index";
-import type expoAppleAuthentication from "expo-apple-authentication/plugin/build/withAppleAuth"; // @ts-expect-error
-import type expoAsset from "expo-asset/plugin/build/withAssets";
-import type expoAudio from "expo-audio/plugin/build/withAudio";
-import type expoAv from "expo-av/plugin/build/withAV";
-import type expoBackgroundFetch from "expo-background-fetch/plugin/build/withBackgroundFetch";
-import type expoBackgroundTask from "expo-background-task/plugin/build/withBackgroundTask";
-import type expoBrightness from "expo-brightness/plugin/build/withBrightness";
-import type expoBuildProperties from "expo-build-properties/build/withBuildProperties";
-import type expoCalendar from "expo-calendar/plugin/build/withCalendar";
-import type expoCamera from "expo-camera/plugin/build/withCamera";
-import type expoCellular from "expo-cellular/plugin/build/withCellular";
-import type expoContacts from "expo-contacts/plugin/build/withContacts";
-import type expoCustomAssets from "expo-custom-assets/build/index";
-import type expoDevClient from "expo-dev-client/plugin/build/withDevClient";
-import type expoDocumentPicker from "expo-document-picker/plugin/build/withDocumentPicker";
-import type expoDynamicAppIcon from "expo-dynamic-app-icon/plugin/build/withDynamicIcon";
-import type expoFileSystem from "expo-file-system/plugin/build/withFileSystem"; // @ts-expect-error
-import type expoFont from "expo-font/plugin/build/withFonts";
-import type expoHealthConnect from "expo-health-connect/build/withHealthConnect";
-import type expoIap from "expo-iap/plugin/build/withIAP";
-import type expoImagePicker from "expo-image-picker/plugin/build/withImagePicker";
-import type expoLibvlcPlayer from "expo-libvlc-player/plugin/build/withExpoLibVlcPlayer";
-import type expoLiveActivity from "expo-live-activity/plugin/build/index";
-import type expoLocalAuthentication from "expo-local-authentication/plugin/build/withLocalAuthentication";
-import type expoLocalization from "expo-localization/plugin/build/withExpoLocalization";
-import type expoLocation from "expo-location/plugin/build/withLocation";
-import type expoMailComposer from "expo-mail-composer/plugin/build/withMailComposer";
-import type expoMaps from "expo-maps/plugin/build/withMapsLocation";
-import type expoMediaLibrary from "expo-media-library/plugin/build/withMediaLibrary"; // @ts-expect-error
-import type expoMusicPicker from "expo-music-picker/app.plugin"; // @ts-expect-error
-import type expoNativeAlipay from "expo-native-alipay/app.plugin";
-import type expoNavigationBar from "expo-navigation-bar/plugin/build/withNavigationBar";
-import type expoNotifications from "expo-notifications/plugin/build/withNotifications";
-import type expoPip from "expo-pip/plugin/build/index";
-import type expoQuickActions from "expo-quick-actions/plugin/build/index"; // @ts-expect-error
-import type expoRoomplan from "expo-roomplan/app.plugin";
-import type expoRouter from "expo-router/plugin/build/index";
-import type expoScreenOrientation from "expo-screen-orientation/plugin/build/withScreenOrientation";
-import type expoSecureStore from "expo-secure-store/plugin/build/withSecureStore";
-import type expoSensors from "expo-sensors/plugin/build/withSensors";
-import type expoShareExtension from "expo-share-extension/plugin/build/index";
-import type expoShareIntent from "expo-share-intent/plugin/build/index";
-import type expoShazamkit from "expo-shazamkit/plugin/build/withShazamKit"; // @ts-expect-error
-import type expoSpeechRecognition from "expo-speech-recognition/app.plugin";
-import type expoSplashScreen from "expo-splash-screen/plugin/build/withSplashScreen"; // @ts-expect-error
-import type expoSqlite from "expo-sqlite/plugin/build/withSQLite"; // @ts-expect-error
-import type expoSuperwall from "expo-superwall/plugin/build/index";
-import type expoSystemUi from "expo-system-ui/plugin/build/withSystemUI";
-import type expoTaskManager from "expo-task-manager/plugin/build/withTaskManager";
-import type expoTrackingTransparency from "expo-tracking-transparency/plugin/build/withTrackingTransparency";
-import type expoUpdates from "expo-updates/plugin/build/withUpdates";
-import type expoVideo from "expo-video/plugin/build/withExpoVideo";
-import type expoWebBrowser from "expo-web-browser/plugin/build/withWebBrowser";
-import type freeraspReactNative from "freerasp-react-native/plugin/build/index"; // @ts-expect-error
-import type instabugReactnative from "instabug-reactnative/plugin/build/index";
-import type newrelicReactNativeAgent from "newrelic-react-native-agent/plugin/build/index"; // @ts-expect-error
-import type pushyExpoPlugin from "pushy-expo-plugin/app.plugin";
-import type reactNativeAddCalendarEvent from "react-native-add-calendar-event/plugin/build/withAddCalendarEvent";
-import type reactNativeAdmobNativeAds from "react-native-admob-native-ads/plugin/build/withAdmobNativeAds";
-import type reactNativeAppClip from "react-native-app-clip/plugin/build/index"; // @ts-expect-error
-import type reactNativeAppsflyer from "react-native-appsflyer/expo/withAppsFlyer";
-import type reactNativeAudioApi from "react-native-audio-api/lib/typescript/plugin/withAudioAPI";
-import type reactNativeAuth0 from "react-native-auth0/lib/typescript/plugin/withAuth0"; // @ts-expect-error
-import type reactNativeAutoSkeleton from "react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton";
-import type reactNativeBackgroundFetch from "react-native-background-fetch/expo/plugin/build/index";
-import type reactNativeBackgroundGeolocation from "react-native-background-geolocation/expo/plugin/build/index";
-import type reactNativeBleManager from "react-native-ble-manager/plugin/build/withBLE";
-import type reactNativeBlePlx from "react-native-ble-plx/plugin/build/withBLE"; // @ts-expect-error
-import type reactNativeBootsplash from "react-native-bootsplash/app.plugin"; // @ts-expect-error
-import type reactNativeBottomTabs from "react-native-bottom-tabs/lib/typescript/expo"; // @ts-expect-error
-import type reactNativeCloudStore from "react-native-cloud-store/plugins/withCloud";
-import type reactNativeCompressor from "react-native-compressor/lib/typescript/expo-plugin/compressor"; // @ts-expect-error
-import type reactNativeCredentialsManager from "react-native-credentials-manager/app.plugin";
-import type reactNativeDocumentScannerPlugin from "react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner";
-import type reactNativeEdgeToEdge from "react-native-edge-to-edge/dist/typescript/expo"; // @ts-expect-error
-import type reactNativeEmailLink from "react-native-email-link/plugin/withEmailLink"; // @ts-expect-error
-import type reactNativeFastTflite from "react-native-fast-tflite/lib/typescript/expo-plugin/withFastTFLite";
-import type reactNativeFbads from "react-native-fbads/plugin/build/withReactNativeFbads";
-import type reactNativeFbsdkNext from "react-native-fbsdk-next/plugin/build/withFacebook"; // @ts-expect-error
-import type reactNativeFullScreenNotificationIncomingCall from "react-native-full-screen-notification-incoming-call/lib/commonjs/expo";
-import type reactNativeGoogleCast from "react-native-google-cast/lib/typescript/plugin/withGoogleCast";
-import type reactNativeGoogleMobileAds from "react-native-google-mobile-ads/plugin/build/index"; // @ts-expect-error
-import type reactNativeHealth from "react-native-health/app.plugin"; // @ts-expect-error
-import type reactNativeHealthConnect from "react-native-health-connect/app.plugin";
-import type reactNativeImageMarker from "react-native-image-marker/lib/typescript/expo-plugin/withImageMarker"; // @ts-expect-error
-import type reactNativeKeys from "react-native-keys/plugin/build/index";
-import type reactNativeLegal from "react-native-legal/plugin/build/index"; // @ts-expect-error
-import type reactNativeLibsodium from "react-native-libsodium/app.plugin";
-import type reactNativeLocalizationSettings from "react-native-localization-settings/plugin/build/index";
-import type reactNativeLocalizeDate from "react-native-localize-date/plugin/build/withLocalizations"; // @ts-expect-error
-import type reactNativeMapLink from "react-native-map-link/app.plugin"; // @ts-expect-error
-import type reactNativeMaps from "react-native-maps/plugin/build/index";
-import type reactNativeMsal from "react-native-msal/plugin/build/withReactNativeMSAL"; // @ts-expect-error
-import type reactNativeNavigationMode from "react-native-navigation-mode/app.plugin"; // @ts-expect-error
-import type reactNativeNfcManager from "react-native-nfc-manager/app.plugin";
-import type reactNativeNitroScreenRecorder from "react-native-nitro-screen-recorder/plugin/build/index"; // @ts-expect-error
-import type reactNativeOrientationDirector from "react-native-orientation-director/plugin/build/index";
-import type reactNativeOtaHotUpdate from "react-native-ota-hot-update/plugin/build/index";
-import type reactNativePermissions from "react-native-permissions/dist/typescript/expo";
-import type reactNativeRateApp from "react-native-rate-app/lib/typescript/plugin/withReactNativeRateApp"; // @ts-expect-error
-import type reactNativeRenderLynx from "react-native-render-lynx/plugin/withRenderLynx";
-import type reactNativeScreenshotAware from "react-native-screenshot-aware/lib/typescript/plugin/withReactNativeScreenshotAware";
-import type reactNativeShare from "react-native-share/plugin/build/index";
-import type reactNativeTheoplayer from "react-native-theoplayer/lib/typescript/plugins/expo/withTHEOplayer"; // @ts-expect-error
-import type reactNativeTiktok from "react-native-tiktok/plugin/build/withTiktok";
-import type reactNativeTwilioVideoWebrtc from "react-native-twilio-video-webrtc/plugin/build/index";
-import type reactNativeV8 from "react-native-v8/plugin/build/withV8ExpoAdapter";
-import type reactNativeVideo from "react-native-video/lib/expo-plugins/withRNVideo";
-import type reactNativeVisionCamera from "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera"; // @ts-expect-error
-import type reactNativeVlcMediaPlayer from "react-native-vlc-media-player/expo/withVlcMediaPlayer";
-import type reactNativeWifiReborn from "react-native-wifi-reborn/plugin/dist/withWifi";
 
- */
 import type { ConfigPluginOptions } from "./types";
 
 export interface ThirdPartyPlugins {
-    "react-native-bootsplash": ConfigPluginOptions<
-        typeof import("react-native-bootsplash/dist/typescript/expo.d.ts")["withBootSplash"]
-    >;
-    "@intercom/intercom-react-native": ConfigPluginOptions<
-        typeof import("@intercom/intercom-react-native/app.plugin.js")["default"]
-    >;
-    "expo-build-properties": ConfigPluginOptions<
-        typeof import("expo-build-properties/build/withBuildProperties")["default"]
-    >;
-
-    // import type expoBuildProperties from "expo-build-properties/build/withBuildProperties";
-    //import type intercomIntercomReactNative from "@intercom/intercom-react-native/app.plugin.js";
+    "@appandflow/expo-camera-characteristics": ConfigPluginOptions<typeof import("@appandflow/expo-camera-characteristics/plugin/build/index")["default"]>;
+    "@bacons/apple-colors": ConfigPluginOptions<typeof import("@bacons/apple-colors/plugin/build/withAndroidColors")["default"]>;
+    "@bam.tech/react-native-batch": ConfigPluginOptions<typeof import("@bam.tech/react-native-batch/plugin/build/withReactNativeBatch")["default"]>;
+    "@batch.com/react-native-plugin": ConfigPluginOptions<typeof import("@batch.com/react-native-plugin/plugin/build/withReactNativeBatch")["default"]>;
+    // @ts-expect-error
+    "@beyondidentity/bi-sdk-react-native": ConfigPluginOptions<typeof import("@beyondidentity/bi-sdk-react-native/app.plugin")["default"]>;
+    "@bittingz/expo-widgets": ConfigPluginOptions<typeof import("@bittingz/expo-widgets/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "@bravemobile/react-native-code-push": ConfigPluginOptions<typeof import("@bravemobile/react-native-code-push/expo/plugin/withCodePush")["default"]>;
+    "@braze/expo-plugin": ConfigPluginOptions<typeof import("@braze/expo-plugin/build/withBraze")["default"]>;
+    "@config-plugins/react-native-blob-util": ConfigPluginOptions<typeof import("@config-plugins/react-native-blob-util/build/withReactNativeBlobUtil")["default"]>;
+    "@config-plugins/react-native-pdf": ConfigPluginOptions<typeof import("@config-plugins/react-native-pdf/build/withPdf")["default"]>;
+    // @ts-expect-error
+    "@corasan/image-compressor": ConfigPluginOptions<typeof import("@corasan/image-compressor/app.plugin")["default"]>;
+    "@fishjam-cloud/react-native-client": ConfigPluginOptions<typeof import("@fishjam-cloud/react-native-client/plugin/build/withFishjam")["default"]>;
+    // @ts-expect-error
+    "@giphy/react-native-sdk": ConfigPluginOptions<typeof import("@giphy/react-native-sdk/app.plugin")["default"]>;
+    // @ts-expect-error
+    "@hot-updater/react-native": ConfigPluginOptions<typeof import("@hot-updater/react-native/plugin/build/withHotUpdater")["default"]>;
+    // @ts-expect-error
+    "@intercom/intercom-react-native": ConfigPluginOptions<typeof import("@intercom/intercom-react-native/lib/typescript/module/expo-plugins/index")["default"]>;
+    "@iterable/expo-plugin": ConfigPluginOptions<typeof import("@iterable/expo-plugin/plugin/build/withIterable")["default"]>;
+    // @ts-expect-error
+    "@kingstinct/react-native-activity-kit": ConfigPluginOptions<typeof import("@kingstinct/react-native-activity-kit/app.plugin")["default"]>;
+    // @ts-expect-error
+    "@kingstinct/react-native-healthkit": ConfigPluginOptions<typeof import("@kingstinct/react-native-healthkit/app.plugin")["default"]>;
+    // @ts-expect-error
+    "@maplibre/maplibre-react-native": ConfigPluginOptions<typeof import("@maplibre/maplibre-react-native/lib/typescript/module/src/plugin/withMapLibre")["default"]>;
+    "@prisma/react-native": ConfigPluginOptions<typeof import("@prisma/react-native/plugin/build/index")["default"]>;
+    "@react-native-community/datetimepicker": ConfigPluginOptions<typeof import("@react-native-community/datetimepicker/plugin/build/withDateTimePickerStyles")["default"]>;
+    "@react-native-firebase/app": ConfigPluginOptions<typeof import("@react-native-firebase/app/plugin/build/index")["default"]>;
+    "@react-native-firebase/app-check": ConfigPluginOptions<typeof import("@react-native-firebase/app-check/plugin/build/index")["default"]>;
+    "@react-native-firebase/app-distribution": ConfigPluginOptions<typeof import("@react-native-firebase/app-distribution/plugin/build/index")["default"]>;
+    "@react-native-firebase/auth": ConfigPluginOptions<typeof import("@react-native-firebase/auth/plugin/build/index")["default"]>;
+    "@react-native-firebase/crashlytics": ConfigPluginOptions<typeof import("@react-native-firebase/crashlytics/plugin/build/index")["default"]>;
+    "@react-native-firebase/messaging": ConfigPluginOptions<typeof import("@react-native-firebase/messaging/plugin/build/index")["default"]>;
+    "@react-native-firebase/perf": ConfigPluginOptions<typeof import("@react-native-firebase/perf/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "@react-native-google-signin/google-signin": ConfigPluginOptions<typeof import("@react-native-google-signin/google-signin/plugin/build/withGoogleSignIn")["default"]>;
+    "@react-native-seoul/naver-login": ConfigPluginOptions<typeof import("@react-native-seoul/naver-login/plugin/build/index")["default"]>;
+    "@react-native-voice/voice": ConfigPluginOptions<typeof import("@react-native-voice/voice/plugin/build/withVoice")["default"]>;
+    "@reactvision/react-viro": ConfigPluginOptions<typeof import("@reactvision/react-viro/dist/plugins/withViro")["default"]>;
+    "@rnmapbox/maps": ConfigPluginOptions<typeof import("@rnmapbox/maps/plugin/build/withMapbox")["default"]>;
+    "@sentry/react-native": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "@stripe/stripe-react-native": ConfigPluginOptions<typeof import("@stripe/stripe-react-native/lib/typescript/plugin/withStripe")["default"]>;
+    // @ts-expect-error
+    "@vonovak/react-native-theme-control": ConfigPluginOptions<typeof import("@vonovak/react-native-theme-control/plugin/build/withThemeControl")["default"]>;
+    "@wwdrew/expo-android-account-manager": ConfigPluginOptions<typeof import("@wwdrew/expo-android-account-manager/plugin/build/index")["default"]>;
+    "@wwdrew/expo-spotify-sdk": ConfigPluginOptions<typeof import("@wwdrew/expo-spotify-sdk/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "@xmartlabs/react-native-line": ConfigPluginOptions<typeof import("@xmartlabs/react-native-line/plugin/withLineSDK")["default"]>;
+    "@zoontek/react-native-navigation-bar": ConfigPluginOptions<typeof import("@zoontek/react-native-navigation-bar/dist/typescript/expo")["default"]>;
+    "expo-alternate-app-icons": ConfigPluginOptions<typeof import("expo-alternate-app-icons/plugin/build/index")["default"]>;
+    "expo-apple-authentication": ConfigPluginOptions<typeof import("expo-apple-authentication/plugin/build/withAppleAuth")["default"]>;
+    // @ts-expect-error
+    "expo-asset": ConfigPluginOptions<typeof import("expo-asset/plugin/build/withAssets")["default"]>;
+    "expo-audio": ConfigPluginOptions<typeof import("expo-audio/plugin/build/withAudio")["default"]>;
+    "expo-av": ConfigPluginOptions<typeof import("expo-av/plugin/build/withAV")["default"]>;
+    "expo-background-fetch": ConfigPluginOptions<typeof import("expo-background-fetch/plugin/build/withBackgroundFetch")["default"]>;
+    "expo-background-task": ConfigPluginOptions<typeof import("expo-background-task/plugin/build/withBackgroundTask")["default"]>;
+    "expo-brightness": ConfigPluginOptions<typeof import("expo-brightness/plugin/build/withBrightness")["default"]>;
+    "expo-build-properties": ConfigPluginOptions<typeof import("expo-build-properties/build/withBuildProperties")["default"]>;
+    "expo-calendar": ConfigPluginOptions<typeof import("expo-calendar/plugin/build/withCalendar")["default"]>;
+    "expo-camera": ConfigPluginOptions<typeof import("expo-camera/plugin/build/withCamera")["default"]>;
+    "expo-cellular": ConfigPluginOptions<typeof import("expo-cellular/plugin/build/withCellular")["default"]>;
+    "expo-contacts": ConfigPluginOptions<typeof import("expo-contacts/plugin/build/withContacts")["default"]>;
+    "expo-custom-assets": ConfigPluginOptions<typeof import("expo-custom-assets/build/index")["default"]>;
+    "expo-dev-client": ConfigPluginOptions<typeof import("expo-dev-client/plugin/build/withDevClient")["default"]>;
+    "expo-document-picker": ConfigPluginOptions<typeof import("expo-document-picker/plugin/build/withDocumentPicker")["default"]>;
+    "expo-dynamic-app-icon": ConfigPluginOptions<typeof import("expo-dynamic-app-icon/plugin/build/withDynamicIcon")["default"]>;
+    "expo-file-system": ConfigPluginOptions<typeof import("expo-file-system/plugin/build/withFileSystem")["default"]>;
+    // @ts-expect-error
+    "expo-font": ConfigPluginOptions<typeof import("expo-font/plugin/build/withFonts")["default"]>;
+    "expo-health-connect": ConfigPluginOptions<typeof import("expo-health-connect/build/withHealthConnect")["default"]>;
+    "expo-iap": ConfigPluginOptions<typeof import("expo-iap/plugin/build/withIAP")["default"]>;
+    "expo-image-picker": ConfigPluginOptions<typeof import("expo-image-picker/plugin/build/withImagePicker")["default"]>;
+    "expo-libvlc-player": ConfigPluginOptions<typeof import("expo-libvlc-player/plugin/build/withExpoLibVlcPlayer")["default"]>;
+    "expo-live-activity": ConfigPluginOptions<typeof import("expo-live-activity/plugin/build/index")["default"]>;
+    "expo-local-authentication": ConfigPluginOptions<typeof import("expo-local-authentication/plugin/build/withLocalAuthentication")["default"]>;
+    "expo-localization": ConfigPluginOptions<typeof import("expo-localization/plugin/build/withExpoLocalization")["default"]>;
+    "expo-location": ConfigPluginOptions<typeof import("expo-location/plugin/build/withLocation")["default"]>;
+    "expo-mail-composer": ConfigPluginOptions<typeof import("expo-mail-composer/plugin/build/withMailComposer")["default"]>;
+    "expo-maps": ConfigPluginOptions<typeof import("expo-maps/plugin/build/withMapsLocation")["default"]>;
+    "expo-media-library": ConfigPluginOptions<typeof import("expo-media-library/plugin/build/withMediaLibrary")["default"]>;
+    // @ts-expect-error
+    "expo-music-picker": ConfigPluginOptions<typeof import("expo-music-picker/app.plugin")["default"]>;
+    // @ts-expect-error
+    "expo-native-alipay": ConfigPluginOptions<typeof import("expo-native-alipay/app.plugin")["default"]>;
+    "expo-navigation-bar": ConfigPluginOptions<typeof import("expo-navigation-bar/plugin/build/withNavigationBar")["default"]>;
+    "expo-notifications": ConfigPluginOptions<typeof import("expo-notifications/plugin/build/withNotifications")["default"]>;
+    "expo-pip": ConfigPluginOptions<typeof import("expo-pip/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "expo-quick-actions": ConfigPluginOptions<typeof import("expo-quick-actions/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "expo-roomplan": ConfigPluginOptions<typeof import("expo-roomplan/app.plugin")["default"]>;
+    "expo-router": ConfigPluginOptions<typeof import("expo-router/plugin/build/index")["default"]>;
+    "expo-screen-orientation": ConfigPluginOptions<typeof import("expo-screen-orientation/plugin/build/withScreenOrientation")["default"]>;
+    "expo-secure-store": ConfigPluginOptions<typeof import("expo-secure-store/plugin/build/withSecureStore")["default"]>;
+    "expo-sensors": ConfigPluginOptions<typeof import("expo-sensors/plugin/build/withSensors")["default"]>;
+    "expo-share-extension": ConfigPluginOptions<typeof import("expo-share-extension/plugin/build/index")["default"]>;
+    "expo-share-intent": ConfigPluginOptions<typeof import("expo-share-intent/plugin/build/index")["default"]>;
+    "expo-shazamkit": ConfigPluginOptions<typeof import("expo-shazamkit/plugin/build/withShazamKit")["default"]>;
+    // @ts-expect-error
+    "expo-speech-recognition": ConfigPluginOptions<typeof import("expo-speech-recognition/app.plugin")["default"]>;
+    "expo-splash-screen": ConfigPluginOptions<typeof import("expo-splash-screen/plugin/build/withSplashScreen")["default"]>;
+    // @ts-expect-error
+    "expo-sqlite": ConfigPluginOptions<typeof import("expo-sqlite/plugin/build/withSQLite")["default"]>;
+    // @ts-expect-error
+    "expo-superwall": ConfigPluginOptions<typeof import("expo-superwall/plugin/build/index")["default"]>;
+    "expo-system-ui": ConfigPluginOptions<typeof import("expo-system-ui/plugin/build/withSystemUI")["default"]>;
+    "expo-task-manager": ConfigPluginOptions<typeof import("expo-task-manager/plugin/build/withTaskManager")["default"]>;
+    "expo-tracking-transparency": ConfigPluginOptions<typeof import("expo-tracking-transparency/plugin/build/withTrackingTransparency")["default"]>;
+    "expo-updates": ConfigPluginOptions<typeof import("expo-updates/plugin/build/withUpdates")["default"]>;
+    "expo-video": ConfigPluginOptions<typeof import("expo-video/plugin/build/withExpoVideo")["default"]>;
+    "expo-web-browser": ConfigPluginOptions<typeof import("expo-web-browser/plugin/build/withWebBrowser")["default"]>;
+    "freerasp-react-native": ConfigPluginOptions<typeof import("freerasp-react-native/plugin/build/index")["default"]>;
+    "instabug-reactnative": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index")["default"]>;
+    "newrelic-react-native-agent": ConfigPluginOptions<typeof import("newrelic-react-native-agent/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "pushy-expo-plugin": ConfigPluginOptions<typeof import("pushy-expo-plugin/app.plugin")["default"]>;
+    "react-native-add-calendar-event": ConfigPluginOptions<typeof import("react-native-add-calendar-event/plugin/build/withAddCalendarEvent")["default"]>;
+    "react-native-admob-native-ads": ConfigPluginOptions<typeof import("react-native-admob-native-ads/plugin/build/withAdmobNativeAds")["default"]>;
+    "react-native-app-clip": ConfigPluginOptions<typeof import("react-native-app-clip/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "react-native-appsflyer": ConfigPluginOptions<typeof import("react-native-appsflyer/expo/withAppsFlyer")["default"]>;
+    "react-native-audio-api": ConfigPluginOptions<typeof import("react-native-audio-api/lib/typescript/plugin/withAudioAPI")["default"]>;
+    "react-native-auth0": ConfigPluginOptions<typeof import("react-native-auth0/lib/typescript/plugin/withAuth0")["default"]>;
+    // @ts-expect-error
+    "react-native-auto-skeleton": ConfigPluginOptions<typeof import("react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton")["default"]>;
+    "react-native-background-fetch": ConfigPluginOptions<typeof import("react-native-background-fetch/expo/plugin/build/index")["default"]>;
+    "react-native-background-geolocation": ConfigPluginOptions<typeof import("react-native-background-geolocation/expo/plugin/build/index")["default"]>;
+    "react-native-ble-manager": ConfigPluginOptions<typeof import("react-native-ble-manager/plugin/build/withBLE")["default"]>;
+    "react-native-ble-plx": ConfigPluginOptions<typeof import("react-native-ble-plx/plugin/build/withBLE")["default"]>;
+    // @ts-expect-error
+    "react-native-bootsplash": ConfigPluginOptions<typeof import("react-native-bootsplash/app.plugin")["default"]>;
+    // @ts-expect-error
+    "react-native-bottom-tabs": ConfigPluginOptions<typeof import("react-native-bottom-tabs/lib/typescript/module/src/expo.d.ts")["default"]>;
+    // @ts-expect-error
+    "react-native-cloud-store": ConfigPluginOptions<typeof import("react-native-cloud-store/plugins/withCloud")["default"]>;
+    "react-native-compressor": ConfigPluginOptions<typeof import("react-native-compressor/lib/typescript/expo-plugin/compressor")["default"]>;
+    // @ts-expect-error
+    "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
+    "react-native-document-scanner-plugin": ConfigPluginOptions<typeof import("react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner")["default"]>;
+    "react-native-edge-to-edge": ConfigPluginOptions<typeof import("react-native-edge-to-edge/dist/typescript/expo")["default"]>;
+    // @ts-expect-error
+    "react-native-email-link": ConfigPluginOptions<typeof import("react-native-email-link/plugin/withEmailLink")["default"]>;
+    "react-native-fast-tflite": ConfigPluginOptions<typeof import("react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite.d.ts")["default"]>;
+    "react-native-fbads": ConfigPluginOptions<typeof import("react-native-fbads/plugin/build/withReactNativeFbads")["default"]>;
+    "react-native-fbsdk-next": ConfigPluginOptions<typeof import("react-native-fbsdk-next/plugin/build/withFacebook")["default"]>;
+    "react-native-full-screen-notification-incoming-call": ConfigPluginOptions<typeof import("react-native-full-screen-notification-incoming-call/lib/typescript/src/expo")["default"]>;
+    "react-native-google-cast": ConfigPluginOptions<typeof import("react-native-google-cast/lib/typescript/plugin/withGoogleCast")["default"]>;
+    "react-native-google-mobile-ads": ConfigPluginOptions<typeof import("react-native-google-mobile-ads/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "react-native-health": ConfigPluginOptions<typeof import("react-native-health/app.plugin")["default"]>;
+    // @ts-expect-error
+    "react-native-health-connect": ConfigPluginOptions<typeof import("react-native-health-connect/app.plugin")["default"]>;
+    "react-native-image-marker": ConfigPluginOptions<typeof import("react-native-image-marker/lib/typescript/expo-plugin/withImageMarker")["default"]>;
+    "react-native-keys": ConfigPluginOptions<typeof import("react-native-keys/lib/typescript/plugin/src/index.d.ts")["default"]>;
+    "react-native-legal": ConfigPluginOptions<typeof import("react-native-legal/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "react-native-libsodium": ConfigPluginOptions<typeof import("react-native-libsodium/app.plugin")["default"]>;
+    "react-native-localization-settings": ConfigPluginOptions<typeof import("react-native-localization-settings/plugin/build/index")["default"]>;
+    "react-native-localize-date": ConfigPluginOptions<typeof import("react-native-localize-date/plugin/build/withLocalizations")["default"]>;
+    // @ts-expect-error
+    "react-native-map-link": ConfigPluginOptions<typeof import("react-native-map-link/app.plugin")["default"]>;
+    // @ts-expect-error
+    "react-native-maps": ConfigPluginOptions<typeof import("react-native-maps/plugin/build/index")["default"]>;
+    "react-native-msal": ConfigPluginOptions<typeof import("react-native-msal/plugin/build/withReactNativeMSAL")["default"]>;
+    // @ts-expect-error
+    "react-native-navigation-mode": ConfigPluginOptions<typeof import("react-native-navigation-mode/app.plugin")["default"]>;
+    // @ts-expect-error
+    "react-native-nfc-manager": ConfigPluginOptions<typeof import("react-native-nfc-manager/app.plugin")["default"]>;
+    "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "react-native-orientation-director": ConfigPluginOptions<typeof import("react-native-orientation-director/plugin/build/index")["default"]>;
+    // @ts-expect-error
+    "react-native-ota-hot-update": ConfigPluginOptions<typeof import("react-native-ota-hot-update/plugin/build/index")["default"]>;
+    "react-native-permissions": ConfigPluginOptions<typeof import("react-native-permissions/dist/typescript/expo")["default"]>;
+    "react-native-rate-app": ConfigPluginOptions<typeof import("react-native-rate-app/lib/typescript/plugin/withReactNativeRateApp")["default"]>;
+    // @ts-expect-error
+    "react-native-render-lynx": ConfigPluginOptions<typeof import("react-native-render-lynx/plugin/withRenderLynx")["default"]>;
+    "react-native-screenshot-aware": ConfigPluginOptions<typeof import("react-native-screenshot-aware/lib/typescript/plugin/withReactNativeScreenshotAware")["default"]>;
+    "react-native-share": ConfigPluginOptions<typeof import("react-native-share/plugin/build/index")["default"]>;
+    "react-native-theoplayer": ConfigPluginOptions<typeof import("react-native-theoplayer/lib/typescript/plugins/expo/withTHEOplayer")["default"]>;
+    // @ts-expect-error
+    "react-native-tiktok": ConfigPluginOptions<typeof import("react-native-tiktok/plugin/build/withTiktok")["default"]>;
+    "react-native-twilio-video-webrtc": ConfigPluginOptions<typeof import("react-native-twilio-video-webrtc/plugin/build/index")["default"]>;
+    "react-native-v8": ConfigPluginOptions<typeof import("react-native-v8/plugin/build/withV8ExpoAdapter")["default"]>;
+    "react-native-video": ConfigPluginOptions<typeof import("react-native-video/lib/expo-plugins/withRNVideo")["default"]>;
+    "react-native-vision-camera": ConfigPluginOptions<typeof import("react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera")["default"]>;
+    // @ts-expect-error
+    "react-native-vlc-media-player": ConfigPluginOptions<typeof import("react-native-vlc-media-player/expo/withVlcMediaPlayer")["default"]>;
+    "react-native-vosk": ConfigPluginOptions<typeof import("react-native-vosk/plugin/build/withVosk")["default"]>;
+    "react-native-wifi-reborn": ConfigPluginOptions<typeof import("react-native-wifi-reborn/plugin/dist/withWifi")["default"]>;
 }
 
 interface FuncOptionMap extends ThirdPartyPlugins {}
 
 export function plugin<Name extends keyof FuncOptionMap>(name: Name): [Name];
 
-export function plugin<Name extends keyof FuncOptionMap, Options extends FuncOptionMap[Name]>(
-    name: Name,
-    options: Options,
-): [Name, Options];
+export function plugin<Name extends keyof FuncOptionMap, Options extends FuncOptionMap[Name]>(name: Name, options: Options): [Name, Options];
 
-export function plugin<Name extends keyof FuncOptionMap, Options extends FuncOptionMap[Name]>(
-    name: Name,
-    options?: Options,
-) {
+export function plugin<Name extends keyof FuncOptionMap, Options extends FuncOptionMap[Name]>(name: Name, options?: Options) {
     return options ? [name, options] : [name];
 }
 

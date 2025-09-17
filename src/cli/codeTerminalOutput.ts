@@ -10,7 +10,7 @@ export const getConfigPluginTypeCode = async (pluginList: Plugin[]): Promise<str
             //const name = packageNameToCamelCase(res.name);
             //generatedLines.imports.push(`import type ${name} from '${path}';`);
             // generatedLines.options.push(`'${res.name}': ConfigPluginOptions<typeof ${name}>,`);
-            generatedLines.options.push(`"${res.name}": ConfigPluginOptions<typeof import("${path}")["default"]>;`);
+            generatedLines.options.push(`"${res.name}": ConfigPluginOptions<typeof import("${path.replaceAll("\\", "/")}")["default"]>;`);
         } catch (e) {
             console.debug("// Could not find file of ", res.name, "error:", e instanceof Error ? e.message : e);
         }

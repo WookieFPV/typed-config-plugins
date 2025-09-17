@@ -23,7 +23,7 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "double",
-      "lineWidth": 120,
+      "lineWidth": 220,
 
       "indentWidth": 4
     }

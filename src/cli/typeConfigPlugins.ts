@@ -7,11 +7,7 @@ import { readExpoConfig } from "./utils/readExpoConfig.js";
 const getExpoConfigPlugins = async (): Promise<Plugin[]> => {
     const config = readExpoConfig();
     if (!config) {
-        console.log(
-            "Unable to read Expo Config\n" +
-                "Make sure your config is valid (run with --debug for more info)\n" +
-                "npx list-config-plugins@latest --debug",
-        );
+        console.log("Unable to read Expo Config\n" + "Make sure your config is valid (run with --debug for more info)\n" + "npx list-config-plugins@latest --debug");
         process.exit(1);
     }
 
