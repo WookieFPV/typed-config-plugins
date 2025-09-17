@@ -1,15 +1,10 @@
 import fsS from "node:fs";
+import { file } from "bun";
 import { getConfigPluginTypeCode } from "./codeTerminalOutput";
 import type { Plugin } from "./types";
 import { readExpoConfig } from "./utils/readExpoConfig.js";
 
-/**
- * WIP/PoC/quick dirty script
- * CLI used to update the list of all npm packages with config-plugin
- * It tries to find the types for the config-plugin.
- * generates code which will be used to type the config plugins
- */
-export const typeConfigPlugins = async () => {
+const getExpoConfigPlugins = async (): Promise<Plugin[]> => {
     const config = readExpoConfig();
     if (!config) {
         console.log(
@@ -17,7 +12,7 @@ export const typeConfigPlugins = async () => {
                 "Make sure your config is valid (run with --debug for more info)\n" +
                 "npx list-config-plugins@latest --debug",
         );
-        return;
+        process.exit(1);
     }
 
     const plugins = config?.exp.plugins ?? [];
@@ -27,6 +22,22 @@ export const typeConfigPlugins = async () => {
         return res ? [res] : [];
     });
 
+    return pluginList;
+};
+
+const getPackageJsonConfigPlugins = async (): Promise<Plugin[]> => {
+    const packageJson = await file("packages/package.json").json();
+    return Object.keys(packageJson.devDependencies).map((pkg) => ({ name: pkg, options: undefined }));
+};
+
+/**
+ * WIP/PoC/quick dirty script
+ * CLI used to update the list of all npm packages with config-plugin
+ * It tries to find the types for the config-plugin.
+ * generates code which will be used to type the config plugins
+ */
+export const typeConfigPlugins = async (typ: "package.json" | "expo" = "package.json") => {
+    const pluginList = await (typ === "package.json" ? getPackageJsonConfigPlugins : getExpoConfigPlugins)();
     console.log(await getConfigPluginTypeCode(pluginList));
 };
 
