@@ -1,0 +1,37 @@
+export type BaseRnDep = {
+    android?: boolean;
+    dev?: boolean;
+    examples?: string[];
+    expoGo?: boolean;
+    fireos?: boolean;
+    githubUrl: string;
+    images?: string[];
+    ios?: boolean;
+    macos?: boolean;
+    newArchitecture?: boolean;
+    npmPkg?: string; // added in 1_add_npmPkg.ts (if not already there)
+    template?: boolean;
+    tvos?: boolean;
+    unmaintained?: boolean;
+    visionos?: boolean;
+    web?: boolean;
+    windows?: boolean;
+};
+
+export type ConfigPluginOverrides =
+    | false
+    | {
+          path?: string;
+          tsIgnore?: true;
+          notes?: string;
+          alias?: string[];
+      };
+
+export type RnDep = BaseRnDep & {
+    hasConfigPlugin?: boolean; // added in 2_has_config_plugin.ts
+    override?: ConfigPluginOverrides;
+};
+
+export type RnDepFull = RnDep & {
+    hasConfigPlugin: boolean;
+};
