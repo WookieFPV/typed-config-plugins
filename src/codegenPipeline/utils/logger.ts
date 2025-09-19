@@ -41,7 +41,13 @@ export const stepLogger = (stepName?: string) => {
         lastLine = "ora";
     };
 
-    return { logger: { start, log, warn, finish, fail }, spinner };
+    const progressText = (message: string) => {
+        if (lastLine === "log") process.stdout.write("\n") && spinner.start();
+        spinner.text = `[Step ${stepCount}]  ${message}`;
+        lastLine = "ora";
+    };
+
+    return { logger: { start, log, warn, finish, fail, progressText }, spinner };
 };
 
 export const promiseStep = async <T>(promise: Promise<T>, stepName: string) => {

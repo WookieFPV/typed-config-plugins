@@ -5,7 +5,7 @@ import { stepLogger } from "../utils/logger";
 import { packageListFile, updatePluginsListFile } from "../utils/packageListJson";
 import type { RnDepFull } from "../utils/types";
 
-const { logger, spinner } = stepLogger("Detecting Config Plugins");
+const { logger } = stepLogger("Detecting Config Plugins");
 
 export const detectConfigPlugins = async (type: "onlyNew" | "full" = "onlyNew"): Promise<Array<RnDepFull>> => {
     logger.start();
@@ -23,7 +23,7 @@ export const detectConfigPlugins = async (type: "onlyNew" | "full" = "onlyNew"):
                     if (typeof hasConfigPlugin !== "boolean") {
                         logger.warn(`- repoHasFile unknown response ${dep.githubUrl}: ${hasConfigPlugin}`);
                     }
-                    spinner.text = `Detecting Config Plugins [${i++}/${packagesToCheck.length}]`;
+                    logger.progressText(`Detecting Config Plugins [${i++}/${packagesToCheck.length}]`);
                     return {
                         ...dep,
                         hasConfigPlugin: hasConfigPlugin === true,

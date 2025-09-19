@@ -7,6 +7,8 @@ export interface ThirdPartyAutomatedPlugins {
 
     // Packages with manual path override:
     // path-override:
+    "@bitdrift/react-native": ConfigPluginOptions<typeof import("@bitdrift/react-native/typescript/packages/react-native/src/plugin/withBitdrift.d.ts")["default"]>;
+    // path-override:
     "instabug-reactnative": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index")["default"]>;
     // path-override:
     "react-native-fast-tflite": ConfigPluginOptions<typeof import("react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite")["default"]>;

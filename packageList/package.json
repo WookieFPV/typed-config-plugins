@@ -8,6 +8,7 @@
     "@bam.tech/react-native-batch": "*",
     "@batch.com/react-native-plugin": "*",
     "@beyondidentity/bi-sdk-react-native": "*",
+    "@bitdrift/react-native": "*",
     "@bittingz/expo-widgets": "*",
     "@bravemobile/react-native-code-push": "*",
     "@braze/expo-plugin": "*",
