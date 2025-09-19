@@ -20,13 +20,17 @@ export const addNpmPackageName = async () => {
         process.exit(1);
     }
 
+    let i = 0;
     const _enrichedPackages = await Promise.allSettled(
         unknown.map(
             (dep) =>
-                gitHubQueue.add(async () => ({
-                    ...dep,
-                    npmPkg: await fetchNpmPackageName(dep.githubUrl),
-                })) as Promise<RnDep>,
+                gitHubQueue.add(async (): Promise<RnDep> => {
+                    logger.progressText(`Adding NPM package names [${i++}/${unknown.length}]`);
+                    return {
+                        ...dep,
+                        npmPkg: await fetchNpmPackageName(dep.githubUrl),
+                    };
+                }) as Promise<RnDep>,
         ),
     );
     const { fulfilled, rejected } = groupPromiseAllSettled(unknown, _enrichedPackages);

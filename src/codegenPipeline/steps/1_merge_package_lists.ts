@@ -8,7 +8,7 @@ const { logger } = stepLogger("Update React-Native Directory Package List");
 
 export const downloadAndMergeLists = async (): Promise<void> => {
     logger.start();
-    const path = await downloadFile(URL, "0_rn-packages.json");
+    const path = await downloadFile(URL, "src", "codegenPipeline", "data", "input-rn-packages.json");
 
     await mergePackageLists(path);
 

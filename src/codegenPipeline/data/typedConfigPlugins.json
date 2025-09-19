@@ -1,9 +1,0 @@
-{
-  "correct": ["@appandflow/expo-camera-characteristics"],
-  "pathOverrides": [
-    {
-      "package": "react-native-fast-tflite",
-      "path": "react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite"
-    }
-  ]
-}
