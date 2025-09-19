@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.1.0...v0.2.0) (2025-09-19)
+
+
+### Features
+
+* use inline type imports to simplify types, add pipeline to read all packages from react-native-directory and use that info to auto generate the packages types for third party packages ([38e93a6](https://github.com/WookieFPV/typed-config-plugins/commit/38e93a679a1d6bd06ada1194eb0123967be8caf7))
+
 ## [0.1.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.0.1...v0.1.0) (2025-09-12)
 
 
