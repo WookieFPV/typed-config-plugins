@@ -15,7 +15,7 @@ export const addNpmPackageName = async () => {
 
     if (unknown.length) logger.log(`Packages without known npm package [${unknown.length}/${unknown.length + npm.length + ignored.length}]`);
 
-    if (!process.env.GITHUB_TOKEN) {
+    if (unknown.length > 0 && !process.env.GITHUB_TOKEN) {
         logger.warn("Not GitHub Token set, aborting...\n");
         process.exit(1);
     }

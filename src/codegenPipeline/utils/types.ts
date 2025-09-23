@@ -33,6 +33,14 @@ export type RnDep = BaseRnDep & {
     ignore?: boolean; // if true, ignore this package here
 };
 
+export type RnDepPersist = {
+    githubUrl: string;
+    npmPkg?: string;
+    hasConfigPlugin?: boolean;
+    override?: ConfigPluginOverrides;
+    ignore?: boolean; // if true, ignore this package here
+};
+
 export type RnDepFull = RnDep & {
     hasConfigPlugin: boolean;
 };

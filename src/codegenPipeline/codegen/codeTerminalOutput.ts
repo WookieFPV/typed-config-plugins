@@ -10,16 +10,25 @@ const emptyStrArr = (): string[] => [];
 export const getConfigPluginTypeCode = async (): Promise<string> => {
     const packageList = (await packageListFile().load()).filter((pkg) => pkg.hasConfigPlugin).sort(sortByPackage);
     const out = {
-        errors: emptyStrArr(),
+        errors: new Map<string, string[]>(),
         correct: emptyStrArr(),
         tsIgnored: emptyStrArr(),
         aliased: emptyStrArr(),
         pathOverrides: emptyStrArr(),
         untyped: emptyStrArr(),
-    } satisfies Record<string, string[]>;
+    } satisfies Record<string, string[] | Map<string, string[]>>;
 
-    for (const { npmPkg, override } of packageList) {
-        if (!npmPkg) continue;
+    const addError = (pkg: string, error: string) => {
+        const packages = out.errors.get(error) || [];
+        packages.push(pkg);
+        out.errors.set(error, packages);
+    };
+
+    for (const { githubUrl, npmPkg, override } of packageList) {
+        if (!npmPkg) {
+            addError(githubUrl, "no npmPkg:");
+            continue;
+        }
         try {
             // biome-ignore lint:  lint/complexity/useOptionalChain not possible here (because of false)
             const path = override && override["path"] ? override.path : await findModuleImplementation(npmPkg);
@@ -31,7 +40,6 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
                 });
             } // biome-ignore lint:  lint/complexity/useOptionalChain not possible here (because of false)
             else if (override && override.path) {
-                out.pathOverrides.push("// path-override:");
                 out.pathOverrides.push(line(npmPkg, path));
                 override.alias?.forEach((alias) => {
                     out.pathOverrides.push(line(alias, path));
@@ -39,7 +47,6 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
             } else if (override === false) {
                 out.correct.push(line(npmPkg, path));
             } else if (override?.alias) {
-                out.aliased.push("// aliased:");
                 out.aliased.push(line(npmPkg, path));
                 override.alias?.forEach((alias) => {
                     out.aliased.push(line(alias, path));
@@ -52,7 +59,8 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
                 });
             }
         } catch (e) {
-            out.errors.push(`// ${e instanceof Error ? e.message : e}`);
+            const errorMessage = `${e instanceof Error ? e.message : String(e)}:`;
+            addError(npmPkg, errorMessage);
         }
     }
 
@@ -76,6 +84,10 @@ export interface ThirdPartyAutomatedPlugins {
     
     // Packages without types:
     ${out.untyped.join("\n    ")}
+    
+    /* Errors:
+${JSON.stringify([...out.errors.entries()], null, 2)}
+    */
 }
 `;
 

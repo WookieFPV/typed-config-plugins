@@ -38,8 +38,14 @@ export async function findModuleImplementation(packageName: string): Promise<str
         // console.debug("relativePath", relativePath);
         return relativePath.replace(/\.js$/, "");
     } catch (error: unknown) {
+        if (error instanceof Error && (error as NodeJS.ErrnoException).code === "ENOENT") {
+            const errorPath = (error as NodeJS.ErrnoException).path ?? "/";
+            if (path.matchesGlob(errorPath, `**/node_modules/${packageName}/app.plugin.js`)) {
+                throw new Error(`does not ship an app.plugin.js`);
+            }
+        }
         const errorMessage = error instanceof Error ? error.message : String(error);
-        throw new Error(`[${packageName}] Failed to find implementation: ${errorMessage}`);
+        throw new Error(`Failed to find: ${errorMessage}`);
     }
 }
 
@@ -146,7 +152,7 @@ async function traceImplementation(filePath: string, packageRoot: string, visite
  * Resolves a relative import path to an absolute file path
  * @param importPath The import path from the source code
  * @param currentFile The file containing the import
- * @param packageRoot The root directory of the package
+ * @param _packageRoot The root directory of the package
  * @returns The absolute path to the imported file
  */
 function resolveImportPath(importPath: string, currentFile: string, _packageRoot: string): string {
@@ -169,6 +175,7 @@ function resolveImportPath(importPath: string, currentFile: string, _packageRoot
                 return indexFile;
             }
         }
+        if (path.extname(resolvedPath) !== "" && fs.existsSync(resolvedPath)) return resolvedPath;
 
         throw new Error(`Could not resolve import: ${importPath} from ${currentFile}`);
     }
