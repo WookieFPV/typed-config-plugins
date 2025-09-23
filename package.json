@@ -54,6 +54,7 @@
     "typescript": "5.9.2"
   },
   "patchedDependencies": {
-    "instabug-reactnative@16.0.2": "patches/instabug-reactnative@16.0.2.patch"
+    "instabug-reactnative@16.0.2": "patches/instabug-reactnative@16.0.2.patch",
+    "onesignal-expo-plugin@2.0.3": "patches/onesignal-expo-plugin@2.0.3.patch"
   }
 }

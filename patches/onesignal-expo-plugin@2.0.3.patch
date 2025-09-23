@@ -1,0 +1,82 @@
+diff --git a/onesignal/withOneSignal.ts b/onesignal/withOneSignal.ts
+index c0e1a31ca91a3b90a03664581383310a96ef2c03..858e27032f7f6819c3b706672bc94f2c4b487df6 100644
+--- a/onesignal/withOneSignal.ts
++++ b/onesignal/withOneSignal.ts
+@@ -3,8 +3,8 @@
+  * @see https://documentation.onesignal.com/docs/react-native-sdk-setup#step-4-install-for-ios-using-cocoapods-for-ios-apps
+  */
+ 
+-import { ConfigPlugin } from '@expo/config-plugins';
+-import { OneSignalPluginProps } from '../types/types';
++import { type ConfigPlugin } from '@expo/config-plugins';
++import { type OneSignalPluginProps } from '../types/types';
+ import { withOneSignalAndroid } from './withOneSignalAndroid';
+ import { withOneSignalIos } from './withOneSignalIos';
+ import { validatePluginProps } from '../support/helpers';
+diff --git a/onesignal/withOneSignalAndroid.ts b/onesignal/withOneSignalAndroid.ts
+index bc15a06ad386f9ec7245af8119bdc02849daeea6..949b3f53fb33d1dfc1efd37ce9e68a4bb0c0fb5f 100644
+--- a/onesignal/withOneSignalAndroid.ts
++++ b/onesignal/withOneSignalAndroid.ts
+@@ -3,10 +3,10 @@
+  * @see https://documentation.onesignal.com/docs/react-native-sdk-setup#step-4-install-for-ios-using-cocoapods-for-ios-apps
+  */
+ 
+-import { ConfigPlugin, withDangerousMod, withStringsXml } from '@expo/config-plugins';
++import { type ConfigPlugin, withDangerousMod, withStringsXml } from '@expo/config-plugins';
+ import { generateImageAsync } from '@expo/image-utils';
+ import { OneSignalLog } from '../support/OneSignalLog';
+-import { OneSignalPluginProps } from '../types/types';
++import type { OneSignalPluginProps } from '../types/types';
+ import { resolve, parse } from 'path';
+ import { existsSync, mkdirSync, writeFileSync } from 'fs';
+ 
+@@ -124,8 +124,8 @@ async function saveIconAsync(icon: string, projectRoot: string, dirsToSize: { [n
+         { projectRoot, cacheType: 'onesignal-icon' },
+         {
+           src: icon,
+-          width: dirsToSize[iconResourceDir],
+-          height: dirsToSize[iconResourceDir],
++          width: dirsToSize[iconResourceDir]!,
++          height: dirsToSize[iconResourceDir]!,
+           resizeMode: 'cover',
+           backgroundColor: 'transparent',
+         }
+diff --git a/onesignal/withOneSignalIos.ts b/onesignal/withOneSignalIos.ts
+index e3593e75c6ce3376317588c5654c3129ca96e1f8..31e71b5fd219ba2bac4da9c829cde96be0bf590e 100644
+--- a/onesignal/withOneSignalIos.ts
++++ b/onesignal/withOneSignalIos.ts
+@@ -3,8 +3,8 @@
+  * @see https://documentation.onesignal.com/docs/react-native-sdk-setup#step-4-install-for-ios-using-cocoapods-for-ios-apps
+  */
+ 
+-import {
+-  ConfigPlugin,
++import { 
++  type ConfigPlugin,
+   withEntitlementsPlist,
+   withInfoPlist,
+   withXcodeProject,
+@@ -25,10 +25,10 @@ import { updatePodfile } from "../support/updatePodfile";
+ import NseUpdaterManager from "../support/NseUpdaterManager";
+ import { OneSignalLog } from "../support/OneSignalLog";
+ import { FileManager } from "../support/FileManager";
+-import { OneSignalPluginProps } from "../types/types";
++import type { OneSignalPluginProps } from "../types/types";
+ import assert from 'assert';
+ import getEasManagedCredentialsConfigExtra from "../support/eas/getEasManagedCredentialsConfigExtra";
+-import { ExpoConfig } from '@expo/config-types';
++import type { ExpoConfig } from '@expo/config-types';
+ 
+ /**
+  * Add 'aps-environment' record with current environment to '<project-name>.entitlements' file
+diff --git a/support/eas/getEasManagedCredentialsConfigExtra.ts b/support/eas/getEasManagedCredentialsConfigExtra.ts
+index 4900172e7a994827160e0f88d2a9b6bb86d51bf2..8ba5dcbf899112247d884bba7a5f7cc6b22d2ddc 100644
+--- a/support/eas/getEasManagedCredentialsConfigExtra.ts
++++ b/support/eas/getEasManagedCredentialsConfigExtra.ts
+@@ -1,5 +1,5 @@
+ import { NSE_TARGET_NAME } from "../iosConstants";
+-import { ExpoConfig } from '@expo/config-types';
++import type { ExpoConfig } from '@expo/config-types';
+ 
+ export default function getEasManagedCredentialsConfigExtra(config: ExpoConfig): {[k: string]: any} {
+   return {

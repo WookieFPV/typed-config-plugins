@@ -6,16 +6,16 @@ export interface ThirdPartyAutomatedPlugins {
     // Packages with ts-ignore override:
 
     // Packages with manual path override:
-    // path-override:
+    "@azesmway/react-native-unity": ConfigPluginOptions<typeof import("@azesmway/react-native-unity/lib/typescript/plugin/src/index.d.ts")["default"]>;
     "@bitdrift/react-native": ConfigPluginOptions<typeof import("@bitdrift/react-native/typescript/packages/react-native/src/plugin/withBitdrift.d.ts")["default"]>;
-    // path-override:
+    "@survicate/react-native-survicate": ConfigPluginOptions<typeof import("@survicate/react-native-survicate/lib/typescript/expo/withSurvicate.d.ts")["default"]>;
+    "expo-color-space-plugin": ConfigPluginOptions<typeof import("expo-color-space-plugin/build/index.d.ts")["default"]>;
     "instabug-reactnative": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index")["default"]>;
-    // path-override:
+    "onesignal-expo-plugin": ConfigPluginOptions<typeof import("onesignal-expo-plugin/onesignal/withOneSignal.ts")["default"]>;
     "react-native-fast-tflite": ConfigPluginOptions<typeof import("react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite")["default"]>;
-    // path-override:
     "react-native-full-screen-notification-incoming-call": ConfigPluginOptions<typeof import("react-native-full-screen-notification-incoming-call/src/expo.ts")["default"]>;
-    // path-override:
     "react-native-keys": ConfigPluginOptions<typeof import("react-native-keys/lib/typescript/plugin/src/index.d.ts")["default"]>;
+    "react-native-localize": ConfigPluginOptions<typeof import("react-native-localize/src/expo.ts")["default"]>;
 
     // Packages with detected types:
     "@appandflow/expo-camera-characteristics": ConfigPluginOptions<typeof import("@appandflow/expo-camera-characteristics/plugin/build/index")["default"]>;
@@ -56,6 +56,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-camera": ConfigPluginOptions<typeof import("expo-camera/plugin/build/withCamera")["default"]>;
     "expo-cellular": ConfigPluginOptions<typeof import("expo-cellular/plugin/build/withCellular")["default"]>;
     "expo-contacts": ConfigPluginOptions<typeof import("expo-contacts/plugin/build/withContacts")["default"]>;
+    "expo-core-spotlight": ConfigPluginOptions<typeof import("expo-core-spotlight/plugin/build/index")["default"]>;
     "expo-custom-assets": ConfigPluginOptions<typeof import("expo-custom-assets/build/index")["default"]>;
     "expo-dev-client": ConfigPluginOptions<typeof import("expo-dev-client/plugin/build/withDevClient")["default"]>;
     "expo-document-picker": ConfigPluginOptions<typeof import("expo-document-picker/plugin/build/withDocumentPicker")["default"]>;
@@ -100,6 +101,7 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-background-geolocation": ConfigPluginOptions<typeof import("react-native-background-geolocation/expo/plugin/build/index")["default"]>;
     "react-native-ble-manager": ConfigPluginOptions<typeof import("react-native-ble-manager/plugin/build/withBLE")["default"]>;
     "react-native-ble-plx": ConfigPluginOptions<typeof import("react-native-ble-plx/plugin/build/withBLE")["default"]>;
+    "react-native-cloud-storage": ConfigPluginOptions<typeof import("react-native-cloud-storage/dist/typescript/expo-plugin/index")["default"]>;
     "react-native-compressor": ConfigPluginOptions<typeof import("react-native-compressor/lib/typescript/expo-plugin/compressor")["default"]>;
     "react-native-document-scanner-plugin": ConfigPluginOptions<typeof import("react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner")["default"]>;
     "react-native-edge-to-edge": ConfigPluginOptions<typeof import("react-native-edge-to-edge/dist/typescript/expo")["default"]>;
@@ -126,7 +128,6 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-wifi-reborn": ConfigPluginOptions<typeof import("react-native-wifi-reborn/plugin/dist/withWifi")["default"]>;
 
     // Packages with custom alias:
-    // aliased:
     "@sentry/react-native": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
     "@sentry/react-native/expo": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
 
@@ -158,6 +159,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "@xmartlabs/react-native-line": ConfigPluginOptions<typeof import("@xmartlabs/react-native-line/plugin/withLineSDK")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "app-icon-badge": ConfigPluginOptions<typeof import("app-icon-badge/dist/app.plugin")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "expo-asset": ConfigPluginOptions<typeof import("expo-asset/plugin/build/withAssets")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "expo-font": ConfigPluginOptions<typeof import("expo-font/plugin/build/withFonts")["default"]>;
@@ -186,15 +189,21 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-bottom-tabs": ConfigPluginOptions<typeof import("react-native-bottom-tabs/lib/typescript/expo")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "react-native-capture-protection": ConfigPluginOptions<typeof import("react-native-capture-protection/plugins/withPlugin")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-cloud-store": ConfigPluginOptions<typeof import("react-native-cloud-store/plugins/withCloud")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-email-link": ConfigPluginOptions<typeof import("react-native-email-link/plugin/withEmailLink")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "react-native-google-auth": ConfigPluginOptions<typeof import("react-native-google-auth/plugin/build/withGoogleAuth")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-health": ConfigPluginOptions<typeof import("react-native-health/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-health-connect": ConfigPluginOptions<typeof import("react-native-health-connect/app.plugin")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "react-native-iap": ConfigPluginOptions<typeof import("react-native-iap/plugin/build/withIAP")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-libsodium": ConfigPluginOptions<typeof import("react-native-libsodium/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
@@ -215,4 +224,20 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-tiktok": ConfigPluginOptions<typeof import("react-native-tiktok/plugin/build/withTiktok")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-vlc-media-player": ConfigPluginOptions<typeof import("react-native-vlc-media-player/expo/withVlcMediaPlayer")["default"]>;
+
+    /* Errors:
+[
+  [
+    "does not ship an app.plugin.js:",
+    [
+      "@datadog/mobile-react-native",
+      "@sparkfabrik/react-native-idfa-aaid",
+      "react-native-nitro-sound",
+      "react-native-quick-crypto",
+      "react-native-whip-whep",
+      "rn-fade-wrapper"
+    ]
+  ]
+]
+    */
 }
