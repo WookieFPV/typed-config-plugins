@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.2.0...v0.3.0) (2025-09-23)
+
+
+### Features
+
+* add types for 8 more packages: ([d5dfa0c](https://github.com/WookieFPV/typed-config-plugins/commit/d5dfa0c0c79ba11d82c445d33b5d9de762ecf588))
+* improve codegen to handle more edge cases ([204be55](https://github.com/WookieFPV/typed-config-plugins/commit/204be55dedd8fb9cb2ef402d7bc9823134ab33bf))
+* show progress on slow tasks (require ~2k API calls) ([0ae8aff](https://github.com/WookieFPV/typed-config-plugins/commit/0ae8aff12b9391df2ffe3301c5e10ccd40f74750))
+
 ## [0.2.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.1.0...v0.2.0) (2025-09-19)
 
 
