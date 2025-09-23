@@ -1,11 +1,21 @@
 import { file } from "bun";
-import type { RnDep } from "./types";
+import type { RnDep, RnDepPersist } from "./types";
 
 const pluginListPath = "src/codegenPipeline/data/rn-packages.json";
 
+const filterPkgData = (deps: RnDep[]): RnDepPersist[] =>
+    deps.map((pkg) => ({
+        githubUrl: pkg.githubUrl,
+        npmPkg: pkg.npmPkg,
+        hasConfigPlugin: pkg.hasConfigPlugin,
+        override: pkg.override,
+        ignore: pkg.ignore,
+        unmaintained: pkg.unmaintained,
+    }));
+
 export const packageListFile = (path = pluginListPath) => ({
-    load: async (): Promise<Array<RnDep>> => file(path).json(),
-    save: async (pluginsList: Array<RnDep>) => file(path).write(JSON.stringify(pluginsList, null, 2)),
+    load: async (): Promise<Array<RnDep | RnDepPersist>> => file(path).json(),
+    save: async (pluginsList: Array<RnDep>) => file(path).write(JSON.stringify(filterPkgData(pluginsList), null, 2)),
 });
 
 export const updatePluginsListFile = async (enrichedPlugins: RnDep[]): Promise<void> => {

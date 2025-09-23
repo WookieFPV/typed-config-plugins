@@ -13,6 +13,11 @@ export const detectConfigPlugins = async (type: "onlyNew" | "full" = "onlyNew"):
 
     const packagesToCheck = allPackages.filter((p) => !p.ignore && "npmPkg" in p && (type === "full" || !("hasConfigPlugin" in p)));
 
+    if (packagesToCheck.length > 0 && !process.env.GITHUB_TOKEN) {
+        logger.warn("Not GitHub Token set, aborting...\n");
+        process.exit(1);
+    }
+
     let i = 0;
     const _processed = await Promise.allSettled(
         packagesToCheck.map(
