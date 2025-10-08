@@ -3,6 +3,7 @@ name: Auto Update
 on:
   schedule:
     - cron: '0 6 * * 6' # Every Saturday at 06:00 UTC
+  workflow_dispatch:
 
 jobs:
   update:
@@ -33,4 +34,3 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
-
