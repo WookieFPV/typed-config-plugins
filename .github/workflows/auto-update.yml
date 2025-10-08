@@ -9,6 +9,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,6 +23,8 @@ jobs:
 
       - name: Run update script
         run: bun run update
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
 
       - name: Commit and push changes
         run: |
@@ -32,5 +35,3 @@ jobs:
             git commit -m "chore: automated weekly update"
             git push
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
