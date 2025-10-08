@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
@@ -28,7 +30,7 @@ jobs:
 
       - name: Commit and push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -36,5 +38,5 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "chore: automated weekly update"
             git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-            git push
+            git push origin HEAD:${GITHUB_REF#refs/heads/}
           fi
