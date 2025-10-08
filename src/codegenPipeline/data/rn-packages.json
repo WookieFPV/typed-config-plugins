@@ -10490,5 +10490,100 @@
     "override": {
       "path": "@survicate/react-native-survicate/lib/typescript/expo/withSurvicate.d.ts"
     }
+  },
+  {
+    "githubUrl": "https://github.com/supabase/supabase-js/tree/master/packages/core/supabase-js",
+    "npmPkg": "@supabase/supabase-js",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/getsettalk/react-native-qr-kit/tree/main/package",
+    "npmPkg": "react-native-qr-kit",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/purrseus/react-native-xenon",
+    "npmPkg": "react-native-xenon",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/NIKHIL0VERMA/flixsrota-player",
+    "npmPkg": "@flixsrota/player",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/devtools-floating-menu",
+    "npmPkg": "@react-buoy/core",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/shared",
+    "npmPkg": "@react-buoy/shared-ui",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/env-tools",
+    "npmPkg": "@react-buoy/env",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/network",
+    "npmPkg": "@react-buoy/network",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/react-query",
+    "npmPkg": "@react-buoy/react-query",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/storage",
+    "npmPkg": "@react-buoy/storage",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-nitro-fetch",
+    "npmPkg": "react-native-nitro-fetch",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/patrickkabwe/react-native-nitro-text",
+    "npmPkg": "react-native-nitro-text",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/thereallo1026/expo-native-storage",
+    "npmPkg": "expo-native-storage",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/pushpender-singh-ap/react-native-unarchive",
+    "npmPkg": "react-native-unarchive",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/SamadK01/react-native-ultrastore",
+    "npmPkg": "react-native-ultrastore",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/pushpender-singh-ap/react-native-otp-verify",
+    "npmPkg": "@pushpendersingh/react-native-otp-verify",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/ahmedawaad1804/react-native-restart-newarch",
+    "npmPkg": "react-native-restart-newarch",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/roeycohen/react-native-mdm-config",
+    "npmPkg": "react-native-mdm-config",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/ebrimasamba/react-native-sms-retriever",
+    "npmPkg": "@ebrimasamba/react-native-sms-retriever",
+    "hasConfigPlugin": false
   }
 ]

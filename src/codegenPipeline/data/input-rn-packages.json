@@ -4571,9 +4571,6 @@
     "githubUrl": "https://github.com/duguyihou/react-native-turbo-image"
   },
   {
-    "githubUrl": "https://github.com/LovesWorking/react-native-react-query-devtools"
-  },
-  {
     "githubUrl": "https://github.com/calintamas/react-native-toast-message"
   },
   {
@@ -4740,7 +4737,7 @@
     "npmPkg": "@react-navigation/devtools"
   },
   {
-    "githubUrl": "https://github.com/supabase/supabase-js",
+    "githubUrl": "https://github.com/supabase/supabase-js/tree/master/packages/core/supabase-js",
     "npmPkg": "@supabase/supabase-js"
   },
   {
@@ -6725,7 +6722,8 @@
     "npmPkg": "@10play/tentap-editor"
   },
   {
-    "githubUrl": "https://github.com/getsettalk/react-native-qr-kit"
+    "githubUrl": "https://github.com/getsettalk/react-native-qr-kit/tree/main/package",
+    "npmPkg": "react-native-qr-kit"
   },
   {
     "githubUrl": "https://github.com/Shopify/checkout-sheet-kit-react-native/tree/main/modules/%40shopify/checkout-sheet-kit",
@@ -6834,5 +6832,70 @@
   {
     "githubUrl": "https://github.com/Survicate/survicate-react-native-sdk",
     "npmPkg": "@survicate/react-native-survicate"
+  },
+  {
+    "githubUrl": "https://github.com/purrseus/react-native-xenon"
+  },
+  {
+    "githubUrl": "https://github.com/NIKHIL0VERMA/flixsrota-player",
+    "npmPkg": "@flixsrota/player"
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/devtools-floating-menu",
+    "npmPkg": "@react-buoy/core"
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/shared",
+    "npmPkg": "@react-buoy/shared-ui"
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/env-tools",
+    "npmPkg": "@react-buoy/env"
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/network",
+    "npmPkg": "@react-buoy/network"
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/react-query",
+    "npmPkg": "@react-buoy/react-query"
+  },
+  {
+    "githubUrl": "https://github.com/LovesWorking/react-native-buoy/tree/main/packages/storage",
+    "npmPkg": "@react-buoy/storage"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-nitro-fetch"
+  },
+  {
+    "githubUrl": "https://github.com/patrickkabwe/react-native-nitro-text"
+  },
+  {
+    "githubUrl": "https://github.com/thereallo1026/expo-native-storage",
+    "npmPkg": "expo-native-storage"
+  },
+  {
+    "githubUrl": "https://github.com/pushpender-singh-ap/react-native-unarchive",
+    "npmPkg": "react-native-unarchive"
+  },
+  {
+    "githubUrl": "https://github.com/SamadK01/react-native-ultrastore",
+    "npmPkg": "react-native-ultrastore"
+  },
+  {
+    "githubUrl": "https://github.com/pushpender-singh-ap/react-native-otp-verify",
+    "npmPkg": "@pushpendersingh/react-native-otp-verify"
+  },
+  {
+    "githubUrl": "https://github.com/ahmedawaad1804/react-native-restart-newarch",
+    "npmPkg": "react-native-restart-newarch"
+  },
+  {
+    "githubUrl": "https://github.com/roeycohen/react-native-mdm-config",
+    "npmPkg": "react-native-mdm-config"
+  },
+  {
+    "githubUrl": "https://github.com/ebrimasamba/react-native-sms-retriever",
+    "npmPkg": "@ebrimasamba/react-native-sms-retriever"
   }
 ]
