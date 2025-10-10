@@ -12,7 +12,6 @@ export const githubHeaders = () => {
 
 export const gitHubQueue = new pQueue({
     concurrency: 20,
-    throwOnTimeout: true,
 });
 
 const token = process.env.GITHUB_TOKEN;
