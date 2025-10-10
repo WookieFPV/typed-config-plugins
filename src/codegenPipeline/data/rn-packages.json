@@ -10585,5 +10585,65 @@
     "githubUrl": "https://github.com/ebrimasamba/react-native-sms-retriever",
     "npmPkg": "@ebrimasamba/react-native-sms-retriever",
     "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/huytdps13400/react-native-ssl-manager",
+    "npmPkg": "react-native-ssl-manager",
+    "hasConfigPlugin": true
+  },
+  {
+    "githubUrl": "https://github.com/huytdps13400/react-native-sms-retriever-nitro-module",
+    "npmPkg": "@huymobile/react-native-sms-retriever-nitro-module",
+    "hasConfigPlugin": true
+  },
+  {
+    "githubUrl": "https://github.com/coolsoftwaretyler/cool-pdf",
+    "npmPkg": "@coolsoftwaretyler/cool-pdf",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/heroui-inc/heroui-native",
+    "npmPkg": "heroui-native",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/GG11HEDR/react-native-google-places-textinput",
+    "npmPkg": "react-native-google-places-textinput",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/DanielAraldi/react-native-blur-view",
+    "npmPkg": "@danielsaraldi/react-native-blur-view",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/furkananter/react-native-shimmer-text",
+    "npmPkg": "react-native-shimmer-text",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/avas-app/react-native-android-otp-autofill",
+    "npmPkg": "@avasapp/react-native-otp-autofill",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/appwrite/sdk-for-react-native",
+    "npmPkg": "react-native-appwrite",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/itsRares/react-native-deepgram",
+    "npmPkg": "react-native-deepgram",
+    "hasConfigPlugin": true
+  },
+  {
+    "githubUrl": "https://github.com/ursnj/nayan-ui/tree/main/packages/react-native",
+    "npmPkg": "@nayan-ui/react-native",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/sharathchandramg/react-native-formo",
+    "npmPkg": "react-native-form0",
+    "hasConfigPlugin": false
   }
 ]

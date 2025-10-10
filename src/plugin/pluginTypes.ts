@@ -143,6 +143,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "@hot-updater/react-native": ConfigPluginOptions<typeof import("@hot-updater/react-native/plugin/build/withHotUpdater")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "@huymobile/react-native-sms-retriever-nitro-module": ConfigPluginOptions<typeof import("@huymobile/react-native-sms-retriever-nitro-module/app.plugin")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "@intercom/intercom-react-native": ConfigPluginOptions<typeof import("@intercom/intercom-react-native/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "@kingstinct/react-native-activity-kit": ConfigPluginOptions<typeof import("@kingstinct/react-native-activity-kit/app.plugin")["default"]>;
@@ -195,6 +197,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "react-native-deepgram": ConfigPluginOptions<typeof import("react-native-deepgram/plugin/build/index")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-email-link": ConfigPluginOptions<typeof import("react-native-email-link/plugin/withEmailLink")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-google-auth": ConfigPluginOptions<typeof import("react-native-google-auth/plugin/build/withGoogleAuth")["default"]>;
@@ -220,6 +224,8 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-ota-hot-update": ConfigPluginOptions<typeof import("react-native-ota-hot-update/plugin/build/index")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-render-lynx": ConfigPluginOptions<typeof import("react-native-render-lynx/plugin/withRenderLynx")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "react-native-ssl-manager": ConfigPluginOptions<typeof import("react-native-ssl-manager/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-tiktok": ConfigPluginOptions<typeof import("react-native-tiktok/plugin/build/withTiktok")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
