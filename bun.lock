@@ -15,7 +15,7 @@
         "typescript": "5.9.3",
       },
       "peerDependencies": {
-        "@expo/config-plugins": "54.0.2",
+        "@expo/config-plugins": "*",
       },
     },
     "packageList": {

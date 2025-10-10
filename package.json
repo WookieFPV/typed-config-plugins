@@ -40,7 +40,7 @@
     "prepublishOnly": "bun i && bun run lint:CI && tsc  && bun run build"
   },
   "peerDependencies": {
-    "@expo/config-plugins": "54.0.2"
+    "@expo/config-plugins": "*"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
