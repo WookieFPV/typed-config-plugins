@@ -30,63 +30,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
 
-      - name: Create update-deps branch and commit changes
-        id: create_pr_branch_commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-
-          # Check if there are any changes *before* branching to avoid empty commits
-          git add -A
-          if ! git diff --cached --quiet; then
-            echo "Changes detected, proceeding to create branch and commit."
-            UPDATE_BRANCH="update-deps"
-
-            # Create and switch to the new branch.
-            # Use 'git checkout -B' to create/reset the branch based on the current HEAD
-            # This handles cases where 'update-deps' might already exist.
-            git checkout -B "${UPDATE_BRANCH}"
-
-            # Ensure all changes are staged on the new branch
-            git add -A
-
-            # Now commit on the newly created branch
-            git commit -m "chore: automated weekly update"
-
-            # Push the new branch (force push is safe here as it's an auto-generated branch)
-            git push origin -f "${UPDATE_BRANCH}"
-
-            echo "has_changes=true" >> "$GITHUB_OUTPUT"
-            echo "created_branch=${UPDATE_BRANCH}" >> "$GITHUB_OUTPUT"
-          else
-            echo "No changes to commit."
-            echo "has_changes=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Open Pull Request
-        if: steps.create_pr_branch_commit.outputs.has_changes == 'true'
+
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
-          # The key change: specify `no-verify: true` to prevent the action
-          # from performing git operations that might alter the branch state.
-          # We've already committed and pushed in the previous step.
-          # Also, removed `commit-message` as the commit already exists.
-          title: "chore: Automated weekly dependency update"
-          body: "This PR updates dependencies automatically."
-          branch: ${{ steps.create_pr_branch_commit.outputs.created_branch }}
-          base: main # The branch you want to merge into
-          labels: automated, dependencies
-          # Set `create-branch` to false if you are sure the branch already exists remotely.
-          # This prevents the action from trying to create or reset the branch itself.
-          create-branch: false
-          # Set `push-to-fork` to false if the PR is always opened against the same repository
-          # push-to-fork: false
-          # Optional: If you want to delete the branch after the PR is merged/closed
-          # delete-branch: true
-          # Optionally, uncomment to enable auto-merge
-          # automerge: true
-          # automerge-method: squash
+          "commit-message": "chore: automated update of config plugins"
+          title: "chore: Automated update of config plugins"
+          body: "This PR updates the list of config plugins automatically. (Might need manual cleanup)"
+          branch: "auto-update-plugins"
+          base: main
+          labels: automated
