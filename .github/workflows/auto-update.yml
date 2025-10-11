@@ -1,21 +1,26 @@
-name: Auto Update
+name: Auto Update Plugins
 
 on:
   schedule:
     - cron: '0 6 * * 6' # Every Saturday at 06:00 UTC
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    # Give it a bit more time, especially if updates can be extensive or Bun is slow sometimes.
     timeout-minutes: 5
 
+    permissions:
+      contents: write # Needed for checkout and creating a commit
+      pull-requests: write # Needed for creating a pull request
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          # We need to fetch all branches for creating a new branch
-          fetch-depth: 0
-          persist-credentials: false
+          fetch-depth: 0 # We need to fetch all branches for creating a new branch
+          persist-credentials: false # Uses the token provided by the 'permissions' block
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
@@ -28,16 +33,24 @@ jobs:
       - name: Run update script
         run: bun run update
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
 
-      - name: Open Pull Request
-
+      - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.RELEASE_PLEASE_GH_TOKEN }}
-          "commit-message": "chore: automated update of config plugins"
-          title: "chore: Automated update of config plugins"
-          body: "This PR updates the list of config plugins automatically. (Might need manual cleanup)"
+          commit-message: "chore(plugins): Automated update of config plugins"
+          title: "chore(plugins): Automated update of config plugins"
+          body: |
+            This PR updates the list of config plugins automatically.
+
+            **Changes include:**
+            - Updates to plugin configurations
+            - Any new plugins discovered
+            - (Possible manual cleanup may be required for breaking changes or conflicts)
+
+            Please review the changes carefully.
           branch: "auto-update-plugins"
           base: main
-          labels: automated
+          labels: |
+            automated
+            config-plugins # Good label for dependency updates
