@@ -44,6 +44,7 @@ jobs:
 
       - run: bunx pkg-pr-new publish
         if: ${{ !steps.release.outputs.release_created && github.ref_type != 'tag' }}
+        continue-on-error: true
 
       - name: Publish to npm
         run: bun publish --access public
