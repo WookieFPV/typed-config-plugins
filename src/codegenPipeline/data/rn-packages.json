@@ -2634,7 +2634,7 @@
     "npmPkg": "react-native-localize",
     "hasConfigPlugin": true,
     "types": {
-      "path": "react-native-localize\\dist\\typescript\\expo.d.ts",
+      "path": "react-native-localize/dist/typescript/expo.d.ts",
       "valid": true,
       "override": {
         "path": "react-native-localize/src/expo.ts"
@@ -4442,7 +4442,7 @@
     "npmPkg": "react-native-nitro-sound",
     "hasConfigPlugin": true,
     "types": {
-      "path": "react-native-nitro-sound\\lib\\typescript\\plugin\\src\\index.d.ts",
+      "path": "react-native-nitro-sound/lib/typescript/plugin/src/index.d.ts",
       "valid": true,
       "override": {
         "ignore": true
@@ -6974,7 +6974,7 @@
     "npmPkg": "@azesmway/react-native-unity",
     "hasConfigPlugin": true,
     "types": {
-      "path": "@azesmway\\react-native-unity\\lib\\typescript\\plugin\\src\\index.d.ts",
+      "path": "@azesmway/react-native-unity/lib/typescript/plugin/src/index.d.ts",
       "valid": true,
       "override": {
         "path": "@azesmway/react-native-unity/lib/typescript/plugin/src/index.d.ts"
@@ -11084,7 +11084,7 @@
     "npmPkg": "expo-color-space-plugin",
     "hasConfigPlugin": true,
     "types": {
-      "path": "expo-color-space-plugin\\build\\index.d.ts",
+      "path": "expo-color-space-plugin/build/index.d.ts",
       "valid": true,
       "override": {
         "path": "expo-color-space-plugin/build/index.d.ts"

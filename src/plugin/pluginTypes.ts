@@ -217,7 +217,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-nfc-manager": ConfigPluginOptions<typeof import("react-native-nfc-manager/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
-    "react-native-nitro-sound": ConfigPluginOptions<typeof import("react-native-nitro-sound\lib\typescript\plugin\src\index.d.ts")["default"]>;
+    "react-native-nitro-sound": ConfigPluginOptions<typeof import("react-native-nitro-sound/lib/typescript/plugin/src/index.d.ts")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-orientation-director": ConfigPluginOptions<typeof import("react-native-orientation-director/plugin/build/index")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
@@ -244,60 +244,5 @@ export interface ThirdPartyAutomatedPlugins {
     ]
   ]
 ]
-    */
-
-    /* Invalid Packages:
-[
-  "@beyondidentity/bi-sdk-react-native",
-  "@bravemobile/react-native-code-push",
-  "@corasan/image-compressor",
-  "@giphy/react-native-sdk",
-  "@hot-updater/react-native",
-  "@huymobile/react-native-sms-retriever-nitro-module",
-  "@intercom/intercom-react-native",
-  "@kingstinct/react-native-activity-kit",
-  "@kingstinct/react-native-healthkit",
-  "@maplibre/maplibre-react-native",
-  "@react-native-google-signin/google-signin",
-  "@stripe/stripe-react-native",
-  "@vonovak/react-native-theme-control",
-  "@xmartlabs/react-native-line",
-  "app-icon-badge",
-  "expo-asset",
-  "expo-font",
-  "expo-music-picker",
-  "expo-native-alipay",
-  "expo-quick-actions",
-  "expo-roomplan",
-  "expo-speech-recognition",
-  "expo-sqlite",
-  "expo-superwall",
-  "pushy-expo-plugin",
-  "react-native-appsflyer",
-  "react-native-auto-skeleton",
-  "react-native-bootsplash",
-  "react-native-bottom-tabs",
-  "react-native-capture-protection",
-  "react-native-cloud-store",
-  "react-native-credentials-manager",
-  "react-native-deepgram",
-  "react-native-email-link",
-  "react-native-google-auth",
-  "react-native-health",
-  "react-native-health-connect",
-  "react-native-iap",
-  "react-native-libsodium",
-  "react-native-map-link",
-  "react-native-maps",
-  "react-native-navigation-mode",
-  "react-native-nfc-manager",
-  "react-native-nitro-sound",
-  "react-native-orientation-director",
-  "react-native-ota-hot-update",
-  "react-native-render-lynx",
-  "react-native-ssl-manager",
-  "react-native-tiktok",
-  "react-native-vlc-media-player"
-]   
     */
 }
