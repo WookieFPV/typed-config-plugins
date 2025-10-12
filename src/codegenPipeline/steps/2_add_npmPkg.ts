@@ -20,7 +20,7 @@ export const addNpmPackageName = async () => {
         process.exit(1);
     }
 
-    let i = 0;
+    let i = 1;
     const _enrichedPackages = await Promise.allSettled(
         unknown.map(
             (dep) =>

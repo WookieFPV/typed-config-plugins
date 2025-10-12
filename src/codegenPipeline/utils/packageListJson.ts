@@ -8,7 +8,7 @@ const filterPkgData = (deps: RnDep[]): RnDepPersist[] =>
         githubUrl: pkg.githubUrl,
         npmPkg: pkg.npmPkg,
         hasConfigPlugin: pkg.hasConfigPlugin,
-        override: pkg.override,
+        types: pkg.types,
         ignore: pkg.ignore,
         unmaintained: pkg.unmaintained,
     }));

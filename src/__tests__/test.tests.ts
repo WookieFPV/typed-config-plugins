@@ -26,7 +26,6 @@ describe("plugin", () => {
     it("expo-color-space-plugin", () => {
         plugin("expo-color-space-plugin", { colorSpace: "SRGB" });
         expect(plugin("expo-color-space-plugin", { colorSpace: "displayP3" })).toEqual(["expo-color-space-plugin", { colorSpace: "displayP3" }]);
-
         expect(plugin("expo-color-space-plugin")).toEqual(["expo-color-space-plugin"]);
 
         // @ts-expect-error this should fail

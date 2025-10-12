@@ -6935,5 +6935,11 @@
   {
     "githubUrl": "https://github.com/sharathchandramg/react-native-formo",
     "npmPkg": "react-native-form0"
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-play-age-signals"
+  },
+  {
+    "githubUrl": "https://github.com/rafalmeida73/heart-switch-react-native"
   }
 ]

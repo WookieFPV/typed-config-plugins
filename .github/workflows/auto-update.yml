@@ -53,4 +53,4 @@ jobs:
           base: main
           labels: |
             automated
-            config-plugins # Good label for dependency updates
+            config-plugins

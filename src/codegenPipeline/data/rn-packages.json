@@ -194,8 +194,12 @@
     "githubUrl": "https://github.com/Instabug/instabug-reactnative",
     "npmPkg": "instabug-reactnative",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "instabug-reactnative/plugin/src/index"
+    "types": {
+      "path": "instabug-reactnative/plugin/build/index",
+      "valid": false,
+      "override": {
+        "path": "instabug-reactnative/plugin/src/index"
+      }
     }
   },
   {
@@ -244,7 +248,10 @@
     "githubUrl": "https://github.com/vonovak/react-native-add-calendar-event",
     "npmPkg": "react-native-add-calendar-event",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-add-calendar-event/plugin/build/withAddCalendarEvent",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/prscX/react-native-bottom-action-sheet",
@@ -417,7 +424,11 @@
   {
     "githubUrl": "https://github.com/react-native-maps/react-native-maps",
     "npmPkg": "react-native-maps",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-maps/plugin/build/index",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/bramus/react-native-maps-directions",
@@ -519,13 +530,19 @@
     "githubUrl": "https://github.com/TheWidlarzGroup/react-native-video",
     "npmPkg": "react-native-video",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-video/lib/expo-plugins/withRNVideo",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/react-native-share/react-native-share",
     "npmPkg": "react-native-share",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-share/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/aakashns/react-native-dialogs",
@@ -547,7 +564,10 @@
     "githubUrl": "https://github.com/innoveit/react-native-ble-manager",
     "npmPkg": "react-native-ble-manager",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-ble-manager/plugin/build/withBLE",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/chirag04/react-native-mail",
@@ -1119,7 +1139,10 @@
     "githubUrl": "https://github.com/callstack/react-native-fbads",
     "npmPkg": "react-native-fbads",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-fbads/plugin/build/withReactNativeFbads",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/BranchMetrics/react-native-branch-deep-linking-attribution",
@@ -1171,7 +1194,10 @@
     "githubUrl": "https://github.com/yonahforst/react-native-permissions",
     "npmPkg": "react-native-permissions",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-permissions/dist/typescript/expo",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/gre/react-native-view-shot",
@@ -1231,7 +1257,10 @@
     "githubUrl": "https://github.com/transistorsoft/react-native-background-fetch",
     "npmPkg": "react-native-background-fetch",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-background-fetch/expo/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/lrettig/react-native-stripe",
@@ -1599,7 +1628,10 @@
     "githubUrl": "https://github.com/Polidea/react-native-ble-plx",
     "npmPkg": "react-native-ble-plx",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-ble-plx/plugin/build/withBLE",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/mfrachet/rn-placeholder",
@@ -1626,7 +1658,10 @@
     "githubUrl": "https://github.com/invertase/react-native-google-mobile-ads",
     "npmPkg": "react-native-google-mobile-ads",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-google-mobile-ads/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/analytics",
@@ -1637,31 +1672,46 @@
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/app-check",
     "npmPkg": "@react-native-firebase/app-check",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-firebase/app-check/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/app-distribution",
     "npmPkg": "@react-native-firebase/app-distribution",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-firebase/app-distribution/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/app",
     "npmPkg": "@react-native-firebase/app",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-firebase/app/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/auth",
     "npmPkg": "@react-native-firebase/auth",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-firebase/auth/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/crashlytics",
     "npmPkg": "@react-native-firebase/crashlytics",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-firebase/crashlytics/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/database",
@@ -1687,7 +1737,10 @@
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/messaging",
     "npmPkg": "@react-native-firebase/messaging",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-firebase/messaging/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/ml",
@@ -1698,7 +1751,10 @@
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/perf",
     "npmPkg": "@react-native-firebase/perf",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-firebase/perf/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/remote-config",
@@ -1778,7 +1834,10 @@
     "githubUrl": "https://github.com/bamlab/react-native-batch-push",
     "npmPkg": "@bam.tech/react-native-batch",
     "hasConfigPlugin": true,
-    "override": false,
+    "types": {
+      "path": "@bam.tech/react-native-batch/plugin/build/withReactNativeBatch",
+      "valid": true
+    },
     "unmaintained": true
   },
   {
@@ -1901,7 +1960,10 @@
     "githubUrl": "https://github.com/JimmyDaddy/react-native-image-marker",
     "npmPkg": "react-native-image-marker",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-image-marker/lib/typescript/expo-plugin/withImageMarker",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/CompanyCam/react-native-walkthrough-tooltip",
@@ -2012,7 +2074,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-apple-authentication",
     "npmPkg": "expo-apple-authentication",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-apple-authentication/plugin/build/withAppleAuth",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-application",
@@ -2022,19 +2087,32 @@
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-asset",
     "npmPkg": "expo-asset",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-asset/plugin/build/withAssets",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-av",
     "npmPkg": "expo-av",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-av/plugin/build/withAV",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-background-fetch",
     "npmPkg": "expo-background-fetch",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-background-fetch/plugin/build/withBackgroundFetch",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-battery",
@@ -2050,25 +2128,37 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-brightness",
     "npmPkg": "expo-brightness",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-brightness/plugin/build/withBrightness",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-calendar",
     "npmPkg": "expo-calendar",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-calendar/plugin/build/withCalendar",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-camera",
     "npmPkg": "expo-camera",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-camera/plugin/build/withCamera",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-cellular",
     "npmPkg": "expo-cellular",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-cellular/plugin/build/withCellular",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-constants",
@@ -2079,7 +2169,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-contacts",
     "npmPkg": "expo-contacts",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-contacts/plugin/build/withContacts",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-crypto",
@@ -2095,18 +2188,31 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-document-picker",
     "npmPkg": "expo-document-picker",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-document-picker/plugin/build/withDocumentPicker",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-file-system",
     "npmPkg": "expo-file-system",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-file-system/plugin/build/withFileSystem",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-font",
     "npmPkg": "expo-font",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-font/plugin/build/withFonts",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-gl",
@@ -2127,7 +2233,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-image-picker",
     "npmPkg": "expo-image-picker",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-image-picker/plugin/build/withImagePicker",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-intent-launcher",
@@ -2148,31 +2257,46 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-local-authentication",
     "npmPkg": "expo-local-authentication",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-local-authentication/plugin/build/withLocalAuthentication",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-localization",
     "npmPkg": "expo-localization",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-localization/plugin/build/withExpoLocalization",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-location",
     "npmPkg": "expo-location",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-location/plugin/build/withLocation",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-mail-composer",
     "npmPkg": "expo-mail-composer",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-mail-composer/plugin/build/withMailComposer",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-media-library",
     "npmPkg": "expo-media-library",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-media-library/plugin/build/withMediaLibrary",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-network",
@@ -2183,7 +2307,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-notifications",
     "npmPkg": "expo-notifications",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-notifications/plugin/build/withNotifications",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo-pixi",
@@ -2205,13 +2332,19 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-secure-store",
     "npmPkg": "expo-secure-store",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-secure-store/plugin/build/withSecureStore",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-sensors",
     "npmPkg": "expo-sensors",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-sensors/plugin/build/withSensors",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-sms",
@@ -2226,7 +2359,14 @@
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-sqlite",
     "npmPkg": "expo-sqlite",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-sqlite/plugin/build/withSQLite",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-store-review",
@@ -2237,7 +2377,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-task-manager",
     "npmPkg": "expo-task-manager",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-task-manager/plugin/build/withTaskManager",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo-three",
@@ -2253,7 +2396,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-web-browser",
     "npmPkg": "expo-web-browser",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-web-browser/plugin/build/withWebBrowser",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/jest-expo",
@@ -2405,7 +2551,10 @@
     "githubUrl": "https://github.com/transistorsoft/react-native-background-geolocation",
     "npmPkg": "react-native-background-geolocation",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-background-geolocation/expo/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/nidorx/react-native-ui-blueprint",
@@ -2446,7 +2595,10 @@
     "githubUrl": "https://github.com/react-native-voice/voice",
     "npmPkg": "@react-native-voice/voice",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-voice/voice/plugin/build/withVoice",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/tienph6m/react-native-animated-spinkit",
@@ -2460,7 +2612,6 @@
   },
   {
     "githubUrl": "https://github.com/react-native-camera/react-native-camera",
-    "ignore": true,
     "unmaintained": true
   },
   {
@@ -2482,15 +2633,22 @@
     "githubUrl": "https://github.com/zoontek/react-native-localize",
     "npmPkg": "react-native-localize",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "react-native-localize/src/expo.ts"
+    "types": {
+      "path": "react-native-localize\\dist\\typescript\\expo.d.ts",
+      "valid": true,
+      "override": {
+        "path": "react-native-localize/src/expo.ts"
+      }
     }
   },
   {
     "githubUrl": "https://github.com/react-native-datetimepicker/datetimepicker",
     "npmPkg": "@react-native-community/datetimepicker",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-community/datetimepicker/plugin/build/withDateTimePickerStyles",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/microsoft/react-native-dualscreen/tree/master/dualscreeninfo",
@@ -2511,13 +2669,19 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-splash-screen",
     "npmPkg": "expo-splash-screen",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-splash-screen/plugin/build/withSplashScreen",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-updates",
     "npmPkg": "expo-updates",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-updates/plugin/build/withUpdates",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/react-native-appearance",
@@ -2539,7 +2703,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-screen-orientation",
     "npmPkg": "expo-screen-orientation",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-screen-orientation/plugin/build/withScreenOrientation",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-sharing",
@@ -2648,7 +2815,10 @@
     "githubUrl": "https://github.com/blackuy/react-native-twilio-video-webrtc",
     "npmPkg": "react-native-twilio-video-webrtc",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-twilio-video-webrtc/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/react-native-webrtc/react-native-callkeep",
@@ -2673,7 +2843,11 @@
   {
     "githubUrl": "https://github.com/zoontek/react-native-bootsplash",
     "npmPkg": "react-native-bootsplash",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-bootsplash/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/jk-gan/redux-flipper",
@@ -2763,7 +2937,14 @@
   {
     "githubUrl": "https://github.com/dooboolab/react-native-iap",
     "npmPkg": "react-native-iap",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-iap/plugin/build/withIAP",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/mientjan/react-native-markdown-renderer",
@@ -2832,7 +3013,14 @@
   {
     "githubUrl": "https://github.com/react-native-google-signin/google-signin",
     "npmPkg": "@react-native-google-signin/google-signin",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@react-native-google-signin/google-signin/plugin/build/withGoogleSignIn",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/khalisafkari/react-native-kvideo",
@@ -3232,7 +3420,11 @@
   {
     "githubUrl": "https://github.com/tschoffelen/react-native-map-link",
     "npmPkg": "react-native-map-link",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-map-link/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/n4kz/react-native-material-dropdown",
@@ -3439,8 +3631,12 @@
     "githubUrl": "https://github.com/getsentry/sentry-react-native/tree/main/packages/core",
     "npmPkg": "@sentry/react-native",
     "hasConfigPlugin": true,
-    "override": {
-      "alias": ["@sentry/react-native/expo"]
+    "types": {
+      "path": "@sentry/react-native/plugin/build/index",
+      "valid": true,
+      "override": {
+        "alias": ["@sentry/react-native/expo"]
+      }
     }
   },
   {
@@ -3518,7 +3714,10 @@
     "githubUrl": "https://github.com/stashenergy/react-native-msal",
     "npmPkg": "react-native-msal",
     "hasConfigPlugin": true,
-    "override": false,
+    "types": {
+      "path": "react-native-msal/plugin/build/withReactNativeMSAL",
+      "valid": true
+    },
     "unmaintained": true
   },
   {
@@ -3721,7 +3920,10 @@
     "githubUrl": "https://github.com/auth0/react-native-auth0",
     "npmPkg": "react-native-auth0",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-auth0/lib/typescript/plugin/withAuth0",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/avishayil/react-native-restart",
@@ -3773,7 +3975,10 @@
     "githubUrl": "https://github.com/react-native-google-cast/react-native-google-cast",
     "npmPkg": "react-native-google-cast",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-google-cast/lib/typescript/plugin/withGoogleCast",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/Gil2015/react-native-table-component",
@@ -3865,7 +4070,10 @@
     "githubUrl": "https://github.com/rnmapbox/maps",
     "npmPkg": "@rnmapbox/maps",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@rnmapbox/maps/plugin/build/withMapbox",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/venits/react-native-map-clustering",
@@ -3875,7 +4083,11 @@
   {
     "githubUrl": "https://github.com/revtel/react-native-nfc-manager",
     "npmPkg": "react-native-nfc-manager",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-nfc-manager/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/mtford90/react-native-watch-connectivity",
@@ -4229,7 +4441,13 @@
     "githubUrl": "https://github.com/hyochan/react-native-nitro-sound",
     "npmPkg": "react-native-nitro-sound",
     "hasConfigPlugin": true,
-    "ignore": true
+    "types": {
+      "path": "react-native-nitro-sound\\lib\\typescript\\plugin\\src\\index.d.ts",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/enesozturk/rn-swipeable-panel",
@@ -4305,7 +4523,10 @@
     "githubUrl": "https://github.com/Kudo/react-native-v8",
     "npmPkg": "react-native-v8",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-v8/plugin/build/withV8ExpoAdapter",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/dstaley/react-native-bootstrap-icons",
@@ -4442,7 +4663,10 @@
     "githubUrl": "https://github.com/mrousavy/react-native-vision-camera/tree/main/package",
     "npmPkg": "react-native-vision-camera",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/dabakovich/react-native-controlled-mentions",
@@ -4496,7 +4720,8 @@
   },
   {
     "githubUrl": "https://github.com/zyslife/react-native-head-tab-view",
-    "ignore": true
+    "npmPkg": "react-native-head-tab-view",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/Rapsssito/react-native-background-actions",
@@ -4527,7 +4752,10 @@
     "githubUrl": "https://github.com/thebergamo/react-native-fbsdk-next",
     "npmPkg": "react-native-fbsdk-next",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-fbsdk-next/plugin/build/withFacebook",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/nandorojo/expo-next-react-navigation",
@@ -4642,7 +4870,11 @@
   {
     "githubUrl": "https://github.com/xmartlabs/react-native-line",
     "npmPkg": "@xmartlabs/react-native-line",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@xmartlabs/react-native-line/plugin/withLineSDK",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/bk52/react-native-weather-chart",
@@ -4657,7 +4889,11 @@
   {
     "githubUrl": "https://github.com/stripe/stripe-react-native",
     "npmPkg": "@stripe/stripe-react-native",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@stripe/stripe-react-native/lib/typescript/plugin/withStripe",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/swaplet/react-native-swipe-cards-deck",
@@ -4741,7 +4977,8 @@
   },
   {
     "githubUrl": "https://github.com/RobertFOConnor/react-native-progress-wheel",
-    "ignore": true
+    "npmPkg": "react-native-progress-wheel",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/mateusz1913/react-native-avoid-softinput/tree/main/packages/react-native-avoid-softinput",
@@ -4812,7 +5049,10 @@
     "githubUrl": "https://github.com/ReactVision/viro",
     "npmPkg": "@reactvision/react-viro",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@reactvision/react-viro/dist/plugins/withViro",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/IjzerenHein/react-native-bundle-visualizer",
@@ -4841,7 +5081,6 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-quick-sqlite",
-    "ignore": true,
     "unmaintained": true
   },
   {
@@ -4907,7 +5146,11 @@
   {
     "githubUrl": "https://github.com/Giphy/giphy-react-native-sdk",
     "npmPkg": "@giphy/react-native-sdk",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@giphy/react-native-sdk/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/SrBrahma/react-native-shadow-2",
@@ -4952,7 +5195,11 @@
   {
     "githubUrl": "https://github.com/DataDog/dd-sdk-reactnative/tree/develop/packages/core",
     "npmPkg": "@datadog/mobile-react-native",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "error": "Package doesn't ship types for app.plugin.js",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/SrBrahma/pagescrollview",
@@ -4994,7 +5241,10 @@
     "githubUrl": "https://github.com/numandev1/react-native-compressor",
     "npmPkg": "react-native-compressor",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-compressor/lib/typescript/expo-plugin/compressor",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/garganurag893/react-native-phone-number-input",
@@ -5144,7 +5394,11 @@
   {
     "githubUrl": "https://github.com/flexible-agency/react-native-email-link",
     "npmPkg": "react-native-email-link",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-email-link/plugin/withEmailLink",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/hoaphantn7604/react-native-element-dropdown",
@@ -5200,7 +5454,10 @@
     "githubUrl": "https://github.com/zoontek/react-native-edge-to-edge",
     "npmPkg": "react-native-edge-to-edge",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-edge-to-edge/dist/typescript/expo",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/henrhie/react-native-sha",
@@ -5270,7 +5527,11 @@
   {
     "githubUrl": "https://github.com/agencyenterprise/react-native-health",
     "npmPkg": "react-native-health",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-health/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/nomi9995/react-native-interactable-reanimated",
@@ -5300,7 +5561,11 @@
   {
     "githubUrl": "https://github.com/gobeyondidentity/bi-sdk-react-native",
     "npmPkg": "@beyondidentity/bi-sdk-react-native",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@beyondidentity/bi-sdk-react-native/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/xulihang/vision-camera-dynamsoft-barcode-reader",
@@ -5487,7 +5752,10 @@
     "githubUrl": "https://github.com/ammarahm-ed/react-native-admob-native-ads",
     "npmPkg": "react-native-admob-native-ads",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-admob-native-ads/plugin/build/withAdmobNativeAds",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-graph",
@@ -5588,7 +5856,10 @@
     "githubUrl": "https://github.com/bndkt/react-native-app-clip",
     "npmPkg": "react-native-app-clip",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-app-clip/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/ivanmoskalev/react-native-compressed-jsbundle",
@@ -5684,7 +5955,11 @@
   {
     "githubUrl": "https://github.com/barthap/expo-music-picker",
     "npmPkg": "expo-music-picker",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-music-picker/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/OvalMoney/react-native-fitness",
@@ -5700,7 +5975,10 @@
     "githubUrl": "https://github.com/websitebeaver/react-native-document-scanner-plugin",
     "npmPkg": "react-native-document-scanner-plugin",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/thakurballary/react-native-btr",
@@ -5780,7 +6058,11 @@
   {
     "githubUrl": "https://github.com/XHMM/react-native-cloud-store",
     "npmPkg": "react-native-cloud-store",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-cloud-store/plugins/withCloud",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/mateoguzmana/react-native-clocks",
@@ -5811,7 +6093,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-router",
     "npmPkg": "expo-router",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-router/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/omdxp/react-native-help-create",
@@ -5977,7 +6262,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-system-ui",
     "npmPkg": "expo-system-ui",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-system-ui/plugin/build/withSystemUI",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/ArunGovil/react-native-flatboard",
@@ -6022,7 +6310,11 @@
   {
     "githubUrl": "https://github.com/kingstinct/react-native-healthkit/tree/master/packages/react-native-healthkit",
     "npmPkg": "@kingstinct/react-native-healthkit",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@kingstinct/react-native-healthkit/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/Kingstinct/react-native-hotkeys",
@@ -6042,7 +6334,11 @@
   {
     "githubUrl": "https://github.com/serenity-kit/react-native-libsodium",
     "npmPkg": "react-native-libsodium",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-libsodium/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/Karthik-B-06/react-native-segmented-control",
@@ -6117,12 +6413,20 @@
   {
     "githubUrl": "https://github.com/sparkfabrik/sparkfabrik-react-native-idfa-aaid",
     "npmPkg": "@sparkfabrik/react-native-idfa-aaid",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "error": "Package doesn't ship types for app.plugin.js",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/matinzd/react-native-health-connect",
     "npmPkg": "react-native-health-connect",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-health-connect/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/Malaa-tech/react-native-simple-line-chart",
@@ -6288,7 +6592,11 @@
   {
     "githubUrl": "https://github.com/vonovak/react-native-theme-control",
     "npmPkg": "@vonovak/react-native-theme-control",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@vonovak/react-native-theme-control/plugin/build/withThemeControl",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/movio/react-native-rsa-signer",
@@ -6319,8 +6627,12 @@
     "githubUrl": "https://github.com/numandev1/react-native-keys",
     "npmPkg": "react-native-keys",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "react-native-keys/lib/typescript/plugin/src/index.d.ts"
+    "types": {
+      "path": "react-native-keys/plugin/build/index",
+      "valid": false,
+      "override": {
+        "path": "react-native-keys/lib/typescript/plugin/src/index.d.ts"
+      }
     }
   },
   {
@@ -6347,7 +6659,10 @@
     "githubUrl": "https://github.com/jakex7/react-native-localization-settings",
     "npmPkg": "react-native-localization-settings",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-localization-settings/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/rnw-community/rnw-community/tree/master/packages/react-native-payments",
@@ -6457,7 +6772,11 @@
   {
     "githubUrl": "https://github.com/maplibre/maplibre-react-native",
     "npmPkg": "@maplibre/maplibre-react-native",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@maplibre/maplibre-react-native/lib/typescript/plugin/withMapLibre",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/3DJakob/react-tinder-card",
@@ -6578,8 +6897,12 @@
     "githubUrl": "https://github.com/mrousavy/react-native-fast-tflite",
     "npmPkg": "react-native-fast-tflite",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite"
+    "types": {
+      "path": "react-native-fast-tflite/lib/typescript/expo-plugin/withFastTFLite",
+      "valid": false,
+      "override": {
+        "path": "react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite"
+      }
     }
   },
   {
@@ -6616,7 +6939,10 @@
     "githubUrl": "https://github.com/AppAndFlow/expo-camera-characteristics",
     "npmPkg": "@appandflow/expo-camera-characteristics",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@appandflow/expo-camera-characteristics/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/PedroBern/react-native-collapsible-tab-view",
@@ -6647,8 +6973,12 @@
     "githubUrl": "https://github.com/azesmway/react-native-unity",
     "npmPkg": "@azesmway/react-native-unity",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "@azesmway/react-native-unity/lib/typescript/plugin/src/index.d.ts"
+    "types": {
+      "path": "@azesmway\\react-native-unity\\lib\\typescript\\plugin\\src\\index.d.ts",
+      "valid": true,
+      "override": {
+        "path": "@azesmway/react-native-unity/lib/typescript/plugin/src/index.d.ts"
+      }
     }
   },
   {
@@ -6721,7 +7051,10 @@
     "githubUrl": "https://github.com/outsung/expo-dynamic-app-icon",
     "npmPkg": "expo-dynamic-app-icon",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-dynamic-app-icon/plugin/build/withDynamicIcon",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/hirbod/expo-video-metadata",
@@ -6812,7 +7145,10 @@
     "githubUrl": "https://github.com/kuatsu/react-native-cloud-storage/tree/master/packages/react-native-cloud-storage",
     "npmPkg": "react-native-cloud-storage",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-cloud-storage/dist/typescript/expo-plugin/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/Malaa-tech/expo-squircle-view",
@@ -6843,7 +7179,10 @@
     "githubUrl": "https://github.com/Malaa-tech/expo-custom-assets",
     "npmPkg": "expo-custom-assets",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-custom-assets/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/ShivamRawat0l/react-native-loader-collection",
@@ -7068,7 +7407,11 @@
   {
     "githubUrl": "https://github.com/margelo/react-native-quick-crypto/tree/main/packages/react-native-quick-crypto",
     "npmPkg": "react-native-quick-crypto",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "error": "Package doesn't ship types for app.plugin.js",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/vokhuyetOz/react-native-messy",
@@ -7108,7 +7451,14 @@
   {
     "githubUrl": "https://github.com/gladiuscode/react-native-orientation-director",
     "npmPkg": "react-native-orientation-director",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-orientation-director/plugin/build/index",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/breeffy/react-native-monorepo/tree/main/packages/pickers",
@@ -7169,7 +7519,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-tracking-transparency",
     "npmPkg": "expo-tracking-transparency",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-tracking-transparency/plugin/build/withTrackingTransparency",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-insights",
@@ -7185,7 +7538,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-navigation-bar",
     "npmPkg": "expo-navigation-bar",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-navigation-bar/plugin/build/withNavigationBar",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-symbols",
@@ -7286,7 +7642,10 @@
     "githubUrl": "https://github.com/BatchLabs/Batch-React-Native-Plugin",
     "npmPkg": "@batch.com/react-native-plugin",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@batch.com/react-native-plugin/plugin/build/withReactNativeBatch",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/@expo/fingerprint",
@@ -7371,18 +7730,32 @@
   {
     "githubUrl": "https://github.com/EvanBacon/expo-quick-actions",
     "npmPkg": "expo-quick-actions",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-quick-actions/plugin/build/index",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/obytes/app-icon-badge",
     "npmPkg": "app-icon-badge",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "app-icon-badge/dist/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/achorein/expo-share-intent",
     "npmPkg": "expo-share-intent",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-share-intent/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/watanabeyu/react-native-store-version",
@@ -7438,7 +7811,10 @@
     "githubUrl": "https://github.com/wwdrew/expo-spotify-sdk",
     "npmPkg": "@wwdrew/expo-spotify-sdk",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@wwdrew/expo-spotify-sdk/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/wwdrew/expo-android-shared-preferences",
@@ -7449,7 +7825,10 @@
     "githubUrl": "https://github.com/wwdrew/expo-android-account-manager",
     "npmPkg": "@wwdrew/expo-android-account-manager",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@wwdrew/expo-android-account-manager/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/ajakka/react-native-here-explore",
@@ -7519,7 +7898,11 @@
   {
     "githubUrl": "https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin",
     "npmPkg": "react-native-appsflyer",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-appsflyer/expo/withAppsFlyer",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/rnheroes/react-native-toastable",
@@ -7623,7 +8006,11 @@
   {
     "githubUrl": "https://github.com/intercom/intercom-react-native",
     "npmPkg": "@intercom/intercom-react-native",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@intercom/intercom-react-native/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/f0wu5u/calendar-kit",
@@ -7634,7 +8021,10 @@
     "githubUrl": "https://github.com/huextrat/react-native-rate-app",
     "npmPkg": "react-native-rate-app",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-rate-app/lib/typescript/plugin/withReactNativeRateApp",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/mehuljetani/react-native-typing-animated-text",
@@ -7665,7 +8055,10 @@
     "githubUrl": "https://github.com/huextrat/react-native-screenshot-aware",
     "npmPkg": "react-native-screenshot-aware",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-screenshot-aware/lib/typescript/plugin/withReactNativeScreenshotAware",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/dominicstop/react-native-ios-visual-effect-view",
@@ -7750,7 +8143,11 @@
   {
     "githubUrl": "https://github.com/jamsch/expo-speech-recognition",
     "npmPkg": "expo-speech-recognition",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-speech-recognition/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/dcavalcante/react-native-sprites",
@@ -7765,7 +8162,11 @@
   {
     "githubUrl": "https://github.com/callstackincubator/react-native-bottom-tabs/tree/main/packages/react-native-bottom-tabs",
     "npmPkg": "react-native-bottom-tabs",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-bottom-tabs/lib/typescript/expo",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/AlirezaHadjar/react-native-fast-confetti",
@@ -7866,19 +8267,28 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-dev-client",
     "npmPkg": "expo-dev-client",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-dev-client/plugin/build/withDevClient",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-build-properties",
     "npmPkg": "expo-build-properties",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-build-properties/build/withBuildProperties",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/pchalupa/expo-alternate-app-icons",
     "npmPkg": "expo-alternate-app-icons",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-alternate-app-icons/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/aravind3566/react-native-get-app-list",
@@ -7899,7 +8309,10 @@
     "githubUrl": "https://github.com/talsec/Free-RASP-ReactNative",
     "npmPkg": "freerasp-react-native",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "freerasp-react-native/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/pnthach95/react-native-root-view-background",
@@ -7910,7 +8323,10 @@
     "githubUrl": "https://github.com/EdgarJMesquita/expo-pip",
     "npmPkg": "expo-pip",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-pip/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/tamagui/tamagui/tree/master/code/ui/tamagui",
@@ -8051,7 +8467,10 @@
     "githubUrl": "https://github.com/jobpaardekooper/react-native-localize-date",
     "npmPkg": "react-native-localize-date",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-localize-date/plugin/build/withLocalizations",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/JUHUU-Labs/sdk-ts",
@@ -8208,13 +8627,19 @@
     "githubUrl": "https://github.com/MaxAst/expo-share-extension",
     "npmPkg": "expo-share-extension",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-share-extension/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/EvanBacon/expo-apple-colors",
     "npmPkg": "@bacons/apple-colors",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@bacons/apple-colors/plugin/build/withAndroidColors",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/azimgd/shadowlist",
@@ -8275,7 +8700,10 @@
     "githubUrl": "https://github.com/fishjam-cloud/mobile-client-sdk/tree/main/packages/react-native-client",
     "npmPkg": "@fishjam-cloud/react-native-client",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@fishjam-cloud/react-native-client/plugin/build/withFishjam",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/saulamsal/react-native-sheet-transitions",
@@ -8366,7 +8794,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-video",
     "npmPkg": "expo-video",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-video/plugin/build/withExpoVideo",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/samitha9125/react-native-timezone",
@@ -8471,7 +8902,14 @@
   {
     "githubUrl": "https://github.com/vantuan88291/react-native-ota-hot-update",
     "npmPkg": "react-native-ota-hot-update",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-ota-hot-update/plugin/build/index",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/f-23/react-native-passkey",
@@ -8487,12 +8925,19 @@
     "githubUrl": "https://github.com/THEOplayer/react-native-theoplayer",
     "npmPkg": "react-native-theoplayer",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-theoplayer/lib/typescript/plugins/expo/withTHEOplayer",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/gronxb/hot-updater/tree/main/packages/react-native",
     "npmPkg": "@hot-updater/react-native",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@hot-updater/react-native/plugin/build/withHotUpdater",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/yunusyavuz16/react-native-trendy",
@@ -8503,7 +8948,10 @@
     "githubUrl": "https://github.com/matinzd/expo-health-connect",
     "npmPkg": "expo-health-connect",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-health-connect/build/withHealthConnect",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/suhaotian/xior",
@@ -8583,7 +9031,14 @@
   {
     "githubUrl": "https://github.com/Lg0gs/react-native-tiktok",
     "npmPkg": "react-native-tiktok",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-tiktok/plugin/build/withTiktok",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/otago-dev/otago",
@@ -8604,7 +9059,10 @@
     "githubUrl": "https://github.com/gitn00b1337/expo-widgets",
     "npmPkg": "@bittingz/expo-widgets",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@bittingz/expo-widgets/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/statelyai/xstate/tree/main/packages/core",
@@ -8665,13 +9123,19 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-audio",
     "npmPkg": "expo-audio",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-audio/plugin/build/withAudio",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-maps",
     "npmPkg": "expo-maps",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-maps/plugin/build/withMapsLocation",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/AakashThakur23102000/useRealmStorage-dexterverse",
@@ -8777,7 +9241,10 @@
     "githubUrl": "https://github.com/newrelic/newrelic-react-native-agent",
     "npmPkg": "newrelic-react-native-agent",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "newrelic-react-native-agent/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/saadqbal/react-native-notification-sounds",
@@ -8793,7 +9260,10 @@
     "githubUrl": "https://github.com/callstackincubator/react-native-legal/tree/main/packages/react-native-legal",
     "npmPkg": "react-native-legal",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-legal/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/callstack/react-native-brownfield",
@@ -8833,13 +9303,20 @@
   {
     "githubUrl": "https://github.com/dcangulo/react-native-render-lynx",
     "npmPkg": "react-native-render-lynx",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-render-lynx/plugin/withRenderLynx",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/JuanSeBestia/react-native-wifi-reborn",
     "npmPkg": "react-native-wifi-reborn",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-wifi-reborn/plugin/dist/withWifi",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/HelpkitHQ/helpkit-help-center-react-native",
@@ -8854,7 +9331,11 @@
   {
     "githubUrl": "https://github.com/pioner92/react-native-auto-skeleton",
     "npmPkg": "react-native-auto-skeleton",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/IvanIhnatsiuk/react-native-advanced-input-mask/tree/main/package",
@@ -8869,7 +9350,11 @@
   {
     "githubUrl": "https://github.com/corasan/image-compressor/tree/main/package",
     "npmPkg": "@corasan/image-compressor",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@corasan/image-compressor/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/ronickg/react-native-nitro-bip39/tree/main/packages/react-native-nitro-bip39",
@@ -8910,13 +9395,19 @@
     "githubUrl": "https://github.com/expo/config-plugins/tree/main/packages/react-native-blob-util",
     "npmPkg": "@config-plugins/react-native-blob-util",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@config-plugins/react-native-blob-util/build/withReactNativeBlobUtil",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/config-plugins/tree/main/packages/react-native-pdf",
     "npmPkg": "@config-plugins/react-native-pdf",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@config-plugins/react-native-pdf/build/withPdf",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/brix/crypto-js",
@@ -8946,7 +9437,11 @@
   {
     "githubUrl": "https://github.com/pioner92/rn-fade-wrapper",
     "npmPkg": "rn-fade-wrapper",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "error": "Package doesn't ship types for app.plugin.js",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/tschoffelen/react-native-check-version",
@@ -9092,7 +9587,10 @@
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-background-task",
     "npmPkg": "expo-background-task",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-background-task/plugin/build/withBackgroundTask",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/software-mansion-labs/react-native-webgpu-worklets",
@@ -9107,7 +9605,11 @@
   {
     "githubUrl": "https://github.com/wn-na/react-native-capture-protection",
     "npmPkg": "react-native-capture-protection",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-capture-protection/plugins/withPlugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/stallion-tech/react-native-stallion",
@@ -9117,7 +9619,11 @@
   {
     "githubUrl": "https://github.com/razorRun/react-native-vlc-media-player",
     "npmPkg": "react-native-vlc-media-player",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-vlc-media-player/expo/withVlcMediaPlayer",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/urbanairship/react-native-airship",
@@ -9128,7 +9634,10 @@
     "githubUrl": "https://github.com/prisma/react-native-prisma",
     "npmPkg": "@prisma/react-native",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@prisma/react-native/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/s77rt/react-native-date-picker",
@@ -9219,7 +9728,10 @@
     "githubUrl": "https://github.com/alanjhughes/expo-shazamkit",
     "npmPkg": "expo-shazamkit",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-shazamkit/plugin/build/withShazamKit",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/deepktp/react-native-vikalp-ratings",
@@ -9459,7 +9971,11 @@
   {
     "githubUrl": "https://github.com/pushy/pushy-expo-plugin",
     "npmPkg": "pushy-expo-plugin",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "pushy-expo-plugin/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/JairajJangle/fast-is-equal",
@@ -9495,7 +10011,10 @@
     "githubUrl": "https://github.com/hyochan/expo-iap",
     "npmPkg": "expo-iap",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-iap/plugin/build/withIAP",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/developit/mitt",
@@ -9580,7 +10099,11 @@
   {
     "githubUrl": "https://github.com/benjamineruvieru/react-native-credentials-manager",
     "npmPkg": "react-native-credentials-manager",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-credentials-manager/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/MortalKastor/expo-resolve-url",
@@ -9605,13 +10128,20 @@
   {
     "githubUrl": "https://github.com/software-mansion/react-native-whip-whep/tree/main/packages/react-native-client",
     "npmPkg": "react-native-whip-whep",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "error": "Package doesn't ship types for app.plugin.js",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/software-mansion/react-native-audio-api/tree/main/packages/react-native-audio-api",
     "npmPkg": "react-native-audio-api",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-audio-api/lib/typescript/plugin/withAudioAPI",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/teamairship/react-native-public-ip",
@@ -9671,7 +10201,11 @@
   {
     "githubUrl": "https://github.com/JairajJangle/react-native-navigation-mode",
     "npmPkg": "react-native-navigation-mode",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-navigation-mode/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/sbaiahmed1/react-native-blur",
@@ -9761,7 +10295,14 @@
   {
     "githubUrl": "https://github.com/superwall/expo-superwall",
     "npmPkg": "expo-superwall",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-superwall/plugin/build/index",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/SolankiYogesh/rn-turbo-location-enabler",
@@ -9777,12 +10318,19 @@
     "githubUrl": "https://github.com/Iterable/iterable-expo-plugin",
     "npmPkg": "@iterable/expo-plugin",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@iterable/expo-plugin/plugin/build/withIterable",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/Soomgo-Mobile/react-native-code-push",
     "npmPkg": "@bravemobile/react-native-code-push",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@bravemobile/react-native-code-push/expo/plugin/withCodePush",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/moyasar/moyasar-react-native",
@@ -9793,7 +10341,10 @@
     "githubUrl": "https://github.com/cornejobarraza/expo-libvlc-player",
     "npmPkg": "expo-libvlc-player",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-libvlc-player/plugin/build/withExpoLibVlcPlayer",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/saseungmin/react-native-gesture-image-viewer",
@@ -9863,7 +10414,11 @@
   {
     "githubUrl": "https://github.com/ihwf/expo-native-alipay",
     "npmPkg": "expo-native-alipay",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-native-alipay/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/maheshmuttintidev/react-native-android-phone-number-hint",
@@ -9874,8 +10429,12 @@
     "githubUrl": "https://github.com/linhvovan29546/react-native-full-screen-notification-incoming-call",
     "npmPkg": "react-native-full-screen-notification-incoming-call",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "react-native-full-screen-notification-incoming-call/src/expo.ts"
+    "types": {
+      "path": "react-native-full-screen-notification-incoming-call/lib/typescript/expo",
+      "valid": false,
+      "override": {
+        "path": "react-native-full-screen-notification-incoming-call/src/expo.ts"
+      }
     }
   },
   {
@@ -10032,8 +10591,12 @@
     "githubUrl": "https://github.com/OneSignal/onesignal-expo-plugin",
     "npmPkg": "onesignal-expo-plugin",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "onesignal-expo-plugin/onesignal/withOneSignal.ts"
+    "types": {
+      "path": "onesignal-expo-plugin/build/onesignal/withOneSignal",
+      "valid": false,
+      "override": {
+        "path": "onesignal-expo-plugin/onesignal/withOneSignal.ts"
+      }
     }
   },
   {
@@ -10045,13 +10608,19 @@
     "githubUrl": "https://github.com/ChristopherGabba/react-native-nitro-screen-recorder",
     "npmPkg": "react-native-nitro-screen-recorder",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-nitro-screen-recorder/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/braze-inc/braze-expo-plugin/tree/main/plugin",
     "npmPkg": "@braze/expo-plugin",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@braze/expo-plugin/build/withBraze",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/Glazzes/react-native-zoom-toolkit",
@@ -10066,7 +10635,11 @@
   {
     "githubUrl": "https://github.com/kingstinct/react-native-activity-kit/tree/main/packages/react-native-activity-kit",
     "npmPkg": "@kingstinct/react-native-activity-kit",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@kingstinct/react-native-activity-kit/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/unofficialmohit/rn-snappy-toast",
@@ -10202,7 +10775,10 @@
     "githubUrl": "https://github.com/riderodd/react-native-vosk",
     "npmPkg": "react-native-vosk",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "react-native-vosk/plugin/build/withVosk",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/stripe/stripe-identity-react-native",
@@ -10222,7 +10798,11 @@
   {
     "githubUrl": "https://github.com/fordat/expo-roomplan",
     "npmPkg": "expo-roomplan",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-roomplan/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/donni106/matomo-tracker-react-native",
@@ -10301,7 +10881,8 @@
   },
   {
     "githubUrl": "https://github.com/getsettalk/react-native-qr-kit",
-    "ignore": true
+    "npmPkg": "react-native-qr-kit",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/Shopify/checkout-sheet-kit-react-native/tree/main/modules/%40shopify/checkout-sheet-kit",
@@ -10312,7 +10893,10 @@
     "githubUrl": "https://github.com/software-mansion-labs/expo-live-activity",
     "npmPkg": "expo-live-activity",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-live-activity/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/software-mansion-labs/react-native-rag",
@@ -10388,7 +10972,10 @@
     "githubUrl": "https://github.com/crossplatformkorea/react-native-naver-login",
     "npmPkg": "@react-native-seoul/naver-login",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@react-native-seoul/naver-login/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/ArunGovil/react-native-flatboard/tree/main/release",
@@ -10399,7 +10986,10 @@
     "githubUrl": "https://github.com/zoontek/react-native-navigation-bar",
     "npmPkg": "@zoontek/react-native-navigation-bar",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "@zoontek/react-native-navigation-bar/dist/typescript/expo",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/satya164/react-native-animated-observer",
@@ -10444,7 +11034,14 @@
   {
     "githubUrl": "https://github.com/sbaiahmed1/react-native-google-auth",
     "npmPkg": "react-native-google-auth",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-google-auth/plugin/build/withGoogleAuth",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/omarsdev/react-native-contacts",
@@ -10460,8 +11057,12 @@
     "githubUrl": "https://github.com/bitdriftlabs/capture-es/tree/main/packages/react-native",
     "npmPkg": "@bitdrift/react-native",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "@bitdrift/react-native/typescript/packages/react-native/src/plugin/withBitdrift.d.ts"
+    "types": {
+      "path": "@bitdrift/react-native/typescript/plugin/withBitdrift",
+      "valid": false,
+      "override": {
+        "path": "@bitdrift/react-native/typescript/packages/react-native/src/plugin/withBitdrift.d.ts"
+      }
     }
   },
   {
@@ -10473,22 +11074,33 @@
     "githubUrl": "https://github.com/huextrat/expo-core-spotlight",
     "npmPkg": "expo-core-spotlight",
     "hasConfigPlugin": true,
-    "override": false
+    "types": {
+      "path": "expo-core-spotlight/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/enzomanuelmangano/expo-color-space-plugin",
     "npmPkg": "expo-color-space-plugin",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "expo-color-space-plugin/build/index.d.ts"
+    "types": {
+      "path": "expo-color-space-plugin\\build\\index.d.ts",
+      "valid": true,
+      "override": {
+        "path": "expo-color-space-plugin/build/index.d.ts"
+      }
     }
   },
   {
     "githubUrl": "https://github.com/Survicate/survicate-react-native-sdk",
     "npmPkg": "@survicate/react-native-survicate",
     "hasConfigPlugin": true,
-    "override": {
-      "path": "@survicate/react-native-survicate/lib/typescript/expo/withSurvicate.d.ts"
+    "types": {
+      "path": "@survicate/react-native-survicate/app.plugin",
+      "valid": false,
+      "override": {
+        "path": "@survicate/react-native-survicate/lib/typescript/expo/withSurvicate.d.ts"
+      }
     }
   },
   {
@@ -10589,12 +11201,20 @@
   {
     "githubUrl": "https://github.com/huytdps13400/react-native-ssl-manager",
     "npmPkg": "react-native-ssl-manager",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-ssl-manager/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/huytdps13400/react-native-sms-retriever-nitro-module",
     "npmPkg": "@huymobile/react-native-sms-retriever-nitro-module",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@huymobile/react-native-sms-retriever-nitro-module/app.plugin",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/coolsoftwaretyler/cool-pdf",
@@ -10634,7 +11254,14 @@
   {
     "githubUrl": "https://github.com/itsRares/react-native-deepgram",
     "npmPkg": "react-native-deepgram",
-    "hasConfigPlugin": true
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-deepgram/plugin/build/index",
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
+    }
   },
   {
     "githubUrl": "https://github.com/ursnj/nayan-ui/tree/main/packages/react-native",
@@ -10644,6 +11271,16 @@
   {
     "githubUrl": "https://github.com/sharathchandramg/react-native-formo",
     "npmPkg": "react-native-form0",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-play-age-signals",
+    "npmPkg": "react-native-play-age-signals",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/rafalmeida73/heart-switch-react-native",
+    "npmPkg": "heart-switch-react-native",
     "hasConfigPlugin": false
   }
 ]

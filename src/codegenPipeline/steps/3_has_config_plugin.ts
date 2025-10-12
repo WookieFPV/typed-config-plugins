@@ -18,7 +18,7 @@ export const detectConfigPlugins = async (type: "onlyNew" | "full" = "onlyNew"):
         process.exit(1);
     }
 
-    let i = 0;
+    let i = 1;
     const _processed = await Promise.allSettled(
         packagesToCheck.map(
             (dep) =>

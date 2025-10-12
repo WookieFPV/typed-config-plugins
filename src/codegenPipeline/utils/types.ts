@@ -18,29 +18,41 @@ export type BaseRnDep = {
     windows?: boolean;
 };
 
-export type ConfigPluginOverrides =
-    | false
-    | {
-          path?: string;
-          tsIgnore?: true;
-          notes?: string;
-          alias?: string[];
-      };
+export type ConfigPluginOverrides = {
+    path?: string;
+    ignore?: boolean;
+    alias?: string[];
+};
 
 export type RnDep = BaseRnDep & {
     hasConfigPlugin?: boolean; // added in 2_has_config_plugin.ts
-    override?: ConfigPluginOverrides;
+    types?: TypePath;
     ignore?: boolean; // if true, ignore this package here
 };
+
+type TypePath =
+    | {
+          path: string;
+          override?: ConfigPluginOverrides;
+          error: never;
+          valid: boolean;
+      }
+    | {
+          path: never;
+          override?: ConfigPluginOverrides;
+          error: string;
+          valid: false;
+      };
 
 export type RnDepPersist = {
     githubUrl: string;
     npmPkg?: string;
     hasConfigPlugin?: boolean;
-    override?: ConfigPluginOverrides;
+    types?: TypePath;
     ignore?: boolean; // if true, ignore this package here
 };
 
 export type RnDepFull = RnDep & {
     hasConfigPlugin: boolean;
+    types?: TypePath;
 };
