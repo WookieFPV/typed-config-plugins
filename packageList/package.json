@@ -138,6 +138,7 @@
     "react-native-full-screen-notification-incoming-call": "*",
     "react-native-google-auth": "*",
     "react-native-google-cast": "*",
+    "react-native-google-maps-plus": "*",
     "react-native-google-mobile-ads": "*",
     "react-native-health": "*",
     "react-native-health-connect": "*",

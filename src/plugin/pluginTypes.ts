@@ -201,6 +201,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-google-auth": ConfigPluginOptions<typeof import("react-native-google-auth/plugin/build/withGoogleAuth")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
+    "react-native-google-maps-plus": ConfigPluginOptions<typeof import("react-native-google-maps-plus/expoConfig/build/index")["default"]>;
+    // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-health": ConfigPluginOptions<typeof import("react-native-health/app.plugin")["default"]>;
     // @ts-expect-error [Package doesn't ship types for app.plugin.js]
     "react-native-health-connect": ConfigPluginOptions<typeof import("react-native-health-connect/app.plugin")["default"]>;

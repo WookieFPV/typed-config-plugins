@@ -162,6 +162,7 @@
         "react-native-full-screen-notification-incoming-call": "*",
         "react-native-google-auth": "*",
         "react-native-google-cast": "*",
+        "react-native-google-maps-plus": "*",
         "react-native-google-mobile-ads": "*",
         "react-native-health": "*",
         "react-native-health-connect": "*",
@@ -2359,6 +2360,8 @@
     "react-native-google-auth": ["react-native-google-auth@1.1.1", "", { "peerDependencies": { "expo": ">=52.0.40", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-ItShV43aSceIdACMRM8Gw/40ipGG9vOPcn/F5umldWZ2HqabnpSX+ozAkS+SFIp0O5WahqsWg4S+KZKsB2EWOg=="],
 
     "react-native-google-cast": ["react-native-google-cast@4.9.1", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-/HvIKAaWHtG6aTNCxrNrqA2ftWGkfH0M/2iN+28pdGUXpKmueb33mgL1m8D4zzwEODQMcmpfoCsym1IwDvugBQ=="],
+
+    "react-native-google-maps-plus": ["react-native-google-maps-plus@1.6.0", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*", "react-native-nitro-modules": "*" }, "optionalPeers": ["expo"] }, "sha512-CkzoFJMkQXgT9krbHxiqUnGOkAaIHjJDtu74tSSWPPD53OXEeOw7N4rlnEFnxxP2pO/P8Ce5mrkSoit47TjbtA=="],
 
     "react-native-google-mobile-ads": ["react-native-google-mobile-ads@15.7.0", "", { "dependencies": { "@iabtcf/core": "^1.5.3", "use-deep-compare-effect": "^1.8.1" }, "peerDependencies": { "expo": ">=47.0.0" }, "optionalPeers": ["expo"] }, "sha512-VAskkfiK/ct9jer0XlASclgpiDLYnaLf4RPCcoenneZ3wVGfPwOtQ2T/HVZ6ZNc42BmRIRefqQSCWZPqIA2Drg=="],
 

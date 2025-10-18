@@ -6937,9 +6937,54 @@
     "npmPkg": "react-native-form0"
   },
   {
-    "githubUrl": "https://github.com/Gautham495/react-native-play-age-signals"
+    "githubUrl": "https://github.com/Gautham495/react-native-play-age-range-declaration"
   },
   {
     "githubUrl": "https://github.com/rafalmeida73/heart-switch-react-native"
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-apns-kit"
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-app-attest"
+  },
+  {
+    "githubUrl": "https://github.com/anirudhabhurke/react-native-google-code-scanner-android"
+  },
+  {
+    "githubUrl": "https://github.com/pinpong/react-native-google-maps-plus"
+  },
+  {
+    "githubUrl": "https://github.com/MisterMunchkin/expo-video-thumbref"
+  },
+  {
+    "githubUrl": "https://github.com/zykeco/react-native-ble-nitro"
+  },
+  {
+    "githubUrl": "https://github.com/FFGlobal/expo-onboarding"
+  },
+  {
+    "githubUrl": "https://github.com/Unistyles-OSS/uniwind/tree/main/packages/uniwind"
+  },
+  {
+    "githubUrl": "https://github.com/LottieFiles/dotlottie-react-native",
+    "npmPkg": "@lottiefiles/dotlottie-react-native"
+  },
+  {
+    "githubUrl": "https://github.com/LegendApp/legend-motion",
+    "npmPkg": "@legendapp/motion"
+  },
+  {
+    "githubUrl": "https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-expo",
+    "npmPkg": "@atproto/oauth-client-expo"
+  },
+  {
+    "githubUrl": "https://github.com/rit3zh/expo-ios-visual-blur"
+  },
+  {
+    "githubUrl": "https://github.com/callstackincubator/react-native-harness/tree/main/packages/react-native-harness"
+  },
+  {
+    "githubUrl": "https://github.com/whidrubeld/react-native-reanimated-modal"
   }
 ]

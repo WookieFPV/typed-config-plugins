@@ -11282,5 +11282,84 @@
     "githubUrl": "https://github.com/rafalmeida73/heart-switch-react-native",
     "npmPkg": "heart-switch-react-native",
     "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-play-age-range-declaration",
+    "npmPkg": "react-native-play-age-range-declaration",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-apns-kit",
+    "npmPkg": "react-native-apns-kit",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-app-attest",
+    "npmPkg": "react-native-app-attest",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/anirudhabhurke/react-native-google-code-scanner-android",
+    "npmPkg": "react-native-google-code-scanner-android",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/pinpong/react-native-google-maps-plus",
+    "npmPkg": "react-native-google-maps-plus",
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-google-maps-plus/expoConfig/build/index",
+      "valid": false
+    }
+  },
+  {
+    "githubUrl": "https://github.com/MisterMunchkin/expo-video-thumbref",
+    "npmPkg": "expo-video-thumbref",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/zykeco/react-native-ble-nitro",
+    "npmPkg": "react-native-ble-nitro",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/FFGlobal/expo-onboarding",
+    "npmPkg": "expo-onboarding",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Unistyles-OSS/uniwind/tree/main/packages/uniwind",
+    "npmPkg": "uniwind",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LottieFiles/dotlottie-react-native",
+    "npmPkg": "@lottiefiles/dotlottie-react-native",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/LegendApp/legend-motion",
+    "npmPkg": "@legendapp/motion",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-expo",
+    "npmPkg": "@atproto/oauth-client-expo",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/rit3zh/expo-ios-visual-blur",
+    "npmPkg": "expo-ios-visual-blur",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/callstackincubator/react-native-harness/tree/main/packages/react-native-harness",
+    "npmPkg": "react-native-harness",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/whidrubeld/react-native-reanimated-modal",
+    "npmPkg": "react-native-reanimated-modal",
+    "hasConfigPlugin": false
   }
 ]
