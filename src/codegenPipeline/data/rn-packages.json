@@ -196,7 +196,10 @@
     "hasConfigPlugin": true,
     "types": {
       "path": "instabug-reactnative/plugin/build/index",
-      "valid": false
+      "valid": false,
+      "override": {
+        "path": "instabug-reactnative/plugin/src/index"
+      }
     }
   },
   {
@@ -9616,7 +9619,10 @@
     "hasConfigPlugin": true,
     "types": {
       "path": "react-native-vlc-media-player/expo/withVlcMediaPlayer",
-      "valid": false
+      "valid": false,
+      "override": {
+        "path": "instabug-reactnative/plugin/src/index.ts"
+      }
     }
   },
   {

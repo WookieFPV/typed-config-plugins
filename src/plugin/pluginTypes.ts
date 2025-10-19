@@ -133,8 +133,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-video": ConfigPluginOptions<typeof import("expo-video/plugin/build/withExpoVideo")["default"]>;
     "expo-web-browser": ConfigPluginOptions<typeof import("expo-web-browser/plugin/build/withWebBrowser")["default"]>;
     "freerasp-react-native": ConfigPluginOptions<typeof import("freerasp-react-native/plugin/build/index")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "instabug-reactnative": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/build/index")["default"]>;
+    "instabug-reactnative": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index")["default"]>;
     "llama.rn": ConfigPluginOptions<typeof import("llama.rn/lib/typescript/expo-plugin/withLlamaRN.d.ts")["default"]>;
     "newrelic-react-native-agent": ConfigPluginOptions<typeof import("newrelic-react-native-agent/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -233,8 +232,7 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-v8": ConfigPluginOptions<typeof import("react-native-v8/plugin/build/withV8ExpoAdapter")["default"]>;
     "react-native-video": ConfigPluginOptions<typeof import("react-native-video/lib/expo-plugins/withRNVideo")["default"]>;
     "react-native-vision-camera": ConfigPluginOptions<typeof import("react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-vlc-media-player": ConfigPluginOptions<typeof import("react-native-vlc-media-player/expo/withVlcMediaPlayer")["default"]>;
+    "react-native-vlc-media-player": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index.ts")["default"]>;
     "react-native-vosk": ConfigPluginOptions<typeof import("react-native-vosk/plugin/build/withVosk")["default"]>;
     "react-native-wifi-reborn": ConfigPluginOptions<typeof import("react-native-wifi-reborn/plugin/dist/withWifi")["default"]>;
 

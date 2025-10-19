@@ -26,8 +26,8 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
             continue;
         }
         try {
-            const isIgnored = !!override?.ignore || !types?.valid;
-            const path = override?.path ? override.path : types?.path;
+            const isIgnored = !!override.ignore || (!types?.valid && !override.path);
+            const path = override.path ?? types?.path;
 
             if (types?.error || !path) {
                 addError(npmPkg, types?.error ?? "unknown Error");
