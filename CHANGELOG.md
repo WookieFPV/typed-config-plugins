@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.3.0...v0.4.0) (2025-10-21)
+
+
+### Features
+
+* add types packages: ([47d1ea6](https://github.com/WookieFPV/typed-config-plugins/commit/47d1ea620f8053a041e3c8018a4f703d9b0b575d))
+  * patch-project
+  * @leanplum/react-native-sdk
+  * react-native-spotlight-search
+  * react-native-app-auth
+  * @didomi/react-native
+  * llama.rn
+  * react-native-vector-image
+
 ## [0.3.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.2.0...v0.3.0) (2025-09-23)
 
 
