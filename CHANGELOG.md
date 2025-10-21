@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/WookieFPV/typed-config-plugins/compare/v0.4.0...v0.4.1) (2025-10-21)
+
+
+### Bug Fixes
+
+* sentry config plugin works with both names (@sentry/react-native/expo and @sentry/react-native) ([10237ad](https://github.com/WookieFPV/typed-config-plugins/commit/10237ade5572472c31b5a300071dfb0325fce380))
+
 ## [0.4.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.3.0...v0.4.0) (2025-10-21)
 
 
