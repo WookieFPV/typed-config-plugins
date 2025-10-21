@@ -56,6 +56,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "@rnmapbox/maps": ConfigPluginOptions<typeof import("@rnmapbox/maps/plugin/build/withMapbox")["default"]>;
     "@sentry/react-native": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
+    "@sentry/react-native/expo": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@stripe/stripe-react-native": ConfigPluginOptions<typeof import("@stripe/stripe-react-native/lib/typescript/plugin/withStripe")["default"]>;
     // @ts-expect-error [Invalid types or not exported]

@@ -3631,7 +3631,10 @@
     "hasConfigPlugin": true,
     "types": {
       "path": "@sentry/react-native/plugin/build/index",
-      "valid": true
+      "valid": true,
+      "override": {
+        "alias": ["@sentry/react-native/expo"]
+      }
     }
   },
   {
