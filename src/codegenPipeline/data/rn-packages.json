@@ -2635,7 +2635,7 @@
     "npmPkg": "react-native-localize",
     "hasConfigPlugin": true,
     "types": {
-      "path": "react-native-localize/dist/typescript/expo.d.ts",
+      "path": "react-native-localize/dist/typescript/expo",
       "valid": true
     }
   },
@@ -3921,7 +3921,10 @@
     "hasConfigPlugin": true,
     "types": {
       "path": "react-native-auth0/lib/typescript/plugin/withAuth0",
-      "valid": true
+      "valid": false,
+      "override": {
+        "path": "react-native-auth0/src/plugin/withAuth0"
+      }
     }
   },
   {
@@ -4075,7 +4078,10 @@
     "hasConfigPlugin": true,
     "types": {
       "path": "@rnmapbox/maps/plugin/build/withMapbox",
-      "valid": true
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
     }
   },
   {
@@ -4935,7 +4941,11 @@
   {
     "githubUrl": "https://github.com/oblador/react-native-vector-image",
     "npmPkg": "react-native-vector-image",
-    "hasConfigPlugin": false
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-vector-image/plugin/build/withVectorImage",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/vivaxy/react-native-auto-height-image",
@@ -5979,7 +5989,10 @@
     "hasConfigPlugin": true,
     "types": {
       "path": "react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner",
-      "valid": true
+      "valid": true,
+      "override": {
+        "ignore": true
+      }
     }
   },
   {
@@ -8157,8 +8170,12 @@
     "npmPkg": "react-native-bottom-tabs",
     "hasConfigPlugin": true,
     "types": {
-      "path": "react-native-bottom-tabs/lib/typescript/expo",
-      "valid": false
+      "path": "react-native-bottom-tabs/lib/module/expo",
+      "valid": false,
+      "override": {
+        "path": "react-native-bottom-tabs/lib/typescript/src/expo.d.ts",
+        "ignore": true
+      }
     }
   },
   {
@@ -10328,8 +10345,12 @@
     "npmPkg": "@bravemobile/react-native-code-push",
     "hasConfigPlugin": true,
     "types": {
-      "path": "@bravemobile/react-native-code-push/expo/plugin/withCodePush",
-      "valid": false
+      "valid": false,
+      "error": "Package doesn't ship types for app.plugin.js",
+      "override": {
+        "path": "@bravemobile/react-native-code-push/expo/plugin/withCodePush",
+        "ignore": true
+      }
     }
   },
   {
@@ -10603,7 +10624,7 @@
     "npmPkg": "react-native-nitro-screen-recorder",
     "hasConfigPlugin": true,
     "types": {
-      "path": "react-native-nitro-screen-recorder/plugin/build/index",
+      "path": "react-native-nitro-screen-recorder/lib/typescript/expo-plugin/withScreenRecorder",
       "valid": true
     }
   },
@@ -11364,5 +11385,92 @@
     "githubUrl": "https://github.com/relateddigital/react-native-related-digital/tree/master/sdk",
     "npmPkg": "react-native-related-digital",
     "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/effx13/react-native-secure-view",
+    "npmPkg": "react-native-secure-view",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/alexrus28996/react-native-threadforge/tree/main/packages/react-native-threadforge",
+    "npmPkg": "react-native-threadforge",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-nitro-fetch/tree/main/package",
+    "npmPkg": "react-native-nitro-fetch",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/adjust/react_native_sdk",
+    "npmPkg": "react-native-adjust",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/idearockers/react-native-dynamic-app-icon",
+    "npmPkg": "react-native-dynamic-app-icon",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/computools/react-native-dynamic-app-icon",
+    "npmPkg": "@computools/react-native-dynamic-app-icon",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Leanplum/Leanplum-ReactNative-SDK",
+    "npmPkg": "@leanplum/react-native-sdk",
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "@leanplum/react-native-sdk/plugin/build/withLeanplumSDK",
+      "valid": true
+    }
+  },
+  {
+    "githubUrl": "https://github.com/MetaMask/react-native-search-api",
+    "npmPkg": "@metamask/react-native-search-api",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/jdmunro/react-native-spotlight-search",
+    "npmPkg": "react-native-spotlight-search",
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-spotlight-search/plugin/build/withSpotlight",
+      "valid": true
+    }
+  },
+  {
+    "githubUrl": "https://github.com/microsoft/appcenter-sdk-react-native/tree/develop/appcenter",
+    "npmPkg": "appcenter",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/microsoft/appcenter-sdk-react-native/tree/develop/appcenter-analytics",
+    "npmPkg": "appcenter-analytics",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/microsoft/appcenter-sdk-react-native/tree/develop/appcenter-crashes",
+    "npmPkg": "appcenter-crashes",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/kevinejohn/react-native-keyevent",
+    "npmPkg": "react-native-keyevent",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/EdgeApp/react-native-airship",
+    "npmPkg": "react-native-airship",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/expo/expo/tree/main/packages/patch-project",
+    "npmPkg": "patch-project",
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "patch-project/build/withPatchPlugin",
+      "valid": true
+    }
   }
 ]

@@ -40,6 +40,8 @@ export async function findModuleImplementation(packageName: string): Promise<str
     } catch (error: unknown) {
         if (error instanceof Error && (error as NodeJS.ErrnoException).code === "ENOENT") {
             const errorPath = (error as NodeJS.ErrnoException).path ?? "/";
+
+            //TODO; react-native-spotlight-search has @types/node as dep. This causes the next line to fail. dirty Workaround force @types/node to the latest version
             if (path.matchesGlob(errorPath, `**/node_modules/${packageName}/app.plugin.js`)) {
                 throw new Error(`does not ship an app.plugin.js`);
             }

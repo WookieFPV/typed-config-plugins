@@ -60,6 +60,11 @@
   },
   "patchedDependencies": {
     "instabug-reactnative@16.0.2": "patches/instabug-reactnative@16.0.2.patch",
-    "onesignal-expo-plugin@2.0.3": "patches/onesignal-expo-plugin@2.0.3.patch"
+    "onesignal-expo-plugin@2.0.3": "patches/onesignal-expo-plugin@2.0.3.patch",
+    "instabug-reactnative@16.0.3": "patches/instabug-reactnative@16.0.3.patch",
+    "react-native-spotlight-search@2.2.0": "patches/react-native-spotlight-search@2.2.0.patch"
+  },
+  "overrides": {
+    "@types/node": "24.9.1"
   }
 }

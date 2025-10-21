@@ -36,6 +36,7 @@ export interface ThirdPartyAutomatedPlugins {
     "@kingstinct/react-native-activity-kit": ConfigPluginOptions<typeof import("@kingstinct/react-native-activity-kit/app.plugin")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@kingstinct/react-native-healthkit": ConfigPluginOptions<typeof import("@kingstinct/react-native-healthkit/app.plugin")["default"]>;
+    "@leanplum/react-native-sdk": ConfigPluginOptions<typeof import("@leanplum/react-native-sdk/plugin/build/withLeanplumSDK")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@maplibre/maplibre-react-native": ConfigPluginOptions<typeof import("@maplibre/maplibre-react-native/lib/typescript/plugin/withMapLibre")["default"]>;
     "@prisma/react-native": ConfigPluginOptions<typeof import("@prisma/react-native/plugin/build/index")["default"]>;
@@ -52,6 +53,7 @@ export interface ThirdPartyAutomatedPlugins {
     "@react-native-seoul/naver-login": ConfigPluginOptions<typeof import("@react-native-seoul/naver-login/plugin/build/index")["default"]>;
     "@react-native-voice/voice": ConfigPluginOptions<typeof import("@react-native-voice/voice/plugin/build/withVoice")["default"]>;
     "@reactvision/react-viro": ConfigPluginOptions<typeof import("@reactvision/react-viro/dist/plugins/withViro")["default"]>;
+    // @ts-expect-error [Invalid types or not exported]
     "@rnmapbox/maps": ConfigPluginOptions<typeof import("@rnmapbox/maps/plugin/build/withMapbox")["default"]>;
     "@sentry/react-native": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -138,6 +140,7 @@ export interface ThirdPartyAutomatedPlugins {
     "newrelic-react-native-agent": ConfigPluginOptions<typeof import("newrelic-react-native-agent/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "onesignal-expo-plugin": ConfigPluginOptions<typeof import("onesignal-expo-plugin/build/onesignal/withOneSignal")["default"]>;
+    "patch-project": ConfigPluginOptions<typeof import("patch-project/build/withPatchPlugin")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "pushy-expo-plugin": ConfigPluginOptions<typeof import("pushy-expo-plugin/app.plugin")["default"]>;
     "react-native-add-calendar-event": ConfigPluginOptions<typeof import("react-native-add-calendar-event/plugin/build/withAddCalendarEvent")["default"]>;
@@ -147,7 +150,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "react-native-appsflyer": ConfigPluginOptions<typeof import("react-native-appsflyer/expo/withAppsFlyer")["default"]>;
     "react-native-audio-api": ConfigPluginOptions<typeof import("react-native-audio-api/lib/typescript/plugin/withAudioAPI")["default"]>;
-    "react-native-auth0": ConfigPluginOptions<typeof import("react-native-auth0/lib/typescript/plugin/withAuth0")["default"]>;
+    "react-native-auth0": ConfigPluginOptions<typeof import("react-native-auth0/src/plugin/withAuth0")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-auto-skeleton": ConfigPluginOptions<typeof import("react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton")["default"]>;
     "react-native-background-fetch": ConfigPluginOptions<typeof import("react-native-background-fetch/expo/plugin/build/index")["default"]>;
@@ -157,7 +160,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "react-native-bootsplash": ConfigPluginOptions<typeof import("react-native-bootsplash/app.plugin")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
-    "react-native-bottom-tabs": ConfigPluginOptions<typeof import("react-native-bottom-tabs/lib/typescript/expo")["default"]>;
+    "react-native-bottom-tabs": ConfigPluginOptions<typeof import("react-native-bottom-tabs/lib/typescript/src/expo.d.ts")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-capture-protection": ConfigPluginOptions<typeof import("react-native-capture-protection/plugins/withPlugin")["default"]>;
     "react-native-cloud-storage": ConfigPluginOptions<typeof import("react-native-cloud-storage/dist/typescript/expo-plugin/index")["default"]>;
@@ -168,6 +171,7 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-deepgram": ConfigPluginOptions<typeof import("react-native-deepgram/plugin/build/index")["default"]>;
+    // @ts-expect-error [Invalid types or not exported]
     "react-native-document-scanner-plugin": ConfigPluginOptions<typeof import("react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner")["default"]>;
     "react-native-edge-to-edge": ConfigPluginOptions<typeof import("react-native-edge-to-edge/dist/typescript/expo")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -199,7 +203,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "react-native-libsodium": ConfigPluginOptions<typeof import("react-native-libsodium/app.plugin")["default"]>;
     "react-native-localization-settings": ConfigPluginOptions<typeof import("react-native-localization-settings/plugin/build/index")["default"]>;
-    "react-native-localize": ConfigPluginOptions<typeof import("react-native-localize/dist/typescript/expo.d.ts")["default"]>;
+    "react-native-localize": ConfigPluginOptions<typeof import("react-native-localize/dist/typescript/expo")["default"]>;
     "react-native-localize-date": ConfigPluginOptions<typeof import("react-native-localize-date/plugin/build/withLocalizations")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-map-link": ConfigPluginOptions<typeof import("react-native-map-link/app.plugin")["default"]>;
@@ -210,7 +214,7 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-navigation-mode": ConfigPluginOptions<typeof import("react-native-navigation-mode/app.plugin")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-nfc-manager": ConfigPluginOptions<typeof import("react-native-nfc-manager/app.plugin")["default"]>;
-    "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/plugin/build/index")["default"]>;
+    "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/lib/typescript/expo-plugin/withScreenRecorder")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-nitro-sound": ConfigPluginOptions<typeof import("react-native-nitro-sound/lib/typescript/plugin/src/index.d.ts")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -223,6 +227,7 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-render-lynx": ConfigPluginOptions<typeof import("react-native-render-lynx/plugin/withRenderLynx")["default"]>;
     "react-native-screenshot-aware": ConfigPluginOptions<typeof import("react-native-screenshot-aware/lib/typescript/plugin/withReactNativeScreenshotAware")["default"]>;
     "react-native-share": ConfigPluginOptions<typeof import("react-native-share/plugin/build/index")["default"]>;
+    "react-native-spotlight-search": ConfigPluginOptions<typeof import("react-native-spotlight-search/plugin/build/withSpotlight")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-ssl-manager": ConfigPluginOptions<typeof import("react-native-ssl-manager/app.plugin")["default"]>;
     "react-native-theoplayer": ConfigPluginOptions<typeof import("react-native-theoplayer/lib/typescript/plugins/expo/withTHEOplayer")["default"]>;
@@ -230,6 +235,7 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-tiktok": ConfigPluginOptions<typeof import("react-native-tiktok/plugin/build/withTiktok")["default"]>;
     "react-native-twilio-video-webrtc": ConfigPluginOptions<typeof import("react-native-twilio-video-webrtc/plugin/build/index")["default"]>;
     "react-native-v8": ConfigPluginOptions<typeof import("react-native-v8/plugin/build/withV8ExpoAdapter")["default"]>;
+    "react-native-vector-image": ConfigPluginOptions<typeof import("react-native-vector-image/plugin/build/withVectorImage")["default"]>;
     "react-native-video": ConfigPluginOptions<typeof import("react-native-video/lib/expo-plugins/withRNVideo")["default"]>;
     "react-native-vision-camera": ConfigPluginOptions<typeof import("react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera")["default"]>;
     "react-native-vlc-media-player": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index.ts")["default"]>;

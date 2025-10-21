@@ -1,0 +1,51 @@
+diff --git a/node_modules/instabug-reactnative/.bun-tag-e4472fc4506028b0 b/.bun-tag-e4472fc4506028b0
+new file mode 100644
+index 0000000000000000000000000000000000000000..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+diff --git a/bin/index.js b/bin/index.js
+old mode 100644
+new mode 100755
+diff --git a/plugin/src/withInstabug.ts b/plugin/src/withInstabug.ts
+index 3eaa8ac3e5f75737f3dcda2c806b6f9f1e45e016..d39874da8037cb8b3fbfe2c99befc19a3e4d3340 100644
+--- a/plugin/src/withInstabug.ts
++++ b/plugin/src/withInstabug.ts
+@@ -3,7 +3,7 @@ import { createRunOncePlugin } from 'expo/config-plugins';
+ 
+ import { withInstabugAndroid } from './withInstabugAndroid';
+ import { withInstabugIOS } from './withInstabugIOS';
+-import { PluginProps } from './pluginProps';
++import type { PluginProps } from './pluginProps';
+ 
+ const instabugPackage = require('../../package.json') as {
+   name: string;
+diff --git a/plugin/src/withInstabugIOS.ts b/plugin/src/withInstabugIOS.ts
+index ce270ad2bae9559fcc652f68a05cf527ff251a9c..b450b5f6cfd6742e5608d92b14055f452189b93d 100644
+--- a/plugin/src/withInstabugIOS.ts
++++ b/plugin/src/withInstabugIOS.ts
+@@ -22,6 +22,7 @@ export const withInstabugIOS: ConfigPlugin<PluginProps> = (config, props) => {
+     const hasInstabugPhase = Boolean(findBuildPhase(buildPhases, INSTABUG_BUILD_PHASE));
+ 
+     if (!hasInstabugPhase && props.forceUploadSourceMaps) {
++        // @ts-ignore
+       addInstabugBuildPhase(xcodeProject, props.name);
+     }
+ 
+@@ -45,8 +46,9 @@ export const withInstabugIOS: ConfigPlugin<PluginProps> = (config, props) => {
+     const photoLibraryPermission =
+       instabugConfig.photoLibraryPermission ||
+       'This needs access to your photo library so you can attach images.';
+-
++// @ts-ignore
+     updatedConfig = withInfoPlist(updatedConfig, (configXcode) => {
++        // @ts-ignore
+       const plist = configXcode.ios.infoPlist ?? {};
+ 
+       if (!plist.NSMicrophoneUsageDescription) {
+@@ -56,7 +58,7 @@ export const withInstabugIOS: ConfigPlugin<PluginProps> = (config, props) => {
+       if (!plist.NSPhotoLibraryUsageDescription) {
+         plist.NSPhotoLibraryUsageDescription = photoLibraryPermission;
+       }
+-
++// @ts-ignore
+       configXcode.ios.infoPlist = plist;
+       return configXcode;
+     });

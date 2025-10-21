@@ -38,7 +38,6 @@ export const fetchNpmPackageName = async (githubRepoUrl: string): Promise<string
 
     const res = await fetch(url, githubHeaders());
     if (!res.ok) {
-        // console.debug("###", url, res.status, res.statusText);
         throw new Error(`Failed to fetch package.json: ${res.status}`);
     }
     const data = (await res.json()) as { content?: string };

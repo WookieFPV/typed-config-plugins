@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index 40f9b485fb3ff088c7aa901e8636f20414b65842..0aabc9a0c1cfc4c0fc932ddf206a5cf84590b857 100644
+--- a/package.json
++++ b/package.json
+@@ -39,7 +39,6 @@
+   },
+   "dependencies": {
+     "@expo/config-plugins": "^4.0.6",
+-    "@types/node": "^16.11.5",
+     "typescript": "^4.4.4"
+   }
+ }
