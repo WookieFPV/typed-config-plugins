@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/WookieFPV/typed-config-plugins/compare/v0.4.1...v0.4.2) (2025-10-22)
+
+
+### Bug Fixes
+
+* improve type detection, add package name even without types (if not valid) ([324b7c6](https://github.com/WookieFPV/typed-config-plugins/commit/324b7c62fb5d08c3850b2e107b3e42e6bb299a67))
+
 ## [0.4.1](https://github.com/WookieFPV/typed-config-plugins/compare/v0.4.0...v0.4.1) (2025-10-21)
 
 
