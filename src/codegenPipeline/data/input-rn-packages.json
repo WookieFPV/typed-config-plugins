@@ -7038,5 +7038,21 @@
   },
   {
     "githubUrl": "https://github.com/EdgeApp/react-native-airship"
+  },
+  {
+    "githubUrl": "https://github.com/expo/expo/tree/main/packages/patch-project"
+  },
+  {
+    "githubUrl": "https://github.com/WookieFPV/typed-config-plugins"
+  },
+  {
+    "githubUrl": "https://github.com/WookieFPV/expo-build-disk-cache"
+  },
+  {
+    "githubUrl": "https://github.com/WookieFPV/list-config-plugins"
+  },
+  {
+    "githubUrl": "https://github.com/orcunorcun/react-native-cookie-handler",
+    "npmPkg": "react-native-cookie-handler"
   }
 ]

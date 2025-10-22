@@ -14,7 +14,11 @@ const filterPkgData = (deps: RnDep[]): RnDepPersist[] =>
     }));
 
 export const packageListFile = (path = pluginListPath) => ({
-    load: async (): Promise<Array<RnDep | RnDepPersist>> => file(path).json(),
+    load: async (type: "all" | "withNpmPkg" = "withNpmPkg"): Promise<Array<RnDep | RnDepPersist>> => {
+        const data = await file(path).json();
+        if (type === "all") return data;
+        return (data as Array<RnDep | RnDepPersist>).filter((pkg) => pkg.npmPkg);
+    },
     save: async (pluginsList: Array<RnDep>) => file(path).write(JSON.stringify(filterPkgData(pluginsList), null, 2)),
 });
 

@@ -33,7 +33,7 @@
   "scripts": {
     "build": "tsup",
     "update": "bun src/codegenPipeline/run.ts",
-    "find": "bun run src/codegenPipeline/codegen/utils/findTypesCli.ts",
+    "find": "bun run src/codegenPipeline/searchTypes/findTypesCli.ts",
     "build:dev": "tsup --watch",
     "lint": "bunx biome check --fix --unsafe",
     "lint:CI": "bunx biome check",

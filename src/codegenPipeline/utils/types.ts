@@ -22,9 +22,11 @@ export type ConfigPluginOverrides = {
     path?: string;
     ignore?: boolean;
     alias?: string[];
+    name?: string;
 };
 
 export type RnDep = BaseRnDep & {
+    npmPkg: string;
     hasConfigPlugin?: boolean; // added in 2_has_config_plugin.ts
     types?: TypePath;
     ignore?: boolean; // if true, ignore this package here
@@ -36,17 +38,19 @@ type TypePath =
           override?: ConfigPluginOverrides;
           error: never;
           valid: boolean;
+          packageExport?: boolean;
       }
     | {
           path: never;
           override?: ConfigPluginOverrides;
           error: string;
           valid: false;
+          packageExport?: boolean;
       };
 
 export type RnDepPersist = {
     githubUrl: string;
-    npmPkg?: string;
+    npmPkg: string;
     hasConfigPlugin?: boolean;
     types?: TypePath;
     ignore?: boolean; // if true, ignore this package here

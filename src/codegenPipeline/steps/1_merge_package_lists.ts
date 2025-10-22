@@ -12,7 +12,7 @@ export const downloadAndMergeLists = async (): Promise<void> => {
 
     // Remove Unused Parameter by loading & saving the file (filtering is done on save)
     const { load, save } = packageListFile(filePath);
-    await save(await load());
+    await save(await load("all"));
 
     await mergePackageLists(filePath);
 

@@ -4,14 +4,13 @@ import type { ConfigPluginOptions } from "./types";
 
 export interface ThirdPartyAutomatedPlugins {
     "@appandflow/expo-camera-characteristics": ConfigPluginOptions<typeof import("@appandflow/expo-camera-characteristics/plugin/build/index")["default"]>;
-    "@azesmway/react-native-unity": ConfigPluginOptions<typeof import("@azesmway/react-native-unity/lib/typescript/plugin/src/index.d.ts")["default"]>;
+    "@azesmway/react-native-unity": ConfigPluginOptions<typeof import("@azesmway/react-native-unity/lib/typescript/plugin/src/index")["default"]>;
     "@bacons/apple-colors": ConfigPluginOptions<typeof import("@bacons/apple-colors/plugin/build/withAndroidColors")["default"]>;
     "@bam.tech/react-native-batch": ConfigPluginOptions<typeof import("@bam.tech/react-native-batch/plugin/build/withReactNativeBatch")["default"]>;
     "@batch.com/react-native-plugin": ConfigPluginOptions<typeof import("@batch.com/react-native-plugin/plugin/build/withReactNativeBatch")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@beyondidentity/bi-sdk-react-native": ConfigPluginOptions<typeof import("@beyondidentity/bi-sdk-react-native/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "@bitdrift/react-native": ConfigPluginOptions<typeof import("@bitdrift/react-native/typescript/plugin/withBitdrift")["default"]>;
+    "@bitdrift/react-native": ConfigPluginOptions<typeof import("@bitdrift/react-native/typescript/packages/react-native/src/plugin/withBitdrift.d.ts")["default"]>;
     "@bittingz/expo-widgets": ConfigPluginOptions<typeof import("@bittingz/expo-widgets/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@bravemobile/react-native-code-push": ConfigPluginOptions<typeof import("@bravemobile/react-native-code-push/expo/plugin/withCodePush")["default"]>;
@@ -20,25 +19,27 @@ export interface ThirdPartyAutomatedPlugins {
     "@config-plugins/react-native-pdf": ConfigPluginOptions<typeof import("@config-plugins/react-native-pdf/build/withPdf")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@corasan/image-compressor": ConfigPluginOptions<typeof import("@corasan/image-compressor/app.plugin")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "@datadog/mobile-react-native": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Invalid types or not exported]
     "@didomi/react-native": ConfigPluginOptions<typeof import("@didomi/react-native/plugin/withDidomi")["default"]>;
     "@fishjam-cloud/react-native-client": ConfigPluginOptions<typeof import("@fishjam-cloud/react-native-client/plugin/build/withFishjam")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@giphy/react-native-sdk": ConfigPluginOptions<typeof import("@giphy/react-native-sdk/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@hot-updater/react-native": ConfigPluginOptions<typeof import("@hot-updater/react-native/plugin/build/withHotUpdater")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@huymobile/react-native-sms-retriever-nitro-module": ConfigPluginOptions<typeof import("@huymobile/react-native-sms-retriever-nitro-module/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "@intercom/intercom-react-native": ConfigPluginOptions<typeof import("@intercom/intercom-react-native/app.plugin")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "@intercom/intercom-react-native": ConfigPluginOptions<typeof import("@intercom/intercom-react-native/lib/typescript/module/expo-plugins/index")["default"]>;
     "@iterable/expo-plugin": ConfigPluginOptions<typeof import("@iterable/expo-plugin/plugin/build/withIterable")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@kingstinct/react-native-activity-kit": ConfigPluginOptions<typeof import("@kingstinct/react-native-activity-kit/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@kingstinct/react-native-healthkit": ConfigPluginOptions<typeof import("@kingstinct/react-native-healthkit/app.plugin")["default"]>;
     "@leanplum/react-native-sdk": ConfigPluginOptions<typeof import("@leanplum/react-native-sdk/plugin/build/withLeanplumSDK")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "@maplibre/maplibre-react-native": ConfigPluginOptions<typeof import("@maplibre/maplibre-react-native/lib/typescript/plugin/withMapLibre")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "@maplibre/maplibre-react-native": ConfigPluginOptions<typeof import("@maplibre/maplibre-react-native/lib/typescript/commonjs/src/plugin/withMapLibre")["default"]>;
     "@prisma/react-native": ConfigPluginOptions<typeof import("@prisma/react-native/plugin/build/index")["default"]>;
     "@react-native-community/datetimepicker": ConfigPluginOptions<typeof import("@react-native-community/datetimepicker/plugin/build/withDateTimePickerStyles")["default"]>;
     "@react-native-firebase/app": ConfigPluginOptions<typeof import("@react-native-firebase/app/plugin/build/index")["default"]>;
@@ -48,19 +49,19 @@ export interface ThirdPartyAutomatedPlugins {
     "@react-native-firebase/crashlytics": ConfigPluginOptions<typeof import("@react-native-firebase/crashlytics/plugin/build/index")["default"]>;
     "@react-native-firebase/messaging": ConfigPluginOptions<typeof import("@react-native-firebase/messaging/plugin/build/index")["default"]>;
     "@react-native-firebase/perf": ConfigPluginOptions<typeof import("@react-native-firebase/perf/plugin/build/index")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@react-native-google-signin/google-signin": ConfigPluginOptions<typeof import("@react-native-google-signin/google-signin/plugin/build/withGoogleSignIn")["default"]>;
     "@react-native-seoul/naver-login": ConfigPluginOptions<typeof import("@react-native-seoul/naver-login/plugin/build/index")["default"]>;
     "@react-native-voice/voice": ConfigPluginOptions<typeof import("@react-native-voice/voice/plugin/build/withVoice")["default"]>;
     "@reactvision/react-viro": ConfigPluginOptions<typeof import("@reactvision/react-viro/dist/plugins/withViro")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@rnmapbox/maps": ConfigPluginOptions<typeof import("@rnmapbox/maps/plugin/build/withMapbox")["default"]>;
     "@sentry/react-native": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
     "@sentry/react-native/expo": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "@stripe/stripe-react-native": ConfigPluginOptions<typeof import("@stripe/stripe-react-native/lib/typescript/plugin/withStripe")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "@survicate/react-native-survicate": ConfigPluginOptions<typeof import("@survicate/react-native-survicate/app.plugin")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "@sparkfabrik/react-native-idfa-aaid": ConfigPluginOptions<unknown>;
+    "@stripe/stripe-react-native": ConfigPluginOptions<typeof import("@stripe/stripe-react-native/lib/typescript/src/plugin/withStripe")["default"]>;
+    "@survicate/react-native-survicate": ConfigPluginOptions<typeof import("@survicate/react-native-survicate/lib/typescript/expo/withSurvicate")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@vonovak/react-native-theme-control": ConfigPluginOptions<typeof import("@vonovak/react-native-theme-control/plugin/build/withThemeControl")["default"]>;
     "@wwdrew/expo-android-account-manager": ConfigPluginOptions<typeof import("@wwdrew/expo-android-account-manager/plugin/build/index")["default"]>;
@@ -72,7 +73,7 @@ export interface ThirdPartyAutomatedPlugins {
     "app-icon-badge": ConfigPluginOptions<typeof import("app-icon-badge/dist/app.plugin")["default"]>;
     "expo-alternate-app-icons": ConfigPluginOptions<typeof import("expo-alternate-app-icons/plugin/build/index")["default"]>;
     "expo-apple-authentication": ConfigPluginOptions<typeof import("expo-apple-authentication/plugin/build/withAppleAuth")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-asset": ConfigPluginOptions<typeof import("expo-asset/plugin/build/withAssets")["default"]>;
     "expo-audio": ConfigPluginOptions<typeof import("expo-audio/plugin/build/withAudio")["default"]>;
     "expo-av": ConfigPluginOptions<typeof import("expo-av/plugin/build/withAV")["default"]>;
@@ -83,7 +84,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-calendar": ConfigPluginOptions<typeof import("expo-calendar/plugin/build/withCalendar")["default"]>;
     "expo-camera": ConfigPluginOptions<typeof import("expo-camera/plugin/build/withCamera")["default"]>;
     "expo-cellular": ConfigPluginOptions<typeof import("expo-cellular/plugin/build/withCellular")["default"]>;
-    "expo-color-space-plugin": ConfigPluginOptions<typeof import("expo-color-space-plugin/build/index.d.ts")["default"]>;
+    "expo-color-space-plugin": ConfigPluginOptions<typeof import("expo-color-space-plugin/build/index")["default"]>;
     "expo-contacts": ConfigPluginOptions<typeof import("expo-contacts/plugin/build/withContacts")["default"]>;
     "expo-core-spotlight": ConfigPluginOptions<typeof import("expo-core-spotlight/plugin/build/index")["default"]>;
     "expo-custom-assets": ConfigPluginOptions<typeof import("expo-custom-assets/build/index")["default"]>;
@@ -91,7 +92,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-document-picker": ConfigPluginOptions<typeof import("expo-document-picker/plugin/build/withDocumentPicker")["default"]>;
     "expo-dynamic-app-icon": ConfigPluginOptions<typeof import("expo-dynamic-app-icon/plugin/build/withDynamicIcon")["default"]>;
     "expo-file-system": ConfigPluginOptions<typeof import("expo-file-system/plugin/build/withFileSystem")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-font": ConfigPluginOptions<typeof import("expo-font/plugin/build/withFonts")["default"]>;
     "expo-health-connect": ConfigPluginOptions<typeof import("expo-health-connect/build/withHealthConnect")["default"]>;
     "expo-iap": ConfigPluginOptions<typeof import("expo-iap/plugin/build/withIAP")["default"]>;
@@ -111,7 +112,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-navigation-bar": ConfigPluginOptions<typeof import("expo-navigation-bar/plugin/build/withNavigationBar")["default"]>;
     "expo-notifications": ConfigPluginOptions<typeof import("expo-notifications/plugin/build/withNotifications")["default"]>;
     "expo-pip": ConfigPluginOptions<typeof import("expo-pip/plugin/build/index")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-quick-actions": ConfigPluginOptions<typeof import("expo-quick-actions/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "expo-roomplan": ConfigPluginOptions<typeof import("expo-roomplan/app.plugin")["default"]>;
@@ -125,9 +126,9 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "expo-speech-recognition": ConfigPluginOptions<typeof import("expo-speech-recognition/app.plugin")["default"]>;
     "expo-splash-screen": ConfigPluginOptions<typeof import("expo-splash-screen/plugin/build/withSplashScreen")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-sqlite": ConfigPluginOptions<typeof import("expo-sqlite/plugin/build/withSQLite")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-superwall": ConfigPluginOptions<typeof import("expo-superwall/plugin/build/index")["default"]>;
     "expo-system-ui": ConfigPluginOptions<typeof import("expo-system-ui/plugin/build/withSystemUI")["default"]>;
     "expo-task-manager": ConfigPluginOptions<typeof import("expo-task-manager/plugin/build/withTaskManager")["default"]>;
@@ -137,7 +138,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-web-browser": ConfigPluginOptions<typeof import("expo-web-browser/plugin/build/withWebBrowser")["default"]>;
     "freerasp-react-native": ConfigPluginOptions<typeof import("freerasp-react-native/plugin/build/index")["default"]>;
     "instabug-reactnative": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index")["default"]>;
-    "llama.rn": ConfigPluginOptions<typeof import("llama.rn/lib/typescript/expo-plugin/withLlamaRN.d.ts")["default"]>;
+    "llama.rn": ConfigPluginOptions<typeof import("llama.rn/lib/typescript/expo-plugin/withLlamaRN")["default"]>;
     "newrelic-react-native-agent": ConfigPluginOptions<typeof import("newrelic-react-native-agent/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "onesignal-expo-plugin": ConfigPluginOptions<typeof import("onesignal-expo-plugin/build/onesignal/withOneSignal")["default"]>;
@@ -158,32 +159,29 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-background-geolocation": ConfigPluginOptions<typeof import("react-native-background-geolocation/expo/plugin/build/index")["default"]>;
     "react-native-ble-manager": ConfigPluginOptions<typeof import("react-native-ble-manager/plugin/build/withBLE")["default"]>;
     "react-native-ble-plx": ConfigPluginOptions<typeof import("react-native-ble-plx/plugin/build/withBLE")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-bootsplash": ConfigPluginOptions<typeof import("react-native-bootsplash/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-bottom-tabs": ConfigPluginOptions<typeof import("react-native-bottom-tabs/lib/typescript/src/expo.d.ts")["default"]>;
+    "react-native-bootsplash": ConfigPluginOptions<typeof import("react-native-bootsplash/dist/typescript/expo")["withBootSplash"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-bottom-tabs": ConfigPluginOptions<typeof import("react-native-bottom-tabs/lib/typescript/src/expo")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-capture-protection": ConfigPluginOptions<typeof import("react-native-capture-protection/plugins/withPlugin")["default"]>;
     "react-native-cloud-storage": ConfigPluginOptions<typeof import("react-native-cloud-storage/dist/typescript/expo-plugin/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-cloud-store": ConfigPluginOptions<typeof import("react-native-cloud-store/plugins/withCloud")["default"]>;
     "react-native-compressor": ConfigPluginOptions<typeof import("react-native-compressor/lib/typescript/expo-plugin/compressor")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-deepgram": ConfigPluginOptions<typeof import("react-native-deepgram/plugin/build/index")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-document-scanner-plugin": ConfigPluginOptions<typeof import("react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner")["default"]>;
     "react-native-edge-to-edge": ConfigPluginOptions<typeof import("react-native-edge-to-edge/dist/typescript/expo")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-email-link": ConfigPluginOptions<typeof import("react-native-email-link/plugin/withEmailLink")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-fast-tflite": ConfigPluginOptions<typeof import("react-native-fast-tflite/lib/typescript/expo-plugin/withFastTFLite")["default"]>;
+    "react-native-fast-tflite": ConfigPluginOptions<typeof import("react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite")["default"]>;
     "react-native-fbads": ConfigPluginOptions<typeof import("react-native-fbads/plugin/build/withReactNativeFbads")["default"]>;
     "react-native-fbsdk-next": ConfigPluginOptions<typeof import("react-native-fbsdk-next/plugin/build/withFacebook")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-full-screen-notification-incoming-call": ConfigPluginOptions<typeof import("react-native-full-screen-notification-incoming-call/lib/typescript/expo")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    "react-native-full-screen-notification-incoming-call": ConfigPluginOptions<typeof import("react-native-full-screen-notification-incoming-call/lib/typescript/src/expo")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-google-auth": ConfigPluginOptions<typeof import("react-native-google-auth/plugin/build/withGoogleAuth")["default"]>;
     "react-native-google-cast": ConfigPluginOptions<typeof import("react-native-google-cast/lib/typescript/plugin/withGoogleCast")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -195,11 +193,10 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-health": ConfigPluginOptions<typeof import("react-native-health/app.plugin")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-health-connect": ConfigPluginOptions<typeof import("react-native-health-connect/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-iap": ConfigPluginOptions<typeof import("react-native-iap/plugin/build/withIAP")["default"]>;
     "react-native-image-marker": ConfigPluginOptions<typeof import("react-native-image-marker/lib/typescript/expo-plugin/withImageMarker")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-keys": ConfigPluginOptions<typeof import("react-native-keys/plugin/build/index")["default"]>;
+    "react-native-keys": ConfigPluginOptions<typeof import("react-native-keys/lib/typescript/plugin/src/index")["default"]>;
     "react-native-legal": ConfigPluginOptions<typeof import("react-native-legal/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-libsodium": ConfigPluginOptions<typeof import("react-native-libsodium/app.plugin")["default"]>;
@@ -208,21 +205,22 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-localize-date": ConfigPluginOptions<typeof import("react-native-localize-date/plugin/build/withLocalizations")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-map-link": ConfigPluginOptions<typeof import("react-native-map-link/app.plugin")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-maps": ConfigPluginOptions<typeof import("react-native-maps/plugin/build/index")["default"]>;
+    "react-native-maps": ConfigPluginOptions<typeof import("react-native-maps/dist/plugin/src/index")["default"]>;
     "react-native-msal": ConfigPluginOptions<typeof import("react-native-msal/plugin/build/withReactNativeMSAL")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-navigation-mode": ConfigPluginOptions<typeof import("react-native-navigation-mode/app.plugin")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-nfc-manager": ConfigPluginOptions<typeof import("react-native-nfc-manager/app.plugin")["default"]>;
     "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/lib/typescript/expo-plugin/withScreenRecorder")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
-    "react-native-nitro-sound": ConfigPluginOptions<typeof import("react-native-nitro-sound/lib/typescript/plugin/src/index.d.ts")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-nitro-sound": ConfigPluginOptions<typeof import("react-native-nitro-sound/lib/typescript/plugin/src/index")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-orientation-director": ConfigPluginOptions<typeof import("react-native-orientation-director/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
-    "react-native-ota-hot-update": ConfigPluginOptions<typeof import("react-native-ota-hot-update/plugin/build/index")["default"]>;
+    "react-native-ota-hot-update": ConfigPluginOptions<typeof import("node_modules/react-native-ota-hot-update/plugin/src/index.ts")["default"]>;
     "react-native-permissions": ConfigPluginOptions<typeof import("react-native-permissions/dist/typescript/expo")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "react-native-quick-crypto": ConfigPluginOptions<unknown>;
     "react-native-rate-app": ConfigPluginOptions<typeof import("react-native-rate-app/lib/typescript/plugin/withReactNativeRateApp")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-render-lynx": ConfigPluginOptions<typeof import("react-native-render-lynx/plugin/withRenderLynx")["default"]>;
@@ -232,7 +230,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "react-native-ssl-manager": ConfigPluginOptions<typeof import("react-native-ssl-manager/app.plugin")["default"]>;
     "react-native-theoplayer": ConfigPluginOptions<typeof import("react-native-theoplayer/lib/typescript/plugins/expo/withTHEOplayer")["default"]>;
-    // @ts-expect-error [Invalid types or not exported]
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-tiktok": ConfigPluginOptions<typeof import("react-native-tiktok/plugin/build/withTiktok")["default"]>;
     "react-native-twilio-video-webrtc": ConfigPluginOptions<typeof import("react-native-twilio-video-webrtc/plugin/build/index")["default"]>;
     "react-native-v8": ConfigPluginOptions<typeof import("react-native-v8/plugin/build/withV8ExpoAdapter")["default"]>;
@@ -241,18 +239,54 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-vision-camera": ConfigPluginOptions<typeof import("react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera")["default"]>;
     "react-native-vlc-media-player": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index.ts")["default"]>;
     "react-native-vosk": ConfigPluginOptions<typeof import("react-native-vosk/plugin/build/withVosk")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "react-native-whip-whep": ConfigPluginOptions<unknown>;
     "react-native-wifi-reborn": ConfigPluginOptions<typeof import("react-native-wifi-reborn/plugin/dist/withWifi")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "rn-fade-wrapper": ConfigPluginOptions<unknown>;
 
     /* Errors:
 [
   [
-    "Package doesn't ship types for app.plugin.js",
+    "Package doesn't ship an app.plugin.js file",
     [
       "@datadog/mobile-react-native",
       "@sparkfabrik/react-native-idfa-aaid",
       "react-native-quick-crypto",
       "react-native-whip-whep",
       "rn-fade-wrapper"
+    ]
+  ],
+  [
+    "Package uses `exports` in `package.json`, which breaks this import",
+    [
+      "@hot-updater/react-native",
+      "@huymobile/react-native-sms-retriever-nitro-module",
+      "@intercom/intercom-react-native",
+      "@kingstinct/react-native-healthkit",
+      "@maplibre/maplibre-react-native",
+      "@react-native-google-signin/google-signin",
+      "@rnmapbox/maps",
+      "expo-asset",
+      "expo-font",
+      "expo-quick-actions",
+      "expo-sqlite",
+      "expo-superwall",
+      "react-native-bottom-tabs",
+      "react-native-credentials-manager",
+      "react-native-deepgram",
+      "react-native-document-scanner-plugin",
+      "react-native-google-auth",
+      "react-native-iap",
+      "react-native-nitro-sound",
+      "react-native-orientation-director",
+      "react-native-tiktok"
+    ]
+  ],
+  [
+    "Redundant ignore override",
+    [
+      "react-native-ota-hot-update"
     ]
   ]
 ]

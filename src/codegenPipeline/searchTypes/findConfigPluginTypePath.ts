@@ -19,7 +19,7 @@ export const findConfigPluginTypePath = async (packageName: string, searchString
             const lines = fileContent.split(";");
 
             lines.forEach((line) => {
-                if (line.includes(searchString) && !line.includes("expo/config-plugins")) {
+                if (line.includes(searchString)) {
                     results.push({ file: getPathRelativeToNodeModules(file), line }); //
                 }
             });
@@ -27,28 +27,25 @@ export const findConfigPluginTypePath = async (packageName: string, searchString
             console.error(`Error reading file ${file}:`, error);
         }
     }
-    if (!results.length) throw Error("Package doesn't ship types for app.plugin.js");
+    if (!results.length) throw Error("Package doesn't ship an app.plugin.js file");
     return results;
 };
 
-export const findBestConfigPluginTypePath = async (packageName: string, searchString: string, fileExtension: string): Promise<string> => {
+export const findBestConfigPluginTypePath = async (packageName: string, searchString: string = "ConfigPlugin", fileExtension: string = ".d.ts"): Promise<string> => {
     const results = await findConfigPluginTypePath(packageName, searchString, fileExtension);
 
-    if (results.length === 0) throw Error("Package doesn't ship types for app.plugin.js");
-    // biome-ignore lint/style/noNonNullAssertion: fine here
-    if (results.length === 1) return results[0]?.file!;
+    // Sort by file path length to prioritize top-level files
+    results.sort((a, b) => a.file.length - b.file.length);
 
-    const defaultExport = dedupe(results.filter((res) => res.line.includes("default")));
-    if (defaultExport.length === 0) {
-        // biome-ignore lint/style/noNonNullAssertion: fine here
-        return results[0]?.file!;
-    }
-    // biome-ignore lint/style/noNonNullAssertion: fine here
-    if (defaultExport.length === 1) return defaultExport[0]!;
-    console.log(`
- ${packageName} found: ${results.length} packages: ${JSON.stringify(results)}`);
+    // dedupe file list:
+    const files = [...new Set(results.map((result) => result.file))];
 
-    throw Error("Package doesn't ship too many default types");
+    if (files.length === 0) throw Error("Package doesn't ship types for app.plugin.js");
+    // biome-ignore lint/style/noNonNullAssertion: fine here
+    if (files.length === 1) return files[0]!;
+
+    // biome-ignore lint/style/noNonNullAssertion: fine here
+    return files[0]!;
 };
 
 const getPathRelativeToNodeModules = (file: string) => {
@@ -58,7 +55,7 @@ const getPathRelativeToNodeModules = (file: string) => {
     return path.relative(nodeModulesPath, file);
 };
 
-const dedupe = (result: Result): string[] => {
+const _dedupe = (result: Result): string[] => {
     const deduped = new Set(result.map((item) => item.file));
     return [...deduped];
 };

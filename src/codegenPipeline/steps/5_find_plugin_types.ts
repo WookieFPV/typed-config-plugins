@@ -20,15 +20,15 @@ export const findConfigPluginTypePath = async (type: "onlyNew" | "full" = "onlyN
             return gitHubQueue.add(async () => {
                 try {
                     logger.progressText(`Detecting Config Plugin Types [${i++}/${packagesToCheck.length}]`);
-                    // biome-ignore lint/style/noNonNullAssertion: fine here
-                    const typePath = await findBestConfigPluginTypePathCombined(dep.npmPkg!);
-
+                    const typePath = await findBestConfigPluginTypePathCombined(dep.npmPkg);
+                    const packageExport = await isUsingExportPackageJson(dep.npmPkg);
                     return {
                         ...dep,
                         types: {
                             ...dep.types,
                             path: typePath,
                             error: undefined,
+                            packageExport,
                             valid: await isValid(typePath),
                         },
                     };
@@ -56,3 +56,9 @@ export const findConfigPluginTypePath = async (type: "onlyNew" | "full" = "onlyN
 };
 
 const isValid = async (typePath: string) => Bun.file(path.join("node_modules", typePath.endsWith(".d.ts") ? typePath : `${typePath}.d.ts`)).exists();
+
+const isUsingExportPackageJson = async (npmPkg: string) => {
+    const packageJsonPath = path.join("node_modules", npmPkg, "package.json");
+    const json = await Bun.file(packageJsonPath).json();
+    return "exports" in json ? true : undefined;
+};

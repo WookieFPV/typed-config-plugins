@@ -9,9 +9,17 @@ const { logger } = stepLogger("Adding NPM package names");
 
 export const addNpmPackageName = async () => {
     logger.start();
-    const packages = await packageListFile().load();
+    const packages = await packageListFile().load("all");
 
-    const { npm = [], unknown = [], ignored = [] } = Object.groupBy(packages, (p) => ("npmPkg" in p ? "npm" : p.ignore ? "ignored" : "unknown"));
+    const {
+        npm = [],
+        unknown = [],
+        ignored = [],
+    } = Object.groupBy(packages, (p) => {
+        if (p.ignore) return "ignored";
+        if ("npmPkg" in p) return "npm";
+        return "unknown";
+    });
 
     if (unknown.length) logger.log(`Packages without known npm package [${unknown.length}/${unknown.length + npm.length + ignored.length}]`);
 

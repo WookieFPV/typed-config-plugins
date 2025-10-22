@@ -1,8 +1,9 @@
+import path from "node:path";
 import { file } from "bun";
+import { cleanupPath } from "../codegen/cleanupPath";
 import { getConfigPluginTypeCode } from "../codegen/codeTerminalOutput";
-import { cleanupPath } from "../codegen/utils/cleanupPath";
-import { findBestConfigPluginTypePath } from "../codegen/utils/findConfigPluginTypePath";
-import { findModuleImplementation } from "../codegen/utils/resolveDefaultExportPath";
+import { findBestConfigPluginTypePath } from "../searchTypes/findConfigPluginTypePath";
+import { findModuleImplementation } from "../searchTypes/resolveDefaultExportPath";
 import { stepLogger } from "../utils/logger";
 
 const { logger } = stepLogger("Generate Plugin Type Code");
@@ -16,8 +17,19 @@ export const codeGeneration = async () => {
 
 export const findBestConfigPluginTypePathCombined = async (packageName: string) => {
     try {
-        return cleanupPath(await findModuleImplementation(packageName));
+        const filePath = cleanupPath(await findModuleImplementation(packageName));
+
+        const dtsFilePath = path.join("node_modules", `${filePath}.d.ts`);
+        if (await Bun.file(dtsFilePath).exists()) return filePath;
+        try {
+            const dir = await findBestConfigPluginTypePath(packageName, "ConfigPlugin<", ".d.ts");
+            return dir.replace(".d.ts", "");
+        } catch (_e) {
+            // There are no types shipped, return the implementation path as a placeholder instead of nothing :(
+            return filePath;
+        }
     } catch (_e) {
-        return await findBestConfigPluginTypePath(packageName, "ConfigPlugin", ".d.ts");
+        const dir = await findBestConfigPluginTypePath(packageName, "ConfigPlugin<", ".d.ts");
+        return dir.replace(".d.ts", "");
     }
 };

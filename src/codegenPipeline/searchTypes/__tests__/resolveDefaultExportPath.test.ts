@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { findModuleImplementation } from "./resolveDefaultExportPath";
+import { findModuleImplementation } from "../resolveDefaultExportPath";
 
 describe("findModuleImplementation", () => {
     it("should find implementation for react-native-permissions package", async () => {

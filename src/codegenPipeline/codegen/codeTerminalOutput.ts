@@ -1,7 +1,9 @@
 import { sortByPackage } from "../utils/filterPackages";
 import { packageListFile } from "../utils/packageListJson";
+import type { RnDep } from "../utils/types";
 
-const line = (pkgName: string, importPath: string) => `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")["default"]>;`;
+const line = (pkgName: string, importPath: string, name = "default") => `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")["${name}"]>;`;
+const linesUntyped = (pkgName: string) => ["// This Packages doesn't ship types for config plugin:", `"${pkgName}": ConfigPluginOptions<unknown>;`];
 
 const emptyStrArr = (): string[] => [];
 
@@ -18,7 +20,16 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
         packages.push(pkg);
         out.errors.set(error, packages);
     };
-
+    const addIgnoreLine = (types: RnDep["types"], npmPkg: string) => {
+        const isIgnored = !!types?.override?.ignore || (!types?.valid && !types?.override?.path);
+        if (types?.packageExport) {
+            out.lines.push("// @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]");
+            addError(npmPkg, "Package uses `exports` in `package.json`, which breaks this import");
+        } else if (isIgnored) {
+            out.lines.push("// @ts-expect-error [Invalid types or not exported]");
+            out.untypedPackages.push(npmPkg);
+        }
+    };
     for (const { githubUrl, npmPkg, types } of packageList) {
         const override = types?.override ?? {};
         if (!npmPkg) {
@@ -26,20 +37,20 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
             continue;
         }
         try {
-            const isIgnored = !!override.ignore || (!types?.valid && !override.path);
             const path = override.path ?? types?.path;
+            if (types?.path && override.path === types?.path) addError(npmPkg, "Redundant path override");
+            if (types?.valid && override.ignore && !types.packageExport) addError(npmPkg, "Redundant ignore override");
 
             if ((!types?.override?.path && types?.error) || !path) {
+                out.lines.push(...linesUntyped(npmPkg));
                 addError(npmPkg, types?.error ?? "unknown Error");
             } else {
-                if (isIgnored) {
-                    out.lines.push("// @ts-expect-error [Invalid types or not exported]");
-                    out.untypedPackages.push(npmPkg);
-                }
-                out.lines.push(line(npmPkg, path));
+                addIgnoreLine(types, npmPkg);
+                out.lines.push(line(npmPkg, path, override.name));
 
                 override.alias?.forEach((alias) => {
-                    out.lines.push(line(alias, path));
+                    addIgnoreLine(types, npmPkg);
+                    out.lines.push(line(alias, path, override.name));
                 });
             }
         } catch (e) {
