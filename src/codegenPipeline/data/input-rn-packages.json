@@ -7054,5 +7054,13 @@
   {
     "githubUrl": "https://github.com/orcunorcun/react-native-cookie-handler",
     "npmPkg": "react-native-cookie-handler"
+  },
+  {
+    "githubUrl": "https://github.com/mCodex/react-native-nitro-sfsymbols",
+    "npmPkg": "react-native-nitro-sfsymbols"
+  },
+  {
+    "githubUrl": "https://github.com/sbaiahmed1/react-native-menus",
+    "npmPkg": "react-native-menus"
   }
 ]
