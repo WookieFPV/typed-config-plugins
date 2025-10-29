@@ -8926,7 +8926,7 @@
       "path": "react-native-ota-hot-update/plugin/build/index",
       "override": {
         "ignore": true,
-        "path": "node_modules/react-native-ota-hot-update/plugin/src/index.ts"
+        "path": "react-native-ota-hot-update/plugin/src/index.ts"
       }
     }
   },
