@@ -158,6 +158,7 @@
     "react-native-localize-date": "*",
     "react-native-map-link": "*",
     "react-native-maps": "*",
+    "react-native-mlx": "*",
     "react-native-msal": "*",
     "react-native-navigation-mode": "*",
     "react-native-nfc-manager": "*",
