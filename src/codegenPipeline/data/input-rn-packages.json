@@ -6158,7 +6158,7 @@
     "npmPkg": "@cantoo/pdf-lib"
   },
   {
-    "githubUrl": "https://github.com/Sharcoux/navigation",
+    "githubUrl": "https://github.com/Sharcoux/navigation/tree/master/packages/react-native",
     "npmPkg": "@react-native-assets/navigation"
   },
   {
@@ -7052,7 +7052,111 @@
     "githubUrl": "https://github.com/WookieFPV/list-config-plugins"
   },
   {
-    "githubUrl": "https://github.com/orcunorcun/react-native-cookie-handler",
-    "npmPkg": "react-native-cookie-handler"
+    "githubUrl": "https://github.com/orcunorcun/react-native-cookie-handler"
+  },
+  {
+    "githubUrl": "https://github.com/mCodex/react-native-nitro-sfsymbols"
+  },
+  {
+    "githubUrl": "https://github.com/sbaiahmed1/react-native-menus"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/react-native-shine"
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-lists-profiler",
+    "npmPkg": "@shopify/react-native-performance-lists-profiler"
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-navigation",
+    "npmPkg": "@shopify/react-native-performance-navigation"
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-navigation-bottom-tabs",
+    "npmPkg": "@shopify/react-native-performance-navigation-bottom-tabs"
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-navigation-drawer",
+    "npmPkg": "@shopify/react-native-performance-navigation-drawer"
+  },
+  {
+    "githubUrl": "https://github.com/storybookjs/react-native/tree/next/packages/react-native-ui",
+    "npmPkg": "@storybook/react-native-ui"
+  },
+  {
+    "githubUrl": "https://github.com/storybookjs/react-native/tree/next/packages/react-native-ui-lite",
+    "npmPkg": "@storybook/react-native-ui-lite"
+  },
+  {
+    "githubUrl": "https://github.com/storybookjs/react-native/tree/next/packages/react-native-theming",
+    "npmPkg": "@storybook/react-native-theming"
+  },
+  {
+    "githubUrl": "https://github.com/gluestack/gluestack-ui/tree/main/packages/gluestack-core",
+    "npmPkg": "@gluestack-ui/core"
+  },
+  {
+    "githubUrl": "https://github.com/gluestack/gluestack-ui/tree/main/packages/gluestack-utils",
+    "npmPkg": "@gluestack-ui/utils"
+  },
+  {
+    "githubUrl": "https://github.com/gluestack/gluestack-ui/tree/main/packages/ui-next-adapter",
+    "npmPkg": "@gluestack/ui-next-adapter"
+  },
+  {
+    "githubUrl": "https://github.com/facebook/metro/tree/main/packages/metro"
+  },
+  {
+    "githubUrl": "https://github.com/mrousavy/react-native-nitro-image/tree/main/packages/react-native-nitro-image"
+  },
+  {
+    "githubUrl": "https://github.com/mrousavy/react-native-nitro-image/tree/main/packages/react-native-nitro-web-image"
+  },
+  {
+    "githubUrl": "https://github.com/BlixtWallet/react-native-nitro-ark/tree/master/react-native-nitro-ark"
+  },
+  {
+    "githubUrl": "https://github.com/Daavidaviid/react-native-nitro-udp"
+  },
+  {
+    "githubUrl": "https://github.com/riteshshukla04/react-native-sports-car",
+    "npmPkg": "react-native-sportscar"
+  },
+  {
+    "githubUrl": "https://github.com/corasan/react-native-mlx/tree/main/package",
+    "npmPkg": "react-native-mlx"
+  },
+  {
+    "githubUrl": "https://github.com/ChrisCosentino/expo-iperf"
+  },
+  {
+    "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/expo-horizon/tree/main/expo-horizon-core"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/expo-horizon/tree/main/expo-horizon-location"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/expo-horizon/tree/main/expo-horizon-notifications"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/react-native-onboarding",
+    "npmPkg": "@blazejkustra/react-native-onboarding"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/expo-live-updates"
+  },
+  {
+    "githubUrl": "https://github.com/ChainPlatform/react-native-splash",
+    "npmPkg": "@chainplatform/splash"
+  },
+  {
+    "githubUrl": "https://github.com/customerio/customerio-reactnative"
+  },
+  {
+    "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/ai",
+    "npmPkg": "@react-native-firebase/ai"
   }
 ]

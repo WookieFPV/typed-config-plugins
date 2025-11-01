@@ -11503,5 +11503,89 @@
     "githubUrl": "https://github.com/orcunorcun/react-native-cookie-handler",
     "npmPkg": "react-native-cookie-handler",
     "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Sharcoux/navigation/tree/master/packages/react-native",
+    "npmPkg": "@react-native-assets/navigation",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-lists-profiler",
+    "npmPkg": "@shopify/react-native-performance-lists-profiler",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-navigation",
+    "npmPkg": "@shopify/react-native-performance-navigation",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-navigation-bottom-tabs",
+    "npmPkg": "@shopify/react-native-performance-navigation-bottom-tabs",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/Shopify/react-native-performance/tree/main/packages/react-native-performance-navigation-drawer",
+    "npmPkg": "@shopify/react-native-performance-navigation-drawer",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/storybookjs/react-native/tree/next/packages/react-native-ui",
+    "npmPkg": "@storybook/react-native-ui",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/storybookjs/react-native/tree/next/packages/react-native-ui-lite",
+    "npmPkg": "@storybook/react-native-ui-lite",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/storybookjs/react-native/tree/next/packages/react-native-theming",
+    "npmPkg": "@storybook/react-native-theming",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/gluestack/gluestack-ui/tree/main/packages/gluestack-core",
+    "npmPkg": "@gluestack-ui/core",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/gluestack/gluestack-ui/tree/main/packages/gluestack-utils",
+    "npmPkg": "@gluestack-ui/utils",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/gluestack/gluestack-ui/tree/main/packages/ui-next-adapter",
+    "npmPkg": "@gluestack/ui-next-adapter",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/riteshshukla04/react-native-sports-car",
+    "npmPkg": "react-native-sportscar",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/corasan/react-native-mlx/tree/main/package",
+    "npmPkg": "react-native-mlx",
+    "hasConfigPlugin": true,
+    "types": {
+      "valid": false,
+      "error": "Package doesn't ship an app.plugin.js file"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/react-native-onboarding",
+    "npmPkg": "@blazejkustra/react-native-onboarding",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/ChainPlatform/react-native-splash",
+    "npmPkg": "@chainplatform/splash",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/ai",
+    "npmPkg": "@react-native-firebase/ai",
+    "hasConfigPlugin": false
   }
 ]

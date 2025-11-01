@@ -182,6 +182,7 @@
         "react-native-localize-date": "*",
         "react-native-map-link": "*",
         "react-native-maps": "*",
+        "react-native-mlx": "*",
         "react-native-msal": "*",
         "react-native-navigation-mode": "*",
         "react-native-nfc-manager": "*",
@@ -2522,6 +2523,8 @@
     "react-native-map-link": ["react-native-map-link@3.9.0", "", { "peerDependencies": { "react": ">=16.8.0", "react-native": ">=0.40.0" } }, "sha512-3Aod4Y/5wtueR0ss6ffPzW5idz9oGYymm8WdnTJihJ89AXC6O1w/ausxdcBO0vmVGPhVlNicJPPZogp2l1oW8A=="],
 
     "react-native-maps": ["react-native-maps@1.26.17", "", { "dependencies": { "@types/geojson": "^7946.0.13" }, "peerDependencies": { "react": ">= 18.3.1", "react-native": ">= 0.76.0", "react-native-web": ">= 0.11" }, "optionalPeers": ["react-native-web"] }, "sha512-MCWUYrhXUyeZ6LpKvyGyvcB91MSPMCy3KjGLdgcUuMqd6sP4haUppwdw0adRpKBrRcy4oFWZiBvT/oirJ9HvCA=="],
+
+    "react-native-mlx": ["react-native-mlx@0.0.1", "", {}, "sha512-qR/KgJ/SXtFYaxESLD2tkCznJ4AwuONO8+36xD3GyAYzH9Z2H6rsc2zw07tXIMNtnB4kdOsM/CfiLV/hlUPwuQ=="],
 
     "react-native-msal": ["react-native-msal@4.0.4", "", { "dependencies": { "@azure/msal-browser": "^2.1.0", "@expo/config-plugins": "^4.0.6" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-KaWzOlix+w+vPfr9NuFSpGIDvZbZM5Ri/dOVEHTVvfOnPQxekEU+kfjdYsEAguR+mwPnsXPJV8kcQve5Nwsj8Q=="],
 

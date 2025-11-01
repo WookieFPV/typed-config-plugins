@@ -206,6 +206,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "react-native-map-link": ConfigPluginOptions<typeof import("react-native-map-link/app.plugin")["default"]>;
     "react-native-maps": ConfigPluginOptions<typeof import("react-native-maps/dist/plugin/src/index")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "react-native-mlx": ConfigPluginOptions<unknown>;
     "react-native-msal": ConfigPluginOptions<typeof import("react-native-msal/plugin/build/withReactNativeMSAL")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-navigation-mode": ConfigPluginOptions<typeof import("react-native-navigation-mode/app.plugin")["default"]>;
@@ -217,7 +219,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-orientation-director": ConfigPluginOptions<typeof import("react-native-orientation-director/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
-    "react-native-ota-hot-update": ConfigPluginOptions<typeof import("node_modules/react-native-ota-hot-update/plugin/src/index.ts")["default"]>;
+    "react-native-ota-hot-update": ConfigPluginOptions<typeof import("react-native-ota-hot-update/plugin/src/index.ts")["default"]>;
     "react-native-permissions": ConfigPluginOptions<typeof import("react-native-permissions/dist/typescript/expo")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "react-native-quick-crypto": ConfigPluginOptions<unknown>;
@@ -252,6 +254,7 @@ export interface ThirdPartyAutomatedPlugins {
     [
       "@datadog/mobile-react-native",
       "@sparkfabrik/react-native-idfa-aaid",
+      "react-native-mlx",
       "react-native-quick-crypto",
       "react-native-whip-whep",
       "rn-fade-wrapper"
