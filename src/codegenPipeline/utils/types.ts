@@ -23,6 +23,7 @@ export type ConfigPluginOverrides = {
     ignore?: boolean;
     alias?: string[];
     name?: string;
+    valid?: boolean;
 };
 
 export type RnDep = BaseRnDep & {
@@ -30,31 +31,18 @@ export type RnDep = BaseRnDep & {
     hasConfigPlugin?: boolean; // added in 2_has_config_plugin.ts
     types?: TypePath;
     ignore?: boolean; // if true, ignore this package here
+    origin?: "directory" | "gitHub";
 };
 
-type TypePath =
-    | {
-          path: string;
-          override?: ConfigPluginOverrides;
-          error: never;
-          valid: boolean;
-          packageExport?: boolean;
-      }
-    | {
-          path: never;
-          override?: ConfigPluginOverrides;
-          error: string;
-          valid: false;
-          packageExport?: boolean;
-      };
-
-export type RnDepPersist = {
-    githubUrl: string;
-    npmPkg: string;
-    hasConfigPlugin?: boolean;
-    types?: TypePath;
-    ignore?: boolean; // if true, ignore this package here
+type TypePath = {
+    path: string;
+    override?: ConfigPluginOverrides;
+    error?: string;
+    valid: boolean;
+    packageExport?: boolean;
 };
+
+export type RnDepPersist = Pick<RnDep, "githubUrl" | "npmPkg" | "hasConfigPlugin" | "types" | "ignore" | "origin" | "unmaintained">;
 
 export type RnDepFull = RnDep & {
     hasConfigPlugin: boolean;

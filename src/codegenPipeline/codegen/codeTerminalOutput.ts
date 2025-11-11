@@ -1,5 +1,5 @@
-import { sortByPackage } from "../utils/filterPackages";
-import { packageListFile } from "../utils/packageListJson";
+import { sortBy, uniqBy } from "es-toolkit/array";
+import { packageListFile } from "../storage/mainPackageList";
 import type { RnDep } from "../utils/types";
 
 const line = (pkgName: string, importPath: string, name = "default") => `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")["${name}"]>;`;
@@ -8,7 +8,8 @@ const linesUntyped = (pkgName: string) => ["// This Packages doesn't ship types 
 const emptyStrArr = (): string[] => [];
 
 export const getConfigPluginTypeCode = async (): Promise<string> => {
-    const packageList = (await packageListFile().load()).filter((pkg) => pkg.hasConfigPlugin && "types" in pkg).sort(sortByPackage);
+    const packages = await packageListFile.load("withPluginAndTypes");
+    const packageList = uniqBy(sortBy(packages, ["npmPkg"]), (pkg) => pkg.npmPkg);
     const out = {
         errors: new Map<string, string[]>(),
         lines: emptyStrArr(),

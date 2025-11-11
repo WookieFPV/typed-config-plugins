@@ -1,0 +1,19 @@
+diff --git a/plugin/src/index.ts b/plugin/src/index.ts
+index b8b86465cad5de405c09de05835706413854a317..4f3116f3b13bb55363783efd9b1a541ef8ee69ef 100644
+--- a/plugin/src/index.ts
++++ b/plugin/src/index.ts
+@@ -1,4 +1,5 @@
+ import {
++  type ConfigPlugin,
+   withMainApplication,
+   withAppDelegate,
+   IOSConfig,
+@@ -65,7 +66,7 @@ const withIosAction: any = (config: any) => {
+   });
+ };
+ 
+-const withAction: any = (config: any) => {
++const withAction = (config: ConfigPlugin<void>) => {
+   config = withAndroidAction(config);
+   config = withIosAction(config);
+   return config;

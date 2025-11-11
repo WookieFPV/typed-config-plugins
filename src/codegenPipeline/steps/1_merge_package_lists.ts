@@ -1,20 +1,26 @@
+import { toMerged } from "es-toolkit";
+import { cleanupGitHubUrl } from "../githubSearch/cleanupGitHubUrl";
+import { jsonPersistorFactory } from "../storage/jsonFileHelper";
+import { packageListFile } from "../storage/mainPackageList";
 import { downloadFile } from "../utils/downloadFile";
 import { stepLogger } from "../utils/logger";
-import { mergePackageLists, packageListFile } from "../utils/packageListJson";
+import type { RnDep } from "../utils/types";
 
 const URL = "https://raw.githubusercontent.com/react-native-community/directory/refs/heads/main/react-native-libraries.json";
 
-const { logger } = stepLogger("Update React-Native Directory Package List");
+const { step } = stepLogger("Update React-Native Directory Package List");
 
-export const downloadAndMergeLists = async (): Promise<void> => {
-    logger.start();
-    const filePath = await downloadFile(URL, "src", "codegenPipeline", "data", "input-rn-packages.json");
+const inputFile = jsonPersistorFactory<RnDep>({
+    primaryKey: "githubUrl",
+    path: "src/codegenPipeline/data/input-rn-packages.json",
+});
 
-    // Remove Unused Parameter by loading & saving the file (filtering is done on save)
-    const { load, save } = packageListFile(filePath);
-    await save(await load("all"));
+export const downloadAndMergeLists = step(async () => {
+    await downloadFile(URL, inputFile.path);
+    const newList = await inputFile.load();
 
-    await mergePackageLists(filePath);
-
-    logger.finish();
-};
+    await packageListFile.update(
+        newList.map((i) => toMerged(i, { origin: "directory", githubUrl: cleanupGitHubUrl(i.githubUrl) })),
+        { override: false },
+    );
+});

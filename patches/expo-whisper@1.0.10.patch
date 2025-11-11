@@ -1,0 +1,10 @@
+diff --git a/plugin/src/index.ts b/plugin/src/index.ts
+index ba841e3a65ed41f6633d5d38467a9f4b41a175b1..ce6dd353b910b41ff0f573a9c31abc2d7caefa27 100644
+--- a/plugin/src/index.ts
++++ b/plugin/src/index.ts
+@@ -1,4 +1,4 @@
+-import { ConfigPlugin, withAndroidManifest, withDangerousMod } from '@expo/config-plugins';
++import { type ConfigPlugin, withAndroidManifest, withDangerousMod } from '@expo/config-plugins';
+ import * as fs from 'fs';
+ import * as path from 'path';
+ 
