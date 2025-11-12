@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.4.2...v0.5.0) (2025-11-12)
+
+
+### Features
+
+* add more 273 more package types (using gitHub API as data source) ([#15](https://github.com/WookieFPV/typed-config-plugins/issues/15)) ([caaa9a6](https://github.com/WookieFPV/typed-config-plugins/commit/caaa9a67a1376e57f63303ded391fb8c6661fade))
+
 ## [0.4.2](https://github.com/WookieFPV/typed-config-plugins/compare/v0.4.1...v0.4.2) (2025-10-22)
 
 
