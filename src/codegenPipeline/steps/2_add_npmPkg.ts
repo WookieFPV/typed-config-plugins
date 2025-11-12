@@ -1,56 +1,21 @@
-import { isPackageNotUnmaintained } from "../utils/filterPackages";
-import { fetchNpmPackageName, gitHubQueue } from "../utils/gitHub";
-import { groupPromiseAllSettled } from "../utils/groupPromiseAllSettled";
+import pMap from "p-map";
+import { mapGetNpmPkg } from "../npmRegistry/mapGetNpmPkg";
+import { packageListFile } from "../storage/mainPackageList";
 import { stepLogger } from "../utils/logger";
-import { packageListFile, updatePluginsListFile } from "../utils/packageListJson";
-import type { RnDep } from "../utils/types";
 
-const { logger } = stepLogger("Adding NPM package names");
+const { logger, step } = stepLogger("Adding NPM package names");
 
-export const addNpmPackageName = async () => {
-    logger.start();
-    const packages = await packageListFile().load("all");
+export const addNpmPackageName = step(async () => {
+    const unknown = await packageListFile.load("withoutNpmPkg");
 
-    const {
-        npm = [],
-        unknown = [],
-        ignored = [],
-    } = Object.groupBy(packages, (p) => {
-        if (p.ignore) return "ignored";
-        if ("npmPkg" in p) return "npm";
-        return "unknown";
-    });
+    if (unknown.length) logger.log(`Packages without known npm package [${unknown.length}]`);
 
-    if (unknown.length) logger.log(`Packages without known npm package [${unknown.length}/${unknown.length + npm.length + ignored.length}]`);
-
-    if (unknown.length > 0 && !process.env.GITHUB_TOKEN) {
+    if (unknown.length && !process.env.GITHUB_TOKEN) {
         logger.warn("Not GitHub Token set, aborting...\n");
         process.exit(1);
     }
 
-    let i = 1;
-    const _enrichedPackages = await Promise.allSettled(
-        unknown.map(
-            (dep) =>
-                gitHubQueue.add(async (): Promise<RnDep> => {
-                    logger.progressText(`Adding NPM package names [${i++}/${unknown.length}]`);
-                    return {
-                        ...dep,
-                        npmPkg: await fetchNpmPackageName(dep.githubUrl),
-                    };
-                }) as Promise<RnDep>,
-        ),
-    );
-    const { fulfilled, rejected } = groupPromiseAllSettled(unknown, _enrichedPackages);
+    const fulfilled = await pMap(unknown, mapGetNpmPkg, { concurrency: 5 });
 
-    await updatePluginsListFile(fulfilled);
-
-    const rejectedAndMaintained = rejected.filter(({ input }) => isPackageNotUnmaintained(input));
-    if (rejectedAndMaintained.length > 0) {
-        logger.warn("Failed to get npm package name:");
-        for (const { input, reason } of rejectedAndMaintained) {
-            logger.log(`- ${input.githubUrl}: ${reason.message}`);
-        }
-    }
-    logger.finish();
-};
+    await packageListFile.update(fulfilled, { override: true });
+});

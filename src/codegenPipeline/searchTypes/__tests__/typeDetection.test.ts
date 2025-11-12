@@ -1,6 +1,6 @@
 import { describe, expect, it } from "bun:test";
-import { findBestConfigPluginTypePathCombined } from "../../steps/6_codegen";
 import { findBestConfigPluginTypePath } from "../findConfigPluginTypePath";
+import { findBestConfigPluginTypePathCombined } from "../findPluginTypePathCombined";
 import { findModuleImplementation } from "../resolveDefaultExportPath";
 
 describe("typeDetection", () => {

@@ -1,19 +1,7 @@
 import path from "node:path";
-import { file } from "bun";
 import { cleanupPath } from "../codegen/cleanupPath";
-import { getConfigPluginTypeCode } from "../codegen/codeTerminalOutput";
-import { findBestConfigPluginTypePath } from "../searchTypes/findConfigPluginTypePath";
-import { findModuleImplementation } from "../searchTypes/resolveDefaultExportPath";
-import { stepLogger } from "../utils/logger";
-
-const { logger } = stepLogger("Generate Plugin Type Code");
-
-export const codeGeneration = async () => {
-    logger.start();
-    const result = await getConfigPluginTypeCode();
-    await file("src/plugin/pluginTypes.ts").write(result);
-    logger.finish();
-};
+import { findBestConfigPluginTypePath } from "./findConfigPluginTypePath";
+import { findModuleImplementation } from "./resolveDefaultExportPath";
 
 export const findBestConfigPluginTypePathCombined = async (packageName: string) => {
     try {

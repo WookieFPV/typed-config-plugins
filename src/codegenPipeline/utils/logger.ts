@@ -7,58 +7,68 @@ type LastLine = "ora" | "log" | null;
 export const stepLogger = (stepName?: string) => {
     let lastLine: LastLine = null;
 
+    const index = () => `[${stepCount.toString().padStart(1, " ")}]`;
+
     const spinner = ora();
 
     const pre = () => (lastLine === "ora" ? "" : "\n");
 
     const start = (message = stepName) => {
         if (lastLine === "log") process.stdout.write("\n");
-        spinner.start(`[Step ${stepCount}]▶️ ${message}`);
+        spinner.start(`${index()} ️ ${message}`);
         lastLine = "ora";
     };
 
     const log = (...message: unknown[]) => {
         if (lastLine === "ora") spinner.stopAndPersist();
-        process.stdout.write(`${pre()}  [Step ${stepCount}]  ${message.join(" ")}`);
+        process.stdout.write(`${pre()}  ${index()}  ${message.join(" ")}`);
         lastLine = "log";
     };
 
     const warn = (...message: unknown[]) => {
         if (lastLine === "ora") spinner.stopAndPersist();
-        process.stdout.write(`${pre()}  [Step ${stepCount}]⚠️  ${message.join(" ")}`);
+        process.stdout.write(`${pre()}  ${index()}⚠️  ${message.join(" ")}`);
         lastLine = "log";
     };
 
     const finish = (message = stepName) => {
         if (lastLine === "log") process.stdout.write("\n");
-        spinner.succeed(`[Step ${stepCount++}]  ${message}`);
+        spinner.succeed(`${index()}  ${message}`);
+        stepCount++;
         lastLine = "ora";
     };
 
     const fail = (message = stepName) => {
         if (lastLine === "log") process.stdout.write("\n");
-        spinner.fail(`[Step ${stepCount++}]  ${message}`);
+        spinner.fail(`${index()}  ${message}`);
+        stepCount++;
         lastLine = "ora";
     };
 
     const progressText = (message: string) => {
         if (lastLine === "log") process.stdout.write("\n") && spinner.start();
-        spinner.text = `[Step ${stepCount}]  ${message}`;
+        spinner.text = `${index()}  ${message}`;
         lastLine = "ora";
     };
 
-    return { logger: { start, log, warn, finish, fail, progressText }, spinner };
+    const step = <A extends unknown[], T>(fn: (...args: A) => Promise<T>) => {
+        return async (...args: A): Promise<T> => {
+            try {
+                start();
+                const data = await fn(...args);
+                finish();
+                return data;
+            } catch (e) {
+                fail();
+                throw e;
+            }
+        };
+    };
+
+    return { logger: { start, log, warn, finish, fail, progressText }, step, spinner };
 };
 
 export const promiseStep = async <T>(promise: Promise<T>, stepName: string) => {
-    const { logger } = stepLogger(stepName);
-    try {
-        logger.start();
-        const data = await promise;
-        logger.finish();
-        return data;
-    } catch (e) {
-        logger.fail();
-        throw e;
-    }
+    const { step } = stepLogger(stepName);
+    return step(async () => promise)();
 };
