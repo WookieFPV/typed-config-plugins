@@ -995,6 +995,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/appandflow/react-navigation-bottom-sheet",
+    "npmPkg": "@appandflow/react-navigation-bottom-sheet",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/apperside/cross-local-storage",
     "npmPkg": "cross-local-storage",
     "hasConfigPlugin": false,
@@ -1095,6 +1101,12 @@
   {
     "githubUrl": "https://github.com/aravind3566/react-native-install-unknown-apps",
     "npmPkg": "react-native-install-unknown-apps",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/arbazz/react-native-ocr-fast",
+    "npmPkg": "react-native-ocr-fast",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -1536,6 +1548,12 @@
   {
     "githubUrl": "https://github.com/bamlab/react-tv-space-navigation/tree/main/packages/lib",
     "npmPkg": "react-tv-space-navigation",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/bang88/react-native-markdown/tree/main/packages/react-native-markdown",
+    "npmPkg": "@hake/react-native-markdown",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -5011,7 +5029,13 @@
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-notifications",
-    "origin": "directory"
+    "npmPkg": "expo-notifications",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-notifications/plugin/build/withNotifications",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-print",

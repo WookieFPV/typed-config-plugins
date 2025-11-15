@@ -9106,10 +9106,11 @@
     "expoGo": true
   },
   {
-    "githubUrl": "https://github.com/th3rdwave/react-navigation-bottom-sheet",
-    "npmPkg": "@th3rdwave/react-navigation-bottom-sheet",
+    "githubUrl": "https://github.com/AppAndFlow/react-navigation-bottom-sheet",
+    "npmPkg": "@appandflow/react-navigation-bottom-sheet",
     "examples": [
-      "https://github.com/th3rdwave/react-navigation-bottom-sheet/tree/main/example"
+      "https://github.com/AppAndFlow/react-navigation-bottom-sheet/tree/main/example/expo-router",
+      "https://github.com/AppAndFlow/react-navigation-bottom-sheet/tree/main/example/react-navigation"
     ],
     "ios": true,
     "android": true
@@ -19700,5 +19701,30 @@
     ],
     "ios": true,
     "android": true
+  },
+  {
+    "githubUrl": "https://github.com/BANG88/react-native-markdown/tree/main/packages/react-native-markdown",
+    "npmPkg": "@hake/react-native-markdown",
+    "examples": [
+      "https://github.com/BANG88/react-native-markdown/tree/main/apps/example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/1.png",
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/2.png",
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/3.png",
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/4.png"
+    ],
+    "ios": true,
+    "android": true,
+    "web": true,
+    "expoGo": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/arbazz/react-native-ocr-fast",
+    "npmPkg": "react-native-ocr-fast",
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
   }
 ]
