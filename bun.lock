@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "typed-config-plugins",
@@ -2502,7 +2503,7 @@
 
     "@stripe/stripe-react-native": ["@stripe/stripe-react-native@0.55.0", "", { "peerDependencies": { "expo": ">=46.0.9", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-9vOlgCoBmmcYYJk2HpRCTzA6X7hMyOuKQZt0ZTRLIVqODIhUqIn1E8mXKhHYlHTseQ44TcCqNVJvZtricRtd7Q=="],
 
-    "@stripe/stripe-terminal-react-native": ["@stripe/stripe-terminal-react-native@0.0.1-beta.27", "", { "dependencies": { "@testing-library/react-native": "^12.4.0", "base-64": "^1.0.0", "react-native-gradle-plugin": "^0.71.19" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-0tPrlPZEToODfmj/Y5b60RgAq1ok0ux9IOl+bi6B0dZp3ZJtxnkoqf+eXV7h8c7vee/KdnrHjSXeGBNklBLfCg=="],
+    "@stripe/stripe-terminal-react-native": ["@stripe/stripe-terminal-react-native@0.0.1-beta.28", "", { "dependencies": { "base-64": "^1.0.0", "react-native-gradle-plugin": "^0.71.19" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-9O+P+eCvtU1fAnucE3o2f+adhckgqx+JEQFKZ7s5L6hwWFrnXQ6xzNYCz3dKkvnwm/XiKU8u2DLTQS43xYK3ng=="],
 
     "@survicate/react-native-survicate": ["@survicate/react-native-survicate@6.4.2", "", { "peerDependencies": { "expo": ">=49", "react": ">=16.8.6", "react-native": ">=0.60.0" }, "optionalPeers": ["expo"] }, "sha512-1AevJLL+bB8iXzWZG2jNFCr5fmVaWwj1dokQI/vZ+z1fySb11JdiPwGcmfE6fUmyzMyVKn6bBK/z3CCWjOV4oQ=="],
 
