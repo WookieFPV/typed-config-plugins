@@ -995,6 +995,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/appandflow/react-navigation-bottom-sheet",
+    "npmPkg": "@appandflow/react-navigation-bottom-sheet",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/apperside/cross-local-storage",
     "npmPkg": "cross-local-storage",
     "hasConfigPlugin": false,
@@ -1095,6 +1101,12 @@
   {
     "githubUrl": "https://github.com/aravind3566/react-native-install-unknown-apps",
     "npmPkg": "react-native-install-unknown-apps",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/arbazz/react-native-ocr-fast",
+    "npmPkg": "react-native-ocr-fast",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -1540,6 +1552,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/bang88/react-native-markdown/tree/main/packages/react-native-markdown",
+    "npmPkg": "@hake/react-native-markdown",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/baronha/react-native-photo-editor",
     "npmPkg": "@baronha/react-native-photo-editor",
     "hasConfigPlugin": false,
@@ -1586,7 +1604,7 @@
   {
     "githubUrl": "https://github.com/batchlabs/batch-react-native-plugin",
     "npmPkg": "@batch.com/react-native-plugin",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "path": "@batch.com/react-native-plugin/plugin/build/withReactNativeBatch",
@@ -4872,8 +4890,12 @@
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-image",
     "npmPkg": "expo-image",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "valid": false,
+      "error": "Package doesn't ship an app.plugin.js file"
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-image-manipulator",
@@ -4949,7 +4971,13 @@
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-location",
-    "origin": "directory"
+    "npmPkg": "expo-location",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-location/plugin/build/withLocation",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-mail-composer",
@@ -5011,7 +5039,13 @@
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-notifications",
-    "origin": "directory"
+    "npmPkg": "expo-notifications",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-notifications/plugin/build/withNotifications",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-print",
@@ -5677,6 +5711,12 @@
     "unmaintained": true
   },
   {
+    "githubUrl": "https://github.com/fiyaz6772/react-native-fn-forms",
+    "npmPkg": "react-native-fn-forms",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/fjmorant/react-native-nested-listview",
     "npmPkg": "react-native-nested-listview",
     "hasConfigPlugin": false,
@@ -5947,6 +5987,16 @@
     "npmPkg": "react-native-oauth",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/fullstorydev/fullstory-react-native",
+    "npmPkg": "@fullstory/react-native",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@fullstory/react-native/plugin/build/index",
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/furkananter/react-native-shimmer-text",
@@ -8402,7 +8452,7 @@
   {
     "githubUrl": "https://github.com/juergengeck/lama",
     "npmPkg": "lama",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -9120,6 +9170,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/kubacienciala/expo-weather-kit",
+    "npmPkg": "expo-weather-kit",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/kubessandra/react-native-dji-mobile-sdk",
     "npmPkg": "react-native-dji-mobile-sdk",
     "hasConfigPlugin": true,
@@ -9444,6 +9500,12 @@
   {
     "githubUrl": "https://github.com/listenzz/react-native-modal-translucent",
     "npmPkg": "react-native-modal-translucent",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/litecoin-foundation/react-native-nitro-scrypt",
+    "npmPkg": "react-native-nitro-scrypt",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -10486,8 +10548,12 @@
   {
     "githubUrl": "https://github.com/mcodex/react-native-sensitive-info",
     "npmPkg": "react-native-sensitive-info",
-    "hasConfigPlugin": false,
-    "origin": "gitHub"
+    "hasConfigPlugin": true,
+    "origin": "gitHub",
+    "types": {
+      "valid": false,
+      "error": "Package doesn't ship an app.plugin.js file"
+    }
   },
   {
     "githubUrl": "https://github.com/mcodex/react-native-sized-webview",
@@ -12152,6 +12218,12 @@
   {
     "githubUrl": "https://github.com/oblador/react-native-store-review",
     "npmPkg": "react-native-store-review",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/oblador/react-native-variable-blur",
+    "npmPkg": "react-native-variable-blur",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -16614,7 +16686,7 @@
   {
     "githubUrl": "https://github.com/superwall/expo-superwall",
     "npmPkg": "expo-superwall",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "path": "expo-superwall/plugin/build/index",

@@ -8,7 +8,10 @@ const { logger, step } = stepLogger("Adding NPM package names");
 export const addNpmPackageName = step(async () => {
     const unknown = await packageListFile.load("withoutNpmPkg");
 
-    if (unknown.length) logger.log(`Packages without known npm package [${unknown.length}]`);
+    if (unknown.length) {
+        logger.log(`Packages without known npm package [${unknown.length}]`);
+        logger.log(JSON.stringify(unknown.map((i) => i.githubUrl)));
+    }
 
     if (unknown.length && !process.env.GITHUB_TOKEN) {
         logger.warn("Not GitHub Token set, aborting...\n");

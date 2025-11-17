@@ -9106,10 +9106,11 @@
     "expoGo": true
   },
   {
-    "githubUrl": "https://github.com/th3rdwave/react-navigation-bottom-sheet",
-    "npmPkg": "@th3rdwave/react-navigation-bottom-sheet",
+    "githubUrl": "https://github.com/AppAndFlow/react-navigation-bottom-sheet",
+    "npmPkg": "@appandflow/react-navigation-bottom-sheet",
     "examples": [
-      "https://github.com/th3rdwave/react-navigation-bottom-sheet/tree/main/example"
+      "https://github.com/AppAndFlow/react-navigation-bottom-sheet/tree/main/example/expo-router",
+      "https://github.com/AppAndFlow/react-navigation-bottom-sheet/tree/main/example/react-navigation"
     ],
     "ios": true,
     "android": true
@@ -15631,9 +15632,9 @@
     "newArchitecture": true
   },
   {
-    "githubUrl": "https://github.com/litecoin-foundation/react-native-turbo-scrypt",
+    "githubUrl": "https://github.com/litecoin-foundation/react-native-nitro-scrypt",
     "examples": [
-      "https://github.com/litecoin-foundation/react-native-turbo-scrypt/tree/master/example"
+      "https://github.com/litecoin-foundation/react-native-nitro-scrypt/tree/master/example"
     ],
     "android": true,
     "ios": true
@@ -18747,11 +18748,6 @@
     "ios": true
   },
   {
-    "githubUrl": "https://github.com/GG11HEDR/react-native-google-places-textinput",
-    "android": true,
-    "ios": true
-  },
-  {
     "githubUrl": "https://github.com/DanielAraldi/react-native-blur-view",
     "npmPkg": "@danielsaraldi/react-native-blur-view",
     "android": true,
@@ -19700,5 +19696,63 @@
     ],
     "ios": true,
     "android": true
+  },
+  {
+    "githubUrl": "https://github.com/BANG88/react-native-markdown/tree/main/packages/react-native-markdown",
+    "npmPkg": "@hake/react-native-markdown",
+    "examples": [
+      "https://github.com/BANG88/react-native-markdown/tree/main/apps/example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/1.png",
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/2.png",
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/3.png",
+      "https://raw.githubusercontent.com/BANG88/react-native-markdown/main/screenshots/4.png"
+    ],
+    "ios": true,
+    "android": true,
+    "web": true,
+    "expoGo": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/arbazz/react-native-ocr-fast",
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/oblador/react-native-variable-blur",
+    "examples": [
+      "https://github.com/oblador/react-native-variable-blur/tree/master/example"
+    ],
+    "ios": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/fullstorydev/fullstory-react-native",
+    "npmPkg": "@fullstory/react-native",
+    "ios": true,
+    "android": true,
+    "newArchitecture": true,
+    "configPlugin": true
+  },
+  {
+    "githubUrl": "https://github.com/Fiyaz6772/react-native-fn-forms",
+    "examples": [
+      "https://github.com/Fiyaz6772/react-native-fn-forms/tree/main/example"
+    ],
+    "ios": true,
+    "android": true,
+    "web": true,
+    "expoGo": true
+  },
+  {
+    "githubUrl": "https://github.com/kubacienciala/expo-weather-kit",
+    "examples": [
+      "https://github.com/kubacienciala/expo-weather-kit/tree/main/example"
+    ],
+    "ios": true,
+    "newArchitecture": true
   }
 ]

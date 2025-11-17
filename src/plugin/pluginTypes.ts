@@ -21,7 +21,6 @@ export interface ThirdPartyAutomatedPlugins {
     "@bam.tech/react-native-batch": ConfigPluginOptions<typeof import("@bam.tech/react-native-batch/plugin/build/withReactNativeBatch")["default"]>;
     "@bam.tech/react-native-msal": ConfigPluginOptions<typeof import("@bam.tech/react-native-msal/plugin/build/withReactNativeMSAL")["default"]>;
     "@bam.tech/react-native-ssl-pinning": ConfigPluginOptions<typeof import("@bam.tech/react-native-ssl-pinning/build/withSSLPinningConfig")["default"]>;
-    "@batch.com/react-native-plugin": ConfigPluginOptions<typeof import("@batch.com/react-native-plugin/plugin/build/withReactNativeBatch")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@beyondidentity/bi-sdk-react-native": ConfigPluginOptions<typeof import("@beyondidentity/bi-sdk-react-native/app.plugin")["default"]>;
     "@bitdrift/react-native": ConfigPluginOptions<typeof import("@bitdrift/react-native/typescript/packages/react-native/src/plugin/withBitdrift.d.ts")["default"]>;
@@ -67,6 +66,7 @@ export interface ThirdPartyAutomatedPlugins {
     "@fishjam-cloud/react-native-client": ConfigPluginOptions<typeof import("@fishjam-cloud/react-native-client/plugin/build/withFishjam")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "@fleetbase/react-native-mapbox-navigation": ConfigPluginOptions<unknown>;
+    "@fullstory/react-native": ConfigPluginOptions<typeof import("@fullstory/react-native/plugin/build/index")["default"]>;
     "@getcello/cello-react-native": ConfigPluginOptions<typeof import("@getcello/cello-react-native/lib/typescript/src/expo-plugin/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@giphy/react-native-sdk": ConfigPluginOptions<typeof import("@giphy/react-native-sdk/app.plugin")["default"]>;
@@ -300,6 +300,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "expo-idnow-auto-ident-config-plugin": ConfigPluginOptions<typeof import("expo-idnow-auto-ident-config-plugin/build/withIdNowAutoIdent")["default"]>;
     "expo-ignore-battery-optimizations": ConfigPluginOptions<typeof import("expo-ignore-battery-optimizations/plugin/build/withBatteryOptimizationPermissions")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "expo-image": ConfigPluginOptions<unknown>;
     "expo-image-picker": ConfigPluginOptions<typeof import("expo-image-picker/plugin/build/withImagePicker")["default"]>;
     "expo-install-apps": ConfigPluginOptions<typeof import("expo-install-apps/plugin/build/withAppList")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -368,8 +370,6 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-sqlite": ConfigPluginOptions<typeof import("expo-sqlite/plugin/build/withSQLite")["default"]>;
     "expo-stores-games-services": ConfigPluginOptions<typeof import("expo-stores-games-services/plugin/build/index")["default"]>;
     "expo-stt": ConfigPluginOptions<typeof import("expo-stt/plugin/build/withSpeechRecognition")["default"]>;
-    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
-    "expo-superwall": ConfigPluginOptions<typeof import("expo-superwall/plugin/build/index")["default"]>;
     "expo-system-ui": ConfigPluginOptions<typeof import("expo-system-ui/plugin/build/withSystemUI")["default"]>;
     "expo-tappay-line-pay": ConfigPluginOptions<typeof import("expo-tappay-line-pay/plugin/build/index")["default"]>;
     "expo-task-manager": ConfigPluginOptions<typeof import("expo-task-manager/plugin/build/withTaskManager")["default"]>;
@@ -404,8 +404,6 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "jpush-expo-config-plugin": ConfigPluginOptions<typeof import("jpush-expo-config-plugin/app.plugin")["default"]>;
     "karte-expo-plugin": ConfigPluginOptions<typeof import("karte-expo-plugin/build/withKarte")["default"]>;
-    // This Packages doesn't ship types for config plugin:
-    lama: ConfigPluginOptions<unknown>;
     "letro-passport": ConfigPluginOptions<typeof import("letro-passport/plugin/build/index")["default"]>;
     "llama.rn": ConfigPluginOptions<typeof import("llama.rn/lib/typescript/expo-plugin/withLlamaRN")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -582,6 +580,8 @@ export interface ThirdPartyAutomatedPlugins {
     // This Packages doesn't ship types for config plugin:
     "react-native-screen-time": ConfigPluginOptions<unknown>;
     "react-native-screenshot-aware": ConfigPluginOptions<typeof import("react-native-screenshot-aware/lib/typescript/plugin/withReactNativeScreenshotAware")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "react-native-sensitive-info": ConfigPluginOptions<unknown>;
     "react-native-share": ConfigPluginOptions<typeof import("react-native-share/plugin/build/index")["default"]>;
     "react-native-spotlight-search": ConfigPluginOptions<typeof import("react-native-spotlight-search/plugin/build/withSpotlight")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -687,7 +687,6 @@ export interface ThirdPartyAutomatedPlugins {
       "expo-quick-actions",
       "expo-safari-web-extension",
       "expo-sqlite",
-      "expo-superwall",
       "mindbox-expo-plugin",
       "react-native-attribution-token",
       "react-native-bottom-tabs",
@@ -731,11 +730,11 @@ export interface ThirdPartyAutomatedPlugins {
       "eos",
       "expo-custom-android-styles-plugin",
       "expo-dev-launcher",
+      "expo-image",
       "expo-live-updates",
       "expo-mapbox-navigation",
       "expo-tiktok-sdk",
       "expo-video-composer",
-      "lama",
       "react-native-call-detection",
       "react-native-game-kit",
       "react-native-get-music-files",
@@ -743,6 +742,7 @@ export interface ThirdPartyAutomatedPlugins {
       "react-native-multipeer",
       "react-native-quick-crypto",
       "react-native-screen-time",
+      "react-native-sensitive-info",
       "react-native-status-keycard",
       "react-native-stripe-terminal",
       "react-native-use-qili",
