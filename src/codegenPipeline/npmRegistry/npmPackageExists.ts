@@ -1,3 +1,4 @@
+import { unary } from "es-toolkit/function";
 import { json } from "npm-registry-fetch";
 import { npmQueue } from "./npmQueue";
 
@@ -8,7 +9,7 @@ import { npmQueue } from "./npmQueue";
  * @param throwOnError
  * @returns {Promise<boolean>} A promise that resolves to `true` if the package exists, `false` otherwise.
  */
-export const npmPackageExists = async (packageName: string, throwOnError = false): Promise<boolean> =>
+export const npmPackageExistsThrowable = async (packageName: string, throwOnError = false): Promise<boolean> =>
     npmQueue.add(async () => {
         try {
             await json(packageName, { fullMetadata: false });
@@ -21,3 +22,5 @@ export const npmPackageExists = async (packageName: string, throwOnError = false
             return false;
         }
     });
+
+export const npmPackageExists = unary(npmPackageExistsThrowable);

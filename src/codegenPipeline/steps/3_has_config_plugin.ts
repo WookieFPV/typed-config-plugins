@@ -1,4 +1,4 @@
-import pMap from "p-map";
+import { mapAsync } from "es-toolkit/array";
 import { packageListFile } from "../storage/mainPackageList";
 import { cleanupUrl } from "../utils/cleanupUrl";
 import { repoHasFile } from "../utils/gitHub";
@@ -24,6 +24,6 @@ export const detectConfigPlugins = step(async (type: "onlyNew" | "full" = "onlyN
         process.exit(1);
     }
 
-    const fulfilled = await pMap(packagesToCheck, mapHasConfigPlugin, { concurrency: 20 });
+    const fulfilled = await mapAsync(packagesToCheck, mapHasConfigPlugin, { concurrency: 20 });
     await packageListFile.update(fulfilled);
 });

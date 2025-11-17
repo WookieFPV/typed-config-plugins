@@ -1,4 +1,4 @@
-# typed-config-plugins [![npm][npm-image]][npm-url]
+# typed-config-plugins [![npm][npm-image]][npm-url] ![npm][npm-dl-stats]
 
 **Type Safety for Your Expo Config Plugins.**
 
@@ -62,3 +62,4 @@ Now, when you use `plugin("my-custom-plugin", { /* ... */ })` in your `app.confi
 
 [npm-image]: https://img.shields.io/npm/v/typed-config-plugins
 [npm-url]: https://www.npmjs.com/package/typed-config-plugins
+[npm-dl-stats]: https://img.shields.io/npm/dm/typed-config-plugins

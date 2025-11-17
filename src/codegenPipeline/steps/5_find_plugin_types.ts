@@ -1,5 +1,5 @@
 import path from "node:path";
-import pMap from "p-map";
+import { mapAsync } from "es-toolkit/array";
 import { findBestConfigPluginTypePathCombined } from "../searchTypes/findPluginTypePathCombined";
 import { packageListFile } from "../storage/mainPackageList";
 import { stepLogger } from "../utils/logger";
@@ -39,7 +39,7 @@ export const findConfigPluginTypePath = step(async (type: "onlyNew" | "full" = "
     const packagesToCheck = await packageListFile.load(type === "full" ? "withPlugin" : "withPluginWithoutTypePath");
     if (packagesToCheck.length) logger.log(`Find Config Plugin: ${packagesToCheck.length}`);
 
-    const fulfilled = await pMap(packagesToCheck, mapPluginTypes, { concurrency: 20 });
+    const fulfilled = await mapAsync(packagesToCheck, mapPluginTypes, { concurrency: 20 });
     await packageListFile.update(fulfilled);
 
     return fulfilled;

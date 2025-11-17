@@ -1,10 +1,8 @@
 import { file } from "bun";
 import { without } from "es-toolkit";
-import { sortBy } from "es-toolkit/array";
-import pMap from "p-map";
+import { filterAsync, mapAsync, sortBy } from "es-toolkit/array";
 import { npmPackageExists } from "../npmRegistry/npmPackageExists";
 import { packageListFile } from "../storage/mainPackageList";
-import { asyncFilter } from "../utils/asyncFilter";
 import { stepLogger } from "../utils/logger";
 import type { RnDep } from "../utils/types";
 
@@ -23,12 +21,12 @@ const syncPackagesPackageJsonFile = async (packagesWithConfigPlugin: RnDep[]) =>
     const newDeps = sortBy(packagesWithConfigPlugin, ["npmPkg"]).map((pkg) => pkg.npmPkg);
 
     const newPackages = without(newDeps, ...deps);
-    const validNewDeps = await asyncFilter(newPackages, (pkg) => npmPackageExists(pkg));
+    const validNewDeps = await filterAsync(newPackages, npmPackageExists, { concurrency: 20 });
 
     if (validNewDeps.length) {
         logger.log(`Adding ${validNewDeps.length} new deps:`);
 
-        await pMap(
+        await mapAsync(
             validNewDeps,
             (dep) => {
                 logger.log(`- install ${dep}`);

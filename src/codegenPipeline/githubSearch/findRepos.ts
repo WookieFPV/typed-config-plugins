@@ -1,8 +1,7 @@
 import { RequestError } from "@octokit/request-error";
 import { Octokit } from "@octokit/rest";
 import { flow } from "es-toolkit";
-import { sortBy, uniqBy } from "es-toolkit/array";
-import pMap from "p-map";
+import { mapAsync, sortBy, uniqBy } from "es-toolkit/array";
 import { mapGetNpmPkg } from "../npmRegistry/mapGetNpmPkg";
 import { type GitHubPersistItem, gitHubRepoList } from "./gitHubRepoList";
 import { type GitHubItems, GitHubPersistorMapper } from "./helper";
@@ -44,7 +43,7 @@ async function searchForPluginFile() {
             page++;
         }
         const deps = await gitHubRepoList.load("withoutNpmPkg");
-        const fulfilled = await pMap(deps, mapGetNpmPkg, { concurrency: 20 });
+        const fulfilled = await mapAsync(deps, mapGetNpmPkg, { concurrency: 20 });
         await gitHubRepoList.update(fulfilled as unknown as GitHubPersistItem[], { override: true });
 
         const allDeps = await gitHubRepoList.load();

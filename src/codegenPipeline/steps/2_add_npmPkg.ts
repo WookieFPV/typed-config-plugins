@@ -1,4 +1,4 @@
-import pMap from "p-map";
+import { mapAsync } from "es-toolkit/array";
 import { mapGetNpmPkg } from "../npmRegistry/mapGetNpmPkg";
 import { packageListFile } from "../storage/mainPackageList";
 import { stepLogger } from "../utils/logger";
@@ -15,7 +15,7 @@ export const addNpmPackageName = step(async () => {
         process.exit(1);
     }
 
-    const fulfilled = await pMap(unknown, mapGetNpmPkg, { concurrency: 5 });
+    const fulfilled = await mapAsync(unknown, mapGetNpmPkg, { concurrency: 5 });
 
     await packageListFile.update(fulfilled, { override: true });
 });
