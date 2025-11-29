@@ -1308,6 +1308,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/authsignal/react-native-authsignal",
+    "npmPkg": "react-native-authsignal",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/avas-app/react-native-android-otp-autofill",
     "npmPkg": "@avasapp/react-native-otp-autofill",
     "hasConfigPlugin": false,
@@ -1757,6 +1763,12 @@
     "githubUrl": "https://github.com/bgoonz/stuff/tree/main/STRIPE/stripe-react-native",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/bhojaniasgar/react-native-otp-input",
+    "npmPkg": "@bhojaniasgar/react-native-otp-input",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/bidah/react-native-vercel-ai",
@@ -3304,6 +3316,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/dariyd/react-native-image-filters",
+    "npmPkg": "@dariyd/react-native-image-filters",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/darkrishabh/react-native-db-models",
     "npmPkg": "react-native-db-models",
     "hasConfigPlugin": false,
@@ -3385,6 +3403,12 @@
   {
     "githubUrl": "https://github.com/dayaki/react-native-app-shortcuts",
     "npmPkg": "@mbdayo/react-native-app-shortcuts",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/dayaki/react-native-health-kits",
+    "npmPkg": "@mbdayo/react-native-health-kits",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -4611,6 +4635,17 @@
     "npmPkg": "expo-2d-context",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/expo/expo-av",
+    "npmPkg": "expo-av",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-av/plugin/build/withAV",
+      "valid": true
+    },
+    "unmaintained": true
   },
   {
     "githubUrl": "https://github.com/expo/expo-pixi",
@@ -6062,6 +6097,12 @@
   {
     "githubUrl": "https://github.com/galio-org/galio",
     "npmPkg": "galio-framework",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ganesh1110/react-native-apptext",
+    "npmPkg": "react-native-apptext",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -15003,6 +15044,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/rpldy/react-uploady/tree/master/packages/native/native-uploady",
+    "npmPkg": "@rpldy/native-uploady",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/rt2zz/react-native-contacts",
     "npmPkg": "react-native-contacts",
     "hasConfigPlugin": false,
@@ -18490,6 +18537,12 @@
   {
     "githubUrl": "https://github.com/wneel/react-native-get-device-locale",
     "npmPkg": "react-native-get-device-locale",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/wneel/react-native-native-select",
+    "npmPkg": "react-native-native-select",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
