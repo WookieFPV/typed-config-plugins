@@ -20,7 +20,7 @@ await detectConfigPlugins("onlyNew");
 
 await updatePackagesPackageJsonFile();
 
-await promiseStep(Bun.$`bun i`.quiet(), "Bun install");
+await promiseStep(Bun.$`bun i`.quiet(), "Bun install --ignore-scripts");
 
 await findConfigPluginTypePath("onlyNew");
 
