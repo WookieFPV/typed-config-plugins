@@ -15568,7 +15568,8 @@
       "https://github.com/google-gemini/generative-ai-js/tree/main/samples"
     ],
     "web": true,
-    "expoGo": true
+    "expoGo": true,
+    "unmaintained": true
   },
   {
     "githubUrl": "https://github.com/pioner92/react-native-auto-skeleton",
@@ -18876,11 +18877,11 @@
     "newArchitecture": true
   },
   {
-    "githubUrl": "https://github.com/Unistyles-OSS/uniwind/tree/main/packages/uniwind",
+    "githubUrl": "https://github.com/uni-stack/uniwind/tree/main/packages/uniwind",
     "examples": [
-      "https://github.com/Unistyles-OSS/uniwind/tree/main/apps/expo-router",
-      "https://github.com/Unistyles-OSS/uniwind/tree/main/apps/expo-example",
-      "https://github.com/Unistyles-OSS/uniwind/tree/main/apps/bare"
+      "https://github.com/uni-stack/uniwind/tree/main/apps/expo-router",
+      "https://github.com/uni-stack/uniwind/tree/main/apps/expo-example",
+      "https://github.com/uni-stack/uniwind/tree/main/apps/bare"
     ],
     "ios": true,
     "android": true,
@@ -18959,7 +18960,8 @@
       "https://github.com/rn-bridge/react-native-shortcuts/tree/master/example"
     ],
     "android": true,
-    "ios": true
+    "ios": true,
+    "alternatives": ["@rn-org/react-native-shortcuts"]
   },
   {
     "githubUrl": "https://github.com/rn-bridge/react-native-geofencing",
@@ -19261,7 +19263,7 @@
   },
   {
     "githubUrl": "https://github.com/corasan/react-native-mlx/tree/main/package",
-    "npmPkg": "react-native-mlx",
+    "npmPkg": "react-native-nitro-mlx",
     "examples": [
       "https://github.com/corasan/react-native-mlx/tree/main/example"
     ],
@@ -19276,7 +19278,7 @@
     "android": true
   },
   {
-    "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info",
+    "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info/tree/main/packages/react-native-nitro-device-info",
     "examples": [
       "https://github.com/l2hyunwoo/react-native-nitro-device-info/tree/main/example"
     ],
@@ -19822,6 +19824,90 @@
     "examples": [
       "https://github.com/dayaki/react-native-health-kits/blob/main/example"
     ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/dawidzawada/bonjour-zeroconf",
+    "npmPkg": "@dawidzawada/bonjour-zeroconf",
+    "examples": [
+      "https://github.com/dawidzawada/bonjour-zeroconf/tree/main/example"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-cookies/tree/main/package",
+    "npmPkg": "react-native-nitro-cookies",
+    "examples": [
+      "https://github.com/l2hyunwoo/react-native-nitro-cookies/tree/main/example"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/athexweb3/react-native-libprisma",
+    "examples": [
+      "https://github.com/athexweb3/react-native-libprisma/tree/master/examples/mobile"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/mdjastrzebski/react-native-unmount",
+    "examples": [
+      "https://github.com/mdjastrzebski/react-native-unmount/tree/main/example"
+    ],
+    "ios": true,
+    "android": true
+  },
+  {
+    "githubUrl": "https://github.com/ICEPepsiCola/react-native-dev-lens",
+    "ios": true,
+    "android": true,
+    "dev": true
+  },
+  {
+    "githubUrl": "https://github.com/rn-org/react-native-shortcuts",
+    "npmPkg": "@rn-org/react-native-shortcuts",
+    "examples": [
+      "https://github.com/rn-org/react-native-shortcuts/tree/master/example"
+    ],
+    "android": true,
+    "ios": true
+  },
+  {
+    "githubUrl": "https://github.com/rn-org/react-native-annotated-text",
+    "npmPkg": "@rn-org/react-native-annotated-text",
+    "examples": [
+      "https://github.com/rn-org/react-native-annotated-text/tree/master/example"
+    ],
+    "android": true,
+    "ios": true
+  },
+  {
+    "githubUrl": "https://github.com/Gautham495/react-native-nitro-cloud-uploader",
+    "examples": [
+      "https://github.com/Gautham495/react-native-nitro-cloud-uploader/tree/main/example"
+    ],
+    "android": true,
+    "ios": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/riteshshukla04/react-native-nitro-ota",
+    "android": true,
+    "npmPkg": "react-native-nitro-ota",
+    "ios": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/bugsnag/bugsnag-expo-performance",
+    "npmPkg": "@bugsnag/expo-performance",
     "ios": true,
     "android": true,
     "newArchitecture": true
