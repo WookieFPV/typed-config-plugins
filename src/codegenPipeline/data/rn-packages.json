@@ -1263,6 +1263,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/athexweb3/react-native-libprisma",
+    "npmPkg": "react-native-libprisma",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/atifkhokhar786/atiftrader/tree/main/modules/expo-onetrust-wrapper",
     "origin": "gitHub",
     "ignore": true
@@ -2130,6 +2136,12 @@
   {
     "githubUrl": "https://github.com/buglife/react-native-buglife",
     "npmPkg": "react-native-buglife",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/bugsnag/bugsnag-expo-performance",
+    "npmPkg": "@bugsnag/expo-performance",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -3399,6 +3411,12 @@
       "path": "expo-instant-app/plugin/build/lib/withInstantAppManifest",
       "valid": false
     }
+  },
+  {
+    "githubUrl": "https://github.com/dawidzawada/bonjour-zeroconf",
+    "npmPkg": "@dawidzawada/bonjour-zeroconf",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/dayaki/react-native-app-shortcuts",
@@ -6142,6 +6160,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/gautham495/react-native-nitro-cloud-uploader",
+    "npmPkg": "react-native-nitro-cloud-uploader",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/gautham495/react-native-play-age-range-declaration",
     "npmPkg": "react-native-play-age-range-declaration",
     "hasConfigPlugin": false,
@@ -6510,7 +6534,8 @@
     "githubUrl": "https://github.com/google-gemini/generative-ai-js",
     "npmPkg": "@google/generative-ai",
     "hasConfigPlugin": false,
-    "origin": "directory"
+    "origin": "directory",
+    "unmaintained": true
   },
   {
     "githubUrl": "https://github.com/google-pay/react-native-make-payment",
@@ -7314,6 +7339,12 @@
   {
     "githubUrl": "https://github.com/ibitcy/react-native-hole-view",
     "npmPkg": "react-native-hole-view",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/icepepsicola/react-native-dev-lens",
+    "npmPkg": "react-native-dev-lens",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -9289,10 +9320,25 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-cookies/tree/main/package",
+    "npmPkg": "react-native-nitro-cookies",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info",
     "npmPkg": "react-native-nitro-device-info",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info/tree/main/packages/react-native-nitro-device-info",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info/tree/master/packages/react-native-nitro-device-info",
+    "npmPkg": "react-native-nitro-device-info",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/lalalic/react-native-use-qili",
@@ -10605,6 +10651,12 @@
   {
     "githubUrl": "https://github.com/mdevils/html-entities",
     "npmPkg": "html-entities",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/mdjastrzebski/react-native-unmount",
+    "npmPkg": "react-native-unmount",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -14593,6 +14645,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/riteshshukla04/react-native-nitro-ota",
+    "npmPkg": "react-native-nitro-ota",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/riteshshukla04/react-native-sports-car",
     "npmPkg": "react-native-sportscar",
     "hasConfigPlugin": false,
@@ -14625,6 +14683,18 @@
   {
     "githubUrl": "https://github.com/rn-elementary/menu",
     "npmPkg": "@rn-elementary/menu",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/rn-org/react-native-annotated-text",
+    "npmPkg": "@rn-org/react-native-annotated-text",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/rn-org/react-native-shortcuts",
+    "npmPkg": "@rn-org/react-native-shortcuts",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -17803,6 +17873,15 @@
     "npmPkg": "react-native-navigation-hooks",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/uni-stack/uniwind/tree/main/packages/uniwind",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/uni-stack/uniwind/tree/master/packages/uniwind",
+    "npmPkg": "uniwind",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/unimonkiez/react-native-asset",
