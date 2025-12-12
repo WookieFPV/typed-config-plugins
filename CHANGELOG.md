@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/WookieFPV/typed-config-plugins/compare/v0.5.0...v0.5.1) (2025-12-12)
+
+
+### Bug Fixes
+
+* add compatibility to more expo versions ([e15c2a3](https://github.com/WookieFPV/typed-config-plugins/commit/e15c2a359fc0dd1a13926eba43175cf541f7ab08))
+
 ## [0.5.0](https://github.com/WookieFPV/typed-config-plugins/compare/v0.4.2...v0.5.0) (2025-11-12)
 
 
