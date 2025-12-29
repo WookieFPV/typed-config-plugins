@@ -81,6 +81,8 @@ export interface ThirdPartyAutomatedPlugins {
     "@huddle01/react-native-call-detection": ConfigPluginOptions<typeof import("@huddle01/react-native-call-detection/expo/withCallDetector")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@huymobile/react-native-sms-retriever-nitro-module": ConfigPluginOptions<typeof import("@huymobile/react-native-sms-retriever-nitro-module/app.plugin")["default"]>;
+    // @ts-expect-error [Invalid types or not exported]
+    "@hyoper/rn-location": ConfigPluginOptions<typeof import("@hyoper/rn-location/app.plugin")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@intercom/intercom-react-native": ConfigPluginOptions<typeof import("@intercom/intercom-react-native/lib/typescript/module/expo-plugins/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -232,6 +234,8 @@ export interface ThirdPartyAutomatedPlugins {
     eos: ConfigPluginOptions<unknown>;
     "expo-ads-facebook": ConfigPluginOptions<typeof import("expo-ads-facebook/plugin/build/withFacebookAds")["default"]>;
     "expo-alarm-module": ConfigPluginOptions<typeof import("expo-alarm-module/plugin/build/withExpoAlarmModule")["default"]>;
+    "expo-aliyun-oss": ConfigPluginOptions<typeof import("expo-aliyun-oss/plugin/build/index")["default"]>;
+    "expo-aliyun-push": ConfigPluginOptions<typeof import("expo-aliyun-push/plugin/build/index")["default"]>;
     "expo-alternate-app-icons": ConfigPluginOptions<typeof import("expo-alternate-app-icons/plugin/build/index")["default"]>;
     "expo-app-auth": ConfigPluginOptions<typeof import("expo-app-auth/plugin/build/withAppAuth")["default"]>;
     "expo-appcenter": ConfigPluginOptions<typeof import("expo-appcenter/plugin/build/index")["default"]>;
@@ -252,6 +256,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "expo-bare-kit": ConfigPluginOptions<typeof import("expo-bare-kit/plugin/index")["default"]>;
     "expo-ble": ConfigPluginOptions<typeof import("expo-ble/plugin/build/index")["default"]>;
+    "expo-bonjour": ConfigPluginOptions<typeof import("expo-bonjour/plugin/build/index")["default"]>;
     "expo-branch": ConfigPluginOptions<typeof import("expo-branch/plugin/build/withBranch")["default"]>;
     "expo-brightness": ConfigPluginOptions<typeof import("expo-brightness/plugin/build/withBrightness")["default"]>;
     "expo-brother-printer-sdk": ConfigPluginOptions<typeof import("expo-brother-printer-sdk/plugin/build/index")["default"]>;
@@ -288,6 +293,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-floating-bubble": ConfigPluginOptions<typeof import("expo-floating-bubble/app.plugin")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-font": ConfigPluginOptions<typeof import("expo-font/plugin/build/withFonts")["default"]>;
+    "expo-gaode-map": ConfigPluginOptions<typeof import("expo-gaode-map/plugin/build/withGaodeMap")["default"]>;
     "expo-google-sign-in": ConfigPluginOptions<typeof import("expo-google-sign-in/plugin/build/withGoogleSignIn")["default"]>;
     "expo-gradle-ext-vars": ConfigPluginOptions<typeof import("expo-gradle-ext-vars/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -342,6 +348,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "expo-pod-pinner": ConfigPluginOptions<typeof import("expo-pod-pinner/build/plugin/withPodPinner")["default"]>;
     "expo-privacy-manifest-polyfill-plugin": ConfigPluginOptions<typeof import("expo-privacy-manifest-polyfill-plugin/build/withExpoPrivacyManifestPolyfillPlugin")["default"]>;
+    "expo-qq": ConfigPluginOptions<typeof import("expo-qq/plugin/build/index")["default"]>;
     "expo-quest-notifications": ConfigPluginOptions<typeof import("expo-quest-notifications/plugin/build/withNotifications")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-quick-actions": ConfigPluginOptions<typeof import("expo-quick-actions/plugin/build/index")["default"]>;
@@ -369,10 +376,13 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-sqlite": ConfigPluginOptions<typeof import("expo-sqlite/plugin/build/withSQLite")["default"]>;
     "expo-stores-games-services": ConfigPluginOptions<typeof import("expo-stores-games-services/plugin/build/index")["default"]>;
+    // @ts-expect-error [Invalid types or not exported]
+    "expo-stream-audio": ConfigPluginOptions<typeof import("expo-stream-audio/app.plugin")["default"]>;
     "expo-stt": ConfigPluginOptions<typeof import("expo-stt/plugin/build/withSpeechRecognition")["default"]>;
     "expo-system-ui": ConfigPluginOptions<typeof import("expo-system-ui/plugin/build/withSystemUI")["default"]>;
     "expo-tappay-line-pay": ConfigPluginOptions<typeof import("expo-tappay-line-pay/plugin/build/index")["default"]>;
     "expo-task-manager": ConfigPluginOptions<typeof import("expo-task-manager/plugin/build/withTaskManager")["default"]>;
+    "expo-tencent-trtc": ConfigPluginOptions<typeof import("expo-tencent-trtc/plugin/build/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "expo-tiktok-sdk": ConfigPluginOptions<unknown>;
     "expo-tracking-transparency": ConfigPluginOptions<typeof import("expo-tracking-transparency/plugin/build/withTrackingTransparency")["default"]>;
@@ -538,6 +548,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "react-native-nfc-manager": ConfigPluginOptions<typeof import("react-native-nfc-manager/app.plugin")["default"]>;
     "react-native-nitro-inspire-face": ConfigPluginOptions<typeof import("react-native-nitro-inspire-face/lib/typescript/module/src/expo-plugin/withInspireFace")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-nitro-ota": ConfigPluginOptions<typeof import("react-native-nitro-ota/expo/plugins/dist/index")["default"]>;
     "react-native-nitro-readium": ConfigPluginOptions<typeof import("react-native-nitro-readium/plugins/build/index")["default"]>;
     "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/lib/typescript/expo-plugin/withScreenRecorder")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -699,6 +711,7 @@ export interface ThirdPartyAutomatedPlugins {
       "react-native-google-auth",
       "react-native-iap",
       "react-native-nai-timer",
+      "react-native-nitro-ota",
       "react-native-nitro-sound",
       "react-native-nitro-speech-recognition",
       "react-native-orientation-director",
