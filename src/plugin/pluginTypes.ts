@@ -466,6 +466,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
     "react-native-crisp-chat-sdk": ConfigPluginOptions<typeof import("react-native-crisp-chat-sdk/plugin/build/withCrispChat")["default"]>;
+    // @ts-expect-error [Invalid types or not exported]
+    "react-native-custom-splash": ConfigPluginOptions<typeof import("react-native-custom-splash/plugin/src/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-deepgram": ConfigPluginOptions<typeof import("react-native-deepgram/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]

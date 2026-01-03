@@ -340,6 +340,7 @@
     "react-native-core-bluetooth": "0.1.10",
     "react-native-credentials-manager": "*",
     "react-native-crisp-chat-sdk": "0.21.1",
+    "react-native-custom-splash": "^3.0.4",
     "react-native-deepgram": "*",
     "react-native-device-activity": "0.5.0",
     "react-native-dji-mobile-sdk": "0.2.25",

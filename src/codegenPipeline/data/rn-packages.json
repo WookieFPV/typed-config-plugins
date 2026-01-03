@@ -1466,6 +1466,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/bacarybruno/react-native-streaming-message-list",
+    "npmPkg": "react-native-streaming-message-list",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/bahtin106/field-work/tree/main/node_modules.backup/@react-native-community/datetimepicker",
     "origin": "gitHub",
     "ignore": true
@@ -8005,6 +8011,12 @@
   {
     "githubUrl": "https://github.com/iwater/react-native-nitro-crypto",
     "npmPkg": "react-native-nitro-crypto",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/iwater/react-native-nitro-dns",
+    "npmPkg": "react-native-nitro-dns",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -18194,6 +18206,8 @@
   },
   {
     "githubUrl": "https://github.com/uni-stack/uniwind/tree/main/packages/uniwind",
+    "npmPkg": "uniwind",
+    "hasConfigPlugin": false,
     "origin": "directory"
   },
   {
@@ -18415,6 +18429,16 @@
     "npmPkg": "react-native-gnss-status-checker",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/vijaykishan312/react-native-custom-splash",
+    "npmPkg": "react-native-custom-splash",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-custom-splash/plugin/src/index",
+      "valid": false
+    }
   },
   {
     "githubUrl": "https://github.com/vikeri/react-native-background-job",
