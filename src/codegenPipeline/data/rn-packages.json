@@ -979,6 +979,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/antosmamanktr/react-native-multi-range-slider",
+    "npmPkg": "react-native-multi-range-slider",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/antosmamanktr/react-native-stonewall-grid",
     "npmPkg": "react-native-stonewall-grid",
     "hasConfigPlugin": false,
@@ -1564,6 +1570,12 @@
   {
     "githubUrl": "https://github.com/b0iq/react-native-place-picker",
     "npmPkg": "react-native-place-picker",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/babayev03/rn-floating-input",
+    "npmPkg": "rn-floating-input",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -7114,6 +7126,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/gufrangaury1887/dschat/tree/main/rn-DS-chat-UI",
+    "npmPkg": "react-native-ds-chat",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/gugaia/guardian-project/tree/main/guardian-project",
     "origin": "gitHub",
     "ignore": true
@@ -7451,6 +7469,12 @@
   {
     "githubUrl": "https://github.com/hiroenzo/react-native-mqtt-clients",
     "npmPkg": "react-native-mqtt-clients",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/hizbullaharif/rn-background-upload",
+    "npmPkg": "rn-background-upload",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -14950,6 +14974,12 @@
     "unmaintained": true
   },
   {
+    "githubUrl": "https://github.com/react-native-async-storage/async-storage/tree/main/packages/async-storage",
+    "npmPkg": "@react-native-async-storage/async-storage",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/react-native-async-storage/async-storage/tree/main/packages/default-storage",
     "npmPkg": "@react-native-async-storage/async-storage",
     "hasConfigPlugin": false,
@@ -15466,6 +15496,12 @@
       "packageExport": true,
       "valid": true
     }
+  },
+  {
+    "githubUrl": "https://github.com/rednegniw/number-flow-react-native/tree/main/packages/number-flow-react-native",
+    "npmPkg": "number-flow-react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/redux-utils/react-native-redux-persist",
@@ -16309,6 +16345,12 @@
   {
     "githubUrl": "https://github.com/rt2zz/redux-persist",
     "npmPkg": "redux-persist",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/rtsouza26/expo-mqtt",
+    "npmPkg": "expo-mqtt",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -18042,6 +18084,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/suhaotian/broad-infinite-list",
+    "npmPkg": "broad-infinite-list",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/suhaotian/xior",
     "npmPkg": "xior",
     "hasConfigPlugin": false,
@@ -18183,6 +18231,12 @@
   {
     "githubUrl": "https://github.com/swif7ify/react-native-earl-gamepad",
     "npmPkg": "react-native-earl-gamepad",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/swif7ify/react-native-earl-thermal-printer",
+    "npmPkg": "react-native-earl-thermal-printer",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -19306,6 +19360,8 @@
   },
   {
     "githubUrl": "https://github.com/uni-stack/uniwind/tree/main/packages/uniwind",
+    "npmPkg": "uniwind",
+    "hasConfigPlugin": false,
     "origin": "directory"
   },
   {
