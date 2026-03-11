@@ -1,6 +1,6 @@
 {
   "name": "typed-config-plugins-package-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": "true",
   "optionalDependencies": {
     "@adyen/react-native": "*",
