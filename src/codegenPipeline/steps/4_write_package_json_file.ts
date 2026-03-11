@@ -16,7 +16,7 @@ export const updatePackagesPackageJsonFile = step(async () => {
 
 const syncPackagesPackageJsonFile = async (packagesWithConfigPlugin: RnDep[]) => {
     const packageJson = await file("packageList/package.json").json();
-    const deps = Object.keys(packageJson.devDependencies ?? {});
+    const deps = Object.keys(packageJson.optionalDependencies ?? {});
 
     const newDeps = sortBy(packagesWithConfigPlugin, ["npmPkg"]).map((pkg) => pkg.npmPkg);
 
@@ -30,7 +30,7 @@ const syncPackagesPackageJsonFile = async (packagesWithConfigPlugin: RnDep[]) =>
             validNewDeps,
             (dep) => {
                 logger.log(`- install ${dep}`);
-                return Bun.$`bun --cwd=packageList i --dev --only-missing ${dep}`.quiet();
+                return Bun.$`bun --cwd=packageList i --optional --only-missing ${dep}`.quiet();
             },
             { concurrency: 1 },
         );
