@@ -1,5 +1,5 @@
 ---
-"typed-config-plugins-package-list": patch
+"typed-config-plugins": patch
 ---
 
 switch to changesets (will change changelogs)
