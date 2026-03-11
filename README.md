@@ -60,6 +60,14 @@ declare module "typed-config-plugins" {
 
 Now, when you use `plugin("my-custom-plugin", { /* ... */ })` in your `app.config.ts`, TypeScript will provide autocompletion and validate the options against the types you've defined.
 
+## Releases
+
+This repo uses Changesets.
+
+1. For any user-facing package change, run `bun run changeset` and commit the generated file in `.changeset/`.
+2. When changesets reach `main`, GitHub Actions opens or updates a release PR with the version bump and generated changelog.
+3. Merge that release PR to publish to npm.
+
 [npm-image]: https://img.shields.io/npm/v/typed-config-plugins
 [npm-url]: https://www.npmjs.com/package/typed-config-plugins
 [npm-dl-stats]: https://img.shields.io/npm/dm/typed-config-plugins
