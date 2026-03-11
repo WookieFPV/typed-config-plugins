@@ -1,6 +1,7 @@
 {
   "name": "typed-config-plugins-package-list",
   "version": "0.0.1",
+  "private": "true",
   "optionalDependencies": {
     "@adyen/react-native": "*",
     "@allboatsrise/expo-gigya": "53.0.0",
