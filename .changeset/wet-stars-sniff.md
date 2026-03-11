@@ -1,5 +1,5 @@
 ---
-"typed-config-plugins-package-list": patch
+"typed-config-plugins": patch
 ---
 
 chore(plugins): update of config plugins
