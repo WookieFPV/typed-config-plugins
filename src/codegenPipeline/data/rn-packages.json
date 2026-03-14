@@ -1033,6 +1033,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/appandflow/react-native-ease",
+    "npmPkg": "react-native-ease",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/appandflow/react-native-google-autocomplete",
     "npmPkg": "@appandflow/react-native-google-autocomplete",
     "hasConfigPlugin": false,
@@ -2105,6 +2111,12 @@
   {
     "githubUrl": "https://github.com/bluesky-social/expo-image-crop-tool",
     "npmPkg": "expo-image-crop-tool",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/bluesky-social/expo-scroll-edge-effect",
+    "npmPkg": "@bsky.app/expo-scroll-edge-effect",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -7199,6 +7211,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/guccio163/react-native-reshuffled",
+    "npmPkg": "react-native-reshuffled",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/gufrangaury1887/dschat/tree/main/rn-DS-chat-UI",
     "npmPkg": "react-native-ds-chat",
     "hasConfigPlugin": false,
@@ -9260,6 +9278,12 @@
       "path": "react-native-wifi-reborn/plugin/dist/withWifi",
       "valid": true
     }
+  },
+  {
+    "githubUrl": "https://github.com/jubakitiashvili/everything-react-native-expo",
+    "npmPkg": "erne-universal",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/juergengeck/lama",
@@ -12720,6 +12744,24 @@
     "githubUrl": "https://github.com/nathan-ahn/expo-image-picker",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/native-html/render/tree/main/packages/css-processor",
+    "npmPkg": "@native-html/css-processor",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/native-html/render/tree/main/packages/render",
+    "npmPkg": "@native-html/render",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/native-html/render/tree/main/packages/transient-render-engine",
+    "npmPkg": "@native-html/transient-render-engine",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/nativeflowteam/nativeflowcss",
@@ -16782,6 +16824,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/satya164/react-native-showtime",
+    "npmPkg": "react-native-showtime",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/saulamsal/react-native-sheet-transitions",
     "npmPkg": "react-native-sheet-transitions",
     "hasConfigPlugin": false,
@@ -17671,6 +17719,12 @@
   {
     "githubUrl": "https://github.com/software-mansion-labs/react-native-shine",
     "npmPkg": "react-native-shine",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/react-native-streamdown",
+    "npmPkg": "react-native-streamdown",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
