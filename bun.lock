@@ -359,6 +359,7 @@
         "react-native-appsflyer": "*",
         "react-native-attribution-token": "1.0.5",
         "react-native-audio-api": "*",
+        "react-native-audio-recorder-player": "^4.5.0",
         "react-native-auth0": "*",
         "react-native-auto-skeleton": "*",
         "react-native-background-fetch": "*",
@@ -5505,6 +5506,8 @@
 
     "react-native-audio-api": ["react-native-audio-api@0.9.1", "", { "peerDependencies": { "react": "*", "react-native": "*", "react-native-worklets": "~0.6.0" }, "bin": { "setup-rn-audio-api-web": "scripts/setup-rn-audio-api-web.js" } }, "sha512-HtdfAnvVlF4TTcP4mqpOoVgabjdizZu+JLKeed3m6JmEXOqAbGw0xUojo7RAEvT0slS2PHck+m9GbUXuJNLdgQ=="],
 
+    "react-native-audio-recorder-player": ["react-native-audio-recorder-player@4.5.0", "", { "peerDependencies": { "react": "*", "react-native": "*", "react-native-nitro-modules": "*" } }, "sha512-+XhF/vTcp/Igzulhk+aL/XPGDjTkZPHKcjMQP9KGFXBVRvYYYoMQxwqqNCAVN0IK7FyTK+jYS9Ouy6kngQLgeQ=="],
+
     "react-native-auth0": ["react-native-auth0@5.0.1", "", { "dependencies": { "@auth0/auth0-spa-js": "2.3.0", "base-64": "^1.0.0", "jwt-decode": "^4.0.0", "url": "^0.11.4" }, "peerDependencies": { "react": ">=19.0.0", "react-native": ">=0.78.0" } }, "sha512-wnsmgD/4b7/96T5LcwStThszcm9iv6kRUUeRN/BLDQXmC+M5oOOTrF9GvRx6JXrg45zD1oNSXuhArcvtOzRLvg=="],
 
     "react-native-auto-skeleton": ["react-native-auto-skeleton@0.1.28", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-FKYVRINUyl20KyeQCUooWwrI77/8wF11A0KPOa6kDB7fVuiNOtwpEBzgFiI/qkj0zRYjCarsi8Bgz6u+KEnkvg=="],
@@ -5549,7 +5552,7 @@
 
     "react-native-config": ["react-native-config@1.5.10", "", { "dependencies": { "@babel/core": "^7.25.2", "@babel/preset-env": "^7.25.0", "@babel/preset-react": "^7.24.7", "babel-jest": "^29.7.0" }, "peerDependencies": { "react-native-windows": ">=0.61" }, "optionalPeers": ["react-native-windows"] }, "sha512-4H2njyu5KAseqcYwiSqD5LZE84VN45M8FViou7LsOc2StzSLXQYMMNR51gfIRRPd0f1gPuVM/O16MEi2AZ4Htg=="],
 
-    "react-native-contacts": ["react-native-contacts@github:valora-inc/react-native-contacts#9940121", {}, "valora-inc-react-native-contacts-9940121"],
+    "react-native-contacts": ["react-native-contacts@github:valora-inc/react-native-contacts#9940121", {}, "valora-inc-react-native-contacts-9940121", "sha512-S0ki88DhKhw/dPMXFedv017cZwrohu2n6eU3RarE7oZllpHiQB/c3mZryu5yzfykU/Q3QHBbFCRmSbCDAbz0uQ=="],
 
     "react-native-core-bluetooth": ["react-native-core-bluetooth@0.1.10", "", { "dependencies": { "base64-js": "^1.5.1" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-jbT5EXsmxK+HNmaZv9zHWHiNgtLbC3+HaWsoCNEEeTqvCSNDzaKWYgrk30tZU0L6aQWj/Dxp4E2Iq/m6HLjuPw=="],
 

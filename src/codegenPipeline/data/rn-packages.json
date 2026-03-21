@@ -222,6 +222,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/acostalima/react-native-polyfill-globals",
+    "npmPkg": "react-native-polyfill-globals",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/acro5piano/react-native-big-calendar",
     "npmPkg": "react-native-big-calendar",
     "hasConfigPlugin": false,
@@ -457,6 +463,12 @@
   {
     "githubUrl": "https://github.com/aksonov/react-native-tabs",
     "npmPkg": "react-native-tabs",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/akvelon/react-native-sms-user-consent",
+    "npmPkg": "@eabdullazyanov/react-native-sms-user-consent",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -1029,6 +1041,12 @@
   {
     "githubUrl": "https://github.com/appandflow/expo-image-cropping",
     "npmPkg": "@appandflow/expo-image-cropping",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/appandflow/react-native-ease",
+    "npmPkg": "react-native-ease",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -2105,6 +2123,12 @@
   {
     "githubUrl": "https://github.com/bluesky-social/expo-image-crop-tool",
     "npmPkg": "expo-image-crop-tool",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/bluesky-social/expo-scroll-edge-effect",
+    "npmPkg": "@bsky.app/expo-scroll-edge-effect",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -3761,6 +3785,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/deeeed/audiolab/tree/main/packages/react-native-essentia",
+    "npmPkg": "@siteed/react-native-essentia",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/deeeed/expo-audio-stream/tree/main/packages/expo-audio-stream",
     "npmPkg": "@siteed/expo-audio-stream",
     "hasConfigPlugin": false,
@@ -5030,6 +5060,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/expo/expo-asset-utils",
+    "npmPkg": "expo-asset-utils",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/expo/expo-av",
     "npmPkg": "expo-av",
     "hasConfigPlugin": true,
@@ -5064,8 +5100,26 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/expo/expo/tree/main/packages/%40expo/dom-webview",
+    "npmPkg": "@expo/dom-webview",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/expo/expo/tree/main/packages/%40expo/router-server",
+    "npmPkg": "@expo/router-server",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/@expo/fingerprint",
     "npmPkg": "@expo/fingerprint",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/expo/expo/tree/main/packages/@expo/metro-runtime",
+    "npmPkg": "@expo/metro-runtime",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -6949,6 +7003,12 @@
     "ignore": true
   },
   {
+    "githubUrl": "https://github.com/glepur/react-native-swipe-gestures",
+    "npmPkg": "react-native-swipe-gestures",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/globalrisksolutions/expo-image-picker",
     "origin": "gitHub",
     "ignore": true
@@ -7195,6 +7255,12 @@
   {
     "githubUrl": "https://github.com/gstj/react-native-magic-modal/tree/main/packages/modal",
     "npmPkg": "react-native-magic-modal",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/guccio163/react-native-reshuffled",
+    "npmPkg": "react-native-reshuffled",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -7813,6 +7879,17 @@
     }
   },
   {
+    "githubUrl": "https://github.com/hyochan/react-native-audio-recorder-player",
+    "npmPkg": "react-native-audio-recorder-player",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-audio-recorder-player/lib/typescript/plugin/src/index",
+      "packageExport": true,
+      "valid": true
+    }
+  },
+  {
     "githubUrl": "https://github.com/hyochan/react-native-iap",
     "origin": "gitHub",
     "ignore": true
@@ -7964,6 +8041,12 @@
   {
     "githubUrl": "https://github.com/iddan/react-native-canvas",
     "npmPkg": "react-native-canvas",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ide/react-native-button",
+    "npmPkg": "react-native-button",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -9262,6 +9345,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/jubakitiashvili/everything-react-native-expo",
+    "npmPkg": "erne-universal",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/juergengeck/lama",
     "npmPkg": "lama",
     "hasConfigPlugin": false,
@@ -9940,6 +10029,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/kpanuragh/zlib",
+    "npmPkg": "react-zlib-js",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/kphetrungnapha/bussypay/tree/main/BussyPay_WebAdmin%20frond-end%20code/BussyPay_Backend/Assets/themes/Notebook/js",
     "origin": "gitHub",
     "ignore": true
@@ -10051,6 +10146,36 @@
     "githubUrl": "https://github.com/kugonza-mark/googlesigninreactnative",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/kuraydev/react-native-apple-card-views",
+    "npmPkg": "react-native-apple-card-views",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/kuraydev/react-native-bouncy-checkbox",
+    "npmPkg": "react-native-bouncy-checkbox",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/kuraydev/react-native-header-view",
+    "npmPkg": "@freakycoder/react-native-header-view",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/kuraydev/react-native-progressive-fast-image",
+    "npmPkg": "@freakycoder/react-native-progressive-fast-image",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/kuraydev/react-native-segmented-control-2",
+    "npmPkg": "react-native-segmented-control-2",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/kureev/react-native-blur",
@@ -11273,6 +11398,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/margelo/react-native-blur",
+    "npmPkg": "@react-native-community/blur",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/margelo/react-native-filament/tree/main/package",
     "npmPkg": "react-native-filament",
     "hasConfigPlugin": false,
@@ -11289,6 +11420,15 @@
     "npmPkg": "react-native-nitro-fetch",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-nitro-fetch/tree/main/packages/react-native-nitro-fetch",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-nitro-fetch/tree/master/packages/react-native-nitro-fetch",
+    "npmPkg": "react-native-nitro-fetch",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-nitro-sqlite/tree/main/package",
@@ -12616,6 +12756,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/naeemur/react-native-wheel-color-picker",
+    "npmPkg": "react-native-wheel-color-picker",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/nagasaicharan/react-native-store-age-signals-native-modules",
     "npmPkg": "react-native-store-age-signals-native-modules",
     "hasConfigPlugin": false,
@@ -12654,6 +12800,12 @@
   {
     "githubUrl": "https://github.com/nandorojo/react-navigation-heavy-screen",
     "npmPkg": "react-navigation-heavy-screen",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/nandorojo/sf-symbols-typescript",
+    "npmPkg": "sf-symbols-typescript",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -12720,6 +12872,24 @@
     "githubUrl": "https://github.com/nathan-ahn/expo-image-picker",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/native-html/render/tree/main/packages/css-processor",
+    "npmPkg": "@native-html/css-processor",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/native-html/render/tree/main/packages/render",
+    "npmPkg": "@native-html/render",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/native-html/render/tree/main/packages/transient-render-engine",
+    "npmPkg": "@native-html/transient-render-engine",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/nativeflowteam/nativeflowcss",
@@ -14919,6 +15089,29 @@
     }
   },
   {
+    "githubUrl": "https://github.com/rahulthakurhimachali/react-native-chat-typing-indicator",
+    "npmPkg": "react-native-chat-typing-indicator",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/rahulthakurhimachali/react-native-dashed-view",
+    "npmPkg": "react-native-dashed-view",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/rahulthakurhimachali/react-native-nitro-wallpaper",
+    "npmPkg": "react-native-nitro-wallpaper",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-nitro-wallpaper/app.plugin",
+      "packageExport": true,
+      "valid": false
+    }
+  },
+  {
     "githubUrl": "https://github.com/raiidr/rns-webview",
     "npmPkg": "rns-webview",
     "hasConfigPlugin": true,
@@ -16782,6 +16975,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/satya164/react-native-showtime",
+    "npmPkg": "react-native-showtime",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/saulamsal/react-native-sheet-transitions",
     "npmPkg": "react-native-sheet-transitions",
     "hasConfigPlugin": false,
@@ -17671,6 +17870,12 @@
   {
     "githubUrl": "https://github.com/software-mansion-labs/react-native-shine",
     "npmPkg": "react-native-shine",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/software-mansion-labs/react-native-streamdown",
+    "npmPkg": "react-native-streamdown",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -19382,6 +19587,12 @@
   {
     "githubUrl": "https://github.com/tunoltd/emoji-mart-native",
     "npmPkg": "emoji-mart-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/turbopushdev/react-native-code-push",
+    "npmPkg": "@turbopush/react-native-code-push",
     "hasConfigPlugin": false,
     "origin": "directory"
   },

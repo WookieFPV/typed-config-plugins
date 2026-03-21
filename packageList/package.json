@@ -333,6 +333,7 @@
     "react-native-appsflyer": "*",
     "react-native-attribution-token": "1.0.5",
     "react-native-audio-api": "*",
+    "react-native-audio-recorder-player": "^4.5.0",
     "react-native-auth0": "*",
     "react-native-auto-skeleton": "*",
     "react-native-background-fetch": "*",
