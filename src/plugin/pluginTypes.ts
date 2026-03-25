@@ -452,6 +452,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-attribution-token": ConfigPluginOptions<typeof import("react-native-attribution-token/lib/typescript/expo-plugin/withBoringSSLFix")["default"]>;
     "react-native-audio-api": ConfigPluginOptions<typeof import("react-native-audio-api/lib/typescript/plugin/withAudioAPI")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-audio-recorder-player": ConfigPluginOptions<typeof import("react-native-audio-recorder-player/lib/typescript/plugin/src/index")["default"]>;
     "react-native-auth0": ConfigPluginOptions<typeof import("react-native-auth0/src/plugin/withAuth0")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-auto-skeleton": ConfigPluginOptions<typeof import("react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton")["default"]>;
@@ -720,6 +722,7 @@ export interface ThirdPartyAutomatedPlugins {
       "expo-sqlite",
       "mindbox-expo-plugin",
       "react-native-attribution-token",
+      "react-native-audio-recorder-player",
       "react-native-bottom-tabs",
       "react-native-credentials-manager",
       "react-native-deepgram",
