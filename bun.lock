@@ -281,6 +281,7 @@
         "expo-native-alipay": "*",
         "expo-native-asset": "0.0.1",
         "expo-native-lockfiles": "0.2.0",
+        "expo-native-sheet-emojis": "^2.0.1",
         "expo-native-wechat": "0.3.1",
         "expo-navigation-bar": "*",
         "expo-notifications": "*",
@@ -4017,6 +4018,8 @@
     "expo-native-asset": ["expo-native-asset@0.0.1", "", { "dependencies": { "xcode": "^3.0.1" }, "peerDependencies": { "expo": ">=47.0.0" }, "optionalPeers": ["expo"] }, "sha512-cxXaLKnWZgWhHzf5ZthdkeKUuw18lXKOwbiq+r1RrIG6IH8zTFfJ4tA2WObijQDZcCkRXNPZy1Dt3jBGV1wvUg=="],
 
     "expo-native-lockfiles": ["expo-native-lockfiles@0.2.0", "", { "dependencies": { "pod-lockfile": "^1.2.2" }, "bin": { "native-lock": "cli/native-lock.sh" } }, "sha512-EJqEGeuVSjMcsnipPWZEnk84l/Yc909vE3N6+tmBy4KtheO6L39vDA3jFA13egkQzdMiXF1eZSnFudeGRAvncw=="],
+
+    "expo-native-sheet-emojis": ["expo-native-sheet-emojis@2.0.1", "", { "peerDependencies": { "expo": ">=54.0.0", "react": ">=18.3.1", "react-native": ">=0.81.0" } }, "sha512-0RNmkdjbI4DTMFhfeZR75F8mbJwuA2cEwe6dQ2xi536IR6U6JhdlMI4+csx/40XQta5tkxsry1scn2b4yjKvKw=="],
 
     "expo-native-wechat": ["expo-native-wechat@0.3.1", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-Ei+ywegr1mRalWJ+PZfO8UvxXGxlkoL/TYzAkfM6iUYTgLg0ZbYCFpoXeod8VMqY77K8TdlOdVkXcymUgtJmHg=="],
 
