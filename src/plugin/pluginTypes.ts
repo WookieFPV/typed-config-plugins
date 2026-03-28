@@ -348,6 +348,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-native-alipay": ConfigPluginOptions<typeof import("expo-native-alipay/app.plugin")["default"]>;
     "expo-native-asset": ConfigPluginOptions<typeof import("expo-native-asset/build/index")["default"]>;
     "expo-native-lockfiles": ConfigPluginOptions<typeof import("expo-native-lockfiles/plugin/build/lockfile-plugin")["default"]>;
+    "expo-native-sheet-emojis": ConfigPluginOptions<typeof import("expo-native-sheet-emojis/plugin/build/withEmojiSheet")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "expo-native-wechat": ConfigPluginOptions<typeof import("expo-native-wechat/app.plugin")["default"]>;
     "expo-navigation-bar": ConfigPluginOptions<typeof import("expo-navigation-bar/plugin/build/withNavigationBar")["default"]>;
