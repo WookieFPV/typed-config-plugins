@@ -286,6 +286,12 @@
     "unmaintained": true
   },
   {
+    "githubUrl": "https://github.com/adoobdoob71/react-native-add-calendar",
+    "npmPkg": "react-native-add-calendar",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/adyen/adyen-react-native",
     "npmPkg": "@adyen/react-native",
     "hasConfigPlugin": true,
@@ -607,6 +613,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/alicanov98/react-native-barcode-qr-generator",
+    "npmPkg": "react-native-barcode-qr-generator",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/alicanov98/react-native-debug-logger",
+    "npmPkg": "react-native-debug-logger",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/alikazemkhanloo/react-native-reanimated-slider",
     "npmPkg": "react-native-reanimated-slider",
     "hasConfigPlugin": false,
@@ -778,6 +796,12 @@
   {
     "githubUrl": "https://github.com/ammarahm-ed/react-native-mmkv-storage",
     "npmPkg": "react-native-mmkv-storage",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/anas-asghar4831/react-native-chess-kit",
+    "npmPkg": "react-native-chess-kit",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -1007,6 +1031,12 @@
   {
     "githubUrl": "https://github.com/antosmamanktr/react-native-multi-range-slider",
     "npmPkg": "react-native-multi-range-slider",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/antosmamanktr/react-native-smooth-collapse",
+    "npmPkg": "react-native-smooth-collapse",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -2097,6 +2127,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/blazejkustra/react-native-3d",
+    "npmPkg": "react-native-3d",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/blazejkustra/react-native-effects",
+    "npmPkg": "react-native-effects",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/blinkid/blinkid-react-native/tree/master/BlinkID",
     "npmPkg": "@microblink/blinkid-react-native",
     "hasConfigPlugin": false,
@@ -3085,6 +3127,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/codewithyasirarafath/expo-playcore-in-app-update",
+    "npmPkg": "expo-playcore-in-app-update",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/codingitwrong/react-native-style-queries",
     "npmPkg": "react-native-style-queries",
     "hasConfigPlugin": false,
@@ -3187,6 +3235,12 @@
   {
     "githubUrl": "https://github.com/comertcimen/expo-skoverlay",
     "npmPkg": "expo-skoverlay",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/cometchat/cometchat-uikit-react-native/tree/v5/packages/ChatUiKit",
+    "npmPkg": "@cometchat/chat-uikit-react-native",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -3498,6 +3552,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/cwilsn/react-native-network-info",
+    "npmPkg": "react-native-network-info",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/cwnicoletti/react-native-gauge/tree/main/src",
     "npmPkg": "react-native-gauge",
     "hasConfigPlugin": false,
@@ -3544,6 +3604,12 @@
       "path": "rn-nomba-terminal-sdk/app.plugin",
       "valid": false
     }
+  },
+  {
+    "githubUrl": "https://github.com/damix00/expo-screen-corner-radius",
+    "npmPkg": "expo-screen-corner-radius",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/dancormier/react-native-listitem",
@@ -3606,6 +3672,12 @@
       "valid": false,
       "error": "Package doesn't ship an app.plugin.js file"
     }
+  },
+  {
+    "githubUrl": "https://github.com/dariyd/react-native-document-scanner",
+    "npmPkg": "@dariyd/react-native-document-scanner",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/dariyd/react-native-image-filters",
@@ -3787,6 +3859,12 @@
   {
     "githubUrl": "https://github.com/deeeed/audiolab/tree/main/packages/react-native-essentia",
     "npmPkg": "@siteed/react-native-essentia",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/deeeed/expo-audio-stream/tree/main/packages/audio-ui",
+    "npmPkg": "@siteed/audio-ui",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -4145,6 +4223,12 @@
     "githubUrl": "https://github.com/dmitrii-eremin/zen-diary/tree/main/media/httpdocs/js",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/doctolib-lab/react-native-streaming-message-list",
+    "npmPkg": "react-native-streaming-message-list",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/docucare/config-plugin-react-native-branch",
@@ -4587,6 +4671,16 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/efstathiosntonas/expo-native-sheet-emojis",
+    "npmPkg": "expo-native-sheet-emojis",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-native-sheet-emojis/plugin/build/withEmojiSheet",
+      "valid": true
+    }
+  },
+  {
     "githubUrl": "https://github.com/egebalci/evilreplay/tree/main/tracker/tracker-reactnative",
     "origin": "gitHub",
     "ignore": true
@@ -4856,6 +4950,12 @@
         "name": "withTargetsDir"
       }
     }
+  },
+  {
+    "githubUrl": "https://github.com/evanbacon/expo-mdx/tree/main/packages/mdx",
+    "npmPkg": "@bacons/mdx",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/evanbacon/expo-quick-actions",
@@ -6778,6 +6878,12 @@
     "ignore": true
   },
   {
+    "githubUrl": "https://github.com/getjobber/atlantis/tree/master/packages/components-native",
+    "npmPkg": "@jobber/components-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/getlimelight/limelight-sdk",
     "npmPkg": "@getlimelight/sdk",
     "hasConfigPlugin": false,
@@ -8187,6 +8293,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/indeedeng/react-native-lighthouse",
+    "npmPkg": "react-native-lighthouse",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/indiespirit/react-native-chart-kit",
     "npmPkg": "react-native-chart-kit",
     "hasConfigPlugin": false,
@@ -9255,6 +9367,12 @@
     "unmaintained": true
   },
   {
+    "githubUrl": "https://github.com/joshstovall/platform-blocks/tree/main/packages/ui",
+    "npmPkg": "@platform-blocks/ui",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/joshswan/react-native-autolink",
     "npmPkg": "react-native-autolink",
     "hasConfigPlugin": false,
@@ -9263,6 +9381,12 @@
   {
     "githubUrl": "https://github.com/joshswan/react-native-globalize",
     "npmPkg": "react-native-globalize",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/jpancotti/expo-hardware-buttons",
+    "npmPkg": "expo-hardware-buttons",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -9333,6 +9457,12 @@
     "githubUrl": "https://github.com/juanchos2018/testgo/tree/main/public/js",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/juanrdbo/expo-circular-reveal",
+    "npmPkg": "expo-circular-reveal",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/juansebestia/react-native-wifi-reborn",
@@ -10074,6 +10204,12 @@
     "ignore": true
   },
   {
+    "githubUrl": "https://github.com/kuatsu/react-native-boost/tree/main/packages/react-native-boost",
+    "npmPkg": "react-native-boost",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/kuatsu/react-native-boost/tree/master/packages/react-native-boost",
     "npmPkg": "react-native-boost",
     "hasConfigPlugin": false,
@@ -10228,6 +10364,18 @@
   {
     "githubUrl": "https://github.com/kyo504/react-native-marquee",
     "npmPkg": "react-native-marquee",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/kyrylokap/react-native-ease-skeleton",
+    "npmPkg": "react-native-ease-skeleton",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/kyrylokap/react-native-ease-ticker",
+    "npmPkg": "react-native-ease-ticker",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -11178,6 +11326,12 @@
   {
     "githubUrl": "https://github.com/magicismight/react-native-root-toast",
     "npmPkg": "react-native-root-toast",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/magrinj/expo-quick-look",
+    "npmPkg": "@magrinj/expo-quick-look",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -12249,6 +12403,12 @@
   {
     "githubUrl": "https://github.com/mohamadkh75/react-native-jalali-datepicker",
     "npmPkg": "@mohamadkh75/react-native-jalali-datepicker",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/mohamedyousuf2/react-native-perf-monitor-tool",
+    "npmPkg": "react-native-perf-monitor-tool",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -13420,6 +13580,12 @@
   {
     "githubUrl": "https://github.com/nozbe/watermelondb",
     "npmPkg": "@nozbe/watermelondb",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/nphardorworse/react-native-emoji-burst",
+    "npmPkg": "react-native-emoji-burst",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -15160,6 +15326,12 @@
     "ignore": true
   },
   {
+    "githubUrl": "https://github.com/rakadoank/material-color-react-native/tree/main/package",
+    "npmPkg": "material-color-react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/rakadoank/ping-react-native/tree/main/package",
     "npmPkg": "ping-react-native",
     "hasConfigPlugin": false,
@@ -15187,6 +15359,12 @@
       "path": "expo-brother-printer-sdk/plugin/build/index",
       "valid": true
     }
+  },
+  {
+    "githubUrl": "https://github.com/rambowasreal/react-native-preflight",
+    "npmPkg": "react-native-preflight",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/rana-faraz/notification-access-service/tree/main/modules/notification-access",
@@ -17741,6 +17919,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/smolcars/react-native-turbo-lnd",
+    "npmPkg": "react-native-turbo-lnd",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/snuutti/pallokala",
     "origin": "gitHub",
     "ignore": true
@@ -18984,6 +19168,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/thedev204/react-native-lumen",
+    "npmPkg": "react-native-lumen",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/thegamenicorus/react-native-phone-input",
     "npmPkg": "react-native-phone-input",
     "hasConfigPlugin": false,
@@ -19514,6 +19704,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/tristanmanchester/react-native-dotgrid/tree/main/packages/react-native-dotgrid",
+    "npmPkg": "react-native-dotgrid",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/troberts-28/react-native-timer-picker",
     "npmPkg": "react-native-timer-picker",
     "hasConfigPlugin": false,
@@ -19792,6 +19988,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/usl-dev/react-intl-phone-username-input",
+    "npmPkg": "react-intl-phone-username-input",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/uxcam/react-native-ux-cam/tree/main/uxcam-react-wrapper",
     "npmPkg": "react-native-ux-cam",
     "hasConfigPlugin": false,
@@ -20048,6 +20250,12 @@
       "path": "expo-stream-audio/app.plugin",
       "valid": false
     }
+  },
+  {
+    "githubUrl": "https://github.com/vladrozhnev/react-native-interception-webview",
+    "npmPkg": "react-native-interception-webview",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/vladyslavmartynov10/react-native-nitro-event-kit",
