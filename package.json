@@ -1,14 +1,18 @@
 {
   "name": "typed-config-plugins",
   "version": "0.5.2",
-  "description": "adds types to expo config plugins, like @types but for expo config plugins",
+  "description": "Type-safe helpers and generated typings for Expo config plugins in app.config.ts.",
   "author": {
     "name": "WookieFPV (Lukas Müller)",
-    "url": "github.com/WookieFPV"
+    "url": "https://github.com/WookieFPV"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/WookieFPV/typed-config-plugins"
+  },
+  "homepage": "https://github.com/WookieFPV/typed-config-plugins#readme",
+  "bugs": {
+    "url": "https://github.com/WookieFPV/typed-config-plugins/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -16,7 +20,9 @@
   "keywords": [
     "expo",
     "config-plugin",
-    "react-native"
+    "react-native",
+    "typescript",
+    "typings"
   ],
   "workspaces": [
     ".",
