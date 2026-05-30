@@ -228,7 +228,6 @@ export interface ThirdPartyAutomatedPlugins {
     "banuba-expo": ConfigPluginOptions<typeof import("banuba-expo/plugin/build/withBanuba")["default"]>;
     "bitmovin-player-react-native": ConfigPluginOptions<typeof import("bitmovin-player-react-native/plugin/build/index")["default"]>;
     "bitmovin-player-react-native-analytics-conviva": ConfigPluginOptions<typeof import("bitmovin-player-react-native-analytics-conviva/plugin/build/index")["default"]>;
-    blueswarm: ConfigPluginOptions<typeof import("blueswarm/plugin/build/withBlueSwarm")["default"]>;
     "cleverpush-expo-plugin": ConfigPluginOptions<typeof import("cleverpush-expo-plugin/build/cleverpush/withCleverPush")["default"]>;
     // This Packages doesn't ship types for config plugin:
     customerapp: ConfigPluginOptions<unknown>;
@@ -546,7 +545,6 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-localize-date": ConfigPluginOptions<typeof import("react-native-localize-date/plugin/build/withLocalizations")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-map-link": ConfigPluginOptions<typeof import("react-native-map-link/app.plugin")["default"]>;
-    "react-native-mapbox-turn-by-turn-navigation": ConfigPluginOptions<typeof import("react-native-mapbox-turn-by-turn-navigation/lib/typescript/src/plugin/withMapbox")["default"]>;
     "react-native-maps": ConfigPluginOptions<typeof import("react-native-maps/dist/plugin/src/index")["default"]>;
     "react-native-metamap-sdk": ConfigPluginOptions<typeof import("react-native-metamap-sdk/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]

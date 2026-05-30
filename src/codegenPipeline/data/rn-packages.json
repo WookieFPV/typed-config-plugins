@@ -1405,6 +1405,7 @@
     "npmPkg": "react-native-mapbox-turn-by-turn-navigation",
     "hasConfigPlugin": true,
     "origin": "gitHub",
+    "ignore": true,
     "types": {
       "path": "react-native-mapbox-turn-by-turn-navigation/lib/typescript/src/plugin/withMapbox",
       "valid": true
@@ -14017,6 +14018,7 @@
     "npmPkg": "blueswarm",
     "hasConfigPlugin": true,
     "origin": "gitHub",
+    "ignore": true,
     "types": {
       "path": "blueswarm/plugin/build/withBlueSwarm",
       "valid": true
