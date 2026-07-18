@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.6
+
+### Patch Changes
+
+- 054c32c: update config plugin definitions
+- 054c32c: improve to detection / scraping of the config plugin list
+
 ## 0.5.5
 
 ### Patch Changes
