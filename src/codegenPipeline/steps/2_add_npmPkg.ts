@@ -14,8 +14,7 @@ export const addNpmPackageName = step(async () => {
     }
 
     if (unknown.length && !process.env.GITHUB_TOKEN) {
-        logger.warn("Not GitHub Token set, aborting...\n");
-        process.exit(1);
+        logger.warn("Running without GitHub Token\n");
     }
 
     const fulfilled = await mapAsync(unknown, mapGetNpmPkg, { concurrency: 5 });

@@ -189,7 +189,7 @@
   {
     "githubUrl": "https://github.com/abdlrhmnnn/expo-tiktok-sdks",
     "npmPkg": "expo-tiktok-sdk",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -2003,11 +2003,12 @@
   {
     "githubUrl": "https://github.com/batchlabs/batch-react-native-plugin",
     "npmPkg": "@batch.com/react-native-plugin",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "directory",
     "types": {
       "path": "@batch.com/react-native-plugin/plugin/build/withReactNativeBatch",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -2024,7 +2025,7 @@
   {
     "githubUrl": "https://github.com/bduyng/expo-mapbox-navigation",
     "npmPkg": "expo-mapbox-navigation",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -2738,8 +2739,13 @@
   {
     "githubUrl": "https://github.com/callstack/react-native-brownfield",
     "npmPkg": "@callstack/react-native-brownfield",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@callstack/react-native-brownfield/app.plugin.js",
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/callstack/react-native-brownfield/tree/main/packages/react-native-brownfield",
@@ -2932,7 +2938,7 @@
   {
     "githubUrl": "https://github.com/candlefinance/candle-react-native/tree/main/package",
     "npmPkg": "react-native-candle",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "react-native-candle/plugin/withIosDeploymentTarget",
@@ -3215,11 +3221,12 @@
   {
     "githubUrl": "https://github.com/christoffercarlsson/expo-ble",
     "npmPkg": "expo-ble",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "expo-ble/plugin/build/index",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -3332,7 +3339,7 @@
   {
     "githubUrl": "https://github.com/clerk/javascript/tree/main/packages/expo",
     "npmPkg": "@clerk/clerk-expo",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -3644,7 +3651,7 @@
   {
     "githubUrl": "https://github.com/coolsoftwaretyler/unistyles-issue-repro",
     "npmPkg": "unitest",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -4016,7 +4023,7 @@
   {
     "githubUrl": "https://github.com/dariomarret/eos",
     "npmPkg": "eos",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -4063,7 +4070,7 @@
   {
     "githubUrl": "https://github.com/datadog/dd-sdk-reactnative/tree/develop/packages/core",
     "npmPkg": "@datadog/mobile-react-native",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -4157,7 +4164,7 @@
   {
     "githubUrl": "https://github.com/dburghelea/react-native-status-keycard",
     "npmPkg": "react-native-status-keycard",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -4251,7 +4258,7 @@
   {
     "githubUrl": "https://github.com/deeeed/expo-audio-stream/tree/main/packages/expo-audio-studio",
     "npmPkg": "@siteed/expo-audio-studio",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "@siteed/expo-audio-studio/app.plugin",
@@ -4275,7 +4282,7 @@
   {
     "githubUrl": "https://github.com/deeeed/universe/tree/main/packages/design-system",
     "npmPkg": "@siteed/design-system",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "@siteed/design-system/dist/plugin/src/index",
@@ -4606,7 +4613,7 @@
   {
     "githubUrl": "https://github.com/dineshkachhot/expo-document-scanner",
     "npmPkg": "expo-document-scanner",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -4621,11 +4628,12 @@
   {
     "githubUrl": "https://github.com/divvi-xyz/divvi-mobile/tree/main/packages/@divvi/mobile",
     "npmPkg": "@divvi/mobile",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "@divvi/mobile/plugin/build/index",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -5087,7 +5095,7 @@
   {
     "githubUrl": "https://github.com/echohuiecho/expo-video-composer",
     "npmPkg": "expo-video-composer",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -5288,7 +5296,7 @@
   {
     "githubUrl": "https://github.com/embrace-io/embrace-react-native-sdk/tree/main/packages/core",
     "npmPkg": "@embrace-io/react-native",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "@embrace-io/react-native/lib/src/plugin/index",
@@ -5855,11 +5863,12 @@
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-av",
     "npmPkg": "expo-av",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "directory",
     "types": {
       "path": "expo-av/plugin/build/withAV",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -6490,10 +6499,11 @@
   {
     "githubUrl": "https://github.com/expo/expo/tree/master/packages/expo-av",
     "npmPkg": "expo-av",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "types": {
       "path": "expo-av/plugin/build/withAV",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -7054,7 +7064,7 @@
   {
     "githubUrl": "https://github.com/fleetbase/react-native-mapbox-navigation",
     "npmPkg": "@fleetbase/react-native-mapbox-navigation",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -7658,11 +7668,12 @@
   {
     "githubUrl": "https://github.com/getmetamap/metamap-expo-plugin",
     "npmPkg": "react-native-expo-metamap-sdk",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "react-native-expo-metamap-sdk/plugin/build/index",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -8897,7 +8908,7 @@
   {
     "githubUrl": "https://github.com/hyochan/react-native-nitro-sound",
     "npmPkg": "react-native-nitro-sound",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "path": "react-native-nitro-sound/lib/typescript/plugin/src/index",
@@ -8931,7 +8942,13 @@
   {
     "githubUrl": "https://github.com/hyodotdev/openiap/tree/master/libraries/react-native-iap",
     "npmPkg": "react-native-iap",
-    "hasConfigPlugin": false
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-iap/plugin/build/withIAP",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/hyoper/react-native-animated-modal",
@@ -8990,11 +9007,12 @@
   {
     "githubUrl": "https://github.com/iamadheil/ses/tree/main/voice",
     "npmPkg": "@react-native-voice/voice",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "@react-native-voice/voice/plugin/build/withVoice",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -9332,7 +9350,7 @@
   {
     "githubUrl": "https://github.com/instamenu/react-native-stripe-terminal",
     "npmPkg": "react-native-stripe-terminal",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -9384,8 +9402,12 @@
   {
     "githubUrl": "https://github.com/invertase/notifee/tree/main/packages/react-native",
     "npmPkg": "@notifee/react-native",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "valid": false,
+      "error": "Package doesn't ship an app.plugin.js file"
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-apple-authentication",
@@ -10037,7 +10059,7 @@
   {
     "githubUrl": "https://github.com/jdmay2/react-native-game-kit",
     "npmPkg": "react-native-game-kit",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -10096,7 +10118,7 @@
   {
     "githubUrl": "https://github.com/jeovabah/expoprojectinitialts",
     "npmPkg": "tracker",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -11498,8 +11520,14 @@
   {
     "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info",
     "npmPkg": "react-native-nitro-device-info",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-nitro-device-info/app.plugin",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info/tree/main/packages/react-native-nitro-device-info",
@@ -11819,7 +11847,7 @@
   {
     "githubUrl": "https://github.com/linkrunner-labs/expo-linkrunner",
     "npmPkg": "expo-linkrunner",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "expo-linkrunner/build/module",
@@ -11846,7 +11874,7 @@
   {
     "githubUrl": "https://github.com/lioruby/react-native-screen-time",
     "npmPkg": "react-native-screen-time",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -11958,7 +11986,7 @@
   {
     "githubUrl": "https://github.com/livekit/livekit_composite/tree/main/livekit/client-sdk-react-native-expo-plugin",
     "npmPkg": "@livekit/react-native-expo-plugin",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "@livekit/react-native-expo-plugin/plugin/build/index",
@@ -12076,11 +12104,13 @@
   {
     "githubUrl": "https://github.com/looong01/onnxruntime-rocm-build/tree/main/onnxruntime-1.23.0/js/react_native",
     "npmPkg": "onnxruntime-react-native",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "onnxruntime-react-native/app.plugin",
-      "valid": false
+      "valid": false,
+      "error": "Could not find a declaration file for module 'onnxruntime-react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/onnxruntime-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/onnxruntime-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module 'onnxruntime-react-native/app.plugin';`",
+      "exportName": "default"
     }
   },
   {
@@ -12421,7 +12451,7 @@
   {
     "githubUrl": "https://github.com/lyrahealth/react-native-orientation-plugin",
     "npmPkg": "@lyrahealth-inc/react-native-orientation-plugin",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "@lyrahealth-inc/react-native-orientation-plugin/build/withOrientation",
@@ -12711,7 +12741,7 @@
   {
     "githubUrl": "https://github.com/maplibre/maplibre-react-native",
     "npmPkg": "@maplibre/maplibre-react-native",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "directory",
     "types": {
       "valid": true,
@@ -12839,8 +12869,14 @@
   {
     "githubUrl": "https://github.com/margelo/react-native-nitro-fetch/tree/main/package",
     "npmPkg": "react-native-nitro-fetch",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-nitro-fetch/app.plugin.js",
+      "error": "Could not find a declaration file for module 'react-native-nitro-fetch/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-fetch/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-fetch` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-fetch/app.plugin.js';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-nitro-fetch/tree/main/packages/react-native-nitro-fetch",
@@ -14029,7 +14065,7 @@
   {
     "githubUrl": "https://github.com/mrousavy/react-native-vision-camera/tree/main/package",
     "npmPkg": "react-native-vision-camera",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "directory",
     "types": {
       "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
@@ -14040,8 +14076,13 @@
   {
     "githubUrl": "https://github.com/mrousavy/react-native-vision-camera/tree/main/packages/react-native-vision-camera",
     "npmPkg": "react-native-vision-camera",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/mrousavy/react-native-vision-camera/tree/main/packages/react-native-vision-camera-barcode-scanner",
@@ -14991,7 +15032,7 @@
   {
     "githubUrl": "https://github.com/noroboto/expo-safari-web-extension",
     "npmPkg": "expo-safari-web-extension",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "expo-safari-web-extension/lib/typescript/module/src/index",
@@ -15229,7 +15270,7 @@
   {
     "githubUrl": "https://github.com/oaax-standard/nvidia-acceleration/tree/main/runtime-library/deps/onnxruntime/onnxruntime-bbd0a80/js/react_native",
     "npmPkg": "onnxruntime-react-native",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "onnxruntime-react-native/app.plugin",
@@ -15569,7 +15610,7 @@
   {
     "githubUrl": "https://github.com/onesignal/onesignal-expo-plugin",
     "npmPkg": "onesignal-expo-plugin",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -16194,11 +16235,13 @@
   {
     "githubUrl": "https://github.com/pieczasz/react-native-dynamic-activities",
     "npmPkg": "react-native-dynamic-activities",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "react-native-dynamic-activities/app.plugin",
-      "valid": false
+      "valid": false,
+      "error": "Could not find a declaration file for module 'react-native-dynamic-activities/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-dynamic-activities/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-dynamic-activities` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-dynamic-activities/app.plugin';`",
+      "exportName": "default"
     }
   },
   {
@@ -16527,7 +16570,7 @@
   {
     "githubUrl": "https://github.com/pranaw2004/music-app-using-react-native/tree/main/android/app/src/main/assets/custom",
     "npmPkg": "react-native-get-music-files",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -16577,7 +16620,7 @@
   {
     "githubUrl": "https://github.com/priteshrnandgaonkar/react-native-call-detection",
     "npmPkg": "react-native-call-detection",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -16723,7 +16766,7 @@
   {
     "githubUrl": "https://github.com/puranjayguleria/ninjadeliveriescustomer",
     "npmPkg": "customerapp",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -19024,8 +19067,14 @@
   {
     "githubUrl": "https://github.com/saleksovski/react-native-android-widget",
     "npmPkg": "react-native-android-widget",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-android-widget/app.plugin",
+      "error": "Could not find a declaration file for module 'react-native-android-widget/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-android-widget/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-android-widget` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-android-widget/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/samadk01/apikit",
@@ -19988,7 +20037,7 @@
   {
     "githubUrl": "https://github.com/software-mansion-labs/expo-live-updates",
     "npmPkg": "expo-live-updates",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -20028,7 +20077,7 @@
   {
     "githubUrl": "https://github.com/software-mansion-labs/react-native-enriched-markdown",
     "npmPkg": "react-native-enriched-markdown",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -20038,7 +20087,7 @@
   {
     "githubUrl": "https://github.com/software-mansion-labs/react-native-labs/tree/main/react-native-multipeer",
     "npmPkg": "react-native-multipeer",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -20187,7 +20236,7 @@
   {
     "githubUrl": "https://github.com/software-mansion/react-native-whip-whep/tree/main/packages/react-native-client",
     "npmPkg": "react-native-whip-whep",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -20335,7 +20384,7 @@
   {
     "githubUrl": "https://github.com/sparkfabrik/sparkfabrik-react-native-idfa-aaid",
     "npmPkg": "@sparkfabrik/react-native-idfa-aaid",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -20787,7 +20836,7 @@
   {
     "githubUrl": "https://github.com/superwall/expo-superwall",
     "npmPkg": "expo-superwall",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "directory",
     "types": {
       "path": "expo-superwall/plugin/build/index",
@@ -20901,7 +20950,7 @@
   {
     "githubUrl": "https://github.com/synonymdev/sodium-react-native",
     "npmPkg": "sodium-react-native-direct",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -21430,11 +21479,12 @@
   {
     "githubUrl": "https://github.com/thewidlarzgroup/react-native-video",
     "npmPkg": "react-native-video",
-    "hasConfigPlugin": false,
+    "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
       "path": "react-native-video/lib/expo-plugins/withRNVideo",
-      "valid": true
+      "valid": true,
+      "exportName": "default"
     }
   },
   {
@@ -22777,7 +22827,7 @@
   {
     "githubUrl": "https://github.com/wcandillon/react-native-webgpu/tree/main/packages/webgpu",
     "npmPkg": "react-native-wgpu",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -23623,7 +23673,7 @@
   {
     "githubUrl": "https://github.com/yownes/yownes/tree/main/packages/core",
     "npmPkg": "@yownes/core",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,

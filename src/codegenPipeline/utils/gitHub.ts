@@ -10,25 +10,29 @@ export const githubHeaders = () => {
     return { headers };
 };
 
-const token = process.env.GITHUB_TOKEN;
 export const apiUrl = (githubUrl: string, fileName: string, path: string | undefined = ""): string => {
     return `${githubUrl.replace("github.com", "api.github.com/repos")}/contents/${path}${fileName}`;
 };
+
 // GitHub occasionally answers a valid, authenticated request with a transient
 // 401/403/5xx (e.g. under concurrent load against the same repo) instead of the
 // real 200/404 result. Retrying those (but not a real 404) avoids permanently
 // recording an incorrect "no config plugin" for the package.
 const isTransientStatus = (status: number) => status === 401 || status === 403 || status === 429 || status >= 500;
 
+// Fallback for `npmPackageHasFile` (jsdelivr) when the published package's git repo exceeds
+// jsdelivr's 150MB size limit (surfaced as a 403) - checks the file directly in the GitHub repo
+// instead. Slower and rate-limited, so it's only used as a last resort.
 export const repoHasFile = async (
     githubUrl: string,
     fileName: string,
     path: string | undefined,
     retries = 3,
 ): Promise<{
-    hasConfigPlugin: boolean | string;
+    hasFile: boolean | string;
     url: string;
 }> => {
+    const token = process.env.GITHUB_TOKEN;
     if (!token) throw new Error("GITHUB_TOKEN is not set");
     const url = apiUrl(githubUrl, fileName, path);
 
@@ -38,24 +42,21 @@ export const repoHasFile = async (
     try {
         new URL(url);
     } catch {
-        return { hasConfigPlugin: `invalid URL: ${url}`, url };
+        return { hasFile: `invalid URL: ${url}`, url };
     }
 
-    // fetch GitHub to check if a file app.plugin.js  at the root of the repo exists
-    const headers: Record<string, string> = {};
-
-    headers.Authorization = `Bearer ${token}`;
+    const headers: Record<string, string> = { Authorization: `Bearer ${token}` };
 
     for (let attempt = 0; attempt <= retries; attempt++) {
         try {
             const response = await fetch(url, { headers });
-            if (response.status === 200) return { hasConfigPlugin: true, url };
-            if (response.status === 404) return { hasConfigPlugin: false, url };
+            if (response.status === 200) return { hasFile: true, url };
+            if (response.status === 404) return { hasFile: false, url };
             if (attempt < retries && isTransientStatus(response.status)) {
                 await delay(2 ** attempt * 500);
                 continue;
             }
-            return { hasConfigPlugin: response.statusText, url };
+            return { hasFile: response.statusText, url };
         } catch (error) {
             // `fetch` itself can throw (DNS failure, timeout, connection reset) rather than
             // resolving to a response - treat that the same as a transient status instead of
@@ -65,11 +66,11 @@ export const repoHasFile = async (
                 await delay(2 ** attempt * 500);
                 continue;
             }
-            return { hasConfigPlugin: `fetch failed: ${message}`, url };
+            return { hasFile: `fetch failed: ${message}`, url };
         }
     }
     // unreachable, satisfies TS
-    return { hasConfigPlugin: "unknown", url };
+    return { hasFile: "unknown", url };
 };
 
 export const fetchNpmPackageName = async (githubRepoUrl: string): Promise<string> => {
