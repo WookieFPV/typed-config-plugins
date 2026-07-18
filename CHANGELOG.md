@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.4
+
+### Patch Changes
+
+- abb55b4: Add config plugin for @react-native-firebase/analytics
+
 ## 0.5.3
 
 ### Patch Changes
