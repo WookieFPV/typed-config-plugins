@@ -1,6 +1,6 @@
 {
   "name": "typed-config-plugins",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Type-safe helpers and generated typings for Expo config plugins in app.config.ts.",
   "author": {
     "name": "WookieFPV (Lukas Müller)",
