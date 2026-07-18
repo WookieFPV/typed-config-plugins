@@ -729,9 +729,148 @@ export interface ThirdPartyAutomatedPlugins {
     /* Errors:
 [
   [
-    "Could not find a declaration file for module '@appzung/expo-config-code-push/build/withReactNativeCodePush'. '/Users/lmueller/os/typed-config-plugins/node_modules/@appzung/expo-config-code-push/build/withReactNativeCodePush.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/appzung__expo-config-code-push` if it exists or add a new declaration (.d.ts) file containing `declare module '@appzung/expo-config-code-push/build/withReactNativeCodePush';`",
+    "Could not find a declaration file for module (implicitly has an 'any' type - no .d.ts shipped)",
     [
-      "@appzung/expo-config-code-push"
+      "@appzung/expo-config-code-push",
+      "@beyondidentity/bi-sdk-react-native",
+      "@codemagic/react-native-patch",
+      "@corasan/image-compressor",
+      "@criipto/verify-expo",
+      "@davotisolutions/expo-localization-utils",
+      "@didomi/react-native",
+      "@evennit/notifee-expo-plugin",
+      "@fingerprintjs/fingerprintjs-pro-react-native",
+      "@giphy/react-native-sdk",
+      "@goliapkg/sentori-expo",
+      "@hot-updater/react-native",
+      "@huddle01/react-native-call-detection",
+      "@hyoper/rn-location",
+      "@isudaji/react-native-install-apk",
+      "@kingstinct/react-native-activity-kit",
+      "@luciq/react-native",
+      "@mapsindoors/react-native-maps-indoors-google-maps",
+      "@mapsindoors/react-native-maps-indoors-mapbox",
+      "@mj-studio/react-native-naver-map",
+      "@native-ui-org/native-modules",
+      "@naveen521kk/react-native-tokenizer",
+      "@openreplay/react-native",
+      "@orbital-systems/react-native-esp-idf-provisioning",
+      "@poilabs-dev/analysis-sdk-plugin",
+      "@poilabs-dev/navigation-sdk-plugin",
+      "@poilabs-dev/vd-navigation-sdk-plugin",
+      "@rownd/react-native",
+      "@siteed/audio-studio",
+      "@siteed/expo-audio-studio",
+      "@stonega/expo-google-signin",
+      "@stream-io/video-react-native-sdk",
+      "@tryvital/vital-core-react-native",
+      "@tryvital/vital-health-react-native",
+      "@vonovak/react-native-theme-control",
+      "@xmartlabs/react-native-line",
+      "@youssefhenna/expo-enode-link-sdk",
+      "@youssefhenna/expo-mapbox-navigation",
+      "app-icon-badge",
+      "dojah-kyc-sdk-react-expo",
+      "expo-applovin-ads",
+      "expo-background-recording",
+      "expo-bare-kit",
+      "expo-cafebazaar-auth",
+      "expo-cdnbye",
+      "expo-firebase-app-distribution",
+      "expo-floating-bubble",
+      "expo-gbk-converter",
+      "expo-instant-app",
+      "expo-liquid-glass-native",
+      "expo-llm-mediapipe",
+      "expo-mds",
+      "expo-motion-detector",
+      "expo-moyasar-apple-pay",
+      "expo-music-picker",
+      "expo-native-alipay",
+      "expo-native-wechat",
+      "expo-numerator",
+      "expo-pod-pinner",
+      "expo-react-native-freshchat",
+      "expo-release-signing",
+      "expo-roomplan",
+      "expo-speech-recognition",
+      "expo-stream-audio",
+      "expo-umeng",
+      "expo-umeng-analytics",
+      "expo-vas-lib",
+      "expo-wireguard",
+      "expo-zendesk-messaging",
+      "jpush-expo-config-plugin",
+      "munim-bluetooth",
+      "mx-jpush-expo",
+      "onesignal-expo-plugin",
+      "onnxruntime-react-native",
+      "pushy-expo-plugin",
+      "react-native-adapty",
+      "react-native-altitude-plugin",
+      "react-native-android-widget",
+      "react-native-appsflyer",
+      "react-native-auto-skeleton",
+      "react-native-beacon-kit",
+      "react-native-blasted-image",
+      "react-native-candle",
+      "react-native-capture-protection",
+      "react-native-cloud-store",
+      "react-native-custom-splash",
+      "react-native-device-activity",
+      "react-native-dji-mobile-sdk",
+      "react-native-dynamic-activities",
+      "react-native-email-link",
+      "react-native-expo-moengage",
+      "react-native-google-fit",
+      "react-native-google-maps-plus",
+      "react-native-health",
+      "react-native-health-connect",
+      "react-native-helios",
+      "react-native-image-sequence-encoder",
+      "react-native-libsodium",
+      "react-native-liquid-glassmorphism",
+      "react-native-litert-lm",
+      "react-native-map-link",
+      "react-native-moyasar-apple-pay",
+      "react-native-navigation-mode",
+      "react-native-nfc-manager",
+      "react-native-nitro-auth",
+      "react-native-nitro-compass",
+      "react-native-nitro-fetch",
+      "react-native-nitro-google-signin",
+      "react-native-nitro-rtmp-publisher",
+      "react-native-nitro-wallpaper",
+      "react-native-notificare-geo",
+      "react-native-notificare-push",
+      "react-native-notificare-push-ui",
+      "react-native-notificare-scannables",
+      "react-native-notify-kit",
+      "react-native-package-checker",
+      "react-native-rasterized-widgets",
+      "react-native-render-lynx",
+      "react-native-render-swift-ui",
+      "react-native-rfid8500-zebra",
+      "react-native-safeguard",
+      "react-native-salesforce-chat-sdk",
+      "react-native-savanitdev-thermal-printer",
+      "react-native-splash-screen-newarch",
+      "react-native-ssl-manager",
+      "react-native-uaepass",
+      "react-native-use-health-kit",
+      "react-native-webassembly",
+      "react-native-webp-format",
+      "react-native-yoco",
+      "rexpo-debugger",
+      "rn-neo",
+      "rn-nomba-terminal-sdk",
+      "rns-webview",
+      "singular-react-native",
+      "singular-react-native-kids-sdk",
+      "swiftui-native",
+      "webengage-expo-push",
+      "with-rn-contacts",
+      "with-rn-image-crop-picker"
     ]
   ],
   [
@@ -803,30 +942,6 @@ export interface ThirdPartyAutomatedPlugins {
     ]
   ],
   [
-    "Could not find a declaration file for module '@beyondidentity/bi-sdk-react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@beyondidentity/bi-sdk-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/beyondidentity__bi-sdk-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@beyondidentity/bi-sdk-react-native/app.plugin';`",
-    [
-      "@beyondidentity/bi-sdk-react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@codemagic/react-native-patch/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@codemagic/react-native-patch/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/codemagic__react-native-patch` if it exists or add a new declaration (.d.ts) file containing `declare module '@codemagic/react-native-patch/app.plugin.js';`",
-    [
-      "@codemagic/react-native-patch"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@corasan/image-compressor/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@corasan/image-compressor/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/corasan__image-compressor` if it exists or add a new declaration (.d.ts) file containing `declare module '@corasan/image-compressor/app.plugin';`",
-    [
-      "@corasan/image-compressor"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@criipto/verify-expo/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@criipto/verify-expo/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/criipto__verify-expo` if it exists or add a new declaration (.d.ts) file containing `declare module '@criipto/verify-expo/app.plugin';`",
-    [
-      "@criipto/verify-expo"
-    ]
-  ],
-  [
     "Redundant ignore override",
     [
       "@daily-co/config-plugin-rn-daily-js",
@@ -839,111 +954,9 @@ export interface ThirdPartyAutomatedPlugins {
     ]
   ],
   [
-    "Could not find a declaration file for module '@davotisolutions/expo-localization-utils/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@davotisolutions/expo-localization-utils/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/davotisolutions__expo-localization-utils` if it exists or add a new declaration (.d.ts) file containing `declare module '@davotisolutions/expo-localization-utils/app.plugin';`",
-    [
-      "@davotisolutions/expo-localization-utils"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@didomi/react-native/plugin/withDidomi'. '/Users/lmueller/os/typed-config-plugins/node_modules/@didomi/react-native/plugin/withDidomi.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/didomi__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@didomi/react-native/plugin/withDidomi';`",
-    [
-      "@didomi/react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@evennit/notifee-expo-plugin/dist/plugin/withNotifee'. '/Users/lmueller/os/typed-config-plugins/node_modules/@evennit/notifee-expo-plugin/dist/plugin/withNotifee.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/evennit__notifee-expo-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module '@evennit/notifee-expo-plugin/dist/plugin/withNotifee';`",
-    [
-      "@evennit/notifee-expo-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@fingerprintjs/fingerprintjs-pro-react-native/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@fingerprintjs/fingerprintjs-pro-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/fingerprintjs__fingerprintjs-pro-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@fingerprintjs/fingerprintjs-pro-react-native/app.plugin.js';`",
-    [
-      "@fingerprintjs/fingerprintjs-pro-react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@giphy/react-native-sdk/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@giphy/react-native-sdk/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/giphy__react-native-sdk` if it exists or add a new declaration (.d.ts) file containing `declare module '@giphy/react-native-sdk/app.plugin';`",
-    [
-      "@giphy/react-native-sdk"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@goliapkg/sentori-expo/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@goliapkg/sentori-expo/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/goliapkg__sentori-expo` if it exists or add a new declaration (.d.ts) file containing `declare module '@goliapkg/sentori-expo/app.plugin.js';`",
-    [
-      "@goliapkg/sentori-expo"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@hot-updater/react-native/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@hot-updater/react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/hot-updater__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@hot-updater/react-native/app.plugin.js';`",
-    [
-      "@hot-updater/react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@huddle01/react-native-call-detection/expo/withCallDetector'. '/Users/lmueller/os/typed-config-plugins/node_modules/@huddle01/react-native-call-detection/expo/withCallDetector.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/huddle01__react-native-call-detection` if it exists or add a new declaration (.d.ts) file containing `declare module '@huddle01/react-native-call-detection/expo/withCallDetector';`",
-    [
-      "@huddle01/react-native-call-detection"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@hyoper/rn-location/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@hyoper/rn-location/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/hyoper__rn-location` if it exists or add a new declaration (.d.ts) file containing `declare module '@hyoper/rn-location/app.plugin';`",
-    [
-      "@hyoper/rn-location"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@isudaji/react-native-install-apk/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/@isudaji/react-native-install-apk/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/isudaji__react-native-install-apk` if it exists or add a new declaration (.d.ts) file containing `declare module '@isudaji/react-native-install-apk/index';`",
-    [
-      "@isudaji/react-native-install-apk"
-    ]
-  ],
-  [
-    "Cannot find module '@journeyapps/react-native-quick-sqlite/lib/typescript/withUseFrameworks' or its corresponding type declarations.",
+    "Cannot find module or its corresponding type declarations",
     [
       "@journeyapps/react-native-quick-sqlite"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@kingstinct/react-native-activity-kit/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@kingstinct/react-native-activity-kit/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/kingstinct__react-native-activity-kit` if it exists or add a new declaration (.d.ts) file containing `declare module '@kingstinct/react-native-activity-kit/app.plugin';`",
-    [
-      "@kingstinct/react-native-activity-kit"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@luciq/react-native/plugin/build/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/@luciq/react-native/plugin/build/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/luciq__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@luciq/react-native/plugin/build/index';`",
-    [
-      "@luciq/react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@mapsindoors/react-native-maps-indoors-google-maps/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@mapsindoors/react-native-maps-indoors-google-maps/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/mapsindoors__react-native-maps-indoors-google-maps` if it exists or add a new declaration (.d.ts) file containing `declare module '@mapsindoors/react-native-maps-indoors-google-maps/app.plugin';`",
-    [
-      "@mapsindoors/react-native-maps-indoors-google-maps"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@mapsindoors/react-native-maps-indoors-mapbox/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@mapsindoors/react-native-maps-indoors-mapbox/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/mapsindoors__react-native-maps-indoors-mapbox` if it exists or add a new declaration (.d.ts) file containing `declare module '@mapsindoors/react-native-maps-indoors-mapbox/app.plugin';`",
-    [
-      "@mapsindoors/react-native-maps-indoors-mapbox"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@mj-studio/react-native-naver-map/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@mj-studio/react-native-naver-map/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/mj-studio__react-native-naver-map` if it exists or add a new declaration (.d.ts) file containing `declare module '@mj-studio/react-native-naver-map/app.plugin.js';`",
-    [
-      "@mj-studio/react-native-naver-map"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@native-ui-org/native-modules/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@native-ui-org/native-modules/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/native-ui-org__native-modules` if it exists or add a new declaration (.d.ts) file containing `declare module '@native-ui-org/native-modules/app.plugin';`",
-    [
-      "@native-ui-org/native-modules"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@naveen521kk/react-native-tokenizer/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@naveen521kk/react-native-tokenizer/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/naveen521kk__react-native-tokenizer` if it exists or add a new declaration (.d.ts) file containing `declare module '@naveen521kk/react-native-tokenizer/app.plugin.js';`",
-    [
-      "@naveen521kk/react-native-tokenizer"
     ]
   ],
   [
@@ -963,717 +976,9 @@ export interface ThirdPartyAutomatedPlugins {
     ]
   ],
   [
-    "Could not find a declaration file for module '@openreplay/react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@openreplay/react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/openreplay__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@openreplay/react-native/app.plugin';`",
-    [
-      "@openreplay/react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@orbital-systems/react-native-esp-idf-provisioning/plugin/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/@orbital-systems/react-native-esp-idf-provisioning/plugin/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/orbital-systems__react-native-esp-idf-provisioning` if it exists or add a new declaration (.d.ts) file containing `declare module '@orbital-systems/react-native-esp-idf-provisioning/plugin/index';`",
-    [
-      "@orbital-systems/react-native-esp-idf-provisioning"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@poilabs-dev/analysis-sdk-plugin/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@poilabs-dev/analysis-sdk-plugin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/poilabs-dev__analysis-sdk-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module '@poilabs-dev/analysis-sdk-plugin/app.plugin';`",
-    [
-      "@poilabs-dev/analysis-sdk-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@poilabs-dev/navigation-sdk-plugin/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@poilabs-dev/navigation-sdk-plugin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/poilabs-dev__navigation-sdk-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module '@poilabs-dev/navigation-sdk-plugin/app.plugin';`",
-    [
-      "@poilabs-dev/navigation-sdk-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@poilabs-dev/vd-navigation-sdk-plugin/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@poilabs-dev/vd-navigation-sdk-plugin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/poilabs-dev__vd-navigation-sdk-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module '@poilabs-dev/vd-navigation-sdk-plugin/app.plugin';`",
-    [
-      "@poilabs-dev/vd-navigation-sdk-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@rownd/react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@rownd/react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/rownd__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@rownd/react-native/app.plugin';`",
-    [
-      "@rownd/react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@siteed/audio-studio/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@siteed/audio-studio/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/siteed__audio-studio` if it exists or add a new declaration (.d.ts) file containing `declare module '@siteed/audio-studio/app.plugin';`",
-    [
-      "@siteed/audio-studio"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@siteed/expo-audio-studio/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@siteed/expo-audio-studio/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/siteed__expo-audio-studio` if it exists or add a new declaration (.d.ts) file containing `declare module '@siteed/expo-audio-studio/app.plugin';`",
-    [
-      "@siteed/expo-audio-studio"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@stonega/expo-google-signin/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@stonega/expo-google-signin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/stonega__expo-google-signin` if it exists or add a new declaration (.d.ts) file containing `declare module '@stonega/expo-google-signin/app.plugin';`",
-    [
-      "@stonega/expo-google-signin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@stream-io/video-react-native-sdk/expo-config-plugin/dist/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/@stream-io/video-react-native-sdk/expo-config-plugin/dist/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/stream-io__video-react-native-sdk` if it exists or add a new declaration (.d.ts) file containing `declare module '@stream-io/video-react-native-sdk/expo-config-plugin/dist/index';`",
-    [
-      "@stream-io/video-react-native-sdk"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@tryvital/vital-core-react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@tryvital/vital-core-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/tryvital__vital-core-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@tryvital/vital-core-react-native/app.plugin';`",
-    [
-      "@tryvital/vital-core-react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@tryvital/vital-health-react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@tryvital/vital-health-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/tryvital__vital-health-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@tryvital/vital-health-react-native/app.plugin';`",
-    [
-      "@tryvital/vital-health-react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@vonovak/react-native-theme-control/plugin/build/withThemeControl'. '/Users/lmueller/os/typed-config-plugins/node_modules/@vonovak/react-native-theme-control/plugin/build/withThemeControl.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/vonovak__react-native-theme-control` if it exists or add a new declaration (.d.ts) file containing `declare module '@vonovak/react-native-theme-control/plugin/build/withThemeControl';`",
-    [
-      "@vonovak/react-native-theme-control"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@xmartlabs/react-native-line/plugin/withLineSDK'. '/Users/lmueller/os/typed-config-plugins/node_modules/@xmartlabs/react-native-line/plugin/withLineSDK.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/xmartlabs__react-native-line` if it exists or add a new declaration (.d.ts) file containing `declare module '@xmartlabs/react-native-line/plugin/withLineSDK';`",
-    [
-      "@xmartlabs/react-native-line"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@youssefhenna/expo-enode-link-sdk/plugin/withCustomAppTheme'. '/Users/lmueller/os/typed-config-plugins/node_modules/@youssefhenna/expo-enode-link-sdk/plugin/withCustomAppTheme.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/youssefhenna__expo-enode-link-sdk` if it exists or add a new declaration (.d.ts) file containing `declare module '@youssefhenna/expo-enode-link-sdk/plugin/withCustomAppTheme';`",
-    [
-      "@youssefhenna/expo-enode-link-sdk"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module '@youssefhenna/expo-mapbox-navigation/plugin/withIosConfig'. '/Users/lmueller/os/typed-config-plugins/node_modules/@youssefhenna/expo-mapbox-navigation/plugin/withIosConfig.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/youssefhenna__expo-mapbox-navigation` if it exists or add a new declaration (.d.ts) file containing `declare module '@youssefhenna/expo-mapbox-navigation/plugin/withIosConfig';`",
-    [
-      "@youssefhenna/expo-mapbox-navigation"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'app-icon-badge/dist/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/app-icon-badge/dist/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/app-icon-badge` if it exists or add a new declaration (.d.ts) file containing `declare module 'app-icon-badge/dist/app.plugin';`",
-    [
-      "app-icon-badge"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'dojah-kyc-sdk-react-expo/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/dojah-kyc-sdk-react-expo/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/dojah-kyc-sdk-react-expo` if it exists or add a new declaration (.d.ts) file containing `declare module 'dojah-kyc-sdk-react-expo/app.plugin';`",
-    [
-      "dojah-kyc-sdk-react-expo"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-applovin-ads/plugin/src/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-applovin-ads/plugin/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-applovin-ads` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-applovin-ads/plugin/src/index';`",
-    [
-      "expo-applovin-ads"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-background-recording/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-background-recording/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-background-recording` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-background-recording/app.plugin';`",
-    [
-      "expo-background-recording"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-bare-kit/plugin/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-bare-kit/plugin/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-bare-kit` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-bare-kit/plugin/index';`",
-    [
-      "expo-bare-kit"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-cafebazaar-auth/plugin/build'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-cafebazaar-auth/plugin/build.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-cafebazaar-auth` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-cafebazaar-auth/plugin/build';`",
-    [
-      "expo-cafebazaar-auth"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-cdnbye/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-cdnbye/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-cdnbye` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-cdnbye/app.plugin';`",
-    [
-      "expo-cdnbye"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-firebase-app-distribution/dist/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-firebase-app-distribution/dist/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-firebase-app-distribution` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-firebase-app-distribution/dist/index';`",
-    [
-      "expo-firebase-app-distribution"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-floating-bubble/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-floating-bubble/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-floating-bubble` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-floating-bubble/app.plugin';`",
-    [
-      "expo-floating-bubble"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-gbk-converter/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-gbk-converter/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-gbk-converter` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-gbk-converter/app.plugin';`",
-    [
-      "expo-gbk-converter"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-instant-app/plugin/build/lib/withInstantAppManifest'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-instant-app/plugin/build/lib/withInstantAppManifest.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-instant-app` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-instant-app/plugin/build/lib/withInstantAppManifest';`",
-    [
-      "expo-instant-app"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-liquid-glass-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-liquid-glass-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-liquid-glass-native` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-liquid-glass-native/app.plugin';`",
-    [
-      "expo-liquid-glass-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-llm-mediapipe/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-llm-mediapipe/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-llm-mediapipe` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-llm-mediapipe/app.plugin';`",
-    [
-      "expo-llm-mediapipe"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-mds/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-mds/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-mds` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-mds/app.plugin';`",
-    [
-      "expo-mds"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-motion-detector/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-motion-detector/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-motion-detector` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-motion-detector/app.plugin';`",
-    [
-      "expo-motion-detector"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-moyasar-apple-pay/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-moyasar-apple-pay/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-moyasar-apple-pay` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-moyasar-apple-pay/app.plugin';`",
-    [
-      "expo-moyasar-apple-pay"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-music-picker/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-music-picker/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-music-picker` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-music-picker/app.plugin';`",
-    [
-      "expo-music-picker"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-native-alipay/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-native-alipay/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-native-alipay` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-native-alipay/app.plugin';`",
-    [
-      "expo-native-alipay"
-    ]
-  ],
-  [
-    "Property 'default' does not exist on type 'typeof import(\"/Users/lmueller/os/typed-config-plugins/node_modules/expo-native-sheet-emojis/plugin/build/withEmojiSheet\")'.",
+    "Property does not exist on module's type (no matching export)",
     [
       "expo-native-sheet-emojis"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-native-wechat/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-native-wechat/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-native-wechat` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-native-wechat/app.plugin';`",
-    [
-      "expo-native-wechat"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-numerator/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-numerator/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-numerator` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-numerator/app.plugin.js';`",
-    [
-      "expo-numerator"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-pod-pinner/build/plugin/withPodPinner'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-pod-pinner/build/plugin/withPodPinner.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-pod-pinner` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-pod-pinner/build/plugin/withPodPinner';`",
-    [
-      "expo-pod-pinner"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-react-native-freshchat/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-react-native-freshchat/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-react-native-freshchat` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-react-native-freshchat/app.plugin';`",
-    [
-      "expo-react-native-freshchat"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-release-signing/dist/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-release-signing/dist/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-release-signing` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-release-signing/dist/index';`",
-    [
-      "expo-release-signing"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-roomplan/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-roomplan/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-roomplan` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-roomplan/app.plugin';`",
-    [
-      "expo-roomplan"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-speech-recognition/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-speech-recognition/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-speech-recognition` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-speech-recognition/app.plugin';`",
-    [
-      "expo-speech-recognition"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-stream-audio/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-stream-audio/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-stream-audio` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-stream-audio/app.plugin';`",
-    [
-      "expo-stream-audio"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-umeng/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-umeng/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-umeng` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-umeng/app.plugin';`",
-    [
-      "expo-umeng"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-umeng-analytics/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-umeng-analytics/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-umeng-analytics` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-umeng-analytics/app.plugin';`",
-    [
-      "expo-umeng-analytics"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-vas-lib/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-vas-lib/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-vas-lib` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-vas-lib/app.plugin';`",
-    [
-      "expo-vas-lib"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-wireguard/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-wireguard/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-wireguard` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-wireguard/app.plugin';`",
-    [
-      "expo-wireguard"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'expo-zendesk-messaging/plugin/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-zendesk-messaging/plugin/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-zendesk-messaging` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-zendesk-messaging/plugin/index';`",
-    [
-      "expo-zendesk-messaging"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'jpush-expo-config-plugin/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/jpush-expo-config-plugin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/jpush-expo-config-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module 'jpush-expo-config-plugin/app.plugin';`",
-    [
-      "jpush-expo-config-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'munim-bluetooth/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/munim-bluetooth/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/munim-bluetooth` if it exists or add a new declaration (.d.ts) file containing `declare module 'munim-bluetooth/app.plugin';`",
-    [
-      "munim-bluetooth"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'mx-jpush-expo/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/mx-jpush-expo/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/mx-jpush-expo` if it exists or add a new declaration (.d.ts) file containing `declare module 'mx-jpush-expo/app.plugin';`",
-    [
-      "mx-jpush-expo"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'onesignal-expo-plugin/build/onesignal/withOneSignal'. '/Users/lmueller/os/typed-config-plugins/node_modules/onesignal-expo-plugin/build/onesignal/withOneSignal.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/onesignal-expo-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module 'onesignal-expo-plugin/build/onesignal/withOneSignal';`",
-    [
-      "onesignal-expo-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'onnxruntime-react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/onnxruntime-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/onnxruntime-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module 'onnxruntime-react-native/app.plugin';`",
-    [
-      "onnxruntime-react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'pushy-expo-plugin/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/pushy-expo-plugin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/pushy-expo-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module 'pushy-expo-plugin/app.plugin';`",
-    [
-      "pushy-expo-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-adapty/plugin/with-adapty'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-adapty/plugin/with-adapty.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-adapty` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-adapty/plugin/with-adapty';`",
-    [
-      "react-native-adapty"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-altitude-plugin/plugin/src/withAltitude'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-altitude-plugin/plugin/src/withAltitude.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-altitude-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-altitude-plugin/plugin/src/withAltitude';`",
-    [
-      "react-native-altitude-plugin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-android-widget/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-android-widget/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-android-widget` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-android-widget/app.plugin';`",
-    [
-      "react-native-android-widget"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-appsflyer/expo/withAppsFlyer'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-appsflyer/expo/withAppsFlyer.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-appsflyer` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-appsflyer/expo/withAppsFlyer';`",
-    [
-      "react-native-appsflyer"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-auto-skeleton` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-auto-skeleton/src/expo-plugins/withAutoSkeleton';`",
-    [
-      "react-native-auto-skeleton"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-beacon-kit/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-beacon-kit/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-beacon-kit` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-beacon-kit/app.plugin.js';`",
-    [
-      "react-native-beacon-kit"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-blasted-image/blastedAssets'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-blasted-image/blastedAssets.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-blasted-image` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-blasted-image/blastedAssets';`",
-    [
-      "react-native-blasted-image"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-candle/plugin/withIosDeploymentTarget'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-candle/plugin/withIosDeploymentTarget.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-candle` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-candle/plugin/withIosDeploymentTarget';`",
-    [
-      "react-native-candle"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-capture-protection/plugins/withPlugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-capture-protection/plugins/withPlugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-capture-protection` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-capture-protection/plugins/withPlugin';`",
-    [
-      "react-native-capture-protection"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-cloud-store/plugins/withCloud'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-cloud-store/plugins/withCloud.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-cloud-store` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-cloud-store/plugins/withCloud';`",
-    [
-      "react-native-cloud-store"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-custom-splash/plugin/src/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-custom-splash/plugin/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-custom-splash` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-custom-splash/plugin/src/index';`",
-    [
-      "react-native-custom-splash"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-device-activity/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-device-activity/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-device-activity` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-device-activity/app.plugin';`",
-    [
-      "react-native-device-activity"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-dji-mobile-sdk/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-dji-mobile-sdk/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-dji-mobile-sdk` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-dji-mobile-sdk/app.plugin';`",
-    [
-      "react-native-dji-mobile-sdk"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-dynamic-activities/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-dynamic-activities/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-dynamic-activities` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-dynamic-activities/app.plugin';`",
-    [
-      "react-native-dynamic-activities"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-email-link/plugin/withEmailLink'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-email-link/plugin/withEmailLink.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-email-link` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-email-link/plugin/withEmailLink';`",
-    [
-      "react-native-email-link"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-expo-moengage/build/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-expo-moengage/build/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-expo-moengage` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-expo-moengage/build/index';`",
-    [
-      "react-native-expo-moengage"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-google-fit/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-google-fit/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-google-fit` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-google-fit/app.plugin';`",
-    [
-      "react-native-google-fit"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-google-maps-plus/expoConfig/build/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-google-maps-plus/expoConfig/build/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-google-maps-plus` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-google-maps-plus/expoConfig/build/index';`",
-    [
-      "react-native-google-maps-plus"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-health/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-health/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-health` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-health/app.plugin';`",
-    [
-      "react-native-health"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-health-connect/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-health-connect/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-health-connect` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-health-connect/app.plugin';`",
-    [
-      "react-native-health-connect"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-helios/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-helios/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-helios` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-helios/app.plugin';`",
-    [
-      "react-native-helios"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-image-sequence-encoder/plugin/withImageSeqEncoder'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-image-sequence-encoder/plugin/withImageSeqEncoder.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-image-sequence-encoder` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-image-sequence-encoder/plugin/withImageSeqEncoder';`",
-    [
-      "react-native-image-sequence-encoder"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-libsodium/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-libsodium/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-libsodium` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-libsodium/app.plugin';`",
-    [
-      "react-native-libsodium"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-liquid-glassmorphism/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-liquid-glassmorphism/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-liquid-glassmorphism` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-liquid-glassmorphism/app.plugin.js';`",
-    [
-      "react-native-liquid-glassmorphism"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-litert-lm/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-litert-lm/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-litert-lm` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-litert-lm/app.plugin';`",
-    [
-      "react-native-litert-lm"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-map-link/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-map-link/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-map-link` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-map-link/app.plugin';`",
-    [
-      "react-native-map-link"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-moyasar-apple-pay/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-moyasar-apple-pay/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-moyasar-apple-pay` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-moyasar-apple-pay/app.plugin';`",
-    [
-      "react-native-moyasar-apple-pay"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-navigation-mode/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-navigation-mode/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-navigation-mode` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-navigation-mode/app.plugin';`",
-    [
-      "react-native-navigation-mode"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-nfc-manager/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nfc-manager/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nfc-manager` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nfc-manager/app.plugin';`",
-    [
-      "react-native-nfc-manager"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-nitro-auth/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-auth/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-auth` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-auth/app.plugin';`",
-    [
-      "react-native-nitro-auth"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-nitro-compass/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-compass/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-compass` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-compass/app.plugin';`",
-    [
-      "react-native-nitro-compass"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-nitro-fetch/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-fetch/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-fetch` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-fetch/app.plugin.js';`",
-    [
-      "react-native-nitro-fetch"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-nitro-google-signin/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-google-signin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-google-signin` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-google-signin/app.plugin.js';`",
-    [
-      "react-native-nitro-google-signin"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-nitro-rtmp-publisher/plugin/withRtmpPublisher'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-rtmp-publisher/plugin/withRtmpPublisher.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-rtmp-publisher` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-rtmp-publisher/plugin/withRtmpPublisher';`",
-    [
-      "react-native-nitro-rtmp-publisher"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-nitro-wallpaper/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-wallpaper/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-wallpaper` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-wallpaper/app.plugin.js';`",
-    [
-      "react-native-nitro-wallpaper"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-notificare-geo/lib/plugin/withNotificareGeo'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-geo/lib/plugin/withNotificareGeo.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-geo` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-geo/lib/plugin/withNotificareGeo';`",
-    [
-      "react-native-notificare-geo"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-notificare-push/lib/plugin/withNotificarePush'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-push/lib/plugin/withNotificarePush.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-push` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-push/lib/plugin/withNotificarePush';`",
-    [
-      "react-native-notificare-push"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-notificare-push-ui/lib/plugin/withNotificarePushUI'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-push-ui/lib/plugin/withNotificarePushUI.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-push-ui` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-push-ui/lib/plugin/withNotificarePushUI';`",
-    [
-      "react-native-notificare-push-ui"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-notificare-scannables/lib/plugin/withNotificareScannables'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-scannables/lib/plugin/withNotificareScannables.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-scannables` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-scannables/lib/plugin/withNotificareScannables';`",
-    [
-      "react-native-notificare-scannables"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-notify-kit/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notify-kit/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notify-kit` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notify-kit/app.plugin';`",
-    [
-      "react-native-notify-kit"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-package-checker/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-package-checker/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-package-checker` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-package-checker/app.plugin';`",
-    [
-      "react-native-package-checker"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-rasterized-widgets/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-rasterized-widgets/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-rasterized-widgets` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-rasterized-widgets/app.plugin.js';`",
-    [
-      "react-native-rasterized-widgets"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-render-lynx/plugin/withRenderLynx'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-render-lynx/plugin/withRenderLynx.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-render-lynx` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-render-lynx/plugin/withRenderLynx';`",
-    [
-      "react-native-render-lynx"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-render-swift-ui/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-render-swift-ui/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-render-swift-ui` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-render-swift-ui/app.plugin';`",
-    [
-      "react-native-render-swift-ui"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-rfid8500-zebra/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-rfid8500-zebra/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-rfid8500-zebra` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-rfid8500-zebra/app.plugin';`",
-    [
-      "react-native-rfid8500-zebra"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-safeguard/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-safeguard/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-safeguard` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-safeguard/app.plugin.js';`",
-    [
-      "react-native-safeguard"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-salesforce-chat-sdk/plugin/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-salesforce-chat-sdk/plugin/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-salesforce-chat-sdk` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-salesforce-chat-sdk/plugin/index';`",
-    [
-      "react-native-salesforce-chat-sdk"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-savanitdev-thermal-printer/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-savanitdev-thermal-printer/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-savanitdev-thermal-printer` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-savanitdev-thermal-printer/app.plugin';`",
-    [
-      "react-native-savanitdev-thermal-printer"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-splash-screen-newarch/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-splash-screen-newarch/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-splash-screen-newarch` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-splash-screen-newarch/app.plugin';`",
-    [
-      "react-native-splash-screen-newarch"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-ssl-manager/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-ssl-manager/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-ssl-manager` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-ssl-manager/app.plugin';`",
-    [
-      "react-native-ssl-manager"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-uaepass/plugin/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-uaepass/plugin/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-uaepass` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-uaepass/plugin/index';`",
-    [
-      "react-native-uaepass"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-use-health-kit/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-use-health-kit/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-use-health-kit` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-use-health-kit/app.plugin';`",
-    [
-      "react-native-use-health-kit"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-webassembly/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-webassembly/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-webassembly` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-webassembly/app.plugin';`",
-    [
-      "react-native-webassembly"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-webp-format/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-webp-format/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-webp-format` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-webp-format/app.plugin';`",
-    [
-      "react-native-webp-format"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'react-native-yoco/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-yoco/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-yoco` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-yoco/app.plugin';`",
-    [
-      "react-native-yoco"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'rexpo-debugger/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/rexpo-debugger/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/rexpo-debugger` if it exists or add a new declaration (.d.ts) file containing `declare module 'rexpo-debugger/app.plugin';`",
-    [
-      "rexpo-debugger"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'rn-neo/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/rn-neo/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/rn-neo` if it exists or add a new declaration (.d.ts) file containing `declare module 'rn-neo/app.plugin';`",
-    [
-      "rn-neo"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'rn-nomba-terminal-sdk/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/rn-nomba-terminal-sdk/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/rn-nomba-terminal-sdk` if it exists or add a new declaration (.d.ts) file containing `declare module 'rn-nomba-terminal-sdk/app.plugin';`",
-    [
-      "rn-nomba-terminal-sdk"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'rns-webview/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/rns-webview/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/rns-webview` if it exists or add a new declaration (.d.ts) file containing `declare module 'rns-webview/app.plugin';`",
-    [
-      "rns-webview"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'singular-react-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/singular-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/singular-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module 'singular-react-native/app.plugin';`",
-    [
-      "singular-react-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'singular-react-native-kids-sdk/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/singular-react-native-kids-sdk/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/singular-react-native-kids-sdk` if it exists or add a new declaration (.d.ts) file containing `declare module 'singular-react-native-kids-sdk/app.plugin';`",
-    [
-      "singular-react-native-kids-sdk"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'swiftui-native/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/swiftui-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/swiftui-native` if it exists or add a new declaration (.d.ts) file containing `declare module 'swiftui-native/app.plugin';`",
-    [
-      "swiftui-native"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'webengage-expo-push/build/webengage/withWebEngage'. '/Users/lmueller/os/typed-config-plugins/node_modules/webengage-expo-push/build/webengage/withWebEngage.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/webengage-expo-push` if it exists or add a new declaration (.d.ts) file containing `declare module 'webengage-expo-push/build/webengage/withWebEngage';`",
-    [
-      "webengage-expo-push"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'with-rn-contacts/build/src/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/with-rn-contacts/build/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/with-rn-contacts` if it exists or add a new declaration (.d.ts) file containing `declare module 'with-rn-contacts/build/src/index';`",
-    [
-      "with-rn-contacts"
-    ]
-  ],
-  [
-    "Could not find a declaration file for module 'with-rn-image-crop-picker/build/src/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/with-rn-image-crop-picker/build/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/with-rn-image-crop-picker` if it exists or add a new declaration (.d.ts) file containing `declare module 'with-rn-image-crop-picker/build/src/index';`",
-    [
-      "with-rn-image-crop-picker"
     ]
   ]
 ]

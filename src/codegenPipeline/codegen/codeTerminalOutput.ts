@@ -10,6 +10,28 @@ const linesUntyped = (pkgName: string) => ["// This Packages doesn't ship types 
 
 const emptyStrArr = (): string[] => [];
 
+// Raw TS diagnostic messages embed package-specific paths (module specifier, absolute file path,
+// suggested `@types/...` name), so two packages failing for the *same* underlying reason never
+// produce an identical error string and can't be grouped in the `Errors:` summary below. Collapse
+// each known diagnostic shape back to its category so packages failing identically group together,
+// the same way the hand-written `"Package uses \`exports\`..."` message already does.
+const normalizeTsError = (error: string): string => {
+    if (
+        /^Could not find a declaration file for module '.*'\. '.*' implicitly has an 'any' type\. {3}Try `npm i --save-dev @types\/.*` if it exists or add a new declaration \(\.d\.ts\) file containing `declare module '.*';`$/.test(
+            error,
+        )
+    ) {
+        return "Could not find a declaration file for module (implicitly has an 'any' type - no .d.ts shipped)";
+    }
+    if (/^Property '.*' does not exist on type 'typeof import\(.*\)'\.$/.test(error)) {
+        return "Property does not exist on module's type (no matching export)";
+    }
+    if (/^Cannot find module '.*' or its corresponding type declarations\.$/.test(error)) {
+        return "Cannot find module or its corresponding type declarations";
+    }
+    return error;
+};
+
 export const getConfigPluginTypeCode = async (): Promise<string> => {
     const packages = await packageListFile.load("withPluginAndTypes");
     const packageList = uniqBy(sortBy(packages, ["npmPkg"]), (pkg) => pkg.npmPkg);
@@ -47,7 +69,7 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
 
             if ((!types?.override?.path && types?.error) || !path) {
                 out.lines.push(...linesUntyped(npmPkg));
-                addError(npmPkg, types?.error ?? "unknown Error");
+                addError(npmPkg, types?.error ? normalizeTsError(types.error) : "unknown Error");
             } else {
                 const exportName = override.name ?? types?.exportName ?? "default";
                 addIgnoreLine(types, npmPkg);
