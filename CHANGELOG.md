@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.5
+
+### Patch Changes
+
+- cee6d32: loosen the types of packages without types (now any instead of never for options in that case)
+
 ## 0.5.4
 
 ### Patch Changes
