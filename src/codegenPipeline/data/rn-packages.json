@@ -5077,7 +5077,7 @@
     "origin": "directory",
     "types": {
       "path": "expo-native-sheet-emojis/plugin/build/withEmojiSheet",
-      "valid": true
+      "valid": false
     }
   },
   {
