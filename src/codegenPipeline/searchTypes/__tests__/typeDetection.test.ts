@@ -40,5 +40,21 @@ describe("typeDetection", () => {
         it("react-native-capture-protection", () => {
             expect(findBestConfigPluginTypePathCombined("react-native-capture-protection")).resolves.toEqual("react-native-capture-protection/plugins/withPlugin");
         });
+
+        it("prefers the exports-declared app.plugin entry when it actually type-checks", () => {
+            // expo-beacon's `exports` map attaches a `types` condition to `./app.plugin`, pointing at
+            // its real `plugin/build/index.d.ts` - TypeScript resolves that automatically, so this
+            // entry is both externally reachable *and* fully typed.
+            expect(findBestConfigPluginTypePathCombined("expo-beacon")).resolves.toEqual("expo-beacon/app.plugin");
+        });
+
+        it("falls back to the internal path when the exports-declared app.plugin entry has no types", () => {
+            // @react-native-firebase/app's `exports` map only whitelists `./app.plugin.js`, with no
+            // `types` condition - it resolves, but TypeScript can't derive a type for it. Its real
+            // implementation at `plugin/build/index` (which does ship a `.d.ts`) isn't externally
+            // importable, so this path only works with the `@ts-expect-error [exports]` suppression -
+            // still strictly better than discarding real types in favor of `unknown`.
+            expect(findBestConfigPluginTypePathCombined("@react-native-firebase/app")).resolves.toEqual("@react-native-firebase/app/plugin/build/index");
+        });
     });
 });

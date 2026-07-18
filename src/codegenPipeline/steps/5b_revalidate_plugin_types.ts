@@ -1,3 +1,5 @@
+import { computePackageExportFlag } from "../searchTypes/computePackageExportFlag";
+import { isExpectedExportsBlock } from "../searchTypes/isExpectedExportsBlock";
 import { verifyExportType } from "../searchTypes/verifyExportType";
 import { packageListFile } from "../storage/mainPackageList";
 import { stepLogger } from "../utils/logger";
@@ -22,19 +24,39 @@ export const revalidate = (dep: RnDepPersist): RnDepPersist => {
     const exportName = types.override?.name ?? "default";
     const result = verifyExportType(effectivePath, exportName);
 
-    // A missing module is often just this run's `bun i` failing to fetch an optional dependency
-    // (registry hiccup, rate limit, transient network error) rather than the package actually
-    // disappearing or being renamed. Don't let that flip valid -> invalid, and don't let it churn
-    // the recorded error message on an already-invalid entry either - only a confirmed shape
-    // mismatch (the module resolved but the export didn't) should change either field.
-    if (!result.valid && result.moduleNotFound) return dep;
+    // `packageExport` is only computed once, when a path is first discovered (step 5). Re-derive
+    // it here too, so a package that adds/tightens `exports` in a *later* release - after its path
+    // was already resolved and recorded - still gets flagged, instead of codegen silently emitting
+    // an unsuppressed (and now permanently broken) import for it.
+    const packageExport = computePackageExportFlag(dep.npmPkg, effectivePath);
 
-    if (result.valid === types.valid && (result.valid || result.error === types.error)) return dep;
+    // A path that reaches past what the package's `exports` map allows (`packageExport: true`) is
+    // *expected* to fail resolution this way - it was chosen because a matching `.d.ts` was found
+    // on disk (see `findBestConfigPluginTypePathCombined`), so treat it as valid rather than
+    // demoting a genuinely-typed package to `unknown`.
+    if (isExpectedExportsBlock(result, packageExport)) {
+        if (types.valid === true && !types.error && packageExport === types.packageExport) return dep;
+        return { ...dep, types: { ...types, packageExport, valid: true, error: undefined } };
+    }
+
+    // A missing module on a package that ISN'T reaching past its own `exports` map is often just
+    // this run's `bun i` failing to fetch an optional dependency (registry hiccup, rate limit,
+    // transient network error) rather than the package actually disappearing or being renamed.
+    // Don't let that flip valid -> invalid, and don't let it churn the recorded error message on
+    // an already-invalid entry either - only a confirmed shape mismatch (the module resolved but
+    // the export didn't) should change either field.
+    if (!result.valid && result.moduleNotFound) {
+        if (packageExport === types.packageExport) return dep;
+        return { ...dep, types: { ...types, packageExport } };
+    }
+
+    if (result.valid === types.valid && (result.valid || result.error === types.error) && packageExport === types.packageExport) return dep;
 
     return {
         ...dep,
         types: {
             ...types,
+            packageExport,
             valid: result.valid,
             error: result.valid ? undefined : result.error,
         },

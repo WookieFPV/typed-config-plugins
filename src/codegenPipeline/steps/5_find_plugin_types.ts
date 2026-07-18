@@ -1,18 +1,13 @@
-import path from "node:path";
 import { mapAsync } from "es-toolkit/array";
+import { computePackageExportFlag } from "../searchTypes/computePackageExportFlag";
 import { findBestConfigPluginTypePathCombined } from "../searchTypes/findPluginTypePathCombined";
+import { isExpectedExportsBlock } from "../searchTypes/isExpectedExportsBlock";
 import { verifyExportType } from "../searchTypes/verifyExportType";
 import { packageListFile } from "../storage/mainPackageList";
 import { stepLogger } from "../utils/logger";
 import type { RnDepPersist } from "../utils/types";
 
 const { logger, step } = stepLogger("Find Config Plugin Type Path");
-
-const isUsingExportPackageJson = async (npmPkg: string) => {
-    const packageJsonPath = path.join("node_modules", npmPkg, "package.json");
-    const json = await Bun.file(packageJsonPath).json();
-    return "exports" in json ? true : undefined;
-};
 
 // A `.d.ts` file existing on disk doesn't mean it ships the export we're about to reference
 // (e.g. `typeof import("...")["default"]`). We verify that with the real TypeScript checker so
@@ -21,21 +16,23 @@ const isUsingExportPackageJson = async (npmPkg: string) => {
 // A manually pinned `override.path` (added when auto-discovery gets it wrong) is what codegen
 // actually emits (see `codeTerminalOutput.ts`: `override.path ?? types?.path`), so it - not the
 // freshly auto-discovered `typePath` - is what must be validated here.
-export const checkValidity = (dep: RnDepPersist, typePath: string): { valid: boolean; error?: string } => {
+export const checkValidity = (dep: RnDepPersist, typePath: string, packageExport: boolean | undefined): { valid: boolean; error?: string } => {
     const overrideValid = dep?.types?.override?.valid;
     if (overrideValid !== undefined) return { valid: overrideValid };
 
     const effectivePath = dep?.types?.override?.path ?? typePath;
     const exportName = dep?.types?.override?.name ?? "default";
     const result = verifyExportType(effectivePath, exportName);
-    return result.valid ? { valid: true } : { valid: false, error: result.error };
+    if (result.valid || isExpectedExportsBlock(result, packageExport)) return { valid: true };
+    return { valid: false, error: result.error };
 };
 
 const mapPluginTypes = async (dep: RnDepPersist): Promise<RnDepPersist> => {
     try {
         const typePath = await findBestConfigPluginTypePathCombined(dep.npmPkg);
-        const packageExport = await isUsingExportPackageJson(dep.npmPkg);
-        const { valid, error } = checkValidity(dep, typePath);
+        const effectivePath = dep?.types?.override?.path ?? typePath;
+        const packageExport = computePackageExportFlag(dep.npmPkg, effectivePath);
+        const { valid, error } = checkValidity(dep, typePath, packageExport);
         return {
             ...dep,
             types: {

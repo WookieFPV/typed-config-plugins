@@ -3938,6 +3938,8 @@
 
     "expo-bare-kit": ["expo-bare-kit@0.0.3", "", { "peerDependencies": { "expo": ">=47.0.0", "react": "*", "react-native": "*", "react-native-bare-kit": ">=0.5.0" } }, "sha512-vvij7qNCbzfRUsZfEmP8kkSkD1UFSqAjtUd5akShmE6rvKrHwhIwS8s4afjmIhCnWexDixkRqPE9MQkBvbTu4A=="],
 
+    "expo-beacon": ["expo-beacon@1.0.3", "", { "peerDependencies": { "@expo/config-plugins": "*", "expo": ">=51.0.0", "react": "*", "react-native": "*" } }, "sha512-Vn3mlmSf54i9AK/CQK5zJ6StuGHngKY4Ko6/l0+nuwnqW3HFU4J97IDT9PKADM9w+5Qd/R6ZC62zZzRqLD8IAA=="],
+
     "expo-ble": ["expo-ble@0.5.0", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-qhiCyxJiQ2b/6d9qIskBAt+NRpWh+Hko4jtjylgWeiJbGlZueiplxoeO13fGyLq8SF559RNcFSZNhu1LiAvI/g=="],
 
     "expo-bonjour": ["expo-bonjour@0.1.1", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-pUHS8bCkaCFTk50dT7YnCQjvgkI6ef5MjlVQ+B4kwh4IqaTKAIpCQz1fCjhCK1q+9MLHuRhAtR1Sr62eg6vnmg=="],
