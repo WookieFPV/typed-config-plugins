@@ -4,6 +4,7 @@ import { addNpmPackageName } from "./steps/2_add_npmPkg";
 import { detectConfigPlugins } from "./steps/3_has_config_plugin";
 import { updatePackagesPackageJsonFile } from "./steps/4_write_package_json_file";
 import { findConfigPluginTypePath } from "./steps/5_find_plugin_types";
+import { revalidatePluginTypes } from "./steps/5b_revalidate_plugin_types";
 import { codeGeneration } from "./steps/7_codegen";
 import { typecheck } from "./steps/8_Typecheck";
 import { promiseStep } from "./utils/logger";
@@ -23,6 +24,8 @@ await updatePackagesPackageJsonFile();
 await promiseStep(Bun.$`bun i`.quiet(), "Bun install --ignore-scripts");
 
 await findConfigPluginTypePath("onlyNew");
+
+await revalidatePluginTypes();
 
 await codeGeneration();
 
