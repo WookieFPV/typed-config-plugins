@@ -1314,6 +1314,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/aravi365/react-native-edge-glow",
+    "npmPkg": "react-native-edge-glow",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/aravind3566/react-native-get-app-list",
     "npmPkg": "react-native-get-app-list",
     "hasConfigPlugin": false,
@@ -3405,10 +3411,9 @@
     "origin": "directory",
     "types": {
       "path": "@codemagic/react-native-patch/app.plugin.js",
-      "packageExport": true,
       "valid": false,
-      "error": "Could not find a declaration file for module '@codemagic/react-native-patch/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@codemagic/react-native-patch/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/codemagic__react-native-patch` if it exists or add a new declaration (.d.ts) file containing `declare module '@codemagic/react-native-patch/app.plugin.js';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module '@codemagic/react-native-patch/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@codemagic/react-native-patch/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/codemagic__react-native-patch` if it exists or add a new declaration (.d.ts) file containing `declare module '@codemagic/react-native-patch/app.plugin.js';`"
     }
   },
   {
@@ -4204,8 +4209,8 @@
     "types": {
       "path": "@siteed/audio-studio/app.plugin",
       "valid": false,
-      "error": "Could not find a declaration file for module '@siteed/audio-studio/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@siteed/audio-studio/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/siteed__audio-studio` if it exists or add a new declaration (.d.ts) file containing `declare module '@siteed/audio-studio/app.plugin';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module '@siteed/audio-studio/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@siteed/audio-studio/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/siteed__audio-studio` if it exists or add a new declaration (.d.ts) file containing `declare module '@siteed/audio-studio/app.plugin';`"
     }
   },
   {
@@ -4234,8 +4239,8 @@
     "types": {
       "path": "@siteed/expo-audio-studio/app.plugin",
       "valid": false,
-      "error": "Could not find a declaration file for module '@siteed/expo-audio-studio/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@siteed/expo-audio-studio/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/siteed__expo-audio-studio` if it exists or add a new declaration (.d.ts) file containing `declare module '@siteed/expo-audio-studio/app.plugin';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module '@siteed/expo-audio-studio/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/@siteed/expo-audio-studio/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/siteed__expo-audio-studio` if it exists or add a new declaration (.d.ts) file containing `declare module '@siteed/expo-audio-studio/app.plugin';`"
     }
   },
   {
@@ -5545,8 +5550,8 @@
     "types": {
       "path": "@evennit/notifee-expo-plugin/dist/plugin/withNotifee",
       "valid": false,
-      "error": "Could not find a declaration file for module '@evennit/notifee-expo-plugin/dist/plugin/withNotifee'. '/Users/lmueller/os/typed-config-plugins/node_modules/@evennit/notifee-expo-plugin/dist/plugin/withNotifee.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/evennit__notifee-expo-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module '@evennit/notifee-expo-plugin/dist/plugin/withNotifee';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module '@evennit/notifee-expo-plugin/dist/plugin/withNotifee'. '/Users/lmueller/os/typed-config-plugins/node_modules/@evennit/notifee-expo-plugin/dist/plugin/withNotifee.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/evennit__notifee-expo-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module '@evennit/notifee-expo-plugin/dist/plugin/withNotifee';`"
     }
   },
   {
@@ -6947,7 +6952,6 @@
     "origin": "gitHub",
     "types": {
       "path": "@fingerprintjs/fingerprintjs-pro-react-native/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module '@fingerprintjs/fingerprintjs-pro-react-native/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@fingerprintjs/fingerprintjs-pro-react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/fingerprintjs__fingerprintjs-pro-react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@fingerprintjs/fingerprintjs-pro-react-native/app.plugin.js';`",
       "exportName": "default"
@@ -7945,7 +7949,6 @@
     "origin": "directory",
     "types": {
       "path": "@goliapkg/sentori-expo/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module '@goliapkg/sentori-expo/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@goliapkg/sentori-expo/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/goliapkg__sentori-expo` if it exists or add a new declaration (.d.ts) file containing `declare module '@goliapkg/sentori-expo/app.plugin.js';`",
       "exportName": "default"
@@ -8103,7 +8106,6 @@
     "types": {
       "valid": false,
       "path": "@hot-updater/react-native/app.plugin.js",
-      "packageExport": true,
       "error": "Could not find a declaration file for module '@hot-updater/react-native/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@hot-updater/react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/hot-updater__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@hot-updater/react-native/app.plugin.js';`",
       "exportName": "default"
     }
@@ -8519,7 +8521,6 @@
     "origin": "directory",
     "types": {
       "path": "react-native-liquid-glassmorphism/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-liquid-glassmorphism/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-liquid-glassmorphism/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-liquid-glassmorphism` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-liquid-glassmorphism/app.plugin.js';`",
       "exportName": "default"
@@ -10380,7 +10381,6 @@
     "origin": "directory",
     "types": {
       "path": "react-native-beacon-kit/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-beacon-kit/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-beacon-kit/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-beacon-kit` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-beacon-kit/app.plugin.js';`",
       "exportName": "default"
@@ -10958,7 +10958,6 @@
     "types": {
       "valid": true,
       "path": "@kingstinct/react-native-healthkit/app.plugin.js",
-      "packageExport": true,
       "exportName": "default"
     }
   },
@@ -12474,7 +12473,6 @@
     "origin": "directory",
     "types": {
       "path": "expo-numerator/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'expo-numerator/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/expo-numerator/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-numerator` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-numerator/app.plugin.js';`",
       "exportName": "default"
@@ -12762,7 +12760,6 @@
     "origin": "directory",
     "types": {
       "path": "react-native-notify-kit/app.plugin",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-notify-kit/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notify-kit/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notify-kit` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notify-kit/app.plugin';`",
       "exportName": "default"
@@ -12913,7 +12910,6 @@
     "origin": "directory",
     "types": {
       "path": "expo-beacon/app.plugin",
-      "packageExport": true,
       "valid": true,
       "exportName": "default"
     }
@@ -13716,8 +13712,8 @@
     "types": {
       "path": "react-native-expo-moengage/build/index",
       "valid": false,
-      "error": "Could not find a declaration file for module 'react-native-expo-moengage/build/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-expo-moengage/build/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-expo-moengage` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-expo-moengage/build/index';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'react-native-expo-moengage/build/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-expo-moengage/build/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-expo-moengage` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-expo-moengage/build/index';`"
     }
   },
   {
@@ -14188,8 +14184,8 @@
     "types": {
       "path": "with-rn-image-crop-picker/build/src/index",
       "valid": false,
-      "error": "Could not find a declaration file for module 'with-rn-image-crop-picker/build/src/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/with-rn-image-crop-picker/build/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/with-rn-image-crop-picker` if it exists or add a new declaration (.d.ts) file containing `declare module 'with-rn-image-crop-picker/build/src/index';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'with-rn-image-crop-picker/build/src/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/with-rn-image-crop-picker/build/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/with-rn-image-crop-picker` if it exists or add a new declaration (.d.ts) file containing `declare module 'with-rn-image-crop-picker/build/src/index';`"
     }
   },
   {
@@ -14261,7 +14257,6 @@
     "origin": "directory",
     "types": {
       "path": "@mj-studio/react-native-naver-map/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module '@mj-studio/react-native-naver-map/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@mj-studio/react-native-naver-map/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/mj-studio__react-native-naver-map` if it exists or add a new declaration (.d.ts) file containing `declare module '@mj-studio/react-native-naver-map/app.plugin.js';`",
       "exportName": "default"
@@ -14530,7 +14525,6 @@
     "origin": "gitHub",
     "types": {
       "path": "@naveen521kk/react-native-tokenizer/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module '@naveen521kk/react-native-tokenizer/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/@naveen521kk/react-native-tokenizer/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/naveen521kk__react-native-tokenizer` if it exists or add a new declaration (.d.ts) file containing `declare module '@naveen521kk/react-native-tokenizer/app.plugin.js';`",
       "exportName": "default"
@@ -14985,8 +14979,8 @@
     "types": {
       "path": "react-native-notificare-geo/lib/plugin/withNotificareGeo",
       "valid": false,
-      "error": "Could not find a declaration file for module 'react-native-notificare-geo/lib/plugin/withNotificareGeo'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-geo/lib/plugin/withNotificareGeo.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-geo` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-geo/lib/plugin/withNotificareGeo';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'react-native-notificare-geo/lib/plugin/withNotificareGeo'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-geo/lib/plugin/withNotificareGeo.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-geo` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-geo/lib/plugin/withNotificareGeo';`"
     }
   },
   {
@@ -14997,8 +14991,8 @@
     "types": {
       "path": "react-native-notificare-push/lib/plugin/withNotificarePush",
       "valid": false,
-      "error": "Could not find a declaration file for module 'react-native-notificare-push/lib/plugin/withNotificarePush'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-push/lib/plugin/withNotificarePush.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-push` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-push/lib/plugin/withNotificarePush';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'react-native-notificare-push/lib/plugin/withNotificarePush'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-push/lib/plugin/withNotificarePush.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-push` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-push/lib/plugin/withNotificarePush';`"
     }
   },
   {
@@ -15009,8 +15003,8 @@
     "types": {
       "path": "react-native-notificare-push-ui/lib/plugin/withNotificarePushUI",
       "valid": false,
-      "error": "Could not find a declaration file for module 'react-native-notificare-push-ui/lib/plugin/withNotificarePushUI'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-push-ui/lib/plugin/withNotificarePushUI.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-push-ui` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-push-ui/lib/plugin/withNotificarePushUI';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'react-native-notificare-push-ui/lib/plugin/withNotificarePushUI'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-push-ui/lib/plugin/withNotificarePushUI.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-push-ui` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-push-ui/lib/plugin/withNotificarePushUI';`"
     }
   },
   {
@@ -15021,8 +15015,8 @@
     "types": {
       "path": "react-native-notificare-scannables/lib/plugin/withNotificareScannables",
       "valid": false,
-      "error": "Could not find a declaration file for module 'react-native-notificare-scannables/lib/plugin/withNotificareScannables'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-scannables/lib/plugin/withNotificareScannables.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-scannables` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-scannables/lib/plugin/withNotificareScannables';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'react-native-notificare-scannables/lib/plugin/withNotificareScannables'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-notificare-scannables/lib/plugin/withNotificareScannables.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-notificare-scannables` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-notificare-scannables/lib/plugin/withNotificareScannables';`"
     }
   },
   {
@@ -15533,8 +15527,8 @@
     "types": {
       "valid": false,
       "path": "onesignal-expo-plugin/build/onesignal/withOneSignal",
-      "error": "Could not find a declaration file for module 'onesignal-expo-plugin/build/onesignal/withOneSignal'. '/Users/lmueller/os/typed-config-plugins/node_modules/onesignal-expo-plugin/build/onesignal/withOneSignal.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/onesignal-expo-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module 'onesignal-expo-plugin/build/onesignal/withOneSignal';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'onesignal-expo-plugin/build/onesignal/withOneSignal'. '/Users/lmueller/os/typed-config-plugins/node_modules/onesignal-expo-plugin/build/onesignal/withOneSignal.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/onesignal-expo-plugin` if it exists or add a new declaration (.d.ts) file containing `declare module 'onesignal-expo-plugin/build/onesignal/withOneSignal';`"
     }
   },
   {
@@ -16995,7 +16989,6 @@
     "origin": "directory",
     "types": {
       "path": "react-native-nitro-wallpaper/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-nitro-wallpaper/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-wallpaper/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-wallpaper` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-wallpaper/app.plugin.js';`",
       "exportName": "default"
@@ -17020,7 +17013,6 @@
     "origin": "directory",
     "types": {
       "path": "react-native-nitro-wallpaper/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-nitro-wallpaper/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-wallpaper/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-wallpaper` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-wallpaper/app.plugin.js';`",
       "exportName": "default"
@@ -17461,7 +17453,6 @@
     "origin": "directory",
     "types": {
       "path": "react-native-rasterized-widgets/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-rasterized-widgets/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-rasterized-widgets/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-rasterized-widgets` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-rasterized-widgets/app.plugin.js';`",
       "exportName": "default"
@@ -17480,7 +17471,6 @@
     "origin": "directory",
     "types": {
       "path": "react-native-nitro-google-signin/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-nitro-google-signin/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-google-signin/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-google-signin` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-google-signin/app.plugin.js';`",
       "exportName": "default"
@@ -22787,8 +22777,8 @@
     "types": {
       "path": "webengage-expo-push/build/webengage/withWebEngage",
       "valid": false,
-      "error": "Could not find a declaration file for module 'webengage-expo-push/build/webengage/withWebEngage'. '/Users/lmueller/os/typed-config-plugins/node_modules/webengage-expo-push/build/webengage/withWebEngage.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/webengage-expo-push` if it exists or add a new declaration (.d.ts) file containing `declare module 'webengage-expo-push/build/webengage/withWebEngage';`",
-      "exportName": "default"
+      "exportName": "default",
+      "error": "Could not find a declaration file for module 'webengage-expo-push/build/webengage/withWebEngage'. '/Users/lmueller/os/typed-config-plugins/node_modules/webengage-expo-push/build/webengage/withWebEngage.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/webengage-expo-push` if it exists or add a new declaration (.d.ts) file containing `declare module 'webengage-expo-push/build/webengage/withWebEngage';`"
     }
   },
   {
@@ -22798,7 +22788,6 @@
     "origin": "gitHub",
     "types": {
       "path": "react-native-safeguard/app.plugin.js",
-      "packageExport": true,
       "valid": false,
       "error": "Could not find a declaration file for module 'react-native-safeguard/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-safeguard/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-safeguard` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-safeguard/app.plugin.js';`",
       "exportName": "default"

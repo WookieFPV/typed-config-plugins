@@ -11,7 +11,7 @@
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": false,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "noEmit": true,
     "outDir": "dist",
 

@@ -99,7 +99,6 @@ export interface ThirdPartyAutomatedPlugins {
     "@kickstartcrew/expo-financekit": ConfigPluginOptions<typeof import("@kickstartcrew/expo-financekit/build/plugin")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "@kingstinct/react-native-activity-kit": ConfigPluginOptions<unknown>;
-    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@kingstinct/react-native-healthkit": ConfigPluginOptions<typeof import("@kingstinct/react-native-healthkit/app.plugin.js")["default"]>;
     "@leanplum/react-native-sdk": ConfigPluginOptions<typeof import("@leanplum/react-native-sdk/plugin/build/withLeanplumSDK")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -279,7 +278,6 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-barcode-scanner": ConfigPluginOptions<typeof import("expo-barcode-scanner/plugin/build/withBarcodeScanner")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "expo-bare-kit": ConfigPluginOptions<unknown>;
-    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-beacon": ConfigPluginOptions<typeof import("expo-beacon/app.plugin")["default"]>;
     "expo-bonjour": ConfigPluginOptions<typeof import("expo-bonjour/plugin/build/index")["default"]>;
     "expo-branch": ConfigPluginOptions<typeof import("expo-branch/plugin/build/withBranch")["default"]>;
@@ -771,7 +769,6 @@ export interface ThirdPartyAutomatedPlugins {
       "@honeycombio/opentelemetry-react-native",
       "@huymobile/react-native-sms-retriever-nitro-module",
       "@intercom/intercom-react-native",
-      "@kingstinct/react-native-healthkit",
       "@lightbase/rn-design-system",
       "@lugg/maps",
       "@maplibre/maplibre-react-native",
@@ -795,7 +792,6 @@ export interface ThirdPartyAutomatedPlugins {
       "@vietmap/vietmap-gl-react-native",
       "apple-health",
       "expo-asset",
-      "expo-beacon",
       "expo-callkit-telecom",
       "expo-clear-keychain",
       "expo-font",
