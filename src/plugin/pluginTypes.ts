@@ -156,6 +156,8 @@ export interface ThirdPartyAutomatedPlugins {
     "@react-native-ai/mlc": ConfigPluginOptions<typeof import("@react-native-ai/mlc/lib/typescript/expo-plugin")["default"]>;
     "@react-native-community/datetimepicker": ConfigPluginOptions<typeof import("@react-native-community/datetimepicker/plugin/build/withDateTimePickerStyles")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "@react-native-firebase/analytics": ConfigPluginOptions<typeof import("@react-native-firebase/analytics/plugin/build/index")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@react-native-firebase/app": ConfigPluginOptions<typeof import("@react-native-firebase/app/plugin/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@react-native-firebase/app-check": ConfigPluginOptions<typeof import("@react-native-firebase/app-check/plugin/build/index")["default"]>;
@@ -783,6 +785,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@oleg_svetlichnyi/expo-icloud-storage",
       "@opacity-labs/react-native-opacity",
       "@portone/react-native-sdk",
+      "@react-native-firebase/analytics",
       "@react-native-firebase/app",
       "@react-native-firebase/app-check",
       "@react-native-firebase/app-distribution",

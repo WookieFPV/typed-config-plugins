@@ -12,8 +12,10 @@ const mapHasConfigPlugin = async (dep: RnDepPersist): Promise<RnDepPersist> => {
     const { hasConfigPlugin } = await repoHasFile(baseUrl, "app.plugin.js", path);
     if (typeof hasConfigPlugin !== "boolean") {
         logger.warn(`- repoHasFile unknown response ${dep.githubUrl}: ${hasConfigPlugin}`);
+        // leave dep.hasConfigPlugin untouched (undefined) so it's retried on the next run
+        return dep;
     }
-    return { ...dep, hasConfigPlugin: hasConfigPlugin === true };
+    return { ...dep, hasConfigPlugin };
 };
 
 export const detectConfigPlugins = step(async (type: "onlyNew" | "full" = "onlyNew") => {

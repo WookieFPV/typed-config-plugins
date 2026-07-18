@@ -9164,8 +9164,13 @@
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/analytics",
     "npmPkg": "@react-native-firebase/analytics",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@react-native-firebase/analytics/plugin/build/index",
+      "packageExport": true,
+      "valid": true
+    }
   },
   {
     "githubUrl": "https://github.com/invertase/react-native-firebase/tree/main/packages/app",

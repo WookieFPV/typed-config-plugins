@@ -108,6 +108,7 @@
     "@prisma/react-native": "*",
     "@react-native-ai/mlc": "*",
     "@react-native-community/datetimepicker": "*",
+    "@react-native-firebase/analytics": "25.1.0",
     "@react-native-firebase/app": "*",
     "@react-native-firebase/app-check": "*",
     "@react-native-firebase/app-distribution": "*",
