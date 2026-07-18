@@ -468,8 +468,14 @@
   {
     "githubUrl": "https://github.com/ajakka/react-native-here-explore",
     "npmPkg": "react-native-here-explore",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-here-explore/plugin/build/index",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/ajayesivan/react-native-remix-icon",
@@ -621,8 +627,14 @@
   {
     "githubUrl": "https://github.com/aleksefo/react-native-webp-format",
     "npmPkg": "react-native-webp-format",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-webp-format/app.plugin",
+      "error": "Could not find a declaration file for module 'react-native-webp-format/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-webp-format/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-webp-format` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-webp-format/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/alex-melnyk/react-native-multibar",
@@ -2732,8 +2744,13 @@
   {
     "githubUrl": "https://github.com/callstack/react-native-brownfield/tree/main/packages/react-native-brownfield",
     "npmPkg": "@callstack/react-native-brownfield",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "valid": true,
+      "path": "@callstack/react-native-brownfield/app.plugin.js",
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/callstack/react-native-bundle-visualizer",
@@ -2915,7 +2932,7 @@
   {
     "githubUrl": "https://github.com/candlefinance/candle-react-native/tree/main/package",
     "npmPkg": "react-native-candle",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "react-native-candle/plugin/withIosDeploymentTarget",
@@ -4234,7 +4251,7 @@
   {
     "githubUrl": "https://github.com/deeeed/expo-audio-stream/tree/main/packages/expo-audio-studio",
     "npmPkg": "@siteed/expo-audio-studio",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "@siteed/expo-audio-studio/app.plugin",
@@ -6328,8 +6345,14 @@
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-status-bar",
     "npmPkg": "expo-status-bar",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-status-bar/plugin/build/withStatusBar",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-store-review",
@@ -8792,8 +8815,14 @@
   {
     "githubUrl": "https://github.com/hung-yueh/react-native-litert-lm",
     "npmPkg": "react-native-litert-lm",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-litert-lm/app.plugin",
+      "error": "Could not find a declaration file for module 'react-native-litert-lm/app.plugin'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-litert-lm/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-litert-lm` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-litert-lm/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/hungdev/react-native-customize-selected-date",
@@ -11475,8 +11504,14 @@
   {
     "githubUrl": "https://github.com/l2hyunwoo/react-native-nitro-device-info/tree/main/packages/react-native-nitro-device-info",
     "npmPkg": "react-native-nitro-device-info",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-nitro-device-info/app.plugin",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/ladjs/react-native-loading-spinner-overlay",
@@ -11923,7 +11958,7 @@
   {
     "githubUrl": "https://github.com/livekit/livekit_composite/tree/main/livekit/client-sdk-react-native-expo-plugin",
     "npmPkg": "@livekit/react-native-expo-plugin",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "@livekit/react-native-expo-plugin/plugin/build/index",
@@ -12386,7 +12421,7 @@
   {
     "githubUrl": "https://github.com/lyrahealth/react-native-orientation-plugin",
     "npmPkg": "@lyrahealth-inc/react-native-orientation-plugin",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "@lyrahealth-inc/react-native-orientation-plugin/build/withOrientation",
@@ -12676,7 +12711,7 @@
   {
     "githubUrl": "https://github.com/maplibre/maplibre-react-native",
     "npmPkg": "@maplibre/maplibre-react-native",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": true,
@@ -12815,7 +12850,13 @@
   {
     "githubUrl": "https://github.com/margelo/react-native-nitro-fetch/tree/master/packages/react-native-nitro-fetch",
     "npmPkg": "react-native-nitro-fetch",
-    "hasConfigPlugin": false
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-nitro-fetch/app.plugin.js",
+      "error": "Could not find a declaration file for module 'react-native-nitro-fetch/app.plugin.js'. '/Users/lmueller/os/typed-config-plugins/node_modules/react-native-nitro-fetch/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nitro-fetch` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nitro-fetch/app.plugin.js';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-nitro-sqlite/tree/main/package",
@@ -13635,8 +13676,14 @@
   {
     "githubUrl": "https://github.com/mkuczera/react-native-haptic-feedback",
     "npmPkg": "react-native-haptic-feedback",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-haptic-feedback/app.plugin",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/mmazzarolo/react-native-dialog",
@@ -13982,7 +14029,7 @@
   {
     "githubUrl": "https://github.com/mrousavy/react-native-vision-camera/tree/main/package",
     "npmPkg": "react-native-vision-camera",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
@@ -15182,7 +15229,7 @@
   {
     "githubUrl": "https://github.com/oaax-standard/nvidia-acceleration/tree/main/runtime-library/deps/onnxruntime/onnxruntime-bbd0a80/js/react_native",
     "npmPkg": "onnxruntime-react-native",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "path": "onnxruntime-react-native/app.plugin",
@@ -15522,7 +15569,7 @@
   {
     "githubUrl": "https://github.com/onesignal/onesignal-expo-plugin",
     "npmPkg": "onesignal-expo-plugin",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "gitHub",
     "types": {
       "valid": false,
@@ -15604,8 +15651,14 @@
   {
     "githubUrl": "https://github.com/orbital-systems/react-native-esp-idf-provisioning",
     "npmPkg": "@orbital-systems/react-native-esp-idf-provisioning",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@orbital-systems/react-native-esp-idf-provisioning/plugin/index",
+      "error": "Could not find a declaration file for module '@orbital-systems/react-native-esp-idf-provisioning/plugin/index'. '/Users/lmueller/os/typed-config-plugins/node_modules/@orbital-systems/react-native-esp-idf-provisioning/plugin/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/orbital-systems__react-native-esp-idf-provisioning` if it exists or add a new declaration (.d.ts) file containing `declare module '@orbital-systems/react-native-esp-idf-provisioning/plugin/index';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/orcunorcun/react-native-cookie-handler",
@@ -19975,7 +20028,7 @@
   {
     "githubUrl": "https://github.com/software-mansion-labs/react-native-enriched-markdown",
     "npmPkg": "react-native-enriched-markdown",
-    "hasConfigPlugin": true,
+    "hasConfigPlugin": false,
     "origin": "directory",
     "types": {
       "valid": false,
@@ -22724,8 +22777,12 @@
   {
     "githubUrl": "https://github.com/wcandillon/react-native-webgpu/tree/main/packages/webgpu",
     "npmPkg": "react-native-wgpu",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "valid": false,
+      "error": "Package doesn't ship an app.plugin.js file"
+    }
   },
   {
     "githubUrl": "https://github.com/wcisco17/react-native-animation-video",
