@@ -5,21 +5,25 @@ import { Mutex, toMerged } from "es-toolkit";
 export type Filter<Item> = Record<string, (item: Item) => boolean>;
 type noFilter<Item> = Record<never, (item: Item) => boolean>;
 
-// A hand-edited entry, a truncated write from a previous crash, or an upstream schema change
-// should fail loudly and name the offending row - not flow silently through 8 pipeline steps
-// until something downstream breaks in a confusing way.
+// A non-array root means the file itself is corrupt/truncated - that's not a single bad row,
+// it's the whole file, so it should still fail loudly.
+// A single malformed row (hand-edited entry, or - for externally-sourced files like the
+// react-native-directory download - a row the upstream data owner shipped) should NOT abort
+// every subsequent pipeline step; drop it and name it loudly instead.
 const assertValidRows = <Item>(path: string, primaryKey: keyof Item, data: unknown): Array<Item> => {
     if (!Array.isArray(data)) throw new Error(`${path}: expected a JSON array, got ${typeof data}`);
-    data.forEach((item, index) => {
+    return data.filter((item, index) => {
         if (typeof item !== "object" || item === null) {
-            throw new Error(`${path}[${index}]: expected an object, got ${JSON.stringify(item)}`);
+            console.warn(`${path}[${index}]: dropping row, expected an object, got ${JSON.stringify(item)}`);
+            return false;
         }
         const value = (item as Record<string, unknown>)[primaryKey as string];
-        if (!value) {
-            throw new Error(`${path}[${index}]: missing required key "${String(primaryKey)}" - ${JSON.stringify(item).slice(0, 200)}`);
+        if (value === undefined || value === "") {
+            console.warn(`${path}[${index}]: dropping row missing required key "${String(primaryKey)}" - ${JSON.stringify(item).slice(0, 200)}`);
+            return false;
         }
-    });
-    return data as Array<Item>;
+        return true;
+    }) as Array<Item>;
 };
 
 export const jsonPersistorFactory = <Item, Filter extends Record<string, (item: Item) => boolean> = noFilter<Item>>({
@@ -67,10 +71,13 @@ export const jsonPersistorFactory = <Item, Filter extends Record<string, (item: 
         } = {},
     ): Promise<void> => {
         await mutex.acquire();
-        const pluginsList = await load(type);
-        const mergedList = mergePluginLists(pluginsList, items, override);
-        await save(mergedList);
-        mutex.release();
+        try {
+            const pluginsList = await load(type);
+            const mergedList = mergePluginLists(pluginsList, items, override);
+            await save(mergedList);
+        } finally {
+            mutex.release();
+        }
     };
 
     const mergePluginLists = (baseList: Item[], updatedList: Item[], override = true): Item[] => {

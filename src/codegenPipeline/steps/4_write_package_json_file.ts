@@ -26,6 +26,8 @@ const syncPackagesPackageJsonFile = async (packagesWithConfigPlugin: RnDep[]) =>
     if (validNewDeps.length) {
         logger.log(`Adding ${validNewDeps.length} new deps:`);
 
+        const failedDeps: string[] = [];
+
         await mapAsync(
             validNewDeps,
             async (dep) => {
@@ -34,12 +36,20 @@ const syncPackagesPackageJsonFile = async (packagesWithConfigPlugin: RnDep[]) =>
                 // engine mismatch) must not abort every subsequent package in this batch. Log and
                 // move on; the package stays out of `packageList/package.json` and gets retried
                 // next run.
-                const result = await Bun.$`bun --cwd=packageList i --optional --only-missing ${dep}`.quiet().nothrow();
+                // `--ignore-scripts` matches the root `bun i --ignore-scripts` in run.ts - without
+                // it, packages added this run would run lifecycle scripts while pre-existing ones
+                // (installed via the root command) wouldn't.
+                const result = await Bun.$`bun --cwd=packageList i --optional --only-missing --ignore-scripts ${dep}`.quiet().nothrow();
                 if (result.exitCode !== 0) {
+                    failedDeps.push(dep);
                     logger.warn(`- install failed for ${dep} (exit ${result.exitCode}): ${result.stderr.toString().trim()}`);
                 }
             },
             { concurrency: 1 },
         );
+
+        if (failedDeps.length) {
+            logger.warn(`${failedDeps.length} package(s) failed to install and will be retried next run: ${failedDeps.join(", ")}`);
+        }
     }
 };

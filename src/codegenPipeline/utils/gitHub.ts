@@ -32,6 +32,15 @@ export const repoHasFile = async (
     if (!token) throw new Error("GITHUB_TOKEN is not set");
     const url = apiUrl(githubUrl, fileName, path);
 
+    // A malformed `githubUrl` (e.g. not actually a github.com URL) makes `url` an invalid URL,
+    // which `fetch` would reject deterministically on every attempt - fail fast instead of
+    // burning retries/backoff on something retrying can never fix.
+    try {
+        new URL(url);
+    } catch {
+        return { hasConfigPlugin: `invalid URL: ${url}`, url };
+    }
+
     // fetch GitHub to check if a file app.plugin.js  at the root of the repo exists
     const headers: Record<string, string> = {};
 
