@@ -38,14 +38,26 @@ export const repoHasFile = async (
     headers.Authorization = `Bearer ${token}`;
 
     for (let attempt = 0; attempt <= retries; attempt++) {
-        const response = await fetch(url, { headers });
-        if (response.status === 200) return { hasConfigPlugin: true, url };
-        if (response.status === 404) return { hasConfigPlugin: false, url };
-        if (attempt < retries && isTransientStatus(response.status)) {
-            await delay(2 ** attempt * 500);
-            continue;
+        try {
+            const response = await fetch(url, { headers });
+            if (response.status === 200) return { hasConfigPlugin: true, url };
+            if (response.status === 404) return { hasConfigPlugin: false, url };
+            if (attempt < retries && isTransientStatus(response.status)) {
+                await delay(2 ** attempt * 500);
+                continue;
+            }
+            return { hasConfigPlugin: response.statusText, url };
+        } catch (error) {
+            // `fetch` itself can throw (DNS failure, timeout, connection reset) rather than
+            // resolving to a response - treat that the same as a transient status instead of
+            // letting it escape and reject the whole concurrency batch this call is part of.
+            const message = error instanceof Error ? error.message : String(error);
+            if (attempt < retries) {
+                await delay(2 ** attempt * 500);
+                continue;
+            }
+            return { hasConfigPlugin: `fetch failed: ${message}`, url };
         }
-        return { hasConfigPlugin: response.statusText, url };
     }
     // unreachable, satisfies TS
     return { hasConfigPlugin: "unknown", url };

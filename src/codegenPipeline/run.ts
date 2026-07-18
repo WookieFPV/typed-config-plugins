@@ -21,7 +21,7 @@ await detectConfigPlugins("onlyNew");
 
 await updatePackagesPackageJsonFile();
 
-await promiseStep(Bun.$`bun i`.quiet(), "Bun install --ignore-scripts");
+await promiseStep(Bun.$`bun i --ignore-scripts`.quiet(), "Bun install --ignore-scripts");
 
 const newlyCheckedTypes = await findConfigPluginTypePath("onlyNew");
 

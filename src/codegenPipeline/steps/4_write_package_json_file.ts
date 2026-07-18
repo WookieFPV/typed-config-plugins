@@ -28,9 +28,16 @@ const syncPackagesPackageJsonFile = async (packagesWithConfigPlugin: RnDep[]) =>
 
         await mapAsync(
             validNewDeps,
-            (dep) => {
+            async (dep) => {
                 logger.log(`- install ${dep}`);
-                return Bun.$`bun --cwd=packageList i --optional --only-missing ${dep}`.quiet();
+                // `.nothrow()` - a single broken install (bad tarball, failing lifecycle script,
+                // engine mismatch) must not abort every subsequent package in this batch. Log and
+                // move on; the package stays out of `packageList/package.json` and gets retried
+                // next run.
+                const result = await Bun.$`bun --cwd=packageList i --optional --only-missing ${dep}`.quiet().nothrow();
+                if (result.exitCode !== 0) {
+                    logger.warn(`- install failed for ${dep} (exit ${result.exitCode}): ${result.stderr.toString().trim()}`);
+                }
             },
             { concurrency: 1 },
         );

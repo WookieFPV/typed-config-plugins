@@ -1,8 +1,26 @@
+import { rename } from "node:fs/promises";
 import { file } from "bun";
 import { Mutex, toMerged } from "es-toolkit";
 
 export type Filter<Item> = Record<string, (item: Item) => boolean>;
 type noFilter<Item> = Record<never, (item: Item) => boolean>;
+
+// A hand-edited entry, a truncated write from a previous crash, or an upstream schema change
+// should fail loudly and name the offending row - not flow silently through 8 pipeline steps
+// until something downstream breaks in a confusing way.
+const assertValidRows = <Item>(path: string, primaryKey: keyof Item, data: unknown): Array<Item> => {
+    if (!Array.isArray(data)) throw new Error(`${path}: expected a JSON array, got ${typeof data}`);
+    data.forEach((item, index) => {
+        if (typeof item !== "object" || item === null) {
+            throw new Error(`${path}[${index}]: expected an object, got ${JSON.stringify(item)}`);
+        }
+        const value = (item as Record<string, unknown>)[primaryKey as string];
+        if (!value) {
+            throw new Error(`${path}[${index}]: missing required key "${String(primaryKey)}" - ${JSON.stringify(item).slice(0, 200)}`);
+        }
+    });
+    return data as Array<Item>;
+};
 
 export const jsonPersistorFactory = <Item, Filter extends Record<string, (item: Item) => boolean> = noFilter<Item>>({
     path,
@@ -20,14 +38,23 @@ export const jsonPersistorFactory = <Item, Filter extends Record<string, (item: 
     const mutex = new Mutex();
 
     const load = async (type?: keyof typeof filters): Promise<Array<Item>> => {
-        const data: Array<Item> = await file(path).json();
+        const raw = await file(path).json();
+        const data = assertValidRows<Item>(path, primaryKey, raw);
         if (!type) return data;
         const filter = filters?.[type];
         if (!filter) return data;
         return data.filter(filter);
     };
 
-    const save = async (pluginsList: Array<Item>) => file(path).write(JSON.stringify(persistor(pluginsList), null, 2));
+    const save = async (pluginsList: Array<Item>) => {
+        // Write-then-rename instead of writing the real path directly: a process killed mid-write
+        // (CI timeout, OOM) would otherwise leave this file - the single source of truth for the
+        // whole pipeline - truncated or invalid, corrupting every subsequent run. `rename` on the
+        // same filesystem is atomic, so readers only ever see the old or the fully-written file.
+        const tmpPath = `${path}.tmp`;
+        await file(tmpPath).write(JSON.stringify(persistor(pluginsList), null, 2));
+        await rename(tmpPath, path);
+    };
 
     const update = async (
         items: Item[],
