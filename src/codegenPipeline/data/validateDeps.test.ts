@@ -3,7 +3,7 @@ import { packageListFile } from "../storage/mainPackageList";
 import type { ConfigPluginOverrides, RnDep, RnDepPersist } from "../utils/types";
 
 const validKeys: Array<keyof RnDepPersist> = ["npmPkg", "githubUrl", "hasConfigPlugin", "types", "origin", "unmaintained"];
-const validTypeKeys: Array<keyof Exclude<RnDep["types"], undefined>> = ["path", "override", "error", "valid", "packageExport"];
+const validTypeKeys: Array<keyof Exclude<RnDep["types"], undefined>> = ["path", "override", "error", "valid", "packageExport", "exportName"];
 const validTypeOverrideKeys: Array<keyof ConfigPluginOverrides> = ["path", "ignore", "alias", "name", "valid"];
 
 const isValid = (dep: RnDep) => {

@@ -16,18 +16,18 @@ const baseDep = (types: RnDepPersist["types"]): RnDepPersist => ({
 
 describe("checkValidity", () => {
     it("validates the auto-discovered path when there is no override", () => {
-        expect(checkValidity(baseDep(undefined), fixture("validDefault"), undefined)).toEqual({ valid: true });
+        expect(checkValidity(baseDep(undefined), fixture("validDefault"), undefined)).toEqual({ valid: true, exportName: "default" });
     });
 
     it("respects a manually pinned override.valid without touching the type checker", () => {
-        expect(checkValidity(baseDep({ path: "", valid: false, override: { valid: true } }), fixture("emptyExport"), undefined)).toEqual({ valid: true });
+        expect(checkValidity(baseDep({ path: "", valid: false, override: { valid: true } }), fixture("emptyExport"), undefined)).toEqual({ valid: true, exportName: "default" });
     });
 
     it("validates override.path instead of the auto-discovered path when one is set", () => {
         // The auto-discovered path is broken, but the override path is valid - codegen emits the
         // override path, so that's what must determine validity.
         const dep = baseDep({ path: "", valid: false, override: { path: fixture("validDefault") } });
-        expect(checkValidity(dep, fixture("emptyExport"), undefined)).toEqual({ valid: true });
+        expect(checkValidity(dep, fixture("emptyExport"), undefined)).toEqual({ valid: true, exportName: "default" });
     });
 
     it("flags an override.path that is itself broken, even if the auto-discovered path is fine", () => {
@@ -41,12 +41,23 @@ describe("checkValidity", () => {
         // because a matching `.d.ts` was found on disk, so a resolution failure here is expected
         // (exports-blocked), not a sign the type shape is actually wrong.
         const dep = baseDep({ path: "", valid: false });
-        expect(checkValidity(dep, fixture("doesNotExist"), true)).toEqual({ valid: true });
+        expect(checkValidity(dep, fixture("doesNotExist"), true)).toEqual({ valid: true, exportName: "default" });
     });
 
     it("still flags a genuine shape mismatch even when packageExport is true", () => {
         const dep = baseDep({ path: "", valid: false });
         const result = checkValidity(dep, fixture("emptyExport"), true);
+        expect(result.valid).toBe(false);
+    });
+
+    it("retries against the bare module type for an `export =` plugin (no default export)", () => {
+        const dep = baseDep({ path: "", valid: false });
+        expect(checkValidity(dep, fixture("exportEquals"), undefined)).toEqual({ valid: true, exportName: "" });
+    });
+
+    it("does not retry the bare module type when a human pinned an explicit override.name", () => {
+        const dep = baseDep({ path: "", valid: false, override: { name: "default" } });
+        const result = checkValidity(dep, fixture("exportEquals"), undefined);
         expect(result.valid).toBe(false);
     });
 });

@@ -60,10 +60,20 @@ export type ExportCheckResult = { valid: true } | { valid: false; error: string;
  * Checks whether `typeof import(importPath)[exportName]` type-checks without errors.
  * `importPath` should be a bare specifier resolvable from `src/plugin/` (e.g. `"some-pkg/plugin/build/index"`),
  * matching exactly what ends up in the generated `ConfigPluginOptions<...>` line.
+ *
+ * Pass `exportName: null` to check the bare module type (`typeof import(importPath)`, no property
+ * access) instead - some packages declare their plugin via `export = ConfigPlugin<...>` rather than
+ * a `default` export, and only the bare module type resolves to the real function type for those.
+ * That bare type-check alone would trivially "pass" for any resolvable module (even an empty one -
+ * a module's namespace type always type-checks), so it additionally asserts the module type is
+ * itself callable as `(config, props) => result`, matching `ConfigPlugin`'s shape.
  */
-export const verifyExportType = (importPath: string, exportName = "default"): ExportCheckResult => {
+export const verifyExportType = (importPath: string, exportName: string | null = "default"): ExportCheckResult => {
     version++;
-    currentContent = `type __Check = typeof import(${JSON.stringify(importPath)})[${JSON.stringify(exportName)}];\nexport {};\n`;
+    currentContent =
+        exportName === null
+            ? `declare function __assertPlugin<T extends true>(): void;\ntype __Check = typeof import(${JSON.stringify(importPath)});\n__assertPlugin<__Check extends (config: any, props: any) => any ? true : false>();\nexport {};\n`
+            : `type __Check = typeof import(${JSON.stringify(importPath)})[${JSON.stringify(exportName)}];\nexport {};\n`;
 
     const ls = getService();
     const diagnostics = [...ls.getSyntacticDiagnostics(virtualFileName), ...ls.getSemanticDiagnostics(virtualFileName)];

@@ -36,4 +36,13 @@ describe("verifyExportType", () => {
         const result = verifyExportType(fixture("cjsOnly"), "default");
         expect(result.valid).toBe(false);
     });
+
+    it("fails an `export =` module when checked against `default`", () => {
+        const result = verifyExportType(fixture("exportEquals"), "default");
+        expect(result.valid).toBe(false);
+    });
+
+    it("passes an `export =` module when checked against the bare module type", () => {
+        expect(verifyExportType(fixture("exportEquals"), null)).toEqual({ valid: true });
+    });
 });

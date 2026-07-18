@@ -21,8 +21,11 @@ export const revalidate = (dep: RnDepPersist): RnDepPersist => {
     if (types.override?.ignore || types.override?.valid !== undefined) return dep;
 
     const effectivePath = types.override?.path ?? types.path;
-    const exportName = types.override?.name ?? "default";
-    const result = verifyExportType(effectivePath, exportName);
+    // Reuse the export name step 5 auto-detected (e.g. "" for an `export =` module) - re-checking
+    // against a hardcoded "default" would wrongly flip a still-valid `export =` package to invalid
+    // on every subsequent run.
+    const exportName = types.override?.name ?? types.exportName ?? "default";
+    const result = verifyExportType(effectivePath, exportName || null);
 
     // `packageExport` is only computed once, when a path is first discovered (step 5). Re-derive
     // it here too, so a package that adds/tightens `exports` in a *later* release - after its path

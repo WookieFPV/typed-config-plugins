@@ -2,7 +2,10 @@ import { sortBy, uniqBy } from "es-toolkit/array";
 import { packageListFile } from "../storage/mainPackageList";
 import type { RnDep } from "../utils/types";
 
-const line = (pkgName: string, importPath: string, name = "default") => `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")["${name}"]>;`;
+// `name` empty means the module uses `export = ConfigPlugin<...>` (see `checkValidity`'s bare
+// module retry) - the whole module type IS the plugin, so there's no property to index into.
+const line = (pkgName: string, importPath: string, name: string) =>
+    name ? `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")["${name}"]>;` : `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")>;`;
 const linesUntyped = (pkgName: string) => ["// This Packages doesn't ship types for config plugin:", `"${pkgName}": ConfigPluginOptions<unknown>;`];
 
 const emptyStrArr = (): string[] => [];
@@ -46,12 +49,13 @@ export const getConfigPluginTypeCode = async (): Promise<string> => {
                 out.lines.push(...linesUntyped(npmPkg));
                 addError(npmPkg, types?.error ?? "unknown Error");
             } else {
+                const exportName = override.name ?? types?.exportName ?? "default";
                 addIgnoreLine(types, npmPkg);
-                out.lines.push(line(npmPkg, path, override.name));
+                out.lines.push(line(npmPkg, path, exportName));
 
                 override.alias?.forEach((alias) => {
                     addIgnoreLine(types, npmPkg);
-                    out.lines.push(line(alias, path, override.name));
+                    out.lines.push(line(alias, path, exportName));
                 });
             }
         } catch (e) {

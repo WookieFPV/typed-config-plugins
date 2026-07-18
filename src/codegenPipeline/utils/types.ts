@@ -40,6 +40,10 @@ type TypePath = {
     error?: string;
     valid: boolean;
     packageExport?: boolean;
+    // The export name that actually validated ("default", a named export, or "" for a bare
+    // `export =` module). Auto-detected in step 5 - distinct from `override.name`, which is a
+    // human-set pin. Absent on legacy entries, which default to "default".
+    exportName?: string;
 };
 
 export type RnDepPersist = Pick<RnDep, "githubUrl" | "npmPkg" | "hasConfigPlugin" | "types" | "ignore" | "origin" | "unmaintained">;
