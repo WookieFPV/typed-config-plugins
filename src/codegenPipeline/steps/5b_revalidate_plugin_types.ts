@@ -24,9 +24,10 @@ export const revalidate = (dep: RnDepPersist): RnDepPersist => {
 
     // A missing module is often just this run's `bun i` failing to fetch an optional dependency
     // (registry hiccup, rate limit, transient network error) rather than the package actually
-    // disappearing or being renamed. Don't let that flip a previously-valid entry to invalid -
-    // only downgrade on a confirmed shape mismatch, where the module resolved but the export didn't.
-    if (!result.valid && result.moduleNotFound && types.valid) return dep;
+    // disappearing or being renamed. Don't let that flip valid -> invalid, and don't let it churn
+    // the recorded error message on an already-invalid entry either - only a confirmed shape
+    // mismatch (the module resolved but the export didn't) should change either field.
+    if (!result.valid && result.moduleNotFound) return dep;
 
     if (result.valid === types.valid && (result.valid || result.error === types.error)) return dep;
 
@@ -40,8 +41,12 @@ export const revalidate = (dep: RnDepPersist): RnDepPersist => {
     };
 };
 
-export const revalidatePluginTypes = step(async (): Promise<Array<RnDepPersist>> => {
-    const packages = await packageListFile.load("withPluginAndTypes");
+export const revalidatePluginTypes = step(async (alreadyCheckedThisRun: ReadonlySet<string> = new Set()): Promise<Array<RnDepPersist>> => {
+    const allPackages = await packageListFile.load("withPluginAndTypes");
+    // Packages step 5 just (re-)validated this run don't need a second, redundant check here -
+    // this step exists to catch drift in *previously* resolved entries, not to re-verify
+    // something already verified moments ago.
+    const packages = allPackages.filter((dep) => !alreadyCheckedThisRun.has(dep.githubUrl));
     if (packages.length) logger.log(`Revalidate Plugin Types: ${packages.length}`);
 
     const fulfilled = packages.map(revalidate);

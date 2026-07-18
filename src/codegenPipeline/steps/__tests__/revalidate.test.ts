@@ -48,4 +48,16 @@ describe("revalidate", () => {
         const dep = baseDep({ path: undefined as unknown as string, valid: false });
         expect(revalidate(dep)).toBe(dep);
     });
+
+    it("keeps an already-invalid entry's error message unchanged when the module can't be found (likely a flaky install)", () => {
+        const dep = baseDep({ path: fixture("doesNotExist"), valid: false, error: "stale error from a real mismatch" });
+        expect(revalidate(dep)).toBe(dep);
+    });
+
+    it("validates the override path instead of the recorded path when one is set", () => {
+        const dep = baseDep({ path: fixture("emptyExport"), override: { path: fixture("validDefault") }, valid: false, error: "stale error" });
+        const result = revalidate(dep);
+        expect(result.types?.valid).toBe(true);
+        expect(result.types?.error).toBeUndefined();
+    });
 });

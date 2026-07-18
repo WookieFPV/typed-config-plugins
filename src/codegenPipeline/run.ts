@@ -23,9 +23,9 @@ await updatePackagesPackageJsonFile();
 
 await promiseStep(Bun.$`bun i`.quiet(), "Bun install --ignore-scripts");
 
-await findConfigPluginTypePath("onlyNew");
+const newlyCheckedTypes = await findConfigPluginTypePath("onlyNew");
 
-await revalidatePluginTypes();
+await revalidatePluginTypes(new Set(newlyCheckedTypes.map((dep) => dep.githubUrl)));
 
 await codeGeneration();
 
