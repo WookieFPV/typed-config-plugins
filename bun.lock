@@ -163,6 +163,7 @@
         "@siteed/audio-studio": "^3.2.1",
         "@siteed/design-system": "0.51.2",
         "@siteed/expo-audio-studio": "2.18.1",
+        "@softwhere-uz/react-native-myid": "^0.1.3",
         "@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet": "0.2.1",
         "@sparkfabrik/react-native-idfa-aaid": "*",
         "@spreen/ffmpeg-kit-react-native-config": "9.0.5",
@@ -173,6 +174,7 @@
         "@superfan-app/spotify-auth": "0.1.73",
         "@survicate/react-native-survicate": "*",
         "@thedev132/expo-widgets": "1.0.3",
+        "@thoughtbot/react-native-social-auth": "^0.2.0",
         "@threls/expo-pusher-beams": "1.0.0",
         "@track-asia/trackasia-react-native": "2.0.2",
         "@tripleplaypay/react-native": "1.1.3",
@@ -207,6 +209,7 @@
         "expo-aliyun-oss": "^0.1.9",
         "expo-aliyun-push": "^0.2.0",
         "expo-alternate-app-icons": "*",
+        "expo-android-pedometer": "^1.5.1",
         "expo-app-auth": "12.0.0",
         "expo-appcenter": "0.2.0",
         "expo-apple-authentication": "*",
@@ -2443,6 +2446,8 @@
 
     "@socket.io/component-emitter": ["@socket.io/component-emitter@3.1.2", "", {}, "sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA=="],
 
+    "@softwhere-uz/react-native-myid": ["@softwhere-uz/react-native-myid@0.1.3", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-4dpckYO0PcRomEPsI/i6gvL5UBlK7awJIYEzLzADg/kUb3CQhGK3YKzR0Sr3nZ4qD4NeCe02xua6/UhaZCpPUQ=="],
+
     "@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet": ["@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet@0.2.1", "", { "dependencies": { "expo-dev-client": "~3.3.8" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-kyeX7mSCCKX3Y/Xvhw/HWGx7ERYAWJz+SbbSBGVDrqbJpLh87QX4m6V10RVU3jI2QtDLEMGbdGpHOEDkgtpx8Q=="],
 
     "@solana-mobile/mobile-wallet-adapter-protocol": ["@solana-mobile/mobile-wallet-adapter-protocol@2.2.5", "", { "dependencies": { "@solana/codecs-strings": "^4.0.0", "@solana/wallet-standard": "^1.1.2", "@solana/wallet-standard-util": "^1.1.1", "@wallet-standard/core": "^1.0.3", "js-base64": "^3.7.5" }, "peerDependencies": { "react-native": ">0.69" } }, "sha512-kCI+0/umWm98M9g12ndpS56U6wBzq4XdhobCkDPF8qRDYX/iTU8CD+QMcalh7VgRT7GWEmySQvQdaugM0Chf0g=="],
@@ -2808,6 +2813,8 @@
     "@thedev132/expo-widgets": ["@thedev132/expo-widgets@1.0.3", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-C4XhGCDvnojJypX8aYYspun6Xq5gFpPJ6yK/JdPgfVGe0tzjlSJ6jVVRvPHGwUBRnwivBhuXkyoCrYhu6tmgAw=="],
 
     "@theoplayer/cmcd-connector-web": ["@theoplayer/cmcd-connector-web@1.4.0", "", { "peerDependencies": { "theoplayer": "^5 || ^6 || ^7 || ^8 || ^9 || ^10" } }, "sha512-fOl94/HKnJLiBwhy4KPLOtxcNksUHfCyXQTvTM0kVBdd+Y6DwgreGpk6RXeHpxzkVXgH0Sx1DjNutwfIqLk/yA=="],
+
+    "@thoughtbot/react-native-social-auth": ["@thoughtbot/react-native-social-auth@0.2.0", "", { "peerDependencies": { "@expo/config-plugins": ">=9.0.0", "react": "*", "react-native": "*", "react-native-svg": ">=13.0.0" }, "optionalPeers": ["@expo/config-plugins"] }, "sha512-7we/JDj4zHEEt55qF77XQFkYsnA3AJbisSGERPH7/wqONkTr/XbGfyGQHIsoLKfmm9SnK1PoNDtYlmdp3slcDw=="],
 
     "@threls/expo-pusher-beams": ["@threls/expo-pusher-beams@1.0.0", "", { "dependencies": { "@pusher/push-notifications-web": "1.1.0" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-cxJ94Cktcn/yvBL0ttKQ517bXK4vms8bTfA7KmfxZgcEGZ9sWYYM+Cdj2LpgWAVq/6EBRI2KnIf5E0dejN7Gfg=="],
 
@@ -3970,6 +3977,8 @@
     "expo-aliyun-push": ["expo-aliyun-push@0.2.0", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-MN6okLfuRf9wqnCVmdx99v67f8WRg1gbD9rRVt/UcOf5MLbemoCpIG95Q3Tu4kAWJc+9vS9ZUS5j6DjkYIlo4A=="],
 
     "expo-alternate-app-icons": ["expo-alternate-app-icons@3.0.0", "", { "peerDependencies": { "expo": ">=53", "react": "*", "react-native": "*" } }, "sha512-PQ+zqTwr5ITlaFx6uQsMFgpnN/bmZrd9kTgVh/L5G+4yMl8Dphlj9xhBxUvTylz+O8RQ1WQUz4Q3FiTW9zl/bA=="],
+
+    "expo-android-pedometer": ["expo-android-pedometer@1.5.1", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-8Vw0fvf+RfBIYTlBCZYLXCvbolDQ5OhFG2gbxDNfUGyjD0VZaY2jlc19cTJrMnRN4KZ1BlM2CzSqynPNAKSKpQ=="],
 
     "expo-app-auth": ["expo-app-auth@12.0.0", "", { "dependencies": { "@expo/config-plugins": "^4.0.14", "expo-modules-core": "0.7.0", "invariant": "^2.2.4" }, "peerDependencies": { "expo": "*" } }, "sha512-MlvuiaSoFXilMC6UAb1cESx2JCZAfhNTNs+fjkU/0CSQsY2COE5cwLqKDpnsrz4ia8th6QPxsomeRzlSJkV5aA=="],
 

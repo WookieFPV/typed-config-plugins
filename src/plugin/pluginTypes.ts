@@ -195,6 +195,7 @@ export interface ThirdPartyAutomatedPlugins {
     "@siteed/audio-studio": ConfigPluginOptions<unknown>;
     // This Packages doesn't ship types for config plugin:
     "@siteed/expo-audio-studio": ConfigPluginOptions<unknown>;
+    "@softwhere-uz/react-native-myid": ConfigPluginOptions<typeof import("@softwhere-uz/react-native-myid/plugin/build/index")["default"]>;
     "@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet": ConfigPluginOptions<typeof import("@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet/plugin/build/withBottomSheet")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@spreen/ffmpeg-kit-react-native-config": ConfigPluginOptions<typeof import("@spreen/ffmpeg-kit-react-native-config/build/withFFMPEG")["default"]>;
@@ -207,6 +208,8 @@ export interface ThirdPartyAutomatedPlugins {
     "@superfan-app/spotify-auth": ConfigPluginOptions<typeof import("@superfan-app/spotify-auth/plugin/build/index")["default"]>;
     "@survicate/react-native-survicate": ConfigPluginOptions<typeof import("@survicate/react-native-survicate/lib/typescript/expo/withSurvicate")["default"]>;
     "@thedev132/expo-widgets": ConfigPluginOptions<typeof import("@thedev132/expo-widgets/plugin/build/index")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "@thoughtbot/react-native-social-auth": ConfigPluginOptions<typeof import("@thoughtbot/react-native-social-auth/plugin/build/withSocialAuth")["default"]>;
     "@threls/expo-pusher-beams": ConfigPluginOptions<typeof import("@threls/expo-pusher-beams/plugin/build/withPusherBeams")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@track-asia/trackasia-react-native": ConfigPluginOptions<typeof import("@track-asia/trackasia-react-native/lib/typescript/module/src/plugin/ios")["default"]>;
@@ -250,6 +253,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-aliyun-oss": ConfigPluginOptions<typeof import("expo-aliyun-oss/plugin/build/index")["default"]>;
     "expo-aliyun-push": ConfigPluginOptions<typeof import("expo-aliyun-push/plugin/build/index")["default"]>;
     "expo-alternate-app-icons": ConfigPluginOptions<typeof import("expo-alternate-app-icons/plugin/build/index")["default"]>;
+    "expo-android-pedometer": ConfigPluginOptions<typeof import("expo-android-pedometer/plugin/build/index")["default"]>;
     "expo-app-auth": ConfigPluginOptions<typeof import("expo-app-auth/plugin/build/withAppAuth")["default"]>;
     "expo-appcenter": ConfigPluginOptions<typeof import("expo-appcenter/plugin/build/index")["default"]>;
     "expo-apple-authentication": ConfigPluginOptions<typeof import("expo-apple-authentication/plugin/build/withAppleAuth")["default"]>;
@@ -903,6 +907,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@react-native-swc/core",
       "@reclaimprotocol/inapp-rn-sdk",
       "@rnmapbox/maps",
+      "@thoughtbot/react-native-social-auth",
       "@track-asia/trackasia-react-native",
       "@vietmap/vietmap-gl-react-native",
       "apple-health",
