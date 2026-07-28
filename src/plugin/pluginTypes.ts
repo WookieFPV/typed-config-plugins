@@ -436,6 +436,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-widgets": ConfigPluginOptions<typeof import("expo-widgets/plugin/build/withWidgets")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "expo-wireguard": ConfigPluginOptions<unknown>;
+    "expo-yandex-mapkit": ConfigPluginOptions<typeof import("expo-yandex-mapkit/plugin/build/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "expo-zendesk-messaging": ConfigPluginOptions<unknown>;
     "ez-expo-share": ConfigPluginOptions<typeof import("ez-expo-share/plugin/build/withShareExtension")["default"]>;

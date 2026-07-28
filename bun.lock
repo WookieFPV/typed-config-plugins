@@ -356,6 +356,7 @@
         "expo-whisper": "1.0.10",
         "expo-widgets": "^57.0.6",
         "expo-wireguard": "0.1.0",
+        "expo-yandex-mapkit": "^2.2.0",
         "expo-zendesk-messaging": "1.0.6",
         "ez-expo-share": "0.1.17",
         "ez-zendesk-unified-sdk": "0.1.4",
@@ -4317,6 +4318,8 @@
     "expo-widgets": ["expo-widgets@57.0.6", "", { "dependencies": { "@expo/plist": "^0.8.1", "@expo/ui": "~57.0.7" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-V7poa4ZP1ilIoNDeBiTWYPXSzz9KWXrMxub8bAbWArN6IjsZzEAURUmXibzUOcbGUrqiDgendKlOf/jwCm1WPg=="],
 
     "expo-wireguard": ["expo-wireguard@0.1.0", "", { "dependencies": { "expo-modules-core": "^2.3.13" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-UnoUVqEzeQU9HLoZUgypcFBUFxG3X74gu2r5+gDiiV466vP3QLHSo8BV0bKbUpRQBSXMhyWHI49x9VUB5+G8Zg=="],
+
+    "expo-yandex-mapkit": ["expo-yandex-mapkit@2.2.0", "", { "peerDependencies": { "expo": ">=55", "react": ">=19.2", "react-native": ">=0.83" } }, "sha512-sEoIobWuAi+Kv3seOqxSL9AElJhOILH4gpJRSYmMzwG+OSLyNz8CWDKUX3J0DuULAsOdkAY73r8L2/ZocMpU8w=="],
 
     "expo-zendesk-messaging": ["expo-zendesk-messaging@1.0.6", "", { "dependencies": { "expo-build-properties": "~0.12.5" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-iEoTum9qaKWwuLIjyXkOUFXI7jVYKVYE0pO0H7JS8oFRIaR1Xo/leUvi59UhFmhlLj8LlxzdpjCV+64MWgURxg=="],
 

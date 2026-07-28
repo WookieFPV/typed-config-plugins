@@ -508,6 +508,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/akashskypatel/ffmpeg-kit-extended/tree/HEAD/react-native",
+    "npmPkg": "ffmpeg-kit-extended",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/akinncar/react-native-mask-text",
     "npmPkg": "react-native-mask-text",
     "hasConfigPlugin": false,
@@ -3948,6 +3954,12 @@
     "hasConfigPlugin": false,
     "origin": "directory",
     "unmaintained": true
+  },
+  {
+    "githubUrl": "https://github.com/d3sm/kalendar",
+    "npmPkg": "@d3sm/kalendar",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/daavidaviid/react-native-nitro-udp",
@@ -13307,6 +13319,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/mdjastrzebski/react-native-memory-footprint",
+    "npmPkg": "react-native-memory-footprint",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/mdjastrzebski/react-native-unmount",
     "npmPkg": "react-native-unmount",
     "hasConfigPlugin": false,
@@ -19322,6 +19340,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/scrolldynasty/react-native-drum-picker",
+    "npmPkg": "react-native-drum-picker",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/sectiontn/otp-input",
     "npmPkg": "@sectiontn/otp-input",
     "hasConfigPlugin": false,
@@ -20296,6 +20320,23 @@
       "valid": false,
       "error": "Package doesn't ship an app.plugin.js file"
     }
+  },
+  {
+    "githubUrl": "https://github.com/softwhere-uz/expo-yandex-mapkit",
+    "npmPkg": "expo-yandex-mapkit",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-yandex-mapkit/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/softwhere-uz/react-native-emoji-keyboard/tree/main/packages/react-native-emoji-keyboard",
+    "npmPkg": "@softwhere-uz/react-native-emoji-keyboard",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/softwhere-uz/react-native-myid",
@@ -23661,6 +23702,12 @@
   {
     "githubUrl": "https://github.com/yasser-g/react-native-scales",
     "npmPkg": "react-native-scales",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ydrea/react-native-cumquat",
+    "npmPkg": "react-native-cumquat",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
