@@ -20,12 +20,27 @@ const isValid = (dep: RnDep) => {
     });
 };
 
+// An absolute path here means the committed file depends on where the pipeline ran, so CI and a
+// contributor's machine generate different content for the exact same packages (see
+// `utils/normalizeErrorPaths.ts`).
+const absolutePath = /(?<![\w.$@+~-])(?:[A-Za-z]:)?[\\/](?:[\w.$@+~-]+[\\/])+[\w.$@+~-]+/;
+
 describe("validateDeps", () => {
     it("should only contain know keys", async () => {
         const deps = await packageListFile.load("unignored");
 
         for (const dep of deps) {
             isValid(dep);
+        }
+    });
+
+    it("should not contain machine specific absolute paths", async () => {
+        const deps = await packageListFile.load();
+
+        for (const dep of deps) {
+            const error = dep.types?.error;
+            if (!error) continue;
+            expect(absolutePath.test(error), `${dep.npmPkg} types.error contains an absolute path: ${error}`).toBe(false);
         }
     });
 });
