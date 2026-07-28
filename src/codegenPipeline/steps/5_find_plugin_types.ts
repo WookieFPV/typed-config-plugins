@@ -5,6 +5,7 @@ import { isExpectedExportsBlock } from "../searchTypes/isExpectedExportsBlock";
 import { verifyExportType } from "../searchTypes/verifyExportType";
 import { packageListFile } from "../storage/mainPackageList";
 import { stepLogger } from "../utils/logger";
+import { normalizeErrorPaths } from "../utils/normalizeErrorPaths";
 import type { RnDepPersist } from "../utils/types";
 
 const { logger, step } = stepLogger("Find Config Plugin Type Path");
@@ -61,7 +62,9 @@ const mapPluginTypes = async (dep: RnDepPersist): Promise<RnDepPersist> => {
             },
         };
     } catch (err) {
-        const msg = err instanceof Error ? err.message : "unknown error message";
+        // A thrown error (fs/resolve failures) names the file it choked on by absolute path - same
+        // machine-dependent-diff problem as the checker diagnostics above.
+        const msg = normalizeErrorPaths(err instanceof Error ? err.message : "unknown error message");
         return { ...dep, types: { ...dep.types, path: undefined as unknown as string, valid: false, error: msg } };
     }
 };

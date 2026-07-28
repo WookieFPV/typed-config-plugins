@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import ts from "typescript";
+import { normalizeErrorPaths } from "../utils/normalizeErrorPaths";
 
 // Verifies that `typeof import(importPath)[exportName]` actually type-checks the same way
 // it will once written into the generated `src/plugin/pluginTypes.ts`. A `.d.ts` file can
@@ -80,7 +81,9 @@ export const verifyExportType = (importPath: string, exportName: string | null =
 
     if (diagnostics.length === 0) return { valid: true };
 
-    const error = diagnostics.map((d) => ts.flattenDiagnosticMessageText(d.messageText, " ")).join("; ");
+    // Diagnostics reference modules by absolute path; those get persisted to `rn-packages.json`,
+    // so strip the machine-specific prefix before it can reach the file (see `normalizeErrorPaths`).
+    const error = normalizeErrorPaths(diagnostics.map((d) => ts.flattenDiagnosticMessageText(d.messageText, " ")).join("; "));
     const moduleNotFound = diagnostics.every((d) => d.code === CANNOT_FIND_MODULE);
     return { valid: false, error, moduleNotFound };
 };
