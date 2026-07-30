@@ -330,6 +330,7 @@
     "expo-whisper": "1.0.10",
     "expo-widgets": "^57.0.6",
     "expo-wireguard": "0.1.0",
+    "expo-yandex-mapkit": "^2.2.0",
     "expo-zendesk-messaging": "1.0.6",
     "ez-expo-share": "0.1.17",
     "ez-zendesk-unified-sdk": "0.1.4",
