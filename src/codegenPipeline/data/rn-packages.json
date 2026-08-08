@@ -416,6 +416,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/ahmed-elmaki/react-native-signal-scorer",
+    "npmPkg": "react-native-signal-scorer",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/ahmedawaad1804/react-native-restart-newarch",
     "npmPkg": "react-native-restart-newarch",
     "hasConfigPlugin": false,
@@ -7730,6 +7736,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/getonramp/onramp-sdk/tree/main/packages/sdk-react-native",
+    "npmPkg": "@onramp-sdk/react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/getsentry/sentry-react-native/tree/main/packages/core",
     "npmPkg": "@sentry/react-native",
     "hasConfigPlugin": true,
@@ -7975,6 +7987,36 @@
     "npmPkg": "@gluestack/ui-next-adapter",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/gmi-software/react-native-better-clustering/tree/main/package",
+    "npmPkg": "react-native-better-clustering",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/gmi-software/react-native-better-maps/tree/main/package",
+    "npmPkg": "react-native-better-maps",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-better-maps/plugin/build/ios",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/gmi-software/react-native-pay/tree/main/package",
+    "npmPkg": "@gmisoftware/react-native-pay",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@gmisoftware/react-native-pay/lib/plugin/index",
+      "error": "Could not find a declaration file for module '@gmisoftware/react-native-pay/lib/plugin/index'. 'node_modules/@gmisoftware/react-native-pay/lib/plugin/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/gmisoftware__react-native-pay` if it exists or add a new declaration (.d.ts) file containing `declare module '@gmisoftware/react-native-pay/lib/plugin/index';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/gmsgowtham/react-native-code-highlighter",
@@ -8225,6 +8267,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/gstj/magic-modal/tree/main/packages/modal",
+    "npmPkg": "magic-modal",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/gstj/react-native-magic-modal/tree/main/packages/modal",
     "npmPkg": "react-native-magic-modal",
     "hasConfigPlugin": false,
@@ -8267,6 +8315,12 @@
   {
     "githubUrl": "https://github.com/gunnartorfis/sonner-native-toasts",
     "npmPkg": "sonner-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/gurdeep99/react-native-video-provider",
+    "npmPkg": "react-native-video-provider",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -8866,6 +8920,18 @@
     }
   },
   {
+    "githubUrl": "https://github.com/hung-yueh/react-native-leap",
+    "npmPkg": "react-native-leap",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-leap/app.plugin",
+      "error": "Could not find a declaration file for module 'react-native-leap/app.plugin'. 'node_modules/react-native-leap/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-leap` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-leap/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/hung-yueh/react-native-litert-lm",
     "npmPkg": "react-native-litert-lm",
     "hasConfigPlugin": true,
@@ -9026,6 +9092,12 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/hzblj/zyplot/tree/main/packages/zyplot",
+    "npmPkg": "@hzblj/zyplot",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/i18next/i18next",
@@ -12647,6 +12719,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/mahdidavoodi7/expo-thinking-orbs",
+    "npmPkg": "expo-thinking-orbs",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/maheshmuttintidev/react-native-android-phone-number-hint",
     "npmPkg": "@shayrn/react-native-android-phone-number-hint",
     "hasConfigPlugin": false,
@@ -13397,6 +13475,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/melihmuratpesmen/expo-modern-table",
+    "npmPkg": "expo-modern-table",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/meliorence/react-native-render-html/tree/master/packages/render-html",
     "npmPkg": "react-native-render-html",
     "hasConfigPlugin": false,
@@ -13709,6 +13793,12 @@
   {
     "githubUrl": "https://github.com/mindinventory/react-native-card-animation",
     "npmPkg": "@mindinventory/react-native-card-animation",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/mindinventory/react-native-nitro-realtime-audio",
+    "npmPkg": "@mindinventory/react-native-nitro-realtime-audio",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -23966,6 +24056,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/zeroqool/react-native-paper-country-picker",
+    "npmPkg": "react-native-paper-country-picker",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/zewish/redux-remember/tree/master/packages/redux-remember",
     "npmPkg": "redux-remember",
     "hasConfigPlugin": false,
@@ -24070,6 +24166,17 @@
     "githubUrl": "https://github.com/zoontek/react-native-permissions",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/zoriya/react-native-omni",
+    "npmPkg": "react-native-omni",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-omni/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/zykeco/react-native-ble-nitro",

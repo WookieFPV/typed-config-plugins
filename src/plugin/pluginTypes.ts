@@ -69,6 +69,8 @@ export interface ThirdPartyAutomatedPlugins {
     // This Packages doesn't ship types for config plugin:
     "@giphy/react-native-sdk": ConfigPluginOptions<unknown>;
     // This Packages doesn't ship types for config plugin:
+    "@gmisoftware/react-native-pay": ConfigPluginOptions<unknown>;
+    // This Packages doesn't ship types for config plugin:
     "@goliapkg/sentori-expo": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@grupalia/react-native-photo-picker": ConfigPluginOptions<typeof import("@grupalia/react-native-photo-picker/app.plugin")["default"]>;
@@ -489,6 +491,8 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-background-geolocation": ConfigPluginOptions<typeof import("react-native-background-geolocation/expo/plugin/build/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "react-native-beacon-kit": ConfigPluginOptions<unknown>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-better-maps": ConfigPluginOptions<typeof import("react-native-better-maps/plugin/build/ios")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "react-native-blasted-image": ConfigPluginOptions<unknown>;
     "react-native-ble-manager": ConfigPluginOptions<typeof import("react-native-ble-manager/plugin/build/withBLE")["default"]>;
@@ -569,6 +573,8 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-intercom-expo-config-plugin": ConfigPluginOptions<typeof import("react-native-intercom-expo-config-plugin/build/withIntercom")["default"]>;
     "react-native-keyevent-expo-config-plugin": ConfigPluginOptions<typeof import("react-native-keyevent-expo-config-plugin/build/withReactNativeKeyevent")["default"]>;
     "react-native-keys": ConfigPluginOptions<typeof import("react-native-keys/lib/typescript/plugin/src/index")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "react-native-leap": ConfigPluginOptions<unknown>;
     "react-native-legal": ConfigPluginOptions<typeof import("react-native-legal/plugin/build/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "react-native-libsodium": ConfigPluginOptions<unknown>;
@@ -627,6 +633,7 @@ export interface ThirdPartyAutomatedPlugins {
     // This Packages doesn't ship types for config plugin:
     "react-native-notify-kit": ConfigPluginOptions<unknown>;
     "react-native-ometria": ConfigPluginOptions<typeof import("react-native-ometria/plugin/build/index")["default"]>;
+    "react-native-omni": ConfigPluginOptions<typeof import("react-native-omni/plugin/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-orientation-director": ConfigPluginOptions<typeof import("react-native-orientation-director/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
@@ -746,6 +753,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@evennit/notifee-expo-plugin",
       "@fingerprintjs/fingerprintjs-pro-react-native",
       "@giphy/react-native-sdk",
+      "@gmisoftware/react-native-pay",
       "@goliapkg/sentori-expo",
       "@hot-updater/react-native",
       "@huddle01/react-native-call-detection",
@@ -833,6 +841,7 @@ export interface ThirdPartyAutomatedPlugins {
       "react-native-health-connect",
       "react-native-helios",
       "react-native-image-sequence-encoder",
+      "react-native-leap",
       "react-native-libsodium",
       "react-native-liquid-glassmorphism",
       "react-native-litert-lm",
@@ -924,6 +933,7 @@ export interface ThirdPartyAutomatedPlugins {
       "mindbox-expo-plugin",
       "react-native-attribution-token",
       "react-native-audio-recorder-player",
+      "react-native-better-maps",
       "react-native-bottom-tabs",
       "react-native-credentials-manager",
       "react-native-deepgram",
