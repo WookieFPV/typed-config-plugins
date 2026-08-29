@@ -197,6 +197,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/abdullahansarii/rn-story",
+    "npmPkg": "rn-story",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/abhinandan-kushwaha/react-native-gifted-charts",
     "npmPkg": "react-native-gifted-charts",
     "hasConfigPlugin": false,
@@ -492,6 +498,12 @@
   {
     "githubUrl": "https://github.com/ajaykumar97/react-native-simple-logger",
     "npmPkg": "react-native-simple-logger",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ajibadedapo/expo-video-encoder",
+    "npmPkg": "expo-video-encoder",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -1010,6 +1022,36 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/andrewdongminyoo/react-native-naver-login",
+    "npmPkg": "react-native-naver-login-turbo",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/andrewdongminyoo/react-native-receipt-scanner",
+    "npmPkg": "react-native-receipt-scanner",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/andrewdongminyoo/react-native-step-counter",
+    "npmPkg": "react-native-step-counter-newarch",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/andrewdongminyoo/rn-newarch-ready",
+    "npmPkg": "rn-newarch-ready",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/andrewdongminyoo/rn-typed-assets",
+    "npmPkg": "rn-typed-assets",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/andreyonadam/react-native-scrolling-images",
     "npmPkg": "react-native-scrolling-images",
     "hasConfigPlugin": false,
@@ -1121,6 +1163,24 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/annabilik/chessboard-native/tree/main/packages/chessboard-native",
+    "npmPkg": "@vibechess/chessboard-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ant-design/ant-design-icons/tree/master/packages/icons-react-native",
+    "npmPkg": "@ant-design/icons-react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+    "npmPkg": "@ant-design/react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/antarmukhopadhyaya/react-native-usage-stats",
@@ -1240,6 +1300,11 @@
     "npmPkg": "@appandflow/react-navigation-bottom-sheet",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/appandflow/rn-iso/tree/main/packages/rn-iso",
+    "origin": "directory",
+    "ignore": true
   },
   {
     "githubUrl": "https://github.com/apperside/cross-local-storage",
@@ -2466,6 +2531,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/boiboif/react-native-toast",
+    "npmPkg": "@boiboif/react-native-toast",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/bolan9999/react-native-largelist/tree/master/src",
     "npmPkg": "react-native-largelist",
     "hasConfigPlugin": false,
@@ -2691,6 +2762,12 @@
   {
     "githubUrl": "https://github.com/bviebahn/react-native-star-rating-widget",
     "npmPkg": "react-native-star-rating-widget",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/byrizki/rusto-rs/tree/main/packages/react-native",
+    "npmPkg": "react-native-rusto",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -4023,6 +4100,17 @@
     "hasConfigPlugin": false,
     "origin": "directory",
     "unmaintained": true
+  },
+  {
+    "githubUrl": "https://github.com/dangerdeveloper/expo-gradle-properties",
+    "npmPkg": "expo-gradle-properties",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-gradle-properties/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/dangervalentine/react-native-scroll-track",
@@ -5495,6 +5583,12 @@
   {
     "githubUrl": "https://github.com/esbenp/react-native-clean-form",
     "npmPkg": "react-native-clean-form",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/eslamelfateh/react-native-body-parts-anatomy",
+    "npmPkg": "react-native-body-parts-anatomy",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -7584,6 +7678,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/gautham495/react-native-nitro-better-auth-passkey",
+    "npmPkg": "react-native-nitro-better-auth-passkey",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/gautham495/react-native-nitro-cloud-uploader",
     "npmPkg": "react-native-nitro-cloud-uploader",
     "hasConfigPlugin": false,
@@ -7844,6 +7944,18 @@
     "npmPkg": "rn-qr-generator",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/gfean/react-native-bundle-drop",
+    "npmPkg": "@gfean/react-native-bundle-drop",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@gfean/react-native-bundle-drop/app.plugin.js",
+      "error": "Could not find a declaration file for module '@gfean/react-native-bundle-drop/app.plugin.js'. 'node_modules/@gfean/react-native-bundle-drop/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/gfean__react-native-bundle-drop` if it exists or add a new declaration (.d.ts) file containing `declare module '@gfean/react-native-bundle-drop/app.plugin.js';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/gg11hedr/react-native-google-places-textinput",
@@ -9368,6 +9480,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/incognitol07/react-native-openwakeword",
+    "npmPkg": "react-native-openwakeword",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/indapp/expo-signature",
     "npmPkg": "expo-signature",
     "hasConfigPlugin": true,
@@ -9444,6 +9562,12 @@
   {
     "githubUrl": "https://github.com/inokawa/react-native-react-bridge",
     "npmPkg": "react-native-react-bridge",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/insert-affiliate/insertaffiliatereactnativesdk",
+    "npmPkg": "insert-affiliate-react-native-sdk",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -9702,6 +9826,12 @@
     "hasConfigPlugin": false,
     "origin": "directory",
     "unmaintained": true
+  },
+  {
+    "githubUrl": "https://github.com/invivek26/react-native-number-animation",
+    "npmPkg": "react-native-number-animation",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/inzamul36/loms/tree/main/public/js",
@@ -10564,6 +10694,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/joonhaelee/luas-rn-foreground-service",
+    "npmPkg": "@luas/rn-foreground-service",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/jordanbyron/react-native-event-source",
     "npmPkg": "react-native-event-source",
     "hasConfigPlugin": false,
@@ -10934,6 +11070,18 @@
     "npmPkg": "@kesha-antonov/react-native-chat",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/kesha-antonov/react-native-cloud-sync",
+    "npmPkg": "react-native-cloud-sync",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-cloud-sync/plugin/build/index",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/kesha-antonov/react-native-zoom-reanimated",
@@ -11447,6 +11595,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/ksblazh/expo-tts-file",
+    "npmPkg": "expo-tts-file",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/ksinghj/timer/tree/main/modules/live-activities",
     "origin": "gitHub",
     "ignore": true
@@ -11660,6 +11814,12 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/ladiyusuph/responsive-rn-helper",
+    "npmPkg": "@ladiyusuph/responsive-rn",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/ladjs/react-native-loading-spinner-overlay",
@@ -11950,6 +12110,12 @@
   {
     "githubUrl": "https://github.com/lingui/js-lingui/tree/main/packages/react",
     "npmPkg": "@lingui/react",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/linhnguyen-gt/react-native-phone-number-input",
+    "npmPkg": "@linhnguyen96114/react-native-phone-input",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -12635,6 +12801,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/maahibhama/pulsern/tree/main/packages/sdk",
+    "npmPkg": "@pulse-rn/sdk",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/mabounassif/apple-targets",
     "origin": "gitHub",
     "ignore": true
@@ -12969,6 +13141,21 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/margelo/nitro/tree/main/packages/nitrogen",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/nitro/tree/main/packages/react-native-nitro-modules",
+    "npmPkg": "react-native-nitro-modules",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/nitro/tree/master/packages/nitrogen",
+    "npmPkg": "nitrogen",
+    "hasConfigPlugin": false
+  },
+  {
     "githubUrl": "https://github.com/margelo/react-native-bignumber",
     "npmPkg": "react-native-bignumber",
     "hasConfigPlugin": false,
@@ -12981,6 +13168,23 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/margelo/react-native-blurhash",
+    "npmPkg": "react-native-blurhash",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-fast-tflite",
+    "npmPkg": "react-native-fast-tflite",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/margelo/react-native-filament/tree/main/package",
     "npmPkg": "react-native-filament",
     "hasConfigPlugin": false,
@@ -12991,6 +13195,16 @@
     "npmPkg": "react-native-graph",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-mmkv/tree/main/packages/react-native-mmkv",
+    "npmPkg": "react-native-mmkv",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "valid": false,
+      "error": "Package doesn't ship an app.plugin.js file"
+    }
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-nitro-fetch/tree/main/package",
@@ -13076,6 +13290,53 @@
     "npmPkg": "react-native-skottie",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera",
+    "npmPkg": "react-native-vision-camera",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-barcode-scanner",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-location",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-resizer",
+    "npmPkg": "react-native-vision-camera-resizer",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-skia",
+    "npmPkg": "react-native-vision-camera-skia",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-worklets",
+    "npmPkg": "react-native-vision-camera-worklets",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera-barcode-scanner",
+    "npmPkg": "react-native-vision-camera-barcode-scanner",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera-location",
+    "npmPkg": "react-native-vision-camera-location",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-worklets-core",
@@ -13399,6 +13660,12 @@
   {
     "githubUrl": "https://github.com/mdjastrzebski/react-native-memory-footprint",
     "npmPkg": "react-native-memory-footprint",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/mdjastrzebski/react-native-plain-text",
+    "npmPkg": "react-native-plain-text",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -13926,6 +14193,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/mobilteknolojileri/react-native-password-intelligence",
+    "npmPkg": "react-native-password-intelligence",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/mockingbot/react-native-zip-archive",
     "npmPkg": "react-native-zip-archive",
     "hasConfigPlugin": false,
@@ -14064,6 +14337,18 @@
   {
     "githubUrl": "https://github.com/mouselangelo/react-native-actions-shortcuts",
     "npmPkg": "react-native-actions-shortcuts",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/movelytics/react-native-pose-estimation",
+    "npmPkg": "@pose-tracker/react-native-pose-estimation",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/movelytics/react-native-pose-estimation-light",
+    "npmPkg": "@pose-tracker/react-native-pose-estimation-light",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -14357,6 +14642,18 @@
       "path": "munim-bluetooth/app.plugin",
       "valid": false,
       "error": "Could not find a declaration file for module 'munim-bluetooth/app.plugin'. 'node_modules/munim-bluetooth/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/munim-bluetooth` if it exists or add a new declaration (.d.ts) file containing `declare module 'munim-bluetooth/app.plugin';`",
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/munimtechnologies/munim-ffmpeg",
+    "npmPkg": "munim-ffmpeg",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "munim-ffmpeg/app.plugin",
+      "error": "Could not find a declaration file for module 'munim-ffmpeg/app.plugin'. 'node_modules/munim-ffmpeg/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/munim-ffmpeg` if it exists or add a new declaration (.d.ts) file containing `declare module 'munim-ffmpeg/app.plugin';`",
+      "valid": false,
       "exportName": "default"
     }
   },
@@ -15184,6 +15481,12 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/notchip/expo-panoramic-stitcher",
+    "npmPkg": "@notchip/expo-panoramic-stitcher",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/notgeorgemessier/nitro-speech",
@@ -17315,6 +17618,12 @@
     "githubUrl": "https://github.com/rajpootathar/expo-av-10.1.3",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/rajssinde/rs-native-kit-version-check",
+    "npmPkg": "@rs-native-kit/version-check",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/rakadoank/carbon-react-native/tree/main/packages/carbon-react-native",
@@ -19526,6 +19835,18 @@
     "githubUrl": "https://github.com/sevnote/sevnote-console/tree/main/javascript/public/js",
     "origin": "gitHub",
     "ignore": true
+  },
+  {
+    "githubUrl": "https://github.com/sfourdrinier/unified-ble-manager",
+    "npmPkg": "unified-ble-manager",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "unified-ble-manager/plugin/build/withBLE",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/sgamrekelashvili/expo-audio-studio",
@@ -22182,6 +22503,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/tristanheilman/react-native-object-capture",
+    "npmPkg": "react-native-object-capture",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/tristanmanchester/react-native-dotgrid",
     "npmPkg": "react-native-dotgrid",
     "hasConfigPlugin": false,
@@ -22349,6 +22676,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/ukladjs/uklad/tree/main/packages/core",
+    "npmPkg": "@ukladjs/core",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/umergitninja/expo-app/tree/main/packages/expo-build-properties",
     "origin": "gitHub",
     "ignore": true
@@ -22489,6 +22822,12 @@
   {
     "githubUrl": "https://github.com/usl-dev/react-intl-phone-username-input",
     "npmPkg": "react-intl-phone-username-input",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/usomnia/react-native-turbo-image-picker",
+    "npmPkg": "react-native-turbo-image-picker",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
