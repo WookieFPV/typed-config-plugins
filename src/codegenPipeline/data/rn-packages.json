@@ -9258,7 +9258,8 @@
       "valid": false,
       "error": "Could not find a declaration file for module 'expo-cdnbye/app.plugin'. 'node_modules/expo-cdnbye/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-cdnbye` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-cdnbye/app.plugin';`",
       "exportName": "default"
-    }
+    },
+    "ignore": true
   },
   {
     "githubUrl": "https://github.com/iehong/expo-umeng",
