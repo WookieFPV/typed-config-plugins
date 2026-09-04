@@ -82,6 +82,7 @@
     "expo-whisper@1.0.10": "patches/expo-whisper@1.0.10.patch"
   },
   "overrides": {
-    "@types/node": "24.9.1"
+    "@types/node": "24.9.1",
+    "esbuild": "0.28.2"
   }
 }
