@@ -106,7 +106,7 @@
         "@leanplum/react-native-sdk": "*",
         "@lightbase/rn-design-system": "2.7.0",
         "@livekit/react-native-expo-plugin": "1.0.2",
-        "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": "1.0.2",
+        "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": "1.0.3",
         "@luciq/react-native": "18.0.1",
         "@lugg/maps": "^0.2.0-alpha.0",
         "@lyrahealth-inc/react-native-orientation-plugin": "1.0.5",
@@ -1756,7 +1756,7 @@
 
     "@livekit/react-native-webrtc": ["@livekit/react-native-webrtc@137.0.2", "", { "dependencies": { "base64-js": "1.5.1", "debug": "4.3.4", "event-target-shim": "6.0.2" }, "peerDependencies": { "react-native": ">=0.60.0" } }, "sha512-0aXYATcBraOMDTteKzmfH5ICNHw8xFyMPHmhKg14+94fAGZ2hGjdHZUSkzL14+e508W486aIAmbXipuSQCCJgA=="],
 
-    "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": ["@lovesworking/watermelondb-expo-plugin-sdk-52-plus@1.0.2", "", {}, "sha512-6lWK1NbBL9H+JSCqslp/ZU1w7mM3iWOqmWVQ89q27UjxLvt9mo5CHSlo7abgE+AkiLLwEaN9qo0RQuc97aUoGw=="],
+    "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": ["@lovesworking/watermelondb-expo-plugin-sdk-52-plus@1.0.3", "", {}, "sha512-1sr/dg1T+EM1C6gWd9Mxtsut3Q2c9797d85WWEWijX1r0lgbuIjvXl4I8R59Oi/4bgpyAj20iSzKVClGbfhUVw=="],
 
     "@luciq/react-native": ["@luciq/react-native@18.0.1", "", { "peerDependencies": { "react": ">=16.8.6", "react-native": ">=0.60.0" }, "bin": { "luciq": "bin/index.js" } }, "sha512-T4g6xquo2cJrS9G3emmv6uP7ta5q224w9vZiERdZ91mVUhEzw3A0dSVNkLpZEjS/Tq2ASBrYUlvmjWsonRk97w=="],
 

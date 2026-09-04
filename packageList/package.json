@@ -80,7 +80,7 @@
     "@leanplum/react-native-sdk": "*",
     "@lightbase/rn-design-system": "2.7.0",
     "@livekit/react-native-expo-plugin": "1.0.2",
-    "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": "1.0.2",
+    "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": "1.0.3",
     "@luciq/react-native": "18.0.1",
     "@lugg/maps": "^0.2.0-alpha.0",
     "@lyrahealth-inc/react-native-orientation-plugin": "1.0.5",
