@@ -51,7 +51,7 @@
     "@divvi/mobile": "1.0.0-alpha.1",
     "@embrace-io/react-native": "6.2.1",
     "@evennit/notifee-expo-plugin": "3.7.3",
-    "@expensify/react-native-wallet": "0.1.21",
+    "@expensify/react-native-wallet": "0.1.23",
     "@fingerprintjs/fingerprintjs-pro-react-native": "3.9.0",
     "@fishjam-cloud/react-native-client": "*",
     "@fleetbase/react-native-mapbox-navigation": "2.1.7",
