@@ -367,6 +367,40 @@
     "ignore": true
   },
   {
+    "githubUrl": "https://github.com/afkcodes/timbre/tree/main/packages/audio-session",
+    "npmPkg": "@afkcodes/timbre-audio-session",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/afkcodes/timbre/tree/main/packages/cast",
+    "npmPkg": "@afkcodes/timbre-cast",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@afkcodes/timbre-cast/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/afkcodes/timbre/tree/main/packages/media-session",
+    "npmPkg": "@afkcodes/timbre-media-session",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@afkcodes/timbre-media-session/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/afkcodes/timbre/tree/main/packages/player",
+    "npmPkg": "@afkcodes/timbre-player",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/afonsojramos/super-calendar/tree/main/packages/native",
     "npmPkg": "@super-calendar/native",
     "hasConfigPlugin": false,
@@ -1302,9 +1336,13 @@
     "origin": "directory"
   },
   {
-    "githubUrl": "https://github.com/appandflow/rn-iso/tree/main/packages/rn-iso",
-    "origin": "directory",
-    "ignore": true
+    "githubUrl": "https://github.com/appandflow/stim/tree/main/packages/stim-cli",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/appandflow/stim/tree/master/packages/stim-cli",
+    "npmPkg": "stim-cli",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/apperside/cross-local-storage",
@@ -1759,6 +1797,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/awesomemotive/pushengage-react-native",
+    "npmPkg": "@pushengage/pushengage-react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/aws-amplify/amplify-js/tree/main/packages/auth",
     "npmPkg": "@aws-amplify/auth",
     "hasConfigPlugin": false,
@@ -1815,6 +1859,12 @@
   {
     "githubUrl": "https://github.com/axios/axios",
     "npmPkg": "axios",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/axonpack/axonpack/tree/HEAD/packages/%40axonpack/expo-devtools",
+    "npmPkg": "@axonpack/expo-devtools",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -4667,6 +4717,12 @@
   {
     "githubUrl": "https://github.com/devshojol/react-native-smart-placeholder",
     "npmPkg": "react-native-smart-placeholder",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/devusimple/ytdlp-react-native",
+    "npmPkg": "ytdlp-react-native",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -9370,7 +9426,8 @@
       "valid": false,
       "error": "Could not find a declaration file for module 'expo-cdnbye/app.plugin'. 'node_modules/expo-cdnbye/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-cdnbye` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-cdnbye/app.plugin';`",
       "exportName": "default"
-    }
+    },
+    "ignore": true
   },
   {
     "githubUrl": "https://github.com/iehong/expo-umeng",
@@ -12897,6 +12954,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/mahdidavoodi7/react-native-continued-task",
+    "npmPkg": "react-native-continued-task",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-continued-task/plugin/build/index",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/maheshmuttintidev/react-native-android-phone-number-hint",
     "npmPkg": "@shayrn/react-native-android-phone-number-hint",
     "hasConfigPlugin": false,
@@ -13142,6 +13211,8 @@
   },
   {
     "githubUrl": "https://github.com/margelo/nitro/tree/main/packages/nitrogen",
+    "npmPkg": "nitrogen",
+    "hasConfigPlugin": false,
     "origin": "directory"
   },
   {
@@ -13149,11 +13220,6 @@
     "npmPkg": "react-native-nitro-modules",
     "hasConfigPlugin": false,
     "origin": "directory"
-  },
-  {
-    "githubUrl": "https://github.com/margelo/nitro/tree/master/packages/nitrogen",
-    "npmPkg": "nitrogen",
-    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-bignumber",
@@ -13293,14 +13359,7 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera",
-    "npmPkg": "react-native-vision-camera",
-    "hasConfigPlugin": true,
-    "origin": "directory",
-    "types": {
-      "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
-      "valid": true,
-      "exportName": "default"
-    }
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-barcode-scanner",
@@ -13312,8 +13371,6 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-resizer",
-    "npmPkg": "react-native-vision-camera-resizer",
-    "hasConfigPlugin": false,
     "origin": "directory"
   },
   {
@@ -13324,9 +13381,17 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-worklets",
-    "npmPkg": "react-native-vision-camera-worklets",
-    "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera",
+    "npmPkg": "react-native-vision-camera",
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera-barcode-scanner",
@@ -13336,6 +13401,16 @@
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera-location",
     "npmPkg": "react-native-vision-camera-location",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera-resizer",
+    "npmPkg": "react-native-vision-camera-resizer",
+    "hasConfigPlugin": false
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera-worklets",
+    "npmPkg": "react-native-vision-camera-worklets",
     "hasConfigPlugin": false
   },
   {
@@ -14653,6 +14728,24 @@
     "types": {
       "path": "munim-ffmpeg/app.plugin",
       "error": "Could not find a declaration file for module 'munim-ffmpeg/app.plugin'. 'node_modules/munim-ffmpeg/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/munim-ffmpeg` if it exists or add a new declaration (.d.ts) file containing `declare module 'munim-ffmpeg/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/munimtechnologies/munim-pencilkit",
+    "npmPkg": "munim-pencilkit",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/munimtechnologies/munim-wifi",
+    "npmPkg": "munim-wifi",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "munim-wifi/app.plugin",
+      "error": "Could not find a declaration file for module 'munim-wifi/app.plugin'. 'node_modules/munim-wifi/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/munim-wifi` if it exists or add a new declaration (.d.ts) file containing `declare module 'munim-wifi/app.plugin';`",
       "valid": false,
       "exportName": "default"
     }
@@ -16816,6 +16909,18 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/platform-blocks/react-ui-library/tree/main/packages/charts",
+    "npmPkg": "@platform-blocks/charts",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/platform-blocks/react-ui-library/tree/main/packages/ui",
+    "npmPkg": "@platform-blocks/react-ui-library",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/playerdata/react-native-mcu-manager/tree/main/react-native-mcu-manager",
@@ -22505,8 +22610,14 @@
   {
     "githubUrl": "https://github.com/tristanheilman/react-native-object-capture",
     "npmPkg": "react-native-object-capture",
-    "hasConfigPlugin": false,
-    "origin": "directory"
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-object-capture/app.plugin",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/tristanmanchester/react-native-dotgrid",
@@ -22917,6 +23028,12 @@
     "hasConfigPlugin": false,
     "origin": "directory",
     "unmaintained": true
+  },
+  {
+    "githubUrl": "https://github.com/vengatmacuser/react-native-inapp-inspector",
+    "npmPkg": "react-native-inapp-inspector",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/venits/react-native-map-clustering",
