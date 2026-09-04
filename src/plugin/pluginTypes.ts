@@ -4,6 +4,8 @@ import type { ConfigPluginOptions } from "./types";
 
 export interface ThirdPartyAutomatedPlugins {
     "@adyen/react-native": ConfigPluginOptions<typeof import("@adyen/react-native/plugin/build/withAdyen")["default"]>;
+    "@afkcodes/timbre-cast": ConfigPluginOptions<typeof import("@afkcodes/timbre-cast/plugin/build/index")["default"]>;
+    "@afkcodes/timbre-media-session": ConfigPluginOptions<typeof import("@afkcodes/timbre-media-session/plugin/build/index")["default"]>;
     "@allboatsrise/expo-gigya": ConfigPluginOptions<typeof import("@allboatsrise/expo-gigya/plugin/build/index")["default"]>;
     "@allboatsrise/expo-marketingcloudsdk": ConfigPluginOptions<typeof import("@allboatsrise/expo-marketingcloudsdk/plugin/build/index")["default"]>;
     "@animo-id/indy-sdk-expo-plugin": ConfigPluginOptions<typeof import("@animo-id/indy-sdk-expo-plugin/build/withIndySdk")["default"]>;
@@ -66,6 +68,8 @@ export interface ThirdPartyAutomatedPlugins {
     "@fishjam-cloud/react-native-client": ConfigPluginOptions<typeof import("@fishjam-cloud/react-native-client/plugin/build/withFishjam")["default"]>;
     "@fullstory/react-native": ConfigPluginOptions<typeof import("@fullstory/react-native/plugin/build/index")["default"]>;
     "@getcello/cello-react-native": ConfigPluginOptions<typeof import("@getcello/cello-react-native/lib/typescript/src/expo-plugin/index")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "@gfean/react-native-bundle-drop": ConfigPluginOptions<unknown>;
     // This Packages doesn't ship types for config plugin:
     "@giphy/react-native-sdk": ConfigPluginOptions<unknown>;
     // This Packages doesn't ship types for config plugin:
@@ -324,6 +328,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-gradle-ext-vars": ConfigPluginOptions<typeof import("expo-gradle-ext-vars/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "expo-gradle-jvmargs": ConfigPluginOptions<typeof import("expo-gradle-jvmargs/plugin/build/withGradleJvmArgs")["default"]>;
+    "expo-gradle-properties": ConfigPluginOptions<typeof import("expo-gradle-properties/build/index")["default"]>;
     "expo-health-connect": ConfigPluginOptions<typeof import("expo-health-connect/build/withHealthConnect")["default"]>;
     "expo-horizon-core": ConfigPluginOptions<typeof import("expo-horizon-core/plugin/build/withHorizon")["default"]>;
     "expo-horizon-location": ConfigPluginOptions<typeof import("expo-horizon-location/plugin/build/withLocation")["default"]>;
@@ -455,6 +460,10 @@ export interface ThirdPartyAutomatedPlugins {
     // This Packages doesn't ship types for config plugin:
     "munim-bluetooth": ConfigPluginOptions<unknown>;
     // This Packages doesn't ship types for config plugin:
+    "munim-ffmpeg": ConfigPluginOptions<unknown>;
+    // This Packages doesn't ship types for config plugin:
+    "munim-wifi": ConfigPluginOptions<unknown>;
+    // This Packages doesn't ship types for config plugin:
     "mx-jpush-expo": ConfigPluginOptions<unknown>;
     "newrelic-react-native-agent": ConfigPluginOptions<typeof import("newrelic-react-native-agent/plugin/build/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
@@ -505,7 +514,11 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-cloud-storage": ConfigPluginOptions<typeof import("react-native-cloud-storage/dist/typescript/expo-plugin/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "react-native-cloud-store": ConfigPluginOptions<unknown>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-cloud-sync": ConfigPluginOptions<typeof import("react-native-cloud-sync/plugin/build/index")["default"]>;
     "react-native-compressor": ConfigPluginOptions<typeof import("react-native-compressor/lib/typescript/expo-plugin/compressor")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-continued-task": ConfigPluginOptions<typeof import("react-native-continued-task/plugin/build/index")["default"]>;
     "react-native-core-bluetooth": ConfigPluginOptions<typeof import("react-native-core-bluetooth/lib/typescript/src/expo-plugin/withCoreBluetooth")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
@@ -588,6 +601,8 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-maps": ConfigPluginOptions<typeof import("react-native-maps/dist/plugin/src/index")["default"]>;
     "react-native-metamap-sdk": ConfigPluginOptions<typeof import("react-native-metamap-sdk/plugin/build/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
+    "react-native-mmkv": ConfigPluginOptions<unknown>;
+    // This Packages doesn't ship types for config plugin:
     "react-native-moyasar-apple-pay": ConfigPluginOptions<unknown>;
     "react-native-msal": ConfigPluginOptions<typeof import("react-native-msal/plugin/build/withReactNativeMSAL")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -630,6 +645,8 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-notificare-scannables": ConfigPluginOptions<unknown>;
     // This Packages doesn't ship types for config plugin:
     "react-native-notify-kit": ConfigPluginOptions<unknown>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-object-capture": ConfigPluginOptions<typeof import("react-native-object-capture/app.plugin")["default"]>;
     "react-native-ometria": ConfigPluginOptions<typeof import("react-native-ometria/plugin/build/index")["default"]>;
     "react-native-omni": ConfigPluginOptions<typeof import("react-native-omni/plugin/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -724,6 +741,8 @@ export interface ThirdPartyAutomatedPlugins {
     "swiftui-native": ConfigPluginOptions<unknown>;
     test12321test: ConfigPluginOptions<typeof import("test12321test/plugin/build/index")["default"]>;
     "testflight-dev-deploy": ConfigPluginOptions<typeof import("testflight-dev-deploy/build/index")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "unified-ble-manager": ConfigPluginOptions<typeof import("unified-ble-manager/plugin/build/withBLE")["default"]>;
     "vibes-react-native-expo": ConfigPluginOptions<typeof import("vibes-react-native-expo/plugin/build/index")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "webengage-expo-push": ConfigPluginOptions<unknown>;
@@ -750,6 +769,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@didomi/react-native",
       "@evennit/notifee-expo-plugin",
       "@fingerprintjs/fingerprintjs-pro-react-native",
+      "@gfean/react-native-bundle-drop",
       "@giphy/react-native-sdk",
       "@gmisoftware/react-native-pay",
       "@goliapkg/sentori-expo",
@@ -812,6 +832,8 @@ export interface ThirdPartyAutomatedPlugins {
       "expo-zendesk-messaging",
       "jpush-expo-config-plugin",
       "munim-bluetooth",
+      "munim-ffmpeg",
+      "munim-wifi",
       "mx-jpush-expo",
       "onesignal-expo-plugin",
       "onnxruntime-react-native",
@@ -932,6 +954,8 @@ export interface ThirdPartyAutomatedPlugins {
       "react-native-audio-recorder-player",
       "react-native-better-maps",
       "react-native-bottom-tabs",
+      "react-native-cloud-sync",
+      "react-native-continued-task",
       "react-native-credentials-manager",
       "react-native-deepgram",
       "react-native-document-scanner-plugin",
@@ -947,11 +971,13 @@ export interface ThirdPartyAutomatedPlugins {
       "react-native-nitro-device-info",
       "react-native-nitro-ota",
       "react-native-nitro-speech-recognition",
+      "react-native-object-capture",
       "react-native-orientation-director",
       "react-native-tiktok",
       "react-native-tuner-engine",
       "react-native-turbo-preferences",
-      "rn-mlkit-ocr"
+      "rn-mlkit-ocr",
+      "unified-ble-manager"
     ]
   ],
   [
@@ -981,6 +1007,7 @@ export interface ThirdPartyAutomatedPlugins {
       "expo-dev-launcher",
       "expo-image",
       "react-native-enriched-markdown",
+      "react-native-mmkv",
       "react-native-quick-crypto",
       "react-native-screenguard",
       "react-native-sensitive-info",
