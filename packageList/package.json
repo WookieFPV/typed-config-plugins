@@ -41,7 +41,7 @@
     "@config-plugins/react-native-pdf": "*",
     "@corasan/image-compressor": "*",
     "@criipto/verify-expo": "3.0.4",
-    "@crossmint/client-sdk-react-native-ui": "0.13.0",
+    "@crossmint/client-sdk-react-native-ui": "0.13.34",
     "@daily-co/config-plugin-rn-daily-js": "0.0.11",
     "@datadog/mobile-react-native": "*",
     "@davotisolutions/expo-localization-utils": "0.1.4",

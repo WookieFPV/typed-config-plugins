@@ -67,7 +67,7 @@
         "@config-plugins/react-native-pdf": "*",
         "@corasan/image-compressor": "*",
         "@criipto/verify-expo": "3.0.4",
-        "@crossmint/client-sdk-react-native-ui": "0.13.0",
+        "@crossmint/client-sdk-react-native-ui": "0.13.34",
         "@daily-co/config-plugin-rn-daily-js": "0.0.11",
         "@datadog/mobile-react-native": "*",
         "@davotisolutions/expo-localization-utils": "0.1.4",
@@ -1065,25 +1065,25 @@
 
     "@criipto/verify-expo": ["@criipto/verify-expo@3.0.4", "", { "dependencies": { "@criipto/oidc": "1.3.2", "base-64": "^1.0.0", "expo-constants": "^18.0.11", "expo-crypto": "~13.0.2", "expo-modules-core": "^3.0.28", "expo-web-browser": "^14.2.0", "js-tokens": "^4.0.0", "jwt-decode": "^3.1.2", "loose-envify": "^1.4.0", "react-native-url-polyfill": "^2.0.0", "text-encoding": "^0.7.0" }, "peerDependencies": { "expo": "52 - 54", "expo-linking": "*", "react": "18 - 19", "react-native": "*" } }, "sha512-yl/eKrx2yvvUIT0jHgj/V7rad42/cZoxlJbOgRZH7957zJA3ReHEJ5S0lpraM6th8OWDW7fHz45M7HVNLcdy1Q=="],
 
-    "@crossmint/client-sdk-auth": ["@crossmint/client-sdk-auth@1.2.36", "", { "dependencies": { "@crossmint/client-sdk-base": "1.7.3", "@crossmint/common-sdk-auth": "1.0.58", "@crossmint/common-sdk-base": "0.9.7", "@farcaster/auth-kit": "0.6.0", "jwt-decode": "4.0.0" } }, "sha512-YG5OO95AV0xf2tpA4NW5kwxlrOr6GzgNu6Rp3kOsxadsRWC50k1c3vFdlyQbjML2sAUTlvdEX3u2X5BSsgVB2Q=="],
+    "@crossmint/client-sdk-auth": ["@crossmint/client-sdk-auth@1.2.50", "", { "dependencies": { "@crossmint/client-sdk-base": "2.0.2", "@crossmint/common-sdk-auth": "1.0.72", "@crossmint/common-sdk-base": "0.9.20", "@farcaster/auth-kit": "0.6.0", "jwt-decode": "4.0.0" } }, "sha512-cCkpYO6Ni30l4uhaAjuYyvl1TATopWGvodexIteoulfH7NLwSOLxa7U5x8xb6MttHMsSWwdqsb0nl88nAeVrHw=="],
 
-    "@crossmint/client-sdk-base": ["@crossmint/client-sdk-base@1.7.3", "", { "dependencies": { "@crossmint/client-sdk-window": "1.0.5", "@crossmint/common-sdk-base": "0.9.7", "@datadog/browser-logs": "4.42.2", "exponential-backoff": "3.1.1", "uuid": "9.0.1", "zod": "3.22.4" } }, "sha512-sh07b0Mc4W6fY/31rQWDeBGEZIkVBBV0M/5141tNIPkrC2K8nlajpYdhoOy/ErmvcGZZ5K7KVpJUSRvVMhxuug=="],
+    "@crossmint/client-sdk-base": ["@crossmint/client-sdk-base@2.0.2", "", { "dependencies": { "@crossmint/client-sdk-window": "1.0.9", "@crossmint/common-sdk-base": "0.9.20", "@datadog/browser-logs": "6.24.1", "exponential-backoff": "3.1.1", "uuid": "9.0.1", "zod": "3.22.4" } }, "sha512-YxeYJtaTO2KwgFTvaeCgjUkZQgdGo85w+oPaZLq/xINscAUAC4KlzFq/rM6uqatNV17s6rsG6v2EvIoa/yZJnQ=="],
 
-    "@crossmint/client-sdk-react-base": ["@crossmint/client-sdk-react-base@0.7.3", "", { "dependencies": { "@crossmint/client-sdk-auth": "1.2.36", "@crossmint/client-sdk-base": "1.7.3", "@crossmint/client-sdk-window": "1.0.5", "@crossmint/client-signers": "0.1.0", "@crossmint/common-sdk-auth": "1.0.58", "@crossmint/common-sdk-base": "0.9.7", "@crossmint/wallets-sdk": "0.18.2", "lodash.clonedeep": "4.5.0", "lodash.isequal": "4.5.0" }, "peerDependencies": { "react": ">=17.0.2" } }, "sha512-AdogBrFpEK4YGVby5hGl1MURIgVfcBvgoWYIKTse4DvZatKnwC3cjs3OZv0rGv1b5/v8jrHSMrOvb6o8TYgnZg=="],
+    "@crossmint/client-sdk-react-base": ["@crossmint/client-sdk-react-base@1.0.5", "", { "dependencies": { "@crossmint/client-sdk-auth": "1.2.50", "@crossmint/client-sdk-base": "2.0.2", "@crossmint/client-sdk-window": "1.0.9", "@crossmint/client-signers": "0.1.2", "@crossmint/common-sdk-auth": "1.0.72", "@crossmint/common-sdk-base": "0.9.20", "@crossmint/wallets-sdk": "0.20.2", "lodash.clonedeep": "4.5.0", "lodash.isequal": "4.5.0" }, "peerDependencies": { "react": ">=17.0.2" } }, "sha512-Gm0FuCh0ehRgaEnpYUWmmNYBHLqKIW0dOxAhUw0E0V6y5ONUf7jFbuQiHIPeQ+95HHbg3vqbSz04fcshLhTccQ=="],
 
-    "@crossmint/client-sdk-react-native-ui": ["@crossmint/client-sdk-react-native-ui@0.13.0", "", { "dependencies": { "@crossmint/client-sdk-auth": "1.2.36", "@crossmint/client-sdk-base": "1.7.3", "@crossmint/client-sdk-react-base": "0.7.3", "@crossmint/client-sdk-rn-window": "0.3.10", "@crossmint/client-signers": "0.1.0", "@crossmint/common-sdk-auth": "1.0.58", "@crossmint/common-sdk-base": "0.9.7", "@crossmint/wallets-sdk": "0.18.2", "@solana/web3.js": "1.98.1", "bs58": "^5.0.0", "lucide-react-native": "0.548.0", "mitt": "3.0.1", "react-native-svg": "15.14.0", "zod": "3.22.4" }, "peerDependencies": { "@expo/config-plugins": ">=9.0.0", "expo-constants": ">=17 <19", "expo-device": ">=7 <9", "expo-secure-store": ">=14 <16", "expo-web-browser": ">=14 <16", "react": ">=17.0.2", "react-native": ">=0.74.3", "react-native-webview": ">=13.15.0 <14" } }, "sha512-OILulLCwW5wb54WPNvjMcmDBLjhfjkzKYnw5jnmeY1abiFJVUMu34XxwelCvKhwt+i2SWnEK8HDmQpcW0DaUHg=="],
+    "@crossmint/client-sdk-react-native-ui": ["@crossmint/client-sdk-react-native-ui@0.13.34", "", { "dependencies": { "@crossmint/client-sdk-auth": "1.2.50", "@crossmint/client-sdk-base": "2.0.2", "@crossmint/client-sdk-react-base": "1.0.5", "@crossmint/client-sdk-rn-window": "0.3.15", "@crossmint/client-signers": "0.1.2", "@crossmint/common-sdk-auth": "1.0.72", "@crossmint/common-sdk-base": "0.9.20", "@crossmint/wallets-sdk": "0.20.5", "@solana/web3.js": "1.98.1", "bs58": "^5.0.0", "lodash.clonedeep": "4.5.0", "lodash.isequal": "4.5.0", "lucide-react-native": "0.548.0", "mitt": "3.0.1", "react-native-svg": "15.14.0", "zod": "3.22.4" }, "peerDependencies": { "@expo/config-plugins": ">=9.0.0", "expo-constants": ">=17 <19", "expo-device": ">=7 <9", "expo-secure-store": ">=14 <16", "expo-web-browser": ">=14 <16", "react": ">=17.0.2", "react-native": ">=0.74.3", "react-native-webview": ">=13.15.0 <14" } }, "sha512-coO7pALzAx9bLetavGe7GZ4IHEFBA4lzRva67I4vphhGo+Bm1/WUZq243YHMTOp2LrfcoOYe1JXYVVXYPLVVVw=="],
 
-    "@crossmint/client-sdk-rn-window": ["@crossmint/client-sdk-rn-window@0.3.10", "", { "dependencies": { "@crossmint/client-sdk-window": "1.0.5", "react-native-get-random-values": "^1.11.0", "zod": "3.22.4" }, "peerDependencies": { "react": ">=18.0.0", "react-native-webview": ">=13.15.0 <14" } }, "sha512-Mjd0PJTPSbaKATwd6aco1OwVobcxFkSTSHOCCzGHfVcQOGpZYaWnoQtk151P0dyxcw+QidBoETTY8uppL34tJQ=="],
+    "@crossmint/client-sdk-rn-window": ["@crossmint/client-sdk-rn-window@0.3.15", "", { "dependencies": { "@crossmint/client-sdk-window": "1.0.9", "react-native-get-random-values": "^1.11.0", "zod": "3.22.4" }, "peerDependencies": { "react": ">=18.0.0", "react-native-webview": ">=13.15.0 <14" } }, "sha512-fjEkRkDSIjpKU07L/kNiuJTtDMNP/PkcKqtLIH4/NbNGmL2uwunn3VPZ93wcI4ntIUPCrFRIivq3ed7wDQkLRg=="],
 
-    "@crossmint/client-sdk-window": ["@crossmint/client-sdk-window@1.0.5", "", { "dependencies": { "zod": "3.22.4" } }, "sha512-HvuVHf06LRPhEVwM7sp8CXMX23QNrceo69o0M5Ivz4IVuVo20/ar3aRtfnsVX5qNFKfNHKWiXrdWuPoTGQ9G1g=="],
+    "@crossmint/client-sdk-window": ["@crossmint/client-sdk-window@1.0.9", "", { "dependencies": { "zod": "3.22.4" } }, "sha512-GSC8JQYnYQHY2psWBPVbcq9hEtNBInN8b2L5ZL8BlPS1+a8B3VM+yi6RBAqf5K0tMVnDNQ/fBMcKYjp2wa4qbQ=="],
 
-    "@crossmint/client-signers": ["@crossmint/client-signers@0.1.0", "", { "dependencies": { "zod": "3.22.4" } }, "sha512-aXAvDAPNTap4nIJXy9dFrv7iUmUbW2Meyy+BJPLxwhOJaKdPWZQfmqsBr3Ys8TSSGiiyBDmnxqG+iblIZMgMsg=="],
+    "@crossmint/client-signers": ["@crossmint/client-signers@0.1.2", "", { "dependencies": { "zod": "3.22.4" } }, "sha512-mnY8XwhMggzqf3q5TUi7yk9+FS9g4NRDgVBOnF8Nx79cX7RNeuNJ1iNkLcV72neQRg0OQ6vZbjAP/Pz4ibnhdg=="],
 
-    "@crossmint/common-sdk-auth": ["@crossmint/common-sdk-auth@1.0.58", "", { "dependencies": { "@crossmint/client-sdk-base": "1.7.3", "@crossmint/common-sdk-base": "0.9.7" } }, "sha512-X0ERrU9F2ZetNA+qme/8iCRcqdIdMYrMQYISEguQhSiQs231Bdpqgr9PGOarPltQ2/x8S/gIOtbI7bh+YYDB9w=="],
+    "@crossmint/common-sdk-auth": ["@crossmint/common-sdk-auth@1.0.72", "", { "dependencies": { "@crossmint/client-sdk-base": "2.0.2", "@crossmint/common-sdk-base": "0.9.20" } }, "sha512-jcALkgkUCpiM5O08AEiLQVAfDJxH8EIcV9RbfEtSFMkSmWAT6EjgsaxJ3wosHVCAwewc4edh7TWiHqSMcn6VUQ=="],
 
-    "@crossmint/common-sdk-base": ["@crossmint/common-sdk-base@0.9.7", "", { "dependencies": { "@solana/web3.js": "1.98.1", "bs58": "5.0.0", "tweetnacl": "1.0.3", "viem": "2.33.1" } }, "sha512-ENbFixwqxrJndU6DAYcKKljEodn2y5NUfqka/hlxMuL7mkgOYcGdrls4t46DaNpOPNAl3a+XJbFHYZ1LzF2jVg=="],
+    "@crossmint/common-sdk-base": ["@crossmint/common-sdk-base@0.9.20", "", { "dependencies": { "@solana/web3.js": "1.98.1", "bs58": "5.0.0", "tweetnacl": "1.0.3", "viem": "2.33.1" } }, "sha512-KyRMvobsPV/Vz1gvYIutSeZeUUIhXDQ3KEhaAXd8Pn96WJCG4kgsgxxUA8HA/JsDY316O1ogGpKUKb9KYCFj2w=="],
 
-    "@crossmint/wallets-sdk": ["@crossmint/wallets-sdk@0.18.2", "", { "dependencies": { "@crossmint/client-sdk-window": "1.0.5", "@crossmint/client-signers": "0.1.0", "@crossmint/common-sdk-auth": "1.0.58", "@crossmint/common-sdk-base": "0.9.7", "@hey-api/client-fetch": "0.8.1", "@solana/web3.js": "1.98.1", "@stellar/stellar-sdk": "v14.0.0-rc.3", "abitype": "1.0.8", "bs58": "5.0.0", "ox": "0.6.9", "tweetnacl": "1.0.3", "viem": "2.33.1" } }, "sha512-aHUDiB7ojBdj6oxqBtQWVqhvQPUEiiuYkXUvjxLcdyeyQGxNK9VFjki2raQPCmb33V8hy9N+xmOPQyaDcmQsxA=="],
+    "@crossmint/wallets-sdk": ["@crossmint/wallets-sdk@0.20.5", "", { "dependencies": { "@crossmint/client-sdk-window": "1.0.9", "@crossmint/client-signers": "0.1.2", "@crossmint/common-sdk-auth": "1.0.72", "@crossmint/common-sdk-base": "0.9.20", "@hey-api/client-fetch": "0.8.1", "@solana/web3.js": "1.98.1", "@stellar/stellar-sdk": "v14.0.0-rc.3", "abitype": "1.0.8", "bs58": "5.0.0", "ox": "0.6.9", "tweetnacl": "1.0.3", "viem": "2.33.1" } }, "sha512-rboVL7B11nWmPXCmefGjbegG3l5wv2lHrN+duVEPDzukA2Br7kgX0KWNUVWfbAiF5scXT2WcrVSQ7R8eaJ9YnA=="],
 
     "@crowdin/ota-client": ["@crowdin/ota-client@0.7.0", "", { "dependencies": { "axios": "0.25.0" } }, "sha512-RNFnR2ter5dsFJlyQysT8jswDn/TBF/ALosiDRpaj2tcOlAk/amQOoqEMJrCdR46xWqMUNwz/hJ4YIlcN51kPQ=="],
 
@@ -1095,9 +1095,9 @@
 
     "@danieldietrich/copy": ["@danieldietrich/copy@0.4.2", "", {}, "sha512-ZVNZIrgb2KeomfNahP77rL445ho6aQj0HHqU6hNlQ61o4rhvca+NS+ePj0d82zQDq2UPk1mjVZBTXgP+ErsDgw=="],
 
-    "@datadog/browser-core": ["@datadog/browser-core@4.42.2", "", {}, "sha512-LnkcdFyNRpMEuvV1ePfKdgRvYh+VqqAiVRoAmgObcuzdYdIwQSfcJp4GFbBgr5v7uF2uhAp/b96MIyKlqi0Ixg=="],
+    "@datadog/browser-core": ["@datadog/browser-core@6.24.1", "", {}, "sha512-ViLqvvCrZtKRCrSCcrZmSbc4Th7Y0rUQ7PruP1KGNgmE2fY4rrRP/n77zXuF8y/bmBce0na8kCdoCUkKzl/xuQ=="],
 
-    "@datadog/browser-logs": ["@datadog/browser-logs@4.42.2", "", { "dependencies": { "@datadog/browser-core": "4.42.2" }, "peerDependencies": { "@datadog/browser-rum": "4.42.2" }, "optionalPeers": ["@datadog/browser-rum"] }, "sha512-idl9DilUGmWbmYb1D6VPmkpnhqaIdsQ08qjOw1c0QbtGUAFlFYyFCrugf2qwMt8QbJ8DqvEiwULTVAZOV9O4kA=="],
+    "@datadog/browser-logs": ["@datadog/browser-logs@6.24.1", "", { "dependencies": { "@datadog/browser-core": "6.24.1" }, "peerDependencies": { "@datadog/browser-rum": "6.24.1" }, "optionalPeers": ["@datadog/browser-rum"] }, "sha512-SmqUVzif6IRrdkhh8mewfFa64IfcnkPXLgMYigJDzo7O1f8PEuHF63sDJ2/x2hTXR68e2JKBKE/ooFpAmtCnYw=="],
 
     "@datadog/mobile-react-native": ["@datadog/mobile-react-native@2.12.4", "", { "dependencies": { "big-integer": "^1.6.52" }, "peerDependencies": { "react": ">=16.13.1", "react-native": ">=0.63.4 <1.0" } }, "sha512-5Kvtfu15qVoObyFWgvxLV9QJQxhiY733QeKphleKXXQy3p6KZNEIeQ0S3tFa3bt+l60KFrJOYNN3fKBNGT53Dw=="],
 
@@ -7370,6 +7370,8 @@
     "@crossmint/client-sdk-base/uuid": ["uuid@9.0.1", "", { "bin": { "uuid": "dist/bin/uuid" } }, "sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA=="],
 
     "@crossmint/client-sdk-base/zod": ["zod@3.22.4", "", {}, "sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg=="],
+
+    "@crossmint/client-sdk-react-base/@crossmint/wallets-sdk": ["@crossmint/wallets-sdk@0.20.2", "", { "dependencies": { "@crossmint/client-sdk-window": "1.0.9", "@crossmint/client-signers": "0.1.2", "@crossmint/common-sdk-auth": "1.0.72", "@crossmint/common-sdk-base": "0.9.20", "@hey-api/client-fetch": "0.8.1", "@solana/web3.js": "1.98.1", "@stellar/stellar-sdk": "v14.0.0-rc.3", "abitype": "1.0.8", "bs58": "5.0.0", "ox": "0.6.9", "tweetnacl": "1.0.3", "viem": "2.33.1" } }, "sha512-OGTbrdLLPK2FheYl5sdSMGmJyUSUa4Qh4NpDXsUtQpOyqyEl9dKfJMKqZzKHAy+MgsmlAqgFgm7rIP/VlQk+bQ=="],
 
     "@crossmint/client-sdk-react-native-ui/expo-web-browser": ["expo-web-browser@15.0.8", "", { "peerDependencies": { "expo": "*", "react-native": "*" } }, "sha512-gn+Y2ABQr6/EvFN/XSjTuzwsSPLU1vNVVV0wNe4xXkcSnYGdHxt9kHxs9uLfoCyPByoaGF4VxzAhHIMI7yDcSg=="],
 
