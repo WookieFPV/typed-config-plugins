@@ -289,8 +289,6 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-callkit-telecom": ConfigPluginOptions<typeof import("expo-callkit-telecom/plugin/build/withExpoCallKitTelecom")["default"]>;
     "expo-camera": ConfigPluginOptions<typeof import("expo-camera/plugin/build/withCamera")["default"]>;
-    // This Packages doesn't ship types for config plugin:
-    "expo-cdnbye": ConfigPluginOptions<unknown>;
     "expo-cellular": ConfigPluginOptions<typeof import("expo-cellular/plugin/build/withCellular")["default"]>;
     "expo-check-installed-apps": ConfigPluginOptions<typeof import("expo-check-installed-apps/plugin/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -788,7 +786,6 @@ export interface ThirdPartyAutomatedPlugins {
       "expo-background-recording",
       "expo-bare-kit",
       "expo-cafebazaar-auth",
-      "expo-cdnbye",
       "expo-firebase-app-distribution",
       "expo-floating-bubble",
       "expo-gbk-converter",

@@ -7,7 +7,7 @@ Type-safe helpers for Expo config plugins in `app.config.ts`.
 ## What It Does
 
 - Adds typed plugin helpers for Expo config authoring
-- Ships ready-made typings for **501** third-party config plugins
+- Ships ready-made typings for **504** third-party config plugins
 - Lets you extend missing plugin types with module augmentation
 - Works with normal Expo config output and only changes authoring ergonomics
 
@@ -15,13 +15,13 @@ Type-safe helpers for Expo config plugins in `app.config.ts`.
 
 ## Coverage
 
-**501 config plugins** are recognized out of the box (as of `v0.5.6`) — install the package, start typing a plugin name inside `plugin()`, and your editor takes it from there.
+**504 config plugins** are recognized out of the box (as of `v0.5.6`) — install the package, start typing a plugin name inside `plugin()`, and your editor takes it from there.
 
 | What you get | Plugins |
 | --- | ---: |
-| Autocomplete for the plugin name *and* its options | 348 |
-| Autocomplete for the plugin name only[^1] | 153 |
-| **Total** | **501** |
+| Autocomplete for the plugin name *and* its options | 350 |
+| Autocomplete for the plugin name only[^1] | 154 |
+| **Total** | **504** |
 
 [^1]: These packages ship a config plugin but no types for its options. `plugin("name", { … })` still autocompletes the name and accepts your options, they just aren't checked. You can add the missing types yourself — see [Extend Missing Plugin Types](#extend-missing-plugin-types).
 

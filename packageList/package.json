@@ -212,7 +212,6 @@
     "expo-calendar": "*",
     "expo-callkit-telecom": "^0.4.0",
     "expo-camera": "*",
-    "expo-cdnbye": "1.0.9",
     "expo-cellular": "*",
     "expo-check-installed-apps": "0.2.9",
     "expo-clear-keychain": "0.3.0",
@@ -543,7 +542,6 @@
     "with-rn-image-crop-picker": "0.2.0"
   },
   "patchedDependencies": {
-    "instabug-reactnative@16.0.2": "patches/instabug-reactnative@16.0.2.patch",
     "onesignal-expo-plugin@2.0.3": "patches/onesignal-expo-plugin@2.0.3.patch",
     "instabug-reactnative@16.0.3": "patches/instabug-reactnative@16.0.3.patch",
     "react-native-spotlight-search@2.2.0": "patches/react-native-spotlight-search@2.2.0.patch",
