@@ -30,7 +30,7 @@
     "@callstack/react-native-brownfield": "3.15.0",
     "@charmy.tech/react-native-admost": "3.3.2",
     "@clerk/clerk-expo": "2.19.31",
-    "@clevertap/clevertap-expo-plugin": "0.0.3",
+    "@clevertap/clevertap-expo-plugin": "0.0.4",
     "@codemagic/react-native-patch": "^0.1.0",
     "@config-plugins/react-native-adjust": "12.0.0",
     "@config-plugins/react-native-blob-util": "*",
