@@ -56,7 +56,7 @@
         "@callstack/react-native-brownfield": "3.15.0",
         "@charmy.tech/react-native-admost": "3.3.2",
         "@clerk/clerk-expo": "2.19.31",
-        "@clevertap/clevertap-expo-plugin": "0.0.3",
+        "@clevertap/clevertap-expo-plugin": "0.0.4",
         "@codemagic/react-native-patch": "^0.1.0",
         "@config-plugins/react-native-adjust": "12.0.0",
         "@config-plugins/react-native-blob-util": "*",
@@ -1020,7 +1020,7 @@
 
     "@clerk/types": ["@clerk/types@4.101.20", "", { "dependencies": { "@clerk/shared": "^3.47.2" } }, "sha512-MHvr1tGL5lwxD6zdzzixkHICbbZz/S1LChONKR52Qeu0yRGChZomPknsgqBMG9J3yNeyhaj0SWa5phQgQUk0lg=="],
 
-    "@clevertap/clevertap-expo-plugin": ["@clevertap/clevertap-expo-plugin@0.0.3", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-NqmjQ6TAatFgwcmXxTLwbPqEVfFKBa06PRi5563myoiBsJ7ibnQnJVcneVgXRM+/O9KFdYJmc76Rv/SVSpFrdw=="],
+    "@clevertap/clevertap-expo-plugin": ["@clevertap/clevertap-expo-plugin@0.0.4", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-S43n478+RzSqRXvkHfT9bc8fUPtEtkl0AlPPJ0B2YcReXn69PlgHX0MRCfauulKMI2JP8ClKJvhWcx3957J4SQ=="],
 
     "@codemagic/react-native-patch": ["@codemagic/react-native-patch@0.1.0", "", { "peerDependencies": { "react": ">=18", "react-native": ">=0.76" } }, "sha512-M0U3keUAayNpKIj4kmQjBPKur+HAFdeGJZ4DTqLeV+HsaZzikaTd190jrJEASLMUKIRkaUKniiXJMgXw05Szdw=="],
 
