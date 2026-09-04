@@ -61,7 +61,7 @@
     "@changesets/cli": "3.0.2",
     "@expo/config-plugins": "57.0.9",
     "@octokit/rest": "22.0.1",
-    "@types/bun": "1.4.0",
+    "@types/bun": "1.4.1",
     "@types/npm-registry-fetch": "8.0.9",
     "@types/resolve": "1.20.6",
     "es-toolkit": "1.52.0",
@@ -81,6 +81,7 @@
     "expo-whisper@1.0.10": "patches/expo-whisper@1.0.10.patch"
   },
   "overrides": {
-    "@types/node": "24.9.1"
+    "@types/node": "24.9.1",
+    "esbuild": "0.28.2"
   }
 }
