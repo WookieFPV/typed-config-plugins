@@ -13371,6 +13371,8 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-resizer",
+    "npmPkg": "react-native-vision-camera-resizer",
+    "hasConfigPlugin": false,
     "origin": "directory"
   },
   {
@@ -15117,9 +15119,9 @@
     "origin": "gitHub",
     "types": {
       "path": "@native-ui-org/native-modules/app.plugin",
-      "valid": false,
-      "error": "Could not find a declaration file for module '@native-ui-org/native-modules/app.plugin'. 'node_modules/@native-ui-org/native-modules/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/native-ui-org__native-modules` if it exists or add a new declaration (.d.ts) file containing `declare module '@native-ui-org/native-modules/app.plugin';`",
-      "exportName": "default"
+      "valid": true,
+      "exportName": "default",
+      "packageExport": true
     }
   },
   {
