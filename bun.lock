@@ -185,7 +185,7 @@
         "@tryvital/vital-core-react-native": "5.4.2",
         "@tryvital/vital-health-react-native": "5.4.2",
         "@vietmap/vietmap-gl-react-native": "2.3.2",
-        "@vivition/expo-camera": "17.0.8-vivition.14",
+        "@vivition/expo-camera": "17.0.8-vivition.54",
         "@vonovak/react-native-theme-control": "*",
         "@woosmap/expo-plugin-geofencing-batch": "1.0.5",
         "@wwdrew/expo-android-account-manager": "*",
@@ -3092,7 +3092,7 @@
 
     "@vimeo/player": ["@vimeo/player@2.30.4", "", { "dependencies": { "native-promise-only": "0.8.1", "weakmap-polyfill": "2.0.4" } }, "sha512-M8m1UAhJSb+KCWuXDLWHViwj+3YY/0ogwFquRfMHs9e9LYjXT9iB7n+sOCKwUusbiXuU2HKmXx+FEGHtYZfUSg=="],
 
-    "@vivition/expo-camera": ["@vivition/expo-camera@17.0.8-vivition.14", "", { "dependencies": { "@expo/config-plugins": "^54.0.2" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*", "react-native-web": "*" }, "optionalPeers": ["react-native-web"] }, "sha512-QVUQDtUSXzN1MwnAmJLZl0rDaQmcDs0dig/RDQoscDrWQAidMsmQ1CjDI1kIJMwlsSJ0RfPmwutlxSsHgeLR8g=="],
+    "@vivition/expo-camera": ["@vivition/expo-camera@17.0.8-vivition.54", "", { "dependencies": { "@expo/config-plugins": "^54.0.2" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*", "react-native-web": "*" }, "optionalPeers": ["react-native-web"] }, "sha512-BKa1gAx0+dtRx15aDDo5AlxYODTByBBEiOaX4VEYt15VnfGhUrdKL2rTAZm7OMfAHlD1in0wKPQh9semqrYgKQ=="],
 
     "@vonovak/react-native-theme-control": ["@vonovak/react-native-theme-control@7.0.2", "", { "dependencies": { "glob": "^11.0.3", "resolve-from": "^5.0.0" }, "peerDependencies": { "expo": ">=53.0.0", "react": ">=19.0.0", "react-native": ">=0.79.0" }, "optionalPeers": ["expo"] }, "sha512-tWBGw+5TL0YqMsLpvbpP6v01Nm27QyB0BxAXWq2jil1DMUiud/pbpDBIEGrj+zEnICBCKofHBLn13qzgzhBKug=="],
 
