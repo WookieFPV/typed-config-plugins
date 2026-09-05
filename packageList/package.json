@@ -129,7 +129,7 @@
     "@react-native-seoul/kakao-login": "*",
     "@react-native-seoul/naver-login": "*",
     "@react-native-swc/core": "^0.1.5",
-    "@react-native-tvos/config-tv": "0.1.4",
+    "@react-native-tvos/config-tv": "0.1.6",
     "@react-native-voice/voice": "*",
     "@reactvision/react-viro": "*",
     "@reclaimprotocol/inapp-rn-sdk": "0.18.0",
