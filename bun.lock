@@ -123,7 +123,7 @@
         "@mobione/thermalib-expo": "0.1.9",
         "@morrowdigital/watermelondb-expo-plugin": "2.3.3",
         "@mykin-ai/expo-audio-stream": "0.2.28",
-        "@native-ui-org/native-modules": "1.1.0",
+        "@native-ui-org/native-modules": "1.1.6",
         "@naveen521kk/react-native-tokenizer": "0.2.1",
         "@niondigital/cleverpush-expo-config-plugin": "1.1.2",
         "@niondigital/widgets-expo-config-plugin": "1.1.1",
@@ -1842,7 +1842,7 @@
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.0.7", "", { "dependencies": { "@emnapi/core": "^1.5.0", "@emnapi/runtime": "^1.5.0", "@tybys/wasm-util": "^0.10.1" } }, "sha512-SeDnOO0Tk7Okiq6DbXmmBODgOAb9dp9gjlphokTUxmt8U3liIP1ZsozBahH69j/RJv+Rfs6IwUKHTgQYJ/HBAw=="],
 
-    "@native-ui-org/native-modules": ["@native-ui-org/native-modules@1.1.0", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-UsBARFQk2+lbBfx438hJWYdSayqgZ58usl62i/bSWLzqy1V8Lpzcqgbx3dgYazKxRtWDnxGkfADD8lcn9D+LuA=="],
+    "@native-ui-org/native-modules": ["@native-ui-org/native-modules@1.1.6", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-pdV4LABq6orMgBY/QdoCME/tlv+uj21EGQOrO0BIRBvl/Gn6VvB8IPHlijANSGmnzKBoxq3aG51wgl/HwDasYg=="],
 
     "@naveen521kk/react-native-tokenizer": ["@naveen521kk/react-native-tokenizer@0.2.1", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-N67arGtILvf6+plWlnucEiEYQJ4OhaxwkEROOmD1lCef1fQx7t7bSLjCfa3UIqkHmZKgBjgz4gzT+SBuAEgSvg=="],
 
