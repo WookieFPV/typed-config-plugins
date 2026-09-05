@@ -206,7 +206,7 @@
         "bitmovin-player-react-native-analytics-conviva": "2.0.0",
         "cleverpush-expo-plugin": "0.0.2",
         "customerapp": "1.0.0",
-        "dojah-kyc-sdk-react-expo": "0.1.6",
+        "dojah-kyc-sdk-react-expo": "0.1.22",
         "eos": "0.4.1",
         "expo-ads-facebook": "11.2.0",
         "expo-alarm-module": "1.2.0",
@@ -3840,7 +3840,7 @@
 
     "doctrine": ["doctrine@3.0.0", "", { "dependencies": { "esutils": "^2.0.2" } }, "sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w=="],
 
-    "dojah-kyc-sdk-react-expo": ["dojah-kyc-sdk-react-expo@0.1.6", "", { "dependencies": { "expo-build-properties": "~0.14.6" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-skm3PTA+0GMyslPsm5JmjPW4h6U5qkfQo9HoZJr55SkyHTge1rR5sPKl39GsTMvIhbj20LCMTaHTzljMe3aq+Q=="],
+    "dojah-kyc-sdk-react-expo": ["dojah-kyc-sdk-react-expo@0.1.22", "", { "dependencies": { "expo-build-properties": "~0.14.6" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-tgDAbM9A5O4d2TXmUEBgaSIKgB/9sMBVV6xLthId64Gr0DLu1pAN2z70/Bu3muuIHNMfxk8JuxqfUWW28yKCWg=="],
 
     "dom-serializer": ["dom-serializer@2.0.0", "", { "dependencies": { "domelementtype": "^2.3.0", "domhandler": "^5.0.2", "entities": "^4.2.0" } }, "sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg=="],
 
