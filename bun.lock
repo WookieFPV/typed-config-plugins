@@ -132,7 +132,7 @@
         "@oleg_svetlichnyi/expo-icloud-storage": "1.0.0",
         "@opacity-labs/react-native-opacity": "6.9.0",
         "@openreplay/react-native": "*",
-        "@orbital-systems/react-native-esp-idf-provisioning": "0.5.5",
+        "@orbital-systems/react-native-esp-idf-provisioning": "0.5.7",
         "@peulda/expo-plugin-channel-io": "1.1.0",
         "@poilabs-dev/analysis-sdk-plugin": "1.0.68",
         "@poilabs-dev/navigation-sdk-plugin": "1.0.43",
@@ -1956,7 +1956,7 @@
 
     "@opentelemetry/web-common": ["@opentelemetry/web-common@0.203.0", "", { "dependencies": { "@opentelemetry/sdk-logs": "0.203.0", "@opentelemetry/sdk-trace-base": "2.0.1", "@opentelemetry/semantic-conventions": "^1.29.0" }, "peerDependencies": { "@opentelemetry/api": ">=1.4.0 <1.10.0" } }, "sha512-cRd2HT4RdGQwVXcw1QCnA/ngrUtS+U8Y5SdvQ31mYvwHfiyetEOE6KVy045gSvPAGrJMu+eiirzMIWaCr8EEhw=="],
 
-    "@orbital-systems/react-native-esp-idf-provisioning": ["@orbital-systems/react-native-esp-idf-provisioning@0.5.5", "", { "dependencies": { "buffer": "^6.0.3" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-gguGaj9gWKEG3kqPhLP1wukJhiZuevagvsanYO7pr6tQE2y5tSfETgde8tKjC3YGnRXeB9wgaL6/a/4WuaqjGQ=="],
+    "@orbital-systems/react-native-esp-idf-provisioning": ["@orbital-systems/react-native-esp-idf-provisioning@0.5.7", "", { "dependencies": { "buffer": "^6.0.3" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-MB6awqNEXDO9/DQa65Txz9DemQIM3imRrz/bn36V1oEomZqFaPnDw2EWdJm7AKKotb21uMhmkyY18IPzYMV1bQ=="],
 
     "@oxc-transform/binding-android-arm64": ["@oxc-transform/binding-android-arm64@0.82.1", "", { "os": "android", "cpu": "arm64" }, "sha512-Ox6tS6x+GNuKz1l73eDJplwiJvgQhrXdK1KHCItSq3MgSFBWc3BgaC41xh4mHQrS1pJjHuU+DsRfqxHsgMYqpw=="],
 
