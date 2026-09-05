@@ -100,7 +100,7 @@
     "@native-ui-org/native-modules": "1.1.6",
     "@naveen521kk/react-native-tokenizer": "0.2.1",
     "@niondigital/cleverpush-expo-config-plugin": "1.1.2",
-    "@niondigital/widgets-expo-config-plugin": "1.1.1",
+    "@niondigital/widgets-expo-config-plugin": "1.1.6",
     "@notifee/react-native": "9.1.8",
     "@novastera-oss/rn-google-signin": "1.0.2",
     "@oleg_svetlichnyi/expo-icloud-storage": "1.0.0",
