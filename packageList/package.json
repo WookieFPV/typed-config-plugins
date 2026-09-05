@@ -140,7 +140,7 @@
     "@sentry/react-native": "*",
     "@siteed/audio-studio": "^3.2.1",
     "@siteed/design-system": "0.51.2",
-    "@siteed/expo-audio-studio": "2.18.1",
+    "@siteed/expo-audio-studio": "2.18.6",
     "@softwhere-uz/react-native-myid": "^0.1.3",
     "@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet": "0.2.1",
     "@sparkfabrik/react-native-idfa-aaid": "*",
