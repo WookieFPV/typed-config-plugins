@@ -124,7 +124,7 @@
     "@react-native-firebase/messaging": "*",
     "@react-native-firebase/perf": "*",
     "@react-native-google-signin/google-signin": "*",
-    "@react-native-kakao/core": "2.4.0",
+    "@react-native-kakao/core": "2.4.6",
     "@react-native-runtimes/core": "^0.1.0-alpha.0",
     "@react-native-seoul/kakao-login": "*",
     "@react-native-seoul/naver-login": "*",
