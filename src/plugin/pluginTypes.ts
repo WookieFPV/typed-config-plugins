@@ -130,8 +130,8 @@ export interface ThirdPartyAutomatedPlugins {
     "@mobione/thermalib-expo": ConfigPluginOptions<typeof import("@mobione/thermalib-expo/plugin/build/index")["default"]>;
     "@morrowdigital/watermelondb-expo-plugin": ConfigPluginOptions<typeof import("@morrowdigital/watermelondb-expo-plugin/build/withWatermelon")["default"]>;
     "@mykin-ai/expo-audio-stream": ConfigPluginOptions<typeof import("@mykin-ai/expo-audio-stream/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
-    "@native-ui-org/native-modules": ConfigPluginOptions<unknown>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "@native-ui-org/native-modules": ConfigPluginOptions<typeof import("@native-ui-org/native-modules/app.plugin")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "@naveen521kk/react-native-tokenizer": ConfigPluginOptions<unknown>;
     "@niondigital/cleverpush-expo-config-plugin": ConfigPluginOptions<typeof import("@niondigital/cleverpush-expo-config-plugin/build/withCleverPush")["default"]>;
@@ -782,7 +782,6 @@ export interface ThirdPartyAutomatedPlugins {
       "@mapsindoors/react-native-maps-indoors-google-maps",
       "@mapsindoors/react-native-maps-indoors-mapbox",
       "@mj-studio/react-native-naver-map",
-      "@native-ui-org/native-modules",
       "@naveen521kk/react-native-tokenizer",
       "@openreplay/react-native",
       "@orbital-systems/react-native-esp-idf-provisioning",
@@ -920,6 +919,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@lightbase/rn-design-system",
       "@lugg/maps",
       "@maplibre/maplibre-react-native",
+      "@native-ui-org/native-modules",
       "@novastera-oss/rn-google-signin",
       "@oleg_svetlichnyi/expo-icloud-storage",
       "@opacity-labs/react-native-opacity",
