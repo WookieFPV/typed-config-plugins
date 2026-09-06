@@ -226,7 +226,7 @@
     "expo-custom-assets": "*",
     "expo-datadog": "54.0.1",
     "expo-dev-client": "*",
-    "expo-dev-launcher": "6.0.17",
+    "expo-dev-launcher": "6.0.21",
     "expo-document-picker": "*",
     "expo-document-scanner": "^0.2.8",
     "expo-dynamic-app-icon": "*",
