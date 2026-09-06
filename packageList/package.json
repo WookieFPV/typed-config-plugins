@@ -166,7 +166,7 @@
     "@wwdrew/expo-spotify-sdk": "*",
     "@xmartlabs/react-native-line": "*",
     "@youssefhenna/expo-enode-link-sdk": "1.0.4",
-    "@youssefhenna/expo-mapbox-navigation": "1.5.1",
+    "@youssefhenna/expo-mapbox-navigation": "1.5.7",
     "@yownes/core": "1.5.5",
     "@zamplyy/react-native-vector-image-plugin": "0.1.2",
     "@zoontek/react-native-navigation-bar": "*",

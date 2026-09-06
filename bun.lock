@@ -192,7 +192,7 @@
         "@wwdrew/expo-spotify-sdk": "*",
         "@xmartlabs/react-native-line": "*",
         "@youssefhenna/expo-enode-link-sdk": "1.0.4",
-        "@youssefhenna/expo-mapbox-navigation": "1.5.1",
+        "@youssefhenna/expo-mapbox-navigation": "1.5.7",
         "@yownes/core": "1.5.5",
         "@zamplyy/react-native-vector-image-plugin": "0.1.2",
         "@zoontek/react-native-navigation-bar": "*",
@@ -3170,7 +3170,7 @@
 
     "@youssefhenna/expo-enode-link-sdk": ["@youssefhenna/expo-enode-link-sdk@1.0.4", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-4x1Fj2a0SChYheZDid/cODHNToaneTCiJezO07Y4TbyfWga5H1pX+CzTv9FwR6fW9SG6eAS5XewhAfD2eDygVA=="],
 
-    "@youssefhenna/expo-mapbox-navigation": ["@youssefhenna/expo-mapbox-navigation@1.5.1", "", { "peerDependencies": { "@rnmapbox/maps": "*", "expo": "*", "react": "*", "react-native": "*" } }, "sha512-0FblqEb8csNTAdGd9i3BvFvum3P5xKPsQTAmX6p9M1jM1igB3aakfyhux4CHpWuPKbEmizFCetQ6+EjXlho/Rw=="],
+    "@youssefhenna/expo-mapbox-navigation": ["@youssefhenna/expo-mapbox-navigation@1.5.7", "", { "peerDependencies": { "@rnmapbox/maps": "*", "expo": "*", "react": "*", "react-native": "*" } }, "sha512-STi9QbY0ReEbkSPClQwFhRq9eC5xWIE46OFTPncna3y1HMdx7ydF+hvY7GJDYjchc2L14hLauJv8yXqVVPVVPw=="],
 
     "@yownes/core": ["@yownes/core@1.5.5", "", { "dependencies": { "@stripe/stripe-react-native": "^0.2.2" }, "peerDependencies": { "react": "^17.0.2", "react-native": "^0.66.0" } }, "sha512-snr+H5dvVxmAxGup4F48IZNzATDJswJ9tGiUPEmX2o07rEs2VOkiTN2cFCgdVIIz6FdS6fDCM8kEGCE1SY8vPw=="],
 
