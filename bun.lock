@@ -264,7 +264,7 @@
         "expo-floating-bubble": "1.0.0",
         "expo-font": "*",
         "expo-gaode-map": "^2.2.12",
-        "expo-gaode-map-navigation": "2.0.2",
+        "expo-gaode-map-navigation": "2.0.24",
         "expo-gbk-converter": "1.0.3",
         "expo-google-sign-in": "11.0.0",
         "expo-gradle-ext-vars": "0.1.3",
@@ -4158,7 +4158,7 @@
 
     "expo-gaode-map": ["expo-gaode-map@2.2.12", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-PHn25lgE6fo3ACUz3oMSTiSDoft0vRpSVjvqd3ZQtu3pqVklmKNltdlMQ18bs5rpu6reX7eBQ5CXTk2XkTTlEw=="],
 
-    "expo-gaode-map-navigation": ["expo-gaode-map-navigation@2.0.2", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-fP4Yi4d7qHFElatqsv+Cv4kAVavF9xF3iTN0RFsxHdjOLkfz+niBsdAvq74J3J32P3+DgSC7g//nORR4h/xyIw=="],
+    "expo-gaode-map-navigation": ["expo-gaode-map-navigation@2.0.24", "", { "peerDependencies": { "@expo/vector-icons": "*", "expo": "*", "react": "*", "react-native": "*", "react-native-safe-area-context": "*" }, "optionalPeers": ["expo"] }, "sha512-zKZBKy5XmvnxkOnuNBFcH6+heqCAuOQrbGSkcpyJar8xRAqPQADcuvB8mAaEvbrXLhJvR15oeqcFARx0zEoSAw=="],
 
     "expo-gbk-converter": ["expo-gbk-converter@1.0.3", "", { "peerDependencies": { "expo": ">=51.0.0" } }, "sha512-fqAGkrnpcMEnfok2RqoS/NeB9apsnAWyzrHbvg44orQDelKXajOVyc5SbU6VAV2135A02QmhPN6bD2V7mWCA8w=="],
 

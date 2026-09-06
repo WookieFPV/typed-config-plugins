@@ -238,7 +238,7 @@
     "expo-floating-bubble": "1.0.0",
     "expo-font": "*",
     "expo-gaode-map": "^2.2.12",
-    "expo-gaode-map-navigation": "2.0.2",
+    "expo-gaode-map-navigation": "2.0.24",
     "expo-gbk-converter": "1.0.3",
     "expo-google-sign-in": "11.0.0",
     "expo-gradle-ext-vars": "0.1.3",
