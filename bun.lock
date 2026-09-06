@@ -175,7 +175,7 @@
         "@stream-io/video-react-native-sdk": "1.24.2",
         "@stripe/stripe-react-native": "*",
         "@stripe/stripe-terminal-react-native": "latest",
-        "@superfan-app/spotify-auth": "0.1.73",
+        "@superfan-app/spotify-auth": "0.1.84",
         "@survicate/react-native-survicate": "*",
         "@thedev132/expo-widgets": "1.0.3",
         "@thoughtbot/react-native-social-auth": "^0.2.0",
@@ -2792,7 +2792,7 @@
 
     "@stripe/stripe-terminal-react-native": ["@stripe/stripe-terminal-react-native@0.0.1-beta.32", "", { "dependencies": { "base-64": "^1.0.0" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-ujIik80yhfHx56SNg0sWm6iEXCXIs+miM6Mb2VaxEkX0xEVA44vYkzt6JFh0n9iScN2WXOXSBc3pvrkuYCTW2A=="],
 
-    "@superfan-app/spotify-auth": ["@superfan-app/spotify-auth@0.1.73", "", { "dependencies": { "@expo/config-plugins": "^10.1.2" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-t3JOyJzXtNWNBMMH8Rc1M5lHtxnhqQvcQjFshf3x/Cs8A3HZH3UV1ATxijPRsoALRPFes0ISmQoqjX5GJ3ILzA=="],
+    "@superfan-app/spotify-auth": ["@superfan-app/spotify-auth@0.1.84", "", { "dependencies": { "@expo/config-plugins": "^10.1.2" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-iR4awcMZd6rKwIdyGn2h/iikCgS3UjmSHxUUQKynmTnGL2lI5yDRUath+RckTr3NK3t7jjpOjTvBhZ83QdN1PQ=="],
 
     "@survicate/react-native-survicate": ["@survicate/react-native-survicate@6.4.2", "", { "peerDependencies": { "expo": ">=49", "react": ">=16.8.6", "react-native": ">=0.60.0" }, "optionalPeers": ["expo"] }, "sha512-1AevJLL+bB8iXzWZG2jNFCr5fmVaWwj1dokQI/vZ+z1fySb11JdiPwGcmfE6fUmyzMyVKn6bBK/z3CCWjOV4oQ=="],
 
