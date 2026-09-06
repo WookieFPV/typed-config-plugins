@@ -224,7 +224,7 @@
     "expo-core-spotlight": "*",
     "expo-custom-android-styles-plugin": "0.0.0",
     "expo-custom-assets": "*",
-    "expo-datadog": "54.0.0",
+    "expo-datadog": "54.0.1",
     "expo-dev-client": "*",
     "expo-dev-launcher": "6.0.17",
     "expo-document-picker": "*",

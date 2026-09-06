@@ -250,7 +250,7 @@
         "expo-core-spotlight": "*",
         "expo-custom-android-styles-plugin": "0.0.0",
         "expo-custom-assets": "*",
-        "expo-datadog": "54.0.0",
+        "expo-datadog": "54.0.1",
         "expo-dev-client": "*",
         "expo-dev-launcher": "6.0.17",
         "expo-document-picker": "*",
@@ -4122,7 +4122,7 @@
 
     "expo-custom-assets": ["expo-custom-assets@1.5.0", "", { "dependencies": { "fs-extra": "^11.3.0" }, "peerDependencies": { "expo": ">=49" } }, "sha512-Sp8TTpIrBD5pTU6kGkmDEUl7ahZJ1RBa4jCLOSBCHXNgS/qeBZPJMk5seZ8TH9Ze4NeuD73evY/VaPEgxVW9qA=="],
 
-    "expo-datadog": ["expo-datadog@54.0.0", "", { "peerDependencies": { "@datadog/mobile-react-native": ">=2.0.0", "expo": "54.x" } }, "sha512-Em7MuEyuRWt18pMY+62udhz58ZbF1EFljotJmAl2AQejhFnYeFBvB1oqiXcNrEhhT45j8yg8X4kBwQn4NnTk3A=="],
+    "expo-datadog": ["expo-datadog@54.0.1", "", { "peerDependencies": { "@datadog/mobile-react-native": ">=2.0.0", "expo": "54.x" } }, "sha512-8EaXWTZbPxEsLfAwO52Xrch5kF7doRR0kN9SfOqflYsl18nLFmnLFAUbCUdJyMfYx9FlPDDOxplhXmHxmU4s9w=="],
 
     "expo-dev-client": ["expo-dev-client@6.0.16", "", { "dependencies": { "expo-dev-launcher": "6.0.16", "expo-dev-menu": "7.0.15", "expo-dev-menu-interface": "2.0.0", "expo-manifests": "~1.0.8", "expo-updates-interface": "~2.0.0" }, "peerDependencies": { "expo": "*" } }, "sha512-8GLud/dtNteqChL9pNGqLBSHd7of2scFmsgN5WwWgtt2dET7+EJM/K1zp0FYUzfmIF5NLsf5xUDg6AjDldOLqg=="],
 
