@@ -216,7 +216,7 @@
     "expo-callkit-telecom": "^0.4.0",
     "expo-camera": "*",
     "expo-cellular": "*",
-    "expo-check-installed-apps": "0.2.9",
+    "expo-check-installed-apps": "0.2.14",
     "expo-clear-keychain": "0.3.0",
     "expo-color-space-plugin": "*",
     "expo-config-plugin-ios-share-extension": "0.0.4",
