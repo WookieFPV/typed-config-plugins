@@ -268,7 +268,7 @@
         "expo-gbk-converter": "1.0.3",
         "expo-google-sign-in": "11.0.0",
         "expo-gradle-ext-vars": "0.1.3",
-        "expo-gradle-jvmargs": "1.1.0",
+        "expo-gradle-jvmargs": "1.1.2",
         "expo-gradle-properties": "^0.1.2",
         "expo-health-connect": "*",
         "expo-horizon-core": "1.0.6",
@@ -4166,7 +4166,7 @@
 
     "expo-gradle-ext-vars": ["expo-gradle-ext-vars@0.1.3", "", {}, "sha512-gbRclqGfebkog597+ZyeH6RnMxb7jojQDOUMkjFLZYNRAYye2edcPW5MrJyNX2lu7PsZWKEBTT0H7DRElSKFxA=="],
 
-    "expo-gradle-jvmargs": ["expo-gradle-jvmargs@1.1.0", "", { "peerDependencies": { "@expo/config-plugins": "*" } }, "sha512-d1zwePHhy9P9MzDOrb8ig6gTS4bFyw083TJuQqfUtfbt5TmGP6XDWfX1j16F45oVN+Fg77N6GtZ3mdvUSCSmOA=="],
+    "expo-gradle-jvmargs": ["expo-gradle-jvmargs@1.1.2", "", { "peerDependencies": { "@expo/config-plugins": "*" } }, "sha512-VJRecrYlklVXEwafLyuZKUCnYEY9vJYvUy639LN3c5krlmunkYQphh/YzXDng8C9oihz6mr+cPbwEn6sv6fXyw=="],
 
     "expo-gradle-properties": ["expo-gradle-properties@0.1.2", "", { "peerDependencies": { "expo": ">=50" } }, "sha512-4yQQuws+LbRGj372QPNz9OaHAZ0iqDmaeb3ggmTJrHlweezr2R0/r4R1ZjsdKJCw7Tj0yqqNeNXMWCiAcAJwuA=="],
 
