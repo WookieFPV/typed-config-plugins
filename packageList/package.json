@@ -165,7 +165,7 @@
     "@wwdrew/expo-android-account-manager": "*",
     "@wwdrew/expo-spotify-sdk": "*",
     "@xmartlabs/react-native-line": "*",
-    "@youssefhenna/expo-enode-link-sdk": "1.0.2",
+    "@youssefhenna/expo-enode-link-sdk": "1.0.4",
     "@youssefhenna/expo-mapbox-navigation": "1.5.1",
     "@yownes/core": "1.5.5",
     "@zamplyy/react-native-vector-image-plugin": "0.1.2",

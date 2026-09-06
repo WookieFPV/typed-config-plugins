@@ -191,7 +191,7 @@
         "@wwdrew/expo-android-account-manager": "*",
         "@wwdrew/expo-spotify-sdk": "*",
         "@xmartlabs/react-native-line": "*",
-        "@youssefhenna/expo-enode-link-sdk": "1.0.2",
+        "@youssefhenna/expo-enode-link-sdk": "1.0.4",
         "@youssefhenna/expo-mapbox-navigation": "1.5.1",
         "@yownes/core": "1.5.5",
         "@zamplyy/react-native-vector-image-plugin": "0.1.2",
@@ -3168,7 +3168,7 @@
 
     "@yarnpkg/lockfile": ["@yarnpkg/lockfile@1.1.0", "", {}, "sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ=="],
 
-    "@youssefhenna/expo-enode-link-sdk": ["@youssefhenna/expo-enode-link-sdk@1.0.2", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-NPW7ilJDR0qrYcuiV9hlv8feUStcq+dRwZ+GjnZlE5b5ulAewv4k2nxef8Nw7f9lj+kXfly6WycrpBcJ1I/9PQ=="],
+    "@youssefhenna/expo-enode-link-sdk": ["@youssefhenna/expo-enode-link-sdk@1.0.4", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-4x1Fj2a0SChYheZDid/cODHNToaneTCiJezO07Y4TbyfWga5H1pX+CzTv9FwR6fW9SG6eAS5XewhAfD2eDygVA=="],
 
     "@youssefhenna/expo-mapbox-navigation": ["@youssefhenna/expo-mapbox-navigation@1.5.1", "", { "peerDependencies": { "@rnmapbox/maps": "*", "expo": "*", "react": "*", "react-native": "*" } }, "sha512-0FblqEb8csNTAdGd9i3BvFvum3P5xKPsQTAmX6p9M1jM1igB3aakfyhux4CHpWuPKbEmizFCetQ6+EjXlho/Rw=="],
 
