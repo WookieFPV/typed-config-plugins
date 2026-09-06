@@ -199,7 +199,7 @@
         "airship-expo-plugin": "2.1.0",
         "android-glance-widget-expo": "0.2.0",
         "app-icon-badge": "*",
-        "apple-health": "0.0.4",
+        "apple-health": "0.0.5",
         "apple-healthkit-export": "0.1.2",
         "banuba-expo": "0.0.40",
         "bitmovin-player-react-native": "*",
@@ -3258,7 +3258,7 @@
 
     "appdirsjs": ["appdirsjs@1.2.7", "", {}, "sha512-Quji6+8kLBC3NnBeo14nPDq0+2jUs5s3/xEye+udFHumHhRk4M7aAMXp/PBJqkKYGuuyR9M/6Dq7d2AViiGmhw=="],
 
-    "apple-health": ["apple-health@0.0.4", "", { "dependencies": { "@stricli/core": "^1.1.0" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" }, "bin": { "apple-health": "cli/index.ts" } }, "sha512-tojJmpJ+4lkQokxG+h6K/Tjt3udds1jgC57MD9r1OfvdVm6PCtZ3O5vbPPEN8rsh7NZ7TeFIdSE05f8D0fIk3g=="],
+    "apple-health": ["apple-health@0.0.5", "", { "dependencies": { "@stricli/core": "^1.1.0" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" }, "bin": { "apple-health": "cli/index.ts" } }, "sha512-nd2CqRM9JuYu7uXoFcagsYJ+fcLDANbu55R6DyqKOUYXwhKOoUTiMS6HLUuTlIhc4V1iGnb82jAhRVvFiO728w=="],
 
     "apple-healthkit-export": ["apple-healthkit-export@0.1.2", "", { "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-TyHqT1nMr+nd2fcyy3B83Med2yQT1yOmIPRZomYFF4YhaS2ej2bPSlhEO0QDJTvz7war+e8gTwm+yZDQ3gLXqQ=="],
 
