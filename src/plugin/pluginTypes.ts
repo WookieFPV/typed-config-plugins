@@ -49,6 +49,8 @@ export interface ThirdPartyAutomatedPlugins {
     // This Packages doesn't ship types for config plugin:
     "@criipto/verify-expo": ConfigPluginOptions<unknown>;
     "@crossmint/client-sdk-react-native-ui": ConfigPluginOptions<typeof import("@crossmint/client-sdk-react-native-ui/dist/plugin/withGooglePay")["default"]>;
+    // This Packages doesn't ship types for config plugin:
+    "@dahab-tech/react-native-media-editor": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Invalid types or not exported]
     "@daily-co/config-plugin-rn-daily-js": ConfigPluginOptions<typeof import("@daily-co/config-plugin-rn-daily-js/build/withDaily")["default"]>;
     // This Packages doesn't ship types for config plugin:
@@ -306,8 +308,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-custom-assets": ConfigPluginOptions<typeof import("expo-custom-assets/build/index")["default"]>;
     "expo-datadog": ConfigPluginOptions<typeof import("expo-datadog/build/plugin/index")["default"]>;
     "expo-dev-client": ConfigPluginOptions<typeof import("expo-dev-client/plugin/build/withDevClient")["default"]>;
-    // This Packages doesn't ship types for config plugin:
-    "expo-dev-launcher": ConfigPluginOptions<unknown>;
+    "expo-dev-launcher": ConfigPluginOptions<typeof import("expo-dev-launcher/plugin/build/withDevLauncher")["default"]>;
     "expo-document-picker": ConfigPluginOptions<typeof import("expo-document-picker/plugin/build/withDocumentPicker")["default"]>;
     "expo-dynamic-app-icon": ConfigPluginOptions<typeof import("expo-dynamic-app-icon/plugin/build/withDynamicIcon")["default"]>;
     "expo-embed-android-unity-project": ConfigPluginOptions<typeof import("expo-embed-android-unity-project/build/index")["default"]>;
@@ -632,6 +633,8 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/lib/typescript/expo-plugin/withScreenRecorder")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nitro-speech-recognition": ConfigPluginOptions<typeof import("react-native-nitro-speech-recognition/plugin/build/withNitroSpeechRecognition")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-nitro-wakeword": ConfigPluginOptions<typeof import("react-native-nitro-wakeword/app.plugin")["default"]>;
     // This Packages doesn't ship types for config plugin:
     "react-native-nitro-wallpaper": ConfigPluginOptions<unknown>;
     "react-native-notificare": ConfigPluginOptions<typeof import("react-native-notificare/lib/plugin/withNotificare")["default"]>;
@@ -765,6 +768,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@codemagic/react-native-patch",
       "@corasan/image-compressor",
       "@criipto/verify-expo",
+      "@dahab-tech/react-native-media-editor",
       "@davotisolutions/expo-localization-utils",
       "@didomi/react-native",
       "@evennit/notifee-expo-plugin",
@@ -971,6 +975,7 @@ export interface ThirdPartyAutomatedPlugins {
       "react-native-nitro-device-info",
       "react-native-nitro-ota",
       "react-native-nitro-speech-recognition",
+      "react-native-nitro-wakeword",
       "react-native-object-capture",
       "react-native-orientation-director",
       "react-native-tiktok",
@@ -1004,7 +1009,6 @@ export interface ThirdPartyAutomatedPlugins {
       "@notifee/react-native",
       "@tripleplaypay/react-native",
       "expo-custom-android-styles-plugin",
-      "expo-dev-launcher",
       "expo-image",
       "react-native-enriched-markdown",
       "react-native-mmkv",
