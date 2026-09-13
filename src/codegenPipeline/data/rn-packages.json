@@ -1355,7 +1355,8 @@
   },
   {
     "githubUrl": "https://github.com/appandflow/stim/tree/main/packages/stim-cli",
-    "origin": "directory"
+    "origin": "directory",
+    "ignore": true
   },
   {
     "githubUrl": "https://github.com/appandflow/stim/tree/master/packages/stim-cli",
@@ -13438,11 +13439,13 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-barcode-scanner",
-    "origin": "directory"
+    "origin": "directory",
+    "ignore": true
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-location",
-    "origin": "directory"
+    "origin": "directory",
+    "ignore": true
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-resizer",
@@ -13458,7 +13461,8 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-worklets",
-    "origin": "directory"
+    "origin": "directory",
+    "ignore": true
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/master/packages/react-native-vision-camera",
