@@ -1,4 +1,4 @@
-const githubUrlSlashCount = "https://github.com/foo/bar".split("/").length;
+const githubUrlSegmentCount = "https://github.com/foo/bar".split("/").length;
 
 /**
  * (dirty & hacky) cleanup of GitHub urls
@@ -8,13 +8,12 @@ const githubUrlSlashCount = "https://github.com/foo/bar".split("/").length;
  * baseUrl: https://github.com/foo/bar
  * possiblePath: package/native-package/
  */
-export const cleanupUrl = (url: string): [string, string | undefined] => {
-    if (url.split("/").length === githubUrlSlashCount) return [url, undefined];
+export const cleanupUrl = (url: string): [baseUrl: string, possiblePath: string | undefined] => {
+    const segments = url.split("/");
+    if (segments.length === githubUrlSegmentCount) return [url, undefined];
 
-    const baseUrl = url.split("/").slice(0, githubUrlSlashCount).join("/");
-    const possiblePath = url
-        .split("/")
-        .slice(githubUrlSlashCount + 2)
-        .join("/");
+    const baseUrl = segments.slice(0, githubUrlSegmentCount).join("/");
+    // Skips the `/tree/<branch>` segments that follow the repo URL.
+    const possiblePath = segments.slice(githubUrlSegmentCount + 2).join("/");
     return [baseUrl, possiblePath ? `${possiblePath}/` : undefined];
 };

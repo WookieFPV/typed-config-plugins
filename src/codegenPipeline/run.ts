@@ -15,8 +15,6 @@ await addNpmPackageName();
 
 await ingestGithubInputJson();
 
-// await removeDuplicates();
-
 await detectConfigPlugins("onlyNew");
 
 await updatePackagesPackageJsonFile();

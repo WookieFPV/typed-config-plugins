@@ -1,26 +1,23 @@
-import { unary } from "es-toolkit/function";
 import { json } from "npm-registry-fetch";
 import { npmQueue } from "./npmQueue";
 
 /**
  * Checks if an npm package exists in the registry.
  *
- * @param {string} packageName The name of the package to check (e.g., 'express', '@angular/core').
- * @param throwOnError
- * @returns {Promise<boolean>} A promise that resolves to `true` if the package exists, `false` otherwise.
+ * Takes exactly one argument so it can be passed straight to `mapAsync`/`filterAsync` (which call
+ * their callback with `(item, index)`) without the index being read as a second parameter.
+ *
+ * @param packageName The name of the package to check (e.g., 'express', '@angular/core').
+ * @returns `true` if the package exists, `false` otherwise (including on an unexpected error).
  */
-export const npmPackageExistsThrowable = async (packageName: string, throwOnError = false): Promise<boolean> =>
+export const npmPackageExists = async (packageName: string): Promise<boolean> =>
     npmQueue.add(async () => {
         try {
             await json(packageName, { fullMetadata: false });
             return true;
-            // biome-ignore lint/suspicious/noExplicitAny: ...
-        } catch (error: any) {
-            if (throwOnError) throw error;
-            if (error?.code === "E404") return false;
-            console.error(`Error checking package "${packageName}":`, error.message);
+        } catch (error) {
+            if ((error as { code?: string } | null)?.code === "E404") return false;
+            console.error(`Error checking package "${packageName}":`, error instanceof Error ? error.message : error);
             return false;
         }
     });
-
-export const npmPackageExists = unary(npmPackageExistsThrowable);

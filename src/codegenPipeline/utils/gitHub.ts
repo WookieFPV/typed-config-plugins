@@ -1,13 +1,10 @@
-import { delay } from "es-toolkit/promise";
 import { cleanupUrl } from "./cleanupUrl";
+import { type FileProbeResult, probeFile } from "./probeFile";
 
-export const githubHeaders = () => {
+export const githubHeaders = (): { headers: Record<string, string> } => {
     const token = process.env.GITHUB_TOKEN;
     if (!token) throw new Error("GITHUB_TOKEN is not set");
-    const headers: Record<string, string> = {};
-
-    headers.Authorization = `Bearer ${token}`;
-    return { headers };
+    return { headers: { Authorization: `Bearer ${token}` } };
 };
 
 export const apiUrl = (githubUrl: string, fileName: string, path: string | undefined = ""): string => {
@@ -23,54 +20,25 @@ const isTransientStatus = (status: number) => status === 401 || status === 403 |
 // Fallback for `npmPackageHasFile` (jsdelivr) when the published package's git repo exceeds
 // jsdelivr's 150MB size limit (surfaced as a 403) - checks the file directly in the GitHub repo
 // instead. Slower and rate-limited, so it's only used as a last resort.
-export const repoHasFile = async (
-    githubUrl: string,
-    fileName: string,
-    path: string | undefined,
-    retries = 3,
-): Promise<{
-    hasFile: boolean | string;
-    url: string;
-}> => {
-    const token = process.env.GITHUB_TOKEN;
-    if (!token) throw new Error("GITHUB_TOKEN is not set");
+export const repoHasFile = async (githubUrl: string, fileName: string, path: string | undefined, retries = 3): Promise<FileProbeResult> => {
+    const init = githubHeaders();
     const url = apiUrl(githubUrl, fileName, path);
 
     // A malformed `githubUrl` (e.g. not actually a github.com URL) makes `url` an invalid URL,
     // which `fetch` would reject deterministically on every attempt - fail fast instead of
     // burning retries/backoff on something retrying can never fix.
-    try {
-        new URL(url);
-    } catch {
-        return { hasFile: `invalid URL: ${url}`, url };
-    }
+    if (!URL.canParse(url)) return { hasFile: `invalid URL: ${url}`, url };
 
-    const headers: Record<string, string> = { Authorization: `Bearer ${token}` };
-
-    for (let attempt = 0; attempt <= retries; attempt++) {
-        try {
-            const response = await fetch(url, { headers });
-            if (response.status === 200) return { hasFile: true, url };
-            if (response.status === 404) return { hasFile: false, url };
-            if (attempt < retries && isTransientStatus(response.status)) {
-                await delay(2 ** attempt * 500);
-                continue;
-            }
-            return { hasFile: response.statusText, url };
-        } catch (error) {
-            // `fetch` itself can throw (DNS failure, timeout, connection reset) rather than
-            // resolving to a response - treat that the same as a transient status instead of
-            // letting it escape and reject the whole concurrency batch this call is part of.
-            const message = error instanceof Error ? error.message : String(error);
-            if (attempt < retries) {
-                await delay(2 ** attempt * 500);
-                continue;
-            }
-            return { hasFile: `fetch failed: ${message}`, url };
-        }
-    }
-    // unreachable, satisfies TS
-    return { hasFile: "unknown", url };
+    return probeFile(
+        url,
+        ({ status, statusText }) => {
+            if (status === 200) return true;
+            if (status === 404) return false;
+            if (isTransientStatus(status)) return undefined; // transient - retry
+            return statusText;
+        },
+        { init, retries },
+    );
 };
 
 export const fetchNpmPackageName = async (githubRepoUrl: string): Promise<string> => {
@@ -80,14 +48,12 @@ export const fetchNpmPackageName = async (githubRepoUrl: string): Promise<string
     const url = apiUrl(base, "package.json", path);
 
     const res = await fetch(url, githubHeaders());
-    if (!res.ok) {
-        throw new Error(`Failed to fetch package.json: ${res.status} ${githubRepoUrl} ${url}`);
-    }
+    if (!res.ok) throw new Error(`Failed to fetch package.json: ${res.status} ${githubRepoUrl} ${url}`);
+
     const data = (await res.json()) as { content?: string };
     if (!data.content) throw new Error("package.json not found in repo");
     // Decode base64 content
     const pkgJson = JSON.parse(Buffer.from(data.content, "base64").toString());
     if (!pkgJson.name) throw new Error("No name field in package.json");
-    // console.log(githubRepoUrl, "->", pkgJson.name);
     return pkgJson.name;
 };

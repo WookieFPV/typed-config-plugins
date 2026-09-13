@@ -3,7 +3,7 @@ import { Octokit } from "@octokit/rest";
 import { flow } from "es-toolkit";
 import { mapAsync, sortBy, uniqBy } from "es-toolkit/array";
 import { mapGetNpmPkg } from "../npmRegistry/mapGetNpmPkg";
-import { type GitHubPersistItem, gitHubRepoList } from "./gitHubRepoList";
+import { gitHubRepoList } from "./gitHubRepoList";
 import { type GitHubItems, GitHubPersistorMapper } from "./helper";
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
@@ -44,11 +44,10 @@ async function searchForPluginFile() {
         }
         const deps = await gitHubRepoList.load("withoutNpmPkg");
         const fulfilled = await mapAsync(deps, mapGetNpmPkg, { concurrency: 20 });
-        await gitHubRepoList.update(fulfilled as unknown as GitHubPersistItem[], { override: true });
+        await gitHubRepoList.update(fulfilled, { override: true });
 
         const allDeps = await gitHubRepoList.load();
-        const uniqAllDeps = uniqBy(allDeps, (pkg) => pkg.npmPkg);
-        await gitHubRepoList.save(uniqAllDeps as unknown as GitHubPersistItem[]);
+        await gitHubRepoList.save(uniqBy(allDeps, (pkg) => pkg.npmPkg));
     } catch (error) {
         if (error instanceof Error) console.error("Error searching for repositories:", error.message);
         if (error instanceof RequestError && error.status === 403 && error.response?.headers["x-ratelimit-remaining"] === "0") {

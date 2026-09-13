@@ -11,10 +11,10 @@ export type GitHubPersistItem = {
 const persistor = (items: GitHubPersistItem[]) => sortBy(items, ["githubUrl"]);
 
 const filters = {
-    withoutNpmPkg: (item) => !item.npmPkg,
+    withoutNpmPkg: (item: GitHubPersistItem) => !item.npmPkg,
 } satisfies Filter<GitHubPersistItem>;
 
-export const gitHubRepoList = jsonPersistorFactory<GitHubPersistItem, typeof filters>({
+export const gitHubRepoList = jsonPersistorFactory({
     primaryKey: "githubUrl",
     path: "src/codegenPipeline/data/input-github.json",
     persistor,

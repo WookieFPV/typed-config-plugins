@@ -46,17 +46,18 @@
     "github": "bun run src/codegenPipeline/githubSearch/findRepos.ts",
     "build:dev": "tsup --watch",
     "changeset": "changeset",
+    "test": "bun test",
     "lint": "bunx biome check --fix --unsafe",
     "lint:CI": "bunx biome check",
     "release": "changeset publish",
     "typecheck": "tsc",
     "version-packages": "changeset version",
-    "prepublishOnly": "bun run lint:CI && bun run typecheck && bun run build"
+    "prepublishOnly": "bun run lint:CI && bun run typecheck && bun test && bun run build"
   },
   "devDependencies": {
-    "@babel/parser": "8.0.4",
-    "@babel/traverse": "8.0.4",
-    "@babel/types": "8.0.4",
+    "@babel/parser": "8.0.5",
+    "@babel/traverse": "8.0.5",
+    "@babel/types": "8.0.5",
     "@biomejs/biome": "2.5.12",
     "@changesets/cli": "3.0.2",
     "@expo/config-plugins": "57.0.9",
@@ -81,6 +82,7 @@
     "expo-whisper@1.0.10": "patches/expo-whisper@1.0.10.patch"
   },
   "overrides": {
+    "@babel/types": "8.0.5",
     "@types/node": "24.9.1",
     "esbuild": "0.28.2"
   }

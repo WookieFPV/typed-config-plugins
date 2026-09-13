@@ -48,7 +48,9 @@ type TypePath = {
 
 export type RnDepPersist = Pick<RnDep, "githubUrl" | "npmPkg" | "hasConfigPlugin" | "types" | "ignore" | "origin" | "unmaintained">;
 
-export type RnDepFull = RnDep & {
-    hasConfigPlugin: boolean;
-    types?: TypePath;
-};
+/**
+ * Result of resolving a GitHub URL to its npm package name (see `mapGetNpmPkg`).
+ * `npmPkg` is absent when the lookup failed - the row is then marked `ignore` so it isn't retried
+ * on every subsequent run.
+ */
+export type NpmPkgLookup = Pick<RnDep, "githubUrl"> & Partial<Pick<RnDep, "npmPkg" | "ignore">>;

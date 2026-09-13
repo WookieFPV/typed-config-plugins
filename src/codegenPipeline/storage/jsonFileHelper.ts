@@ -5,6 +5,9 @@ import { Mutex, toMerged } from "es-toolkit";
 export type Filter<Item> = Record<string, (item: Item) => boolean>;
 type noFilter<Item> = Record<never, (item: Item) => boolean>;
 
+/** A partial row to merge into an existing one - the primary key is what identifies the target. */
+type Patch<Item, Key extends keyof Item> = Partial<Item> & Pick<Item, Key>;
+
 // A non-array root means the file itself is corrupt/truncated - that's not a single bad row,
 // it's the whole file, so it should still fail loudly.
 // A single malformed row (hand-edited entry, or - for externally-sourced files like the
@@ -26,28 +29,24 @@ const assertValidRows = <Item>(path: string, primaryKey: keyof Item, data: unkno
     }) as Array<Item>;
 };
 
-export const jsonPersistorFactory = <Item, Filter extends Record<string, (item: Item) => boolean> = noFilter<Item>>({
+export const jsonPersistorFactory = <Item, Filters extends Filter<Item> = noFilter<Item>, Key extends keyof Item = keyof Item>({
     path,
-    filters = {} as Filter,
+    filters = {} as Filters,
     persistor = (item) => item,
     primaryKey,
-    updateType,
 }: {
     path: string;
-    filters?: Filter;
+    filters?: Filters;
     persistor?: (item: Item[]) => Item[];
-    primaryKey: keyof Item;
-    updateType?: keyof Filter;
+    primaryKey: Key;
 }) => {
     const mutex = new Mutex();
 
-    const load = async (type?: keyof typeof filters): Promise<Array<Item>> => {
+    const load = async (type?: keyof Filters): Promise<Array<Item>> => {
         const raw = await file(path).json();
         const data = assertValidRows<Item>(path, primaryKey, raw);
-        if (!type) return data;
-        const filter = filters?.[type];
-        if (!filter) return data;
-        return data.filter(filter);
+        const filter = type ? filters[type] : undefined;
+        return filter ? data.filter(filter) : data;
     };
 
     const save = async (pluginsList: Array<Item>) => {
@@ -60,44 +59,32 @@ export const jsonPersistorFactory = <Item, Filter extends Record<string, (item: 
         await rename(tmpPath, path);
     };
 
-    const update = async (
-        items: Item[],
-        {
-            override = true,
-            type = updateType,
-        }: {
-            override?: boolean;
-            type?: keyof typeof filters;
-        } = {},
-    ): Promise<void> => {
+    const mergeRows = (baseList: Item[], patches: Array<Patch<Item, Key>>, override: boolean): Item[] => {
+        const list = [...baseList];
+
+        for (const patch of patches) {
+            const index = list.findIndex((row) => row[primaryKey] === patch[primaryKey]);
+            const existing = index === -1 ? undefined : list[index];
+            if (existing) {
+                list[index] = override ? toMerged(existing, patch) : toMerged(patch, existing);
+            } else {
+                // No row to merge into - callers that introduce new keys always pass complete rows,
+                // partial patches only ever target rows that already exist.
+                list.push(patch as Item);
+            }
+        }
+        return list;
+    };
+
+    /** Merges `items` into the stored rows by primary key, appending the ones that don't exist yet. */
+    const update = async (items: Array<Patch<Item, Key>>, { override = true }: { override?: boolean } = {}): Promise<void> => {
         await mutex.acquire();
         try {
-            const pluginsList = await load(type);
-            const mergedList = mergePluginLists(pluginsList, items, override);
-            await save(mergedList);
+            await save(mergeRows(await load(), items, override));
         } finally {
             mutex.release();
         }
     };
 
-    const mergePluginLists = (baseList: Item[], updatedList: Item[], override = true): Item[] => {
-        const list = [...baseList];
-
-        updatedList.forEach((plugin) => {
-            const index = list.findIndex((p) => p[primaryKey] === plugin[primaryKey]);
-            if (index !== -1 && list[index] && plugin) {
-                list[index] = override ? toMerged(list[index], plugin) : toMerged(plugin, list[index]);
-            } else {
-                list.push(plugin);
-            }
-        });
-        return list;
-    };
-
-    return {
-        load,
-        save,
-        update,
-        path,
-    };
+    return { load, save, update, path };
 };

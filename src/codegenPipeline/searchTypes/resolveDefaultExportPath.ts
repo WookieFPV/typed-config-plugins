@@ -15,27 +15,15 @@ import resolve from "resolve";
 export async function findModuleImplementation(packageName: string): Promise<string> {
     try {
         const packageRoot = path.join("node_modules", packageName);
-        // Find the package's root directory
         const entryPoint = path.join(packageRoot, "app.plugin.js");
 
-        // console.debug("entryPoint", entryPoint);
-        // Trace the implementation path
         const result = await traceImplementation(entryPoint, packageRoot);
 
         // More cross-platform compatible way to extract the module path
         const nodeModulesPath = path.join("node_modules/", "");
-        let relativePath = result;
-
-        if (result.includes(nodeModulesPath)) {
-            const parts = result.split(nodeModulesPath);
-            if (parts.length > 1) {
-                // @ts-expect-error gpt ...
-                relativePath = parts[1];
-            }
-        }
+        const relativePath = result.split(nodeModulesPath)[1] ?? result;
 
         // Remove .js extension if present
-        // console.debug("relativePath", relativePath);
         return relativePath.replace(/\.js$/, "");
     } catch (error: unknown) {
         if (error instanceof Error && (error as NodeJS.ErrnoException).code === "ENOENT") {

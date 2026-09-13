@@ -6284,7 +6284,8 @@
     "types": {
       "path": "expo-file-system/plugin/build/withFileSystem",
       "valid": true,
-      "exportName": "default"
+      "exportName": "default",
+      "packageExport": true
     }
   },
   {

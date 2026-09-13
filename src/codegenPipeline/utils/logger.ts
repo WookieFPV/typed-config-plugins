@@ -7,10 +7,12 @@ type LastLine = "ora" | "log" | null;
 export const stepLogger = (stepName?: string) => {
     let lastLine: LastLine = null;
 
-    const index = () => `[${stepCount.toString().padStart(1, " ")}]`;
+    const index = () => `[${stepCount}]`;
 
     const spinner = ora();
 
+    // Keep a blank line between a finished spinner and the plain lines that follow it, but not
+    // between consecutive plain lines.
     const pre = () => (lastLine === "ora" ? "" : "\n");
 
     const start = (message = stepName) => {
@@ -19,42 +21,29 @@ export const stepLogger = (stepName?: string) => {
         lastLine = "ora";
     };
 
-    const log = (...message: unknown[]) => {
+    const write = (prefix: string, message: unknown[]) => {
         if (lastLine === "ora") spinner.stopAndPersist();
-        process.stdout.write(`${pre()}  ${index()}  ${message.join(" ")}`);
+        process.stdout.write(`${pre()}  ${index()}${prefix}${message.join(" ")}`);
         lastLine = "log";
     };
 
-    const warn = (...message: unknown[]) => {
-        if (lastLine === "ora") spinner.stopAndPersist();
-        process.stdout.write(`${pre()}  ${index()}⚠️  ${message.join(" ")}`);
-        lastLine = "log";
-    };
+    const log = (...message: unknown[]) => write("  ", message);
+    const warn = (...message: unknown[]) => write("⚠️  ", message);
 
-    const finish = (message = stepName) => {
+    const end = (outcome: "succeed" | "fail", message = stepName) => {
         if (lastLine === "log") process.stdout.write("\n");
-        spinner.succeed(`${index()}  ${message}`);
+        spinner[outcome](`${index()}  ${message}`);
         stepCount++;
         lastLine = "ora";
     };
 
-    const fail = (message = stepName) => {
-        if (lastLine === "log") process.stdout.write("\n");
-        spinner.fail(`${index()}  ${message}`);
-        stepCount++;
-        lastLine = "ora";
-    };
-
-    const progressText = (message: string) => {
-        if (lastLine === "log") process.stdout.write("\n") && spinner.start();
-        spinner.text = `${index()}  ${message}`;
-        lastLine = "ora";
-    };
+    const finish = (message?: string) => end("succeed", message);
+    const fail = (message?: string) => end("fail", message);
 
     const step = <A extends unknown[], T>(fn: (...args: A) => Promise<T>) => {
         return async (...args: A): Promise<T> => {
+            start();
             try {
-                start();
                 const data = await fn(...args);
                 finish();
                 return data;
@@ -65,7 +54,7 @@ export const stepLogger = (stepName?: string) => {
         };
     };
 
-    return { logger: { start, log, warn, finish, fail, progressText }, step, spinner };
+    return { logger: { start, log, warn, finish, fail }, step };
 };
 
 export const promiseStep = async <T>(promise: Promise<T>, stepName: string) => {

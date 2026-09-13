@@ -11,7 +11,7 @@ export interface ThirdPartyAutomatedPlugins {
     "@animo-id/indy-sdk-expo-plugin": ConfigPluginOptions<typeof import("@animo-id/indy-sdk-expo-plugin/build/withIndySdk")["default"]>;
     "@animo-id/react-native-ble-didcomm": ConfigPluginOptions<typeof import("@animo-id/react-native-ble-didcomm/build/plugin")["default"]>;
     "@appandflow/expo-camera-characteristics": ConfigPluginOptions<typeof import("@appandflow/expo-camera-characteristics/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@appzung/expo-config-code-push": ConfigPluginOptions<unknown>;
     "@archimedes4/expo-msal": ConfigPluginOptions<typeof import("@archimedes4/expo-msal/plugin/main/index")["default"]>;
     "@armanatz/expo-hms-location": ConfigPluginOptions<typeof import("@armanatz/expo-hms-location/build/withHMSLocation")["default"]>;
@@ -24,7 +24,7 @@ export interface ThirdPartyAutomatedPlugins {
     "@bam.tech/react-native-msal": ConfigPluginOptions<typeof import("@bam.tech/react-native-msal/plugin/build/withReactNativeMSAL")["default"]>;
     "@bam.tech/react-native-ssl-pinning": ConfigPluginOptions<typeof import("@bam.tech/react-native-ssl-pinning/build/withSSLPinningConfig")["default"]>;
     "@batch.com/react-native-plugin": ConfigPluginOptions<typeof import("@batch.com/react-native-plugin/plugin/build/withReactNativeBatch")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@beyondidentity/bi-sdk-react-native": ConfigPluginOptions<unknown>;
     "@bitdrift/react-native": ConfigPluginOptions<typeof import("@bitdrift/react-native/typescript/packages/react-native/src/plugin/withBitdrift.d.ts")["default"]>;
     "@bittingz/expo-widgets": ConfigPluginOptions<typeof import("@bittingz/expo-widgets/plugin/build/index")["default"]>;
@@ -37,71 +37,71 @@ export interface ThirdPartyAutomatedPlugins {
     "@callstack/react-native-brownfield": ConfigPluginOptions<typeof import("@callstack/react-native-brownfield/app.plugin.js")["default"]>;
     "@charmy.tech/react-native-admost": ConfigPluginOptions<typeof import("@charmy.tech/react-native-admost/plugin/build/index")["default"]>;
     "@clevertap/clevertap-expo-plugin": ConfigPluginOptions<typeof import("@clevertap/clevertap-expo-plugin/build/src/withClevertap")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@codemagic/react-native-patch": ConfigPluginOptions<unknown>;
     "@config-plugins/react-native-adjust": ConfigPluginOptions<typeof import("@config-plugins/react-native-adjust/build/withReactNativeAdjust")["default"]>;
     "@config-plugins/react-native-blob-util": ConfigPluginOptions<typeof import("@config-plugins/react-native-blob-util/build/withReactNativeBlobUtil")["default"]>;
     "@config-plugins/react-native-branch": ConfigPluginOptions<typeof import("@config-plugins/react-native-branch/build/withBranch")["default"]>;
     "@config-plugins/react-native-callkeep": ConfigPluginOptions<typeof import("@config-plugins/react-native-callkeep/build/withCallkeep")["default"]>;
     "@config-plugins/react-native-pdf": ConfigPluginOptions<typeof import("@config-plugins/react-native-pdf/build/withPdf")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@corasan/image-compressor": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@criipto/verify-expo": ConfigPluginOptions<unknown>;
     "@crossmint/client-sdk-react-native-ui": ConfigPluginOptions<typeof import("@crossmint/client-sdk-react-native-ui/dist/plugin/withGooglePay")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@dahab-tech/react-native-media-editor": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Invalid types or not exported]
     "@daily-co/config-plugin-rn-daily-js": ConfigPluginOptions<typeof import("@daily-co/config-plugin-rn-daily-js/build/withDaily")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@davotisolutions/expo-localization-utils": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@dbkable/react-native-speech-to-text": ConfigPluginOptions<typeof import("@dbkable/react-native-speech-to-text/app.plugin")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@deeplinknow/react-native": ConfigPluginOptions<typeof import("@deeplinknow/react-native/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@didomi/react-native": ConfigPluginOptions<unknown>;
     "@divvi/mobile": ConfigPluginOptions<typeof import("@divvi/mobile/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@evennit/notifee-expo-plugin": ConfigPluginOptions<unknown>;
     "@expensify/react-native-wallet": ConfigPluginOptions<typeof import("@expensify/react-native-wallet/plugins/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@fingerprintjs/fingerprintjs-pro-react-native": ConfigPluginOptions<unknown>;
     "@fishjam-cloud/react-native-client": ConfigPluginOptions<typeof import("@fishjam-cloud/react-native-client/plugin/build/withFishjam")["default"]>;
     "@fullstory/react-native": ConfigPluginOptions<typeof import("@fullstory/react-native/plugin/build/index")["default"]>;
     "@getcello/cello-react-native": ConfigPluginOptions<typeof import("@getcello/cello-react-native/lib/typescript/src/expo-plugin/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@gfean/react-native-bundle-drop": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@giphy/react-native-sdk": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@gmisoftware/react-native-pay": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@goliapkg/sentori-expo": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@grupalia/react-native-photo-picker": ConfigPluginOptions<typeof import("@grupalia/react-native-photo-picker/app.plugin")["default"]>;
     "@heartbot/expo-google-authentication": ConfigPluginOptions<typeof import("@heartbot/expo-google-authentication/plugin/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@honeycombio/opentelemetry-react-native": ConfigPluginOptions<typeof import("@honeycombio/opentelemetry-react-native/lib/typescript/module/src/plugin/withUUIDIosPlugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@hot-updater/react-native": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@huddle01/react-native-call-detection": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@huymobile/react-native-sms-retriever-nitro-module": ConfigPluginOptions<typeof import("@huymobile/react-native-sms-retriever-nitro-module/app.plugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@hyoper/rn-location": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@intercom/intercom-react-native": ConfigPluginOptions<typeof import("@intercom/intercom-react-native/lib/typescript/module/expo-plugins/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@isudaji/react-native-install-apk": ConfigPluginOptions<unknown>;
     "@iterable/expo-plugin": ConfigPluginOptions<typeof import("@iterable/expo-plugin/plugin/build/withIterable")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@journeyapps/react-native-quick-sqlite": ConfigPluginOptions<unknown>;
     "@jt-technologies/expo-idnow": ConfigPluginOptions<typeof import("@jt-technologies/expo-idnow/plugin/build/index")["default"]>;
     "@kesha-antonov/react-native-background-downloader": ConfigPluginOptions<typeof import("@kesha-antonov/react-native-background-downloader/plugin/build/index")["default"]>;
     "@kickstartcrew/expo-financekit": ConfigPluginOptions<typeof import("@kickstartcrew/expo-financekit/build/plugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@kingstinct/react-native-activity-kit": ConfigPluginOptions<unknown>;
     "@kingstinct/react-native-healthkit": ConfigPluginOptions<typeof import("@kingstinct/react-native-healthkit/app.plugin.js")["default"]>;
     "@leanplum/react-native-sdk": ConfigPluginOptions<typeof import("@leanplum/react-native-sdk/plugin/build/withLeanplumSDK")["default"]>;
@@ -109,7 +109,7 @@ export interface ThirdPartyAutomatedPlugins {
     "@lightbase/rn-design-system": ConfigPluginOptions<typeof import("@lightbase/rn-design-system/lib/typescript/module/src/expo")["default"]>;
     "@livekit/react-native-expo-plugin": ConfigPluginOptions<typeof import("@livekit/react-native-expo-plugin/plugin/build/index")["default"]>;
     "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": ConfigPluginOptions<typeof import("@lovesworking/watermelondb-expo-plugin-sdk-52-plus/build/withWatermelon")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@luciq/react-native": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@lugg/maps": ConfigPluginOptions<typeof import("@lugg/maps/plugin/build/index")["default"]>;
@@ -120,25 +120,25 @@ export interface ThirdPartyAutomatedPlugins {
     "@mankin/expo-mods-localized-name": ConfigPluginOptions<typeof import("@mankin/expo-mods-localized-name/build/withLocalizedName")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@maplibre/maplibre-react-native": ConfigPluginOptions<typeof import("@maplibre/maplibre-react-native/lib/typescript/commonjs/src/plugin/withMapLibre")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@mapsindoors/react-native-maps-indoors-google-maps": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@mapsindoors/react-native-maps-indoors-mapbox": ConfigPluginOptions<unknown>;
     "@matthewwarnes/react-native-ble-manager-plugin": ConfigPluginOptions<typeof import("@matthewwarnes/react-native-ble-manager-plugin/build/withBLE")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@mikekhristo/expo-tiktok-opensdk": ConfigPluginOptions<typeof import("@mikekhristo/expo-tiktok-opensdk/plugin/build/withTikTokOpenSDK")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@mj-studio/react-native-naver-map": ConfigPluginOptions<unknown>;
     "@mobione/thermalib-expo": ConfigPluginOptions<typeof import("@mobione/thermalib-expo/plugin/build/index")["default"]>;
     "@morrowdigital/watermelondb-expo-plugin": ConfigPluginOptions<typeof import("@morrowdigital/watermelondb-expo-plugin/build/withWatermelon")["default"]>;
     "@mykin-ai/expo-audio-stream": ConfigPluginOptions<typeof import("@mykin-ai/expo-audio-stream/plugin/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@native-ui-org/native-modules": ConfigPluginOptions<typeof import("@native-ui-org/native-modules/app.plugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@naveen521kk/react-native-tokenizer": ConfigPluginOptions<unknown>;
     "@niondigital/cleverpush-expo-config-plugin": ConfigPluginOptions<typeof import("@niondigital/cleverpush-expo-config-plugin/build/withCleverPush")["default"]>;
     "@niondigital/widgets-expo-config-plugin": ConfigPluginOptions<typeof import("@niondigital/widgets-expo-config-plugin/build/withWidgets")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@notifee/react-native": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@novastera-oss/rn-google-signin": ConfigPluginOptions<typeof import("@novastera-oss/rn-google-signin/expo-plugin/build/withGoogleSignIn")["default"]>;
@@ -146,16 +146,16 @@ export interface ThirdPartyAutomatedPlugins {
     "@oleg_svetlichnyi/expo-icloud-storage": ConfigPluginOptions<typeof import("@oleg_svetlichnyi/expo-icloud-storage/app.plugin")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@opacity-labs/react-native-opacity": ConfigPluginOptions<typeof import("@opacity-labs/react-native-opacity/expo-plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@openreplay/react-native": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@orbital-systems/react-native-esp-idf-provisioning": ConfigPluginOptions<unknown>;
     "@peulda/expo-plugin-channel-io": ConfigPluginOptions<typeof import("@peulda/expo-plugin-channel-io/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@poilabs-dev/analysis-sdk-plugin": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@poilabs-dev/navigation-sdk-plugin": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@poilabs-dev/vd-navigation-sdk-plugin": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@portone/react-native-sdk": ConfigPluginOptions<typeof import("@portone/react-native-sdk/lib/typescript/plugin")["default"]>;
@@ -194,22 +194,22 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@rnmapbox/maps": ConfigPluginOptions<typeof import("@rnmapbox/maps/plugin/build/withMapbox")["default"]>;
     "@rokt/react-native-sdk": ConfigPluginOptions<typeof import("@rokt/react-native-sdk/plugin/build/withRoktSDK")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@rownd/react-native": ConfigPluginOptions<unknown>;
     "@sd-tech/rn-camera-face-blur": ConfigPluginOptions<typeof import("@sd-tech/rn-camera-face-blur/lib/typescript/expo-plugin/withVisionCamera")["default"]>;
     "@sentry/react-native": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
     "@sentry/react-native/expo": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@siteed/audio-studio": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@siteed/expo-audio-studio": ConfigPluginOptions<unknown>;
     "@softwhere-uz/react-native-myid": ConfigPluginOptions<typeof import("@softwhere-uz/react-native-myid/plugin/build/index")["default"]>;
     "@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet": ConfigPluginOptions<typeof import("@solana-mobile/mobile-wallet-adapter-expo-bottom-sheet/plugin/build/withBottomSheet")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "@spreen/ffmpeg-kit-react-native-config": ConfigPluginOptions<typeof import("@spreen/ffmpeg-kit-react-native-config/build/withFFMPEG")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@stonega/expo-google-signin": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@stream-io/video-react-native-sdk": ConfigPluginOptions<unknown>;
     "@stripe/stripe-react-native": ConfigPluginOptions<typeof import("@stripe/stripe-react-native/lib/typescript/src/plugin/withStripe")["default"]>;
     "@stripe/stripe-terminal-react-native": ConfigPluginOptions<typeof import("@stripe/stripe-terminal-react-native/lib/typescript/src/plugin/withStripeTerminal")["default"]>;
@@ -221,31 +221,31 @@ export interface ThirdPartyAutomatedPlugins {
     "@threls/expo-pusher-beams": ConfigPluginOptions<typeof import("@threls/expo-pusher-beams/plugin/build/withPusherBeams")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@track-asia/trackasia-react-native": ConfigPluginOptions<typeof import("@track-asia/trackasia-react-native/lib/typescript/module/src/plugin/ios")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@tripleplaypay/react-native": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@tryvital/vital-core-react-native": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@tryvital/vital-health-react-native": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@vietmap/vietmap-gl-react-native": ConfigPluginOptions<typeof import("@vietmap/vietmap-gl-react-native/plugin/build/withVietmap")["default"]>;
     "@vivition/expo-camera": ConfigPluginOptions<typeof import("@vivition/expo-camera/plugin/build/withCamera")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@vonovak/react-native-theme-control": ConfigPluginOptions<unknown>;
     "@woosmap/expo-plugin-geofencing-batch": ConfigPluginOptions<typeof import("@woosmap/expo-plugin-geofencing-batch/build/index")["default"]>;
     "@wwdrew/expo-android-account-manager": ConfigPluginOptions<typeof import("@wwdrew/expo-android-account-manager/plugin/build/index")["default"]>;
     "@wwdrew/expo-spotify-sdk": ConfigPluginOptions<typeof import("@wwdrew/expo-spotify-sdk/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@xmartlabs/react-native-line": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@youssefhenna/expo-enode-link-sdk": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "@youssefhenna/expo-mapbox-navigation": ConfigPluginOptions<unknown>;
     "@zamplyy/react-native-vector-image-plugin": ConfigPluginOptions<typeof import("@zamplyy/react-native-vector-image-plugin/build/withVectorImage")["default"]>;
     "@zoontek/react-native-navigation-bar": ConfigPluginOptions<typeof import("@zoontek/react-native-navigation-bar/dist/typescript/expo")["default"]>;
     "airship-expo-plugin": ConfigPluginOptions<typeof import("airship-expo-plugin/plugin/build/withAirship")["default"]>;
     "android-glance-widget-expo": ConfigPluginOptions<typeof import("android-glance-widget-expo/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "app-icon-badge": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "apple-health": ConfigPluginOptions<typeof import("apple-health/plugin/build/index")["default"]>;
@@ -254,7 +254,7 @@ export interface ThirdPartyAutomatedPlugins {
     "bitmovin-player-react-native": ConfigPluginOptions<typeof import("bitmovin-player-react-native/plugin/build/index")["default"]>;
     "bitmovin-player-react-native-analytics-conviva": ConfigPluginOptions<typeof import("bitmovin-player-react-native-analytics-conviva/plugin/build/index")["default"]>;
     "cleverpush-expo-plugin": ConfigPluginOptions<typeof import("cleverpush-expo-plugin/build/cleverpush/withCleverPush")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "dojah-kyc-sdk-react-expo": ConfigPluginOptions<unknown>;
     "expo-ads-facebook": ConfigPluginOptions<typeof import("expo-ads-facebook/plugin/build/withFacebookAds")["default"]>;
     "expo-alarm-module": ConfigPluginOptions<typeof import("expo-alarm-module/plugin/build/withExpoAlarmModule")["default"]>;
@@ -265,7 +265,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-app-auth": ConfigPluginOptions<typeof import("expo-app-auth/plugin/build/withAppAuth")["default"]>;
     "expo-appcenter": ConfigPluginOptions<typeof import("expo-appcenter/plugin/build/index")["default"]>;
     "expo-apple-authentication": ConfigPluginOptions<typeof import("expo-apple-authentication/plugin/build/withAppleAuth")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-applovin-ads": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-asset": ConfigPluginOptions<typeof import("expo-asset/plugin/build/withAssets")["default"]>;
@@ -274,12 +274,12 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-audio-studio": ConfigPluginOptions<typeof import("expo-audio-studio/plugin/build/withAudio")["default"]>;
     "expo-av": ConfigPluginOptions<typeof import("expo-av/plugin/build/withAV")["default"]>;
     "expo-background-fetch": ConfigPluginOptions<typeof import("expo-background-fetch/plugin/build/withBackgroundFetch")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-background-recording": ConfigPluginOptions<unknown>;
     "expo-background-task": ConfigPluginOptions<typeof import("expo-background-task/plugin/build/withBackgroundTask")["default"]>;
     "expo-banuba": ConfigPluginOptions<typeof import("expo-banuba/plugin/build/withBanuba")["default"]>;
     "expo-barcode-scanner": ConfigPluginOptions<typeof import("expo-barcode-scanner/plugin/build/withBarcodeScanner")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-bare-kit": ConfigPluginOptions<unknown>;
     "expo-beacon": ConfigPluginOptions<typeof import("expo-beacon/app.plugin")["default"]>;
     "expo-ble": ConfigPluginOptions<typeof import("expo-ble/plugin/build/index")["default"]>;
@@ -289,7 +289,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-brother-printer-sdk": ConfigPluginOptions<typeof import("expo-brother-printer-sdk/plugin/build/index")["default"]>;
     "expo-build-flags": ConfigPluginOptions<typeof import("expo-build-flags/build/config-plugin/index")["default"]>;
     "expo-build-properties": ConfigPluginOptions<typeof import("expo-build-properties/build/withBuildProperties")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-cafebazaar-auth": ConfigPluginOptions<unknown>;
     "expo-calendar": ConfigPluginOptions<typeof import("expo-calendar/plugin/build/withCalendar")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -303,7 +303,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-config-plugin-ios-share-extension": ConfigPluginOptions<typeof import("expo-config-plugin-ios-share-extension/build/index")["default"]>;
     "expo-contacts": ConfigPluginOptions<typeof import("expo-contacts/plugin/build/withContacts")["default"]>;
     "expo-core-spotlight": ConfigPluginOptions<typeof import("expo-core-spotlight/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-custom-android-styles-plugin": ConfigPluginOptions<unknown>;
     "expo-custom-assets": ConfigPluginOptions<typeof import("expo-custom-assets/build/index")["default"]>;
     "expo-datadog": ConfigPluginOptions<typeof import("expo-datadog/build/plugin/index")["default"]>;
@@ -313,17 +313,18 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-dynamic-app-icon": ConfigPluginOptions<typeof import("expo-dynamic-app-icon/plugin/build/withDynamicIcon")["default"]>;
     "expo-embed-android-unity-project": ConfigPluginOptions<typeof import("expo-embed-android-unity-project/build/index")["default"]>;
     "expo-facebook": ConfigPluginOptions<typeof import("expo-facebook/plugin/build/withFacebook")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-file-system": ConfigPluginOptions<typeof import("expo-file-system/plugin/build/withFileSystem")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-firebase-app-distribution": ConfigPluginOptions<unknown>;
     "expo-firebase-core": ConfigPluginOptions<typeof import("expo-firebase-core/plugin/build/withFirebaseCore")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-floating-bubble": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-font": ConfigPluginOptions<typeof import("expo-font/plugin/build/withFonts")["default"]>;
     "expo-gaode-map": ConfigPluginOptions<typeof import("expo-gaode-map/plugin/build/withGaodeMap")["default"]>;
     "expo-gaode-map-navigation": ConfigPluginOptions<typeof import("expo-gaode-map-navigation/plugin/build/withGaodeMap")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-gbk-converter": ConfigPluginOptions<unknown>;
     "expo-google-sign-in": ConfigPluginOptions<typeof import("expo-google-sign-in/plugin/build/withGoogleSignIn")["default"]>;
     "expo-gradle-ext-vars": ConfigPluginOptions<typeof import("expo-gradle-ext-vars/build/index")["default"]>;
@@ -338,48 +339,48 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Invalid types or not exported]
     "expo-idnow-auto-ident-config-plugin": ConfigPluginOptions<typeof import("expo-idnow-auto-ident-config-plugin/build/withIdNowAutoIdent")["default"]>;
     "expo-ignore-battery-optimizations": ConfigPluginOptions<typeof import("expo-ignore-battery-optimizations/plugin/build/withBatteryOptimizationPermissions")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-image": ConfigPluginOptions<unknown>;
     "expo-image-picker": ConfigPluginOptions<typeof import("expo-image-picker/plugin/build/withImagePicker")["default"]>;
     "expo-install-apps": ConfigPluginOptions<typeof import("expo-install-apps/plugin/build/withAppList")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-instant-app": ConfigPluginOptions<unknown>;
     "expo-libvlc-player": ConfigPluginOptions<typeof import("expo-libvlc-player/plugin/build/withExpoLibVlcPlayer")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-liquid-glass-native": ConfigPluginOptions<unknown>;
     "expo-live-activity": ConfigPluginOptions<typeof import("expo-live-activity/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-llm-mediapipe": ConfigPluginOptions<unknown>;
     "expo-local-authentication": ConfigPluginOptions<typeof import("expo-local-authentication/plugin/build/withLocalAuthentication")["default"]>;
     "expo-localization": ConfigPluginOptions<typeof import("expo-localization/plugin/build/withExpoLocalization")["default"]>;
     "expo-location": ConfigPluginOptions<typeof import("expo-location/plugin/build/withLocation")["default"]>;
     "expo-mail-composer": ConfigPluginOptions<typeof import("expo-mail-composer/plugin/build/withMailComposer")["default"]>;
     "expo-maps": ConfigPluginOptions<typeof import("expo-maps/plugin/build/withMapsLocation")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-mds": ConfigPluginOptions<unknown>;
     "expo-media-control": ConfigPluginOptions<typeof import("expo-media-control/plugin/build/index")["default"]>;
     "expo-media-library": ConfigPluginOptions<typeof import("expo-media-library/plugin/build/withMediaLibrary")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-motion-detector": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-moyasar-apple-pay": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-music-picker": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-native-alipay": ConfigPluginOptions<unknown>;
     "expo-native-asset": ConfigPluginOptions<typeof import("expo-native-asset/build/index")["default"]>;
     "expo-native-lockfiles": ConfigPluginOptions<typeof import("expo-native-lockfiles/plugin/build/lockfile-plugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-native-sheet-emojis": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-native-wechat": ConfigPluginOptions<unknown>;
     "expo-navigation-bar": ConfigPluginOptions<typeof import("expo-navigation-bar/plugin/build/withNavigationBar")["default"]>;
     "expo-notifications": ConfigPluginOptions<typeof import("expo-notifications/plugin/build/withNotifications")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-numerator": ConfigPluginOptions<unknown>;
     "expo-payments-stripe": ConfigPluginOptions<typeof import("expo-payments-stripe/plugin/build/withStripe")["default"]>;
     "expo-pip": ConfigPluginOptions<typeof import("expo-pip/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-pod-pinner": ConfigPluginOptions<unknown>;
     "expo-privacy-image": ConfigPluginOptions<typeof import("expo-privacy-image/plugin/build/index")["default"]>;
     "expo-privacy-manifest-polyfill-plugin": ConfigPluginOptions<typeof import("expo-privacy-manifest-polyfill-plugin/build/withExpoPrivacyManifestPolyfillPlugin")["default"]>;
@@ -387,15 +388,15 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-quest-notifications": ConfigPluginOptions<typeof import("expo-quest-notifications/plugin/build/withNotifications")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-quick-actions": ConfigPluginOptions<typeof import("expo-quick-actions/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-react-native-freshchat": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-release-signing": ConfigPluginOptions<unknown>;
     "expo-request-more-ram": ConfigPluginOptions<typeof import("expo-request-more-ram/build/index")["default"]>;
     "expo-required-hardware": ConfigPluginOptions<typeof import("expo-required-hardware/build/withRequiredHardware")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-reverse-tcp": ConfigPluginOptions<typeof import("expo-reverse-tcp/dist/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-roomplan": ConfigPluginOptions<unknown>;
     "expo-router": ConfigPluginOptions<typeof import("expo-router/plugin/build/index")["default"]>;
     "expo-ruler": ConfigPluginOptions<typeof import("expo-ruler/build/withRuler")["default"]>;
@@ -407,7 +408,7 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-sharing": ConfigPluginOptions<typeof import("expo-sharing/plugin/build/index")["default"]>;
     "expo-shazamkit": ConfigPluginOptions<typeof import("expo-shazamkit/plugin/build/withShazamKit")["default"]>;
     "expo-signature": ConfigPluginOptions<typeof import("expo-signature/plugin/build/withLocalAuthentication")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-speech-recognition": ConfigPluginOptions<unknown>;
     "expo-splash-screen": ConfigPluginOptions<typeof import("expo-splash-screen/plugin/build/withSplashScreen")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -415,7 +416,7 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "expo-status-bar": ConfigPluginOptions<typeof import("expo-status-bar/plugin/build/withStatusBar")["default"]>;
     "expo-stores-games-services": ConfigPluginOptions<typeof import("expo-stores-games-services/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-stream-audio": ConfigPluginOptions<unknown>;
     "expo-stt": ConfigPluginOptions<typeof import("expo-stt/plugin/build/withSpeechRecognition")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
@@ -426,13 +427,13 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-tencent-trtc": ConfigPluginOptions<typeof import("expo-tencent-trtc/plugin/build/index")["default"]>;
     "expo-tracking-transparency": ConfigPluginOptions<typeof import("expo-tracking-transparency/plugin/build/withTrackingTransparency")["default"]>;
     "expo-truecaller": ConfigPluginOptions<typeof import("expo-truecaller/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-umeng": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-umeng-analytics": ConfigPluginOptions<unknown>;
     "expo-updates": ConfigPluginOptions<typeof import("expo-updates/plugin/build/withUpdates")["default"]>;
     "expo-user-identity": ConfigPluginOptions<typeof import("expo-user-identity/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-vas-lib": ConfigPluginOptions<unknown>;
     "expo-video": ConfigPluginOptions<typeof import("expo-video/plugin/build/withExpoVideo")["default"]>;
     "expo-vision-image-scanner": ConfigPluginOptions<typeof import("expo-vision-image-scanner/plugin/build/index")["default"]>;
@@ -440,10 +441,10 @@ export interface ThirdPartyAutomatedPlugins {
     "expo-wechat": ConfigPluginOptions<typeof import("expo-wechat/plugin/build/index")["default"]>;
     "expo-whisper": ConfigPluginOptions<typeof import("expo-whisper/plugin/src/index")["default"]>;
     "expo-widgets": ConfigPluginOptions<typeof import("expo-widgets/plugin/build/withWidgets")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-wireguard": ConfigPluginOptions<unknown>;
     "expo-yandex-mapkit": ConfigPluginOptions<typeof import("expo-yandex-mapkit/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "expo-zendesk-messaging": ConfigPluginOptions<unknown>;
     "ez-expo-share": ConfigPluginOptions<typeof import("ez-expo-share/plugin/build/withShareExtension")["default"]>;
     "ez-zendesk-unified-sdk": ConfigPluginOptions<typeof import("ez-zendesk-unified-sdk/plugin/build/index")["default"]>;
@@ -451,41 +452,41 @@ export interface ThirdPartyAutomatedPlugins {
     "freerasp-react-native": ConfigPluginOptions<typeof import("freerasp-react-native/plugin/build/index")["default"]>;
     "hypertrack-sdk-expo": ConfigPluginOptions<typeof import("hypertrack-sdk-expo/build/index")["default"]>;
     "instabug-reactnative": ConfigPluginOptions<typeof import("instabug-reactnative/plugin/src/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "jpush-expo-config-plugin": ConfigPluginOptions<unknown>;
     "karte-expo-plugin": ConfigPluginOptions<typeof import("karte-expo-plugin/build/withKarte")["default"]>;
     "letro-passport": ConfigPluginOptions<typeof import("letro-passport/plugin/build/index")["default"]>;
     "llama.rn": ConfigPluginOptions<typeof import("llama.rn/lib/typescript/expo-plugin/withLlamaRN")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "mindbox-expo-plugin": ConfigPluginOptions<typeof import("mindbox-expo-plugin/build/withMindbox")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "munim-bluetooth": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "munim-ffmpeg": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "munim-wifi": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "mx-jpush-expo": ConfigPluginOptions<unknown>;
     "newrelic-react-native-agent": ConfigPluginOptions<typeof import("newrelic-react-native-agent/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "onesignal-expo-plugin": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "onnxruntime-react-native": ConfigPluginOptions<unknown>;
     "patch-project": ConfigPluginOptions<typeof import("patch-project/build/withPatchPlugin")["default"]>;
     "pushwoosh-expo-plugin": ConfigPluginOptions<typeof import("pushwoosh-expo-plugin/plugin/build/withPushwoosh")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "pushy-expo-plugin": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-adapty": ConfigPluginOptions<unknown>;
     "react-native-add-calendar-event": ConfigPluginOptions<typeof import("react-native-add-calendar-event/plugin/build/withAddCalendarEvent")["default"]>;
     "react-native-admob-native-ads": ConfigPluginOptions<typeof import("react-native-admob-native-ads/plugin/build/withAdmobNativeAds")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-altitude-plugin": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-android-widget": ConfigPluginOptions<unknown>;
     "react-native-app-auth": ConfigPluginOptions<typeof import("react-native-app-auth/plugin/build/index")["default"]>;
     "react-native-app-clip": ConfigPluginOptions<typeof import("react-native-app-clip/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-appsflyer": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-attribution-token": ConfigPluginOptions<typeof import("react-native-attribution-token/lib/typescript/expo-plugin/withBoringSSLFix")["default"]>;
@@ -493,27 +494,27 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-audio-recorder-player": ConfigPluginOptions<typeof import("react-native-audio-recorder-player/lib/typescript/plugin/src/index")["default"]>;
     "react-native-auth0": ConfigPluginOptions<typeof import("react-native-auth0/src/plugin/withAuth0")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-auto-skeleton": ConfigPluginOptions<unknown>;
     "react-native-background-fetch": ConfigPluginOptions<typeof import("react-native-background-fetch/expo/plugin/build/index")["default"]>;
     "react-native-background-geolocation": ConfigPluginOptions<typeof import("react-native-background-geolocation/expo/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-beacon-kit": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-better-maps": ConfigPluginOptions<typeof import("react-native-better-maps/plugin/build/ios")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-blasted-image": ConfigPluginOptions<unknown>;
     "react-native-ble-manager": ConfigPluginOptions<typeof import("react-native-ble-manager/plugin/build/withBLE")["default"]>;
     "react-native-ble-plx": ConfigPluginOptions<typeof import("react-native-ble-plx/plugin/build/withBLE")["default"]>;
     "react-native-bootsplash": ConfigPluginOptions<typeof import("react-native-bootsplash/dist/typescript/expo")["withBootSplash"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-bottom-tabs": ConfigPluginOptions<typeof import("react-native-bottom-tabs/lib/typescript/src/expo")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-candle": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-capture-protection": ConfigPluginOptions<unknown>;
     "react-native-cloud-storage": ConfigPluginOptions<typeof import("react-native-cloud-storage/dist/typescript/expo-plugin/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-cloud-store": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-cloud-sync": ConfigPluginOptions<typeof import("react-native-cloud-sync/plugin/build/index")["default"]>;
@@ -524,30 +525,30 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-credentials-manager": ConfigPluginOptions<typeof import("react-native-credentials-manager/app.plugin")["default"]>;
     "react-native-crisp-chat-sdk": ConfigPluginOptions<typeof import("react-native-crisp-chat-sdk/plugin/build/withCrispChat")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-custom-splash": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-deepgram": ConfigPluginOptions<typeof import("react-native-deepgram/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-device-activity": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-dji-mobile-sdk": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-document-scanner-plugin": ConfigPluginOptions<typeof import("react-native-document-scanner-plugin/expo-plugin/build/withDocumentScanner")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-dynamic-activities": ConfigPluginOptions<unknown>;
     "react-native-edge-to-edge": ConfigPluginOptions<typeof import("react-native-edge-to-edge/dist/typescript/expo")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-email-link": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-embedded-httpd": ConfigPluginOptions<typeof import("react-native-embedded-httpd/lib/typescript/module/withoutNettyMeta")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-enriched-markdown": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-epson-escposprinter": ConfigPluginOptions<typeof import("react-native-epson-escposprinter/lib/typescript/module/withPluginConfigs")["default"]>;
     "react-native-expo-braintree": ConfigPluginOptions<typeof import("react-native-expo-braintree/lib/typescript/src/plugin/withExpoBraintree")["default"]>;
     "react-native-expo-metamap-sdk": ConfigPluginOptions<typeof import("react-native-expo-metamap-sdk/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-expo-moengage": ConfigPluginOptions<unknown>;
     "react-native-face-detector-camera": ConfigPluginOptions<typeof import("react-native-face-detector-camera/plugin/build/withCamera")["default"]>;
     "react-native-fast-tflite": ConfigPluginOptions<typeof import("react-native-fast-tflite/lib/typescript/src/expo-plugin/withFastTFLite")["default"]>;
@@ -561,18 +562,18 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-google-auth": ConfigPluginOptions<typeof import("react-native-google-auth/plugin/build/withGoogleAuth")["default"]>;
     "react-native-google-cast": ConfigPluginOptions<typeof import("react-native-google-cast/lib/typescript/plugin/withGoogleCast")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-google-fit": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-google-maps-plus": ConfigPluginOptions<unknown>;
     "react-native-google-mobile-ads": ConfigPluginOptions<typeof import("react-native-google-mobile-ads/plugin/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-haptic-feedback": ConfigPluginOptions<typeof import("react-native-haptic-feedback/app.plugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-health": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-health-connect": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-helios": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-here-explore": ConfigPluginOptions<typeof import("react-native-here-explore/plugin/build/index")["default"]>;
@@ -580,73 +581,73 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-iap": ConfigPluginOptions<typeof import("react-native-iap/plugin/build/withIAP")["default"]>;
     "react-native-icon-converter": ConfigPluginOptions<typeof import("react-native-icon-converter/lib/typescript/module/withIcons")["default"]>;
     "react-native-image-marker": ConfigPluginOptions<typeof import("react-native-image-marker/lib/typescript/expo-plugin/withImageMarker")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-image-sequence-encoder": ConfigPluginOptions<unknown>;
     "react-native-intercom-expo-config-plugin": ConfigPluginOptions<typeof import("react-native-intercom-expo-config-plugin/build/withIntercom")["default"]>;
     "react-native-keyevent-expo-config-plugin": ConfigPluginOptions<typeof import("react-native-keyevent-expo-config-plugin/build/withReactNativeKeyevent")["default"]>;
     "react-native-keys": ConfigPluginOptions<typeof import("react-native-keys/lib/typescript/plugin/src/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-leap": ConfigPluginOptions<unknown>;
     "react-native-legal": ConfigPluginOptions<typeof import("react-native-legal/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-libsodium": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-liquid-glassmorphism": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-litert-lm": ConfigPluginOptions<unknown>;
     "react-native-localization-settings": ConfigPluginOptions<typeof import("react-native-localization-settings/plugin/build/index")["default"]>;
     "react-native-localize": ConfigPluginOptions<typeof import("react-native-localize/dist/typescript/expo")["default"]>;
     "react-native-localize-date": ConfigPluginOptions<typeof import("react-native-localize-date/plugin/build/withLocalizations")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-map-link": ConfigPluginOptions<unknown>;
     "react-native-maps": ConfigPluginOptions<typeof import("react-native-maps/dist/plugin/src/index")["default"]>;
     "react-native-metamap-sdk": ConfigPluginOptions<typeof import("react-native-metamap-sdk/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-mmkv": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-moyasar-apple-pay": ConfigPluginOptions<unknown>;
     "react-native-msal": ConfigPluginOptions<typeof import("react-native-msal/plugin/build/withReactNativeMSAL")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nai-timer": ConfigPluginOptions<typeof import("react-native-nai-timer/plugin/build/withNaiTimer")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nano-icons": ConfigPluginOptions<typeof import("react-native-nano-icons/lib/commonjs/plugin/src/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-navigation-mode": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-nfc-manager": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-nitro-auth": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-nitro-compass": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nitro-device-info": ConfigPluginOptions<typeof import("react-native-nitro-device-info/app.plugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-nitro-fetch": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-nitro-google-signin": ConfigPluginOptions<unknown>;
     "react-native-nitro-inspire-face": ConfigPluginOptions<typeof import("react-native-nitro-inspire-face/lib/typescript/module/src/expo-plugin/withInspireFace")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nitro-ota": ConfigPluginOptions<typeof import("react-native-nitro-ota/expo/plugins/dist/index")["default"]>;
     "react-native-nitro-readium": ConfigPluginOptions<typeof import("react-native-nitro-readium/plugins/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-nitro-rtmp-publisher": ConfigPluginOptions<unknown>;
     "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/lib/typescript/expo-plugin/withScreenRecorder")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nitro-speech-recognition": ConfigPluginOptions<typeof import("react-native-nitro-speech-recognition/plugin/build/withNitroSpeechRecognition")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nitro-wakeword": ConfigPluginOptions<typeof import("react-native-nitro-wakeword/app.plugin")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-nitro-wallpaper": ConfigPluginOptions<unknown>;
     "react-native-notificare": ConfigPluginOptions<typeof import("react-native-notificare/lib/plugin/withNotificare")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-notificare-geo": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-notificare-push": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-notificare-push-ui": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-notificare-scannables": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-notify-kit": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-object-capture": ConfigPluginOptions<typeof import("react-native-object-capture/app.plugin")["default"]>;
@@ -656,39 +657,39 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-orientation-director": ConfigPluginOptions<typeof import("react-native-orientation-director/plugin/build/index")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "react-native-ota-hot-update": ConfigPluginOptions<typeof import("react-native-ota-hot-update/plugin/src/index.ts")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-package-checker": ConfigPluginOptions<unknown>;
     "react-native-pdf-jsi": ConfigPluginOptions<typeof import("react-native-pdf-jsi/plugin/build/index")["default"]>;
     "react-native-permissions": ConfigPluginOptions<typeof import("react-native-permissions/dist/typescript/expo")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-quick-crypto": ConfigPluginOptions<unknown>;
     "react-native-radar": ConfigPluginOptions<typeof import("react-native-radar/plugin/build/withRadar")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-rasterized-widgets": ConfigPluginOptions<unknown>;
     "react-native-rate-app": ConfigPluginOptions<typeof import("react-native-rate-app/lib/typescript/plugin/withReactNativeRateApp")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-render-lynx": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-render-swift-ui": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-rfid8500-zebra": ConfigPluginOptions<unknown>;
     "react-native-safari-extension": ConfigPluginOptions<typeof import("react-native-safari-extension/plugin/build/withSafariExtension")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-safeguard": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-salesforce-chat-sdk": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-savanitdev-thermal-printer": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-screenguard": ConfigPluginOptions<unknown>;
     "react-native-screenshot-aware": ConfigPluginOptions<typeof import("react-native-screenshot-aware/lib/typescript/plugin/withReactNativeScreenshotAware")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-sensitive-info": ConfigPluginOptions<unknown>;
     "react-native-share": ConfigPluginOptions<typeof import("react-native-share/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-splash-screen-newarch": ConfigPluginOptions<unknown>;
     "react-native-spotlight-search": ConfigPluginOptions<typeof import("react-native-spotlight-search/plugin/build/withSpotlight")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-ssl-manager": ConfigPluginOptions<unknown>;
     "react-native-stripe-apple-pay": ConfigPluginOptions<typeof import("react-native-stripe-apple-pay/lib/typescript/src/plugins/withStripe")["default"]>;
     "react-native-theoplayer": ConfigPluginOptions<typeof import("react-native-theoplayer/lib/typescript/plugins/expo/withTHEOplayer")["default"]>;
@@ -699,11 +700,11 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-turbo-preferences": ConfigPluginOptions<typeof import("react-native-turbo-preferences/plugin/withTurboPreferences")["default"]>;
     "react-native-twilio-video-webrtc": ConfigPluginOptions<typeof import("react-native-twilio-video-webrtc/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-uaepass": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-use-health-kit": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-use-qili": ConfigPluginOptions<unknown>;
     "react-native-v8": ConfigPluginOptions<typeof import("react-native-v8/plugin/build/withV8ExpoAdapter")["default"]>;
     "react-native-vector-image": ConfigPluginOptions<typeof import("react-native-vector-image/plugin/build/withVectorImage")["default"]>;
@@ -713,49 +714,49 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-voice-voice-reworked": ConfigPluginOptions<typeof import("react-native-voice-voice-reworked/plugin/build/withVoice")["default"]>;
     "react-native-voicekit": ConfigPluginOptions<typeof import("react-native-voicekit/dist/typescript/expo-plugin/index")["default"]>;
     "react-native-vosk": ConfigPluginOptions<typeof import("react-native-vosk/plugin/build/withVosk")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-webassembly": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-webp-format": ConfigPluginOptions<unknown>;
     "react-native-wifi-reborn": ConfigPluginOptions<typeof import("react-native-wifi-reborn/plugin/dist/withWifi")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "react-native-yoco": ConfigPluginOptions<unknown>;
     "react-viro-sw": ConfigPluginOptions<typeof import("react-viro-sw/dist/plugins/withViro")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "rexpo-debugger": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "rn-fade-wrapper": ConfigPluginOptions<unknown>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "rn-mlkit-ocr": ConfigPluginOptions<typeof import("rn-mlkit-ocr/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "rn-neo": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "rn-nomba-terminal-sdk": ConfigPluginOptions<unknown>;
     "rnn-expo-plugin": ConfigPluginOptions<typeof import("rnn-expo-plugin/build/withRNN")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "rns-webview": ConfigPluginOptions<unknown>;
     "sentry-expo": ConfigPluginOptions<typeof import("sentry-expo/plugin/build/withSentry")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "singular-react-native": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "singular-react-native-kids-sdk": ConfigPluginOptions<unknown>;
     "square-expo-plugin": ConfigPluginOptions<typeof import("square-expo-plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "swiftui-native": ConfigPluginOptions<unknown>;
     test12321test: ConfigPluginOptions<typeof import("test12321test/plugin/build/index")["default"]>;
     "testflight-dev-deploy": ConfigPluginOptions<typeof import("testflight-dev-deploy/build/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "unified-ble-manager": ConfigPluginOptions<typeof import("unified-ble-manager/plugin/build/withBLE")["default"]>;
     "vibes-react-native-expo": ConfigPluginOptions<typeof import("vibes-react-native-expo/plugin/build/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "webengage-expo-push": ConfigPluginOptions<unknown>;
     "widget-watchos-expo-plugin": ConfigPluginOptions<typeof import("widget-watchos-expo-plugin/plugin/build/index")["default"]>;
     "with-react-native-tcp-socket": ConfigPluginOptions<typeof import("with-react-native-tcp-socket/build/withReactNativeTcpSocket")["default"]>;
     // @ts-expect-error [Invalid types or not exported]
     "with-rn-bluetooth-classic": ConfigPluginOptions<typeof import("with-rn-bluetooth-classic/plugin/lib/index")["default"]>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "with-rn-contacts": ConfigPluginOptions<unknown>;
-    // This Packages doesn't ship types for config plugin:
+    // This package doesn't ship types for its config plugin:
     "with-rn-image-crop-picker": ConfigPluginOptions<unknown>;
 
     /* Errors:
@@ -947,6 +948,7 @@ export interface ThirdPartyAutomatedPlugins {
       "expo-asset",
       "expo-callkit-telecom",
       "expo-clear-keychain",
+      "expo-file-system",
       "expo-font",
       "expo-quick-actions",
       "expo-reverse-tcp",

@@ -3,6 +3,13 @@ import { Glob } from "bun";
 
 type Result = { file: string; line: string }[];
 
+const getPathRelativeToNodeModules = (file: string) => {
+    const pathParts = file.split(path.sep);
+    const nodeModulesIndex = pathParts.lastIndexOf("node_modules");
+    const nodeModulesPath = pathParts.slice(0, nodeModulesIndex + 1).join(path.sep);
+    return path.relative(nodeModulesPath, file);
+};
+
 /**
  * Search all files with file extension that contain a string
  */
@@ -16,13 +23,10 @@ export const findConfigPluginTypePath = async (packageName: string, searchString
         if (file.includes(deepNodeModulesIgnorePath)) continue;
         try {
             const fileContent = await Bun.file(file).text();
-            const lines = fileContent.split(";");
 
-            lines.forEach((line) => {
-                if (line.includes(searchString)) {
-                    results.push({ file: getPathRelativeToNodeModules(file), line }); //
-                }
-            });
+            for (const line of fileContent.split(";")) {
+                if (line.includes(searchString)) results.push({ file: getPathRelativeToNodeModules(file), line });
+            }
         } catch (error) {
             console.error(`Error reading file ${file}:`, error);
         }
@@ -34,28 +38,11 @@ export const findConfigPluginTypePath = async (packageName: string, searchString
 export const findBestConfigPluginTypePath = async (packageName: string, searchString: string = "ConfigPlugin", fileExtension: string = ".d.ts"): Promise<string> => {
     const results = await findConfigPluginTypePath(packageName, searchString, fileExtension);
 
-    // Sort by file path length to prioritize top-level files
-    results.sort((a, b) => a.file.length - b.file.length);
-
-    // dedupe file list:
-    const files = [...new Set(results.map((result) => result.file))];
+    // Shortest path first, to prioritize top-level files over deeply nested ones.
+    const files = [...new Set(results.map((result) => result.file))].sort((a, b) => a.length - b.length);
 
     if (files.length === 0) throw Error("Package doesn't ship types for app.plugin.js");
-    // biome-ignore lint/style/noNonNullAssertion: fine here
-    if (files.length === 1) return files[0]!;
 
-    // biome-ignore lint/style/noNonNullAssertion: fine here
+    // biome-ignore lint/style/noNonNullAssertion: guaranteed non-empty by the throw above
     return files[0]!;
-};
-
-const getPathRelativeToNodeModules = (file: string) => {
-    const pathParts = file.split(path.sep);
-    const nodeModulesIndex = pathParts.lastIndexOf("node_modules");
-    const nodeModulesPath = pathParts.slice(0, nodeModulesIndex + 1).join(path.sep);
-    return path.relative(nodeModulesPath, file);
-};
-
-const _dedupe = (result: Result): string[] => {
-    const deduped = new Set(result.map((item) => item.file));
-    return [...deduped];
 };

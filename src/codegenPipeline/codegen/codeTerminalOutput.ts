@@ -6,100 +6,87 @@ import type { RnDep } from "../utils/types";
 // module retry) - the whole module type IS the plugin, so there's no property to index into.
 const line = (pkgName: string, importPath: string, name: string) =>
     name ? `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")["${name}"]>;` : `"${pkgName}": ConfigPluginOptions<typeof import("${importPath}")>;`;
-const linesUntyped = (pkgName: string) => ["// This Packages doesn't ship types for config plugin:", `"${pkgName}": ConfigPluginOptions<unknown>;`];
+const linesUntyped = (pkgName: string) => ["// This package doesn't ship types for its config plugin:", `"${pkgName}": ConfigPluginOptions<unknown>;`];
 
-const emptyStrArr = (): string[] => [];
+const PACKAGE_EXPORT_ERROR = "Package uses `exports` in `package.json`, which breaks this import";
 
 // Raw TS diagnostic messages embed package-specific paths (module specifier, absolute file path,
 // suggested `@types/...` name), so two packages failing for the *same* underlying reason never
 // produce an identical error string and can't be grouped in the `Errors:` summary below. Collapse
 // each known diagnostic shape back to its category so packages failing identically group together,
-// the same way the hand-written `"Package uses \`exports\`..."` message already does.
-const normalizeTsError = (error: string): string => {
-    if (
-        /^Could not find a declaration file for module '.*'\. '.*' implicitly has an 'any' type\. {3}Try `npm i --save-dev @types\/.*` if it exists or add a new declaration \(\.d\.ts\) file containing `declare module '.*';`$/.test(
-            error,
-        )
-    ) {
-        return "Could not find a declaration file for module (implicitly has an 'any' type - no .d.ts shipped)";
-    }
-    if (/^Property '.*' does not exist on type 'typeof import\(.*\)'\.$/.test(error)) {
-        return "Property does not exist on module's type (no matching export)";
-    }
-    if (/^Cannot find module '.*' or its corresponding type declarations\.$/.test(error)) {
-        return "Cannot find module or its corresponding type declarations";
-    }
-    return error;
-};
+// the same way the hand-written `PACKAGE_EXPORT_ERROR` message already does.
+const TS_ERROR_CATEGORIES: Array<[RegExp, string]> = [
+    [
+        /^Could not find a declaration file for module '.*'\. '.*' implicitly has an 'any' type\. {3}Try `npm i --save-dev @types\/.*` if it exists or add a new declaration \(\.d\.ts\) file containing `declare module '.*';`$/,
+        "Could not find a declaration file for module (implicitly has an 'any' type - no .d.ts shipped)",
+    ],
+    [/^Property '.*' does not exist on type 'typeof import\(.*\)'\.$/, "Property does not exist on module's type (no matching export)"],
+    [/^Cannot find module '.*' or its corresponding type declarations\.$/, "Cannot find module or its corresponding type declarations"],
+];
+
+const normalizeTsError = (error: string): string => TS_ERROR_CATEGORIES.find(([pattern]) => pattern.test(error))?.[1] ?? error;
 
 export const getConfigPluginTypeCode = async (): Promise<string> => {
     const packages = await packageListFile.load("withPluginAndTypes");
     const packageList = uniqBy(sortBy(packages, ["npmPkg"]), (pkg) => pkg.npmPkg);
-    const out = {
-        errors: new Map<string, string[]>(),
-        lines: emptyStrArr(),
-        untypedPackages: emptyStrArr(),
-    } satisfies Record<string, string[] | Map<string, string[]>>;
+
+    const errors = new Map<string, string[]>();
+    const lines: string[] = [];
 
     const addError = (pkg: string, error: string) => {
-        const packages = out.errors.get(error) || [];
-        packages.push(pkg);
-        out.errors.set(error, packages);
+        errors.set(error, [...(errors.get(error) ?? []), pkg]);
     };
-    const addIgnoreLine = (types: RnDep["types"], npmPkg: string) => {
-        const isIgnored = !!types?.override?.ignore || (!types?.valid && !types?.override?.path);
+
+    // The `@ts-expect-error` comment (if any) that has to precede every emitted line for this
+    // package. Also records why, once per package - not once per emitted alias.
+    const suppressionComment = (types: RnDep["types"], npmPkg: string): string | undefined => {
         if (types?.packageExport) {
-            out.lines.push("// @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]");
-            addError(npmPkg, "Package uses `exports` in `package.json`, which breaks this import");
-        } else if (isIgnored) {
-            out.lines.push("// @ts-expect-error [Invalid types or not exported]");
-            out.untypedPackages.push(npmPkg);
+            addError(npmPkg, PACKAGE_EXPORT_ERROR);
+            return `// @ts-expect-error [${PACKAGE_EXPORT_ERROR}]`;
         }
+        if (types?.override?.ignore || (!types?.valid && !types?.override?.path)) {
+            return "// @ts-expect-error [Invalid types or not exported]";
+        }
+        return undefined;
     };
+
     for (const { githubUrl, npmPkg, types } of packageList) {
-        const override = types?.override ?? {};
         if (!npmPkg) {
             addError(githubUrl, "no npmPkg:");
             continue;
         }
-        try {
-            const path = override.path ?? types?.path;
-            if (types?.path && override.path === types?.path) addError(npmPkg, "Redundant path override");
-            if (types?.valid && override.ignore && !types.packageExport) addError(npmPkg, "Redundant ignore override");
+        const override = types?.override ?? {};
+        const path = override.path ?? types?.path;
 
-            if ((!types?.override?.path && types?.error) || !path) {
-                out.lines.push(...linesUntyped(npmPkg));
-                addError(npmPkg, types?.error ? normalizeTsError(types.error) : "unknown Error");
-            } else {
-                const exportName = override.name ?? types?.exportName ?? "default";
-                addIgnoreLine(types, npmPkg);
-                out.lines.push(line(npmPkg, path, exportName));
+        if (types?.path && override.path === types.path) addError(npmPkg, "Redundant path override");
+        if (types?.valid && override.ignore && !types.packageExport) addError(npmPkg, "Redundant ignore override");
 
-                override.alias?.forEach((alias) => {
-                    addIgnoreLine(types, npmPkg);
-                    out.lines.push(line(alias, path, exportName));
-                });
-            }
-        } catch (e) {
-            const errorMessage = `${e instanceof Error ? e.message : String(e)}:`;
-            addError(npmPkg, errorMessage);
+        if ((!override.path && types?.error) || !path) {
+            lines.push(...linesUntyped(npmPkg));
+            addError(npmPkg, types?.error ? normalizeTsError(types.error) : "unknown Error");
+            continue;
+        }
+
+        const exportName = override.name ?? types?.exportName ?? "default";
+        const comment = suppressionComment(types, npmPkg);
+        for (const name of [npmPkg, ...(override.alias ?? [])]) {
+            if (comment) lines.push(comment);
+            lines.push(line(name, path, exportName));
         }
     }
 
-    const template = `
+    return `
 import type { ConfigPluginOptions } from "./types";
 
 // This file is auto-generated by the codegenCli
 
 export interface ThirdPartyAutomatedPlugins {
-    
-    ${out.lines.join("\n    ")}
-      
+
+    ${lines.join("\n    ")}
+
     /* Errors:
-${JSON.stringify([...out.errors.entries()], null, 2)}
+${JSON.stringify([...errors.entries()], null, 2)}
     */
 }
 `;
-
-    return template;
 };

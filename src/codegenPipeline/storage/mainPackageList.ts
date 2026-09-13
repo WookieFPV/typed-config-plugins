@@ -33,7 +33,7 @@ const filterPresets = {
     withPluginWithoutTypePath: (pkg: RnDepPersist) => !!pkg.npmPkg && !pkg.ignore && !!pkg.hasConfigPlugin && !pkg.types?.path,
 } satisfies Filter<RnDepPersist>;
 
-export const packageListFile = jsonPersistorFactory<RnDepPersist, typeof filterPresets>({
+export const packageListFile = jsonPersistorFactory({
     filters: filterPresets,
     primaryKey: "githubUrl",
     path: "src/codegenPipeline/data/rn-packages.json",
