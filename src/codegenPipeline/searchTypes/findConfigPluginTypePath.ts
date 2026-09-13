@@ -38,8 +38,10 @@ export const findConfigPluginTypePath = async (packageName: string, searchString
 export const findBestConfigPluginTypePath = async (packageName: string, searchString: string = "ConfigPlugin", fileExtension: string = ".d.ts"): Promise<string> => {
     const results = await findConfigPluginTypePath(packageName, searchString, fileExtension);
 
-    // Shortest path first, to prioritize top-level files over deeply nested ones.
-    const files = [...new Set(results.map((result) => result.file))].sort((a, b) => a.length - b.length);
+    // Shortest path first, to prioritize top-level files over deeply nested ones. Break ties
+    // alphabetically so the result is deterministic regardless of filesystem enumeration order
+    // (glob.scan's iteration order isn't guaranteed stable across fresh installs).
+    const files = [...new Set(results.map((result) => result.file))].sort((a, b) => a.length - b.length || a.localeCompare(b));
 
     if (files.length === 0) throw Error("Package doesn't ship types for app.plugin.js");
 

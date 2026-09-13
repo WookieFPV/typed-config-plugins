@@ -16,7 +16,9 @@ describe("typeDetection", () => {
 
     describe("findBestConfigPluginTypePath", () => {
         it("resolve react-native-app-auth", () => {
-            expect(findBestConfigPluginTypePath("react-native-app-auth")).resolves.toBeOneOf(["react-native-app-auth/plugin/build/index", "react-native-app-auth/plugin/build/types.d.ts"]);
+            // index.d.ts and types.d.ts are both candidates (same length, both mention
+            // ConfigPlugin); the alphabetical tiebreaker deterministically picks index.d.ts.
+            expect(findBestConfigPluginTypePath("react-native-app-auth")).resolves.toEqual("react-native-app-auth/plugin/build/index.d.ts");
         });
 
         it("resolve react-native-bootsplash", () => {
