@@ -957,6 +957,24 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/amplitude/amplitude-typescript/tree/main/packages/analytics-react-native",
+    "npmPkg": "@amplitude/analytics-react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/amplitude/amplitude-typescript/tree/main/packages/plugin-session-replay-react-native",
+    "npmPkg": "@amplitude/plugin-session-replay-react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/amplitude/experiment-react-native-client",
+    "npmPkg": "@amplitude/experiment-react-native-client",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/anas-asghar4831/react-native-chess-kit",
     "npmPkg": "react-native-chess-kit",
     "hasConfigPlugin": false,
@@ -1341,7 +1359,7 @@
   },
   {
     "githubUrl": "https://github.com/appandflow/stim/tree/master/packages/stim-cli",
-    "npmPkg": "stim-cli",
+    "npmPkg": "stim",
     "hasConfigPlugin": false
   },
   {
@@ -1544,6 +1562,12 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/armanrma7/react-native-callkit-telecom",
+    "npmPkg": "react-native-callkit-telecom",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/arnaudrinquin/react-native-radio-buttons",
@@ -3672,8 +3696,9 @@
     "hasConfigPlugin": true,
     "origin": "gitHub",
     "types": {
-      "valid": false,
-      "error": "Package doesn't ship an app.plugin.js file"
+      "valid": true,
+      "path": "expo-dev-launcher/plugin/build/withDevLauncher",
+      "exportName": "default"
     }
   },
   {
@@ -4107,6 +4132,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/dahab-tech/react-native-media-editor",
+    "npmPkg": "@dahab-tech/react-native-media-editor",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@dahab-tech/react-native-media-editor/app.plugin",
+      "error": "Could not find a declaration file for module '@dahab-tech/react-native-media-editor/app.plugin'. 'node_modules/@dahab-tech/react-native-media-editor/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/dahab-tech__react-native-media-editor` if it exists or add a new declaration (.d.ts) file containing `declare module '@dahab-tech/react-native-media-editor/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/daily-co/rn-daily-js-expo-config-plugin",
     "npmPkg": "@daily-co/config-plugin-rn-daily-js",
     "hasConfigPlugin": true,
@@ -4296,6 +4333,12 @@
   {
     "githubUrl": "https://github.com/davidohayon669/react-native-youtube",
     "npmPkg": "react-native-youtube",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/davidtrujillo123/orn-ui/tree/main/packages/ui",
+    "npmPkg": "orn-ui",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -5915,6 +5958,18 @@
     }
   },
   {
+    "githubUrl": "https://github.com/expo/dev-plugins/tree/main/packages/apollo-client",
+    "npmPkg": "@dev-plugins/apollo-client",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/expo/dev-plugins/tree/main/packages/react-navigation",
+    "npmPkg": "@dev-plugins/react-navigation",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/expo/ex-navigation",
     "npmPkg": "@expo/ex-navigation",
     "hasConfigPlugin": false,
@@ -7125,6 +7180,18 @@
     "origin": "gitHub",
     "types": {
       "path": "expo-stores-games-services/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/ferriv3ra/react-native-nitro-wakeword",
+    "npmPkg": "react-native-nitro-wakeword",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-nitro-wakeword/app.plugin",
+      "packageExport": true,
       "valid": true,
       "exportName": "default"
     }
@@ -13359,7 +13426,14 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera",
-    "origin": "directory"
+    "npmPkg": "react-native-vision-camera",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera",
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-vision-camera/tree/main/packages/react-native-vision-camera-barcode-scanner",
@@ -15403,6 +15477,12 @@
   {
     "githubUrl": "https://github.com/nikochan2k/expo-split-pane",
     "npmPkg": "expo-split-pane",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/nikpnevmatikos/html-renderer/tree/main/packages/core",
+    "npmPkg": "@nikpnevmatikos/html-renderer",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -17789,6 +17869,12 @@
   {
     "githubUrl": "https://github.com/rambowasreal/react-native-preflight",
     "npmPkg": "react-native-preflight",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ramssutharr/react-native-collapsible-tabs-native",
+    "npmPkg": "react-native-collapsible-tabs-native",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
