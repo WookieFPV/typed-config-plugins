@@ -1301,6 +1301,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/apolyanov/impulse-ui-native/tree/main/packages/toolkit",
+    "npmPkg": "@impulse-ui-native/toolkit",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/appandflow/expo-camera-characteristics",
     "npmPkg": "@appandflow/expo-camera-characteristics",
     "hasConfigPlugin": true,
@@ -1355,6 +1361,7 @@
   },
   {
     "githubUrl": "https://github.com/appandflow/stim/tree/main/packages/stim-cli",
+    "npmPkg": "stim",
     "origin": "directory",
     "ignore": true
   },
@@ -4424,6 +4431,15 @@
     "npmPkg": "tailwind-merge",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/dcastil/tailwind-merge/tree/main/packages/tailwind-merge",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/dcastil/tailwind-merge/tree/master/packages/tailwind-merge",
+    "npmPkg": "tailwind-merge",
+    "hasConfigPlugin": false
   },
   {
     "githubUrl": "https://github.com/dcavalcante/react-native-sprites",
@@ -9947,6 +9963,17 @@
     }
   },
   {
+    "githubUrl": "https://github.com/invertase/react-native-google-mobile-ads/tree/main/packages/core",
+    "npmPkg": "react-native-google-mobile-ads",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-google-mobile-ads/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/invertase/react-native-material-design",
     "npmPkg": "react-native-material-design",
     "hasConfigPlugin": false,
@@ -14355,6 +14382,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/mobilteknolojileri/react-native-password-intelligence/tree/main/packages/react-native",
+    "npmPkg": "react-native-password-intelligence",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/mockingbot/react-native-zip-archive",
     "npmPkg": "react-native-zip-archive",
     "hasConfigPlugin": false,
@@ -16866,6 +16899,12 @@
     "ignore": true
   },
   {
+    "githubUrl": "https://github.com/phucprime/react-native-image-editor",
+    "npmPkg": "@phucprime/react-native-image-editor",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/pieczasz/react-native-dynamic-activities",
     "npmPkg": "react-native-dynamic-activities",
     "hasConfigPlugin": true,
@@ -18676,6 +18715,12 @@
   },
   {
     "githubUrl": "https://github.com/retyui/react-native-bundle-discovery",
+    "npmPkg": "react-native-bundle-discovery",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/retyui/react-native-bundle-discovery/tree/main/_serializer",
     "npmPkg": "react-native-bundle-discovery",
     "hasConfigPlugin": false,
     "origin": "directory"

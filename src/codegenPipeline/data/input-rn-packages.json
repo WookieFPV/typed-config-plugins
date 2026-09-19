@@ -2303,7 +2303,8 @@
     "vegaos": "@amazon-devices/react-native-qrcode-svg"
   },
   {
-    "githubUrl": "https://github.com/invertase/react-native-google-mobile-ads",
+    "githubUrl": "https://github.com/invertase/react-native-google-mobile-ads/tree/main/packages/core",
+    "npmPkg": "react-native-google-mobile-ads",
     "examples": [
       "https://github.com/invertase/react-native-google-mobile-ads/tree/main/RNGoogleMobileAdsExample"
     ],
@@ -14892,7 +14893,7 @@
     "vegaos": true
   },
   {
-    "githubUrl": "https://github.com/dcastil/tailwind-merge",
+    "githubUrl": "https://github.com/dcastil/tailwind-merge/tree/main/packages/tailwind-merge",
     "ios": true,
     "android": true,
     "web": true,
@@ -19091,7 +19092,8 @@
     "newArchitecture": true
   },
   {
-    "githubUrl": "https://github.com/retyui/react-native-bundle-discovery",
+    "githubUrl": "https://github.com/retyui/react-native-bundle-discovery/tree/main/_serializer",
+    "npmPkg": "react-native-bundle-discovery",
     "images": [
       "https://raw.githubusercontent.com/retyui/react-native-bundle-discovery/main/assets/img.png"
     ],
@@ -22393,23 +22395,8 @@
     "fireos": true
   },
   {
-    "githubUrl": "https://github.com/rygrams/xaui/tree/main/packages/core",
-    "npmPkg": "@xaui/core",
-    "ios": true,
-    "android": true,
-    "newArchitecture": true
-  },
-  {
     "githubUrl": "https://github.com/rygrams/xaui/tree/main/packages/native",
     "npmPkg": "@xaui/native",
-    "ios": true,
-    "android": true,
-    "newArchitecture": true,
-    "fireos": true
-  },
-  {
-    "githubUrl": "https://github.com/rygrams/xaui/tree/main/packages/icons",
-    "npmPkg": "@xaui/icons",
     "ios": true,
     "android": true,
     "newArchitecture": true,
@@ -23426,7 +23413,7 @@
   },
   {
     "githubUrl": "https://github.com/OxyHQ/Bloom",
-    "npmPkg": "@oxyhq/bloom",
+    "npmPkg": "@oxy.so/bloom",
     "ios": true,
     "android": true,
     "web": true
@@ -25013,6 +25000,7 @@
   },
   {
     "githubUrl": "https://github.com/appandflow/stim/tree/main/packages/stim-cli",
+    "npmPkg": "stim",
     "ios": true,
     "android": true,
     "dev": true
@@ -25882,7 +25870,8 @@
     "android": true
   },
   {
-    "githubUrl": "https://github.com/mobilteknolojileri/react-native-password-intelligence",
+    "githubUrl": "https://github.com/mobilteknolojileri/react-native-password-intelligence/tree/main/packages/react-native",
+    "npmPkg": "react-native-password-intelligence",
     "examples": [
       "https://github.com/mobilteknolojileri/react-native-password-intelligence/tree/main/example"
     ],
@@ -26152,5 +26141,27 @@
     "android": true,
     "newArchitecture": "new-arch-only",
     "configPlugin": true
+  },
+  {
+    "githubUrl": "https://github.com/apolyanov/impulse-ui-native/tree/main/packages/toolkit",
+    "npmPkg": "@impulse-ui-native/toolkit",
+    "newArchitecture": true,
+    "ios": true,
+    "android": true,
+    "expoGo": true
+  },
+  {
+    "githubUrl": "https://github.com/phucprime/react-native-image-editor",
+    "npmPkg": "@phucprime/react-native-image-editor",
+    "examples": [
+      "https://github.com/phucprime/react-native-image-editor/tree/master/Example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/phucprime/react-native-image-editor/master/assets/ios.gif",
+      "https://raw.githubusercontent.com/phucprime/react-native-image-editor/master/assets/android.gif"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
   }
 ]
