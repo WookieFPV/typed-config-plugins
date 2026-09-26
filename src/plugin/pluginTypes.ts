@@ -195,6 +195,8 @@ export interface ThirdPartyAutomatedPlugins {
     "@rnmapbox/maps": ConfigPluginOptions<typeof import("@rnmapbox/maps/plugin/build/withMapbox")["default"]>;
     "@rokt/react-native-sdk": ConfigPluginOptions<typeof import("@rokt/react-native-sdk/plugin/build/withRoktSDK")["default"]>;
     // This package doesn't ship types for its config plugin:
+    "@rollbird/react-native": ConfigPluginOptions<unknown>;
+    // This package doesn't ship types for its config plugin:
     "@rownd/react-native": ConfigPluginOptions<unknown>;
     "@sd-tech/rn-camera-face-blur": ConfigPluginOptions<typeof import("@sd-tech/rn-camera-face-blur/lib/typescript/expo-plugin/withVisionCamera")["default"]>;
     "@sentry/react-native": ConfigPluginOptions<typeof import("@sentry/react-native/plugin/build/index")["default"]>;
@@ -793,6 +795,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@poilabs-dev/analysis-sdk-plugin",
       "@poilabs-dev/navigation-sdk-plugin",
       "@poilabs-dev/vd-navigation-sdk-plugin",
+      "@rollbird/react-native",
       "@rownd/react-native",
       "@siteed/audio-studio",
       "@siteed/expo-audio-studio",

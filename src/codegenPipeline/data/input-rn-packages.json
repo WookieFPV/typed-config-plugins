@@ -3477,8 +3477,14 @@
   },
   {
     "githubUrl": "https://github.com/fjmorant/react-native-nested-listview",
+    "examples": [
+      "https://github.com/fjmorant/react-native-nested-listview-examples",
+      "https://github.com/fjmorant/-react-native-nested-listview-examples-expo"
+    ],
     "ios": true,
-    "android": true
+    "android": true,
+    "expoGo": true,
+    "newArchitecture": true
   },
   {
     "githubUrl": "https://github.com/kirillzyusko/react-native-wifi-p2p",
@@ -22943,6 +22949,7 @@
     "images": [
       "https://raw.githubusercontent.com/magrinj/expo-quick-look/main/.github/assets/demo-ios.gif"
     ],
+    "web": true,
     "ios": true,
     "android": true,
     "newArchitecture": true,
@@ -24198,7 +24205,8 @@
     ],
     "configPlugin": true,
     "ios": true,
-    "android": true
+    "android": true,
+    "newArchitecture": "new-arch-only"
   },
   {
     "githubUrl": "https://github.com/Th4nderG0d/clarion/tree/main/packages/recorder",
@@ -26163,5 +26171,76 @@
     "ios": true,
     "android": true,
     "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/manuelrodmota/react-native-live-list",
+    "examples": [
+      "https://github.com/manuelrodmota/react-native-live-list/tree/main/example"
+    ],
+    "ios": true,
+    "android": true,
+    "expoGo": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/maikkkko1/rollbird/tree/main/packages/react-native",
+    "npmPkg": "@rollbird/react-native",
+    "ios": true,
+    "android": true
+  },
+  {
+    "githubUrl": "https://github.com/nobodywho-ooo/nobodywho/tree/main/nobodywho/react-native",
+    "npmPkg": "react-native-nobodywho",
+    "examples": [
+      "https://github.com/nobodywho-ooo/react-native-starter-example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/nobodywho-ooo/react-native-starter-example/main/preview.png"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/vijeshkr/react-native-biometric-auth",
+    "npmPkg": "@vijeshkr/react-native-biometric-auth",
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/majornutcracker-dev/react-native-selectable-text",
+    "npmPkg": "@majornutcracker/react-native-selectable-text",
+    "examples": [
+      "https://snack.expo.dev/@majornutcracker/selectabletext",
+      "https://github.com/majornutcracker-dev/react-native-selectable-text/tree/main/example"
+    ],
+    "images": [
+      "https://github.com/majornutcracker-dev/react-native-selectable-text/raw/main/assets/ios.gif"
+    ],
+    "ios": true,
+    "android": true,
+    "expoGo": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/mz-real/react-native-responsive-hook",
+    "ios": true,
+    "android": true,
+    "web": true,
+    "expoGo": true
+  },
+  {
+    "githubUrl": "https://github.com/thiagobrez/react-native-arrangement-view",
+    "examples": [
+      "https://github.com/thiagobrez/react-native-arrangement-view/tree/main/apps/example-expo"
+    ],
+    "images": [
+      "https://github.com/thiagobrez/react-native-arrangement-view/raw/main/docs/comparison/ios/half-portrait-split.jpg",
+      "https://github.com/thiagobrez/react-native-arrangement-view/raw/main/docs/comparison/android/half-portrait-split.jpg"
+    ],
+    "newArchitecture": "new-arch-only",
+    "ios": true,
+    "android": true
   }
 ]

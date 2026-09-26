@@ -4434,6 +4434,8 @@
   },
   {
     "githubUrl": "https://github.com/dcastil/tailwind-merge/tree/main/packages/tailwind-merge",
+    "npmPkg": "tailwind-merge",
+    "hasConfigPlugin": false,
     "origin": "directory"
   },
   {
@@ -13074,6 +13076,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/maikkkko1/rollbird/tree/main/packages/react-native",
+    "npmPkg": "@rollbird/react-native",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@rollbird/react-native/app.plugin",
+      "error": "Could not find a declaration file for module '@rollbird/react-native/app.plugin'. 'node_modules/@rollbird/react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/rollbird__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@rollbird/react-native/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/maitrungduc1410/react-native-loader-kit",
     "npmPkg": "react-native-loader-kit",
     "hasConfigPlugin": false,
@@ -13082,6 +13096,12 @@
   {
     "githubUrl": "https://github.com/maitrungduc1410/react-native-video-trim",
     "npmPkg": "react-native-video-trim",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/majornutcracker-dev/react-native-selectable-text",
+    "npmPkg": "@majornutcracker/react-native-selectable-text",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -13198,6 +13218,12 @@
   {
     "githubUrl": "https://github.com/manuelbieh/geolib",
     "npmPkg": "geolib",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/manuelrodmota/react-native-live-list",
+    "npmPkg": "react-native-live-list",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -15005,6 +15031,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/mz-real/react-native-responsive-hook",
+    "npmPkg": "react-native-responsive-hook",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/n0ku/react-native-nitro-healthkit",
     "origin": "directory",
     "ignore": true
@@ -15623,6 +15655,12 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/nobodywho-ooo/nobodywho/tree/main/nobodywho/react-native",
+    "npmPkg": "react-native-nobodywho",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/nodixo/expo-updates-standalone",
@@ -22288,6 +22326,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/thiagobrez/react-native-arrangement-view",
+    "npmPkg": "react-native-arrangement-view",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/thinhkhang97/react-native-viewport-detector",
     "npmPkg": "react-native-viewport-detector",
     "hasConfigPlugin": false,
@@ -23305,6 +23349,12 @@
       "error": "Could not find a declaration file for module 'react-native-custom-splash/plugin/src/index'. 'node_modules/react-native-custom-splash/plugin/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-custom-splash` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-custom-splash/plugin/src/index';`",
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/vijeshkr/react-native-biometric-auth",
+    "npmPkg": "@vijeshkr/react-native-biometric-auth",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/vikeri/react-native-background-job",

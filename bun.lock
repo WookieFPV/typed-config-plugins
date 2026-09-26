@@ -162,6 +162,7 @@
         "@reclaimprotocol/inapp-rn-sdk": "0.18.0",
         "@rnmapbox/maps": "*",
         "@rokt/react-native-sdk": "4.11.0",
+        "@rollbird/react-native": "^0.1.2",
         "@rownd/react-native": "3.4.0",
         "@sd-tech/rn-camera-face-blur": "1.1.5",
         "@sentry/react-native": "*",
@@ -2344,6 +2345,8 @@
     "@rock-js/tools": ["@rock-js/tools@0.14.1", "", { "dependencies": { "@clack/prompts": "^0.11.0", "adm-zip": "^0.5.16", "appdirsjs": "^1.2.7", "fs-fingerprint": "^0.11.0", "is-unicode-supported": "^2.1.0", "nano-spawn": "^0.2.0", "picocolors": "^1.1.1", "string-argv": "^0.3.2", "tar": "^7.5.1", "tslib": "^2.3.0" } }, "sha512-5NDwsJi4D21uAPRYQWm3PnWKuh19TZ5yduKdvmTVO+x6Yu/Dg/tXDdq7hD/ZZOPFWtJmlvNDdUzGbsHomQJvbw=="],
 
     "@rokt/react-native-sdk": ["@rokt/react-native-sdk@4.11.0", "", { "dependencies": { "@expo/config-plugins": "^7.2.5" }, "peerDependencies": { "react-native": ">= 0.55.4" } }, "sha512-GvHRo6XTkLaWJtCNdTaSPXRghQo4dHuUMW1K5ROzrXT7ilY9JnMPYPkCGEDLq8z5vo6P1DMmB5jtoDmmnGH90g=="],
+
+    "@rollbird/react-native": ["@rollbird/react-native@0.1.2", "", { "peerDependencies": { "@expo/config-plugins": ">=9", "@hot-updater/react-native": "0.36.13", "react": "*", "react-native": "*" }, "optionalPeers": ["@expo/config-plugins"] }, "sha512-TcqOLf0j84a8xVEV7yCmWYl9npq6r02IKiVPXZIqmV70UWrXGDns1XFT92SQfhLFQpBMhzXyyqC295OaDghwlQ=="],
 
     "@rollup/rollup-android-arm-eabi": ["@rollup/rollup-android-arm-eabi@4.63.2", "", { "os": "android", "cpu": "arm" }, "sha512-Xa6RDoWa+hNiX6PgsljlH6W75RaONx3y6PVlbLhkEWW+GaPQ3dP5gwbL/erAzQHWwkvW5UxdD5l87Qx2FAQ/4A=="],
 

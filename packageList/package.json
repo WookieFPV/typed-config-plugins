@@ -136,6 +136,7 @@
     "@reclaimprotocol/inapp-rn-sdk": "0.18.0",
     "@rnmapbox/maps": "*",
     "@rokt/react-native-sdk": "4.11.0",
+    "@rollbird/react-native": "^0.1.2",
     "@rownd/react-native": "3.4.0",
     "@sd-tech/rn-camera-face-blur": "1.1.5",
     "@sentry/react-native": "*",
