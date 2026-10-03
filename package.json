@@ -55,7 +55,7 @@
     "prepublishOnly": "bun run lint:CI && bun run typecheck && bun test && bun run build"
   },
   "devDependencies": {
-    "@babel/parser": "8.0.5",
+    "@babel/parser": "8.0.6",
     "@babel/traverse": "8.0.5",
     "@babel/types": "8.0.5",
     "@biomejs/biome": "2.5.12",
