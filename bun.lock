@@ -74,6 +74,7 @@
         "@davotisolutions/expo-localization-utils": "0.1.4",
         "@dbkable/react-native-speech-to-text": "*",
         "@deeplinknow/react-native": "1.1.20",
+        "@devreply/react-native": "^0.5.0",
         "@didomi/react-native": "*",
         "@divvi/mobile": "1.0.0-alpha.1",
         "@embrace-io/react-native": "6.2.1",
@@ -162,6 +163,7 @@
         "@reclaimprotocol/inapp-rn-sdk": "0.18.0",
         "@rnmapbox/maps": "*",
         "@rokt/react-native-sdk": "4.11.0",
+        "@rollbird/react-native": "^0.1.2",
         "@rownd/react-native": "3.4.0",
         "@sd-tech/rn-camera-face-blur": "1.1.5",
         "@sentry/react-native": "*",
@@ -490,6 +492,7 @@
         "react-native-nitro-screen-recorder": "*",
         "react-native-nitro-sound": "*",
         "react-native-nitro-speech-recognition": "0.2.0",
+        "react-native-nitro-sync": "^2.0.0",
         "react-native-nitro-wakeword": "^0.2.2",
         "react-native-nitro-wallpaper": "1.1.5",
         "react-native-notificare": "4.2.3",
@@ -506,6 +509,7 @@
         "react-native-package-checker": "1.0.0",
         "react-native-pdf-jsi": "4.4.0",
         "react-native-permissions": "*",
+        "react-native-pose-detection": "^0.2.2",
         "react-native-quick-crypto": "*",
         "react-native-radar": "*",
         "react-native-rasterized-widgets": "^0.1.0",
@@ -1132,6 +1136,8 @@
     "@deepgram/sdk": ["@deepgram/sdk@4.11.3", "", { "dependencies": { "@deepgram/captions": "^1.1.1", "@types/node": "^18.19.39", "cross-fetch": "^3.1.5", "deepmerge": "^4.3.1", "events": "^3.3.0", "ws": "^8.17.0" } }, "sha512-7NujHlAX6ciBeYAkxkhE7LCZWy0JK3nvFsV2VwVZIUiFR40ykhep5fxYd7ZovM+PbNyCoM8GKNMHu9MeQ5/wTQ=="],
 
     "@deeplinknow/react-native": ["@deeplinknow/react-native@1.1.20", "", { "dependencies": { "expo-modules-core": "~3.0.21" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-lWRNLzbvf2HTs4qdYE9gYvtgK4j6vpjPs6Og1Dsph7k3SKtlT1Zi4Tn/LIuT2i9LkKZEGGRTeMEqxDvkXrmVQA=="],
+
+    "@devreply/react-native": ["@devreply/react-native@0.5.0", "", { "peerDependencies": { "react": "*", "react-native": ">=0.80" } }, "sha512-wLgQp7maC02yD1SnKE/jG11XNC60ygKcfuXM7V/F8oj+Cqx3+3MksD5ZAbCuZeqOMh+6BCp9Mge0S5hR5B1xoQ=="],
 
     "@didomi/react-native": ["@didomi/react-native@2.16.0", "", { "dependencies": { "@expo/config-plugins": "^54.0.2" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-LKcokJZy3KC2YCwN6rZGtnZ3oiKF7VrEnsUrNdJJ1fvkaXKx9ZQI3/G7PUmlUGf7NBNnFN4J2d0Ebcf2DFyDWw=="],
 
@@ -2344,6 +2350,8 @@
     "@rock-js/tools": ["@rock-js/tools@0.14.1", "", { "dependencies": { "@clack/prompts": "^0.11.0", "adm-zip": "^0.5.16", "appdirsjs": "^1.2.7", "fs-fingerprint": "^0.11.0", "is-unicode-supported": "^2.1.0", "nano-spawn": "^0.2.0", "picocolors": "^1.1.1", "string-argv": "^0.3.2", "tar": "^7.5.1", "tslib": "^2.3.0" } }, "sha512-5NDwsJi4D21uAPRYQWm3PnWKuh19TZ5yduKdvmTVO+x6Yu/Dg/tXDdq7hD/ZZOPFWtJmlvNDdUzGbsHomQJvbw=="],
 
     "@rokt/react-native-sdk": ["@rokt/react-native-sdk@4.11.0", "", { "dependencies": { "@expo/config-plugins": "^7.2.5" }, "peerDependencies": { "react-native": ">= 0.55.4" } }, "sha512-GvHRo6XTkLaWJtCNdTaSPXRghQo4dHuUMW1K5ROzrXT7ilY9JnMPYPkCGEDLq8z5vo6P1DMmB5jtoDmmnGH90g=="],
+
+    "@rollbird/react-native": ["@rollbird/react-native@0.1.2", "", { "peerDependencies": { "@expo/config-plugins": ">=9", "@hot-updater/react-native": "0.36.13", "react": "*", "react-native": "*" }, "optionalPeers": ["@expo/config-plugins"] }, "sha512-TcqOLf0j84a8xVEV7yCmWYl9npq6r02IKiVPXZIqmV70UWrXGDns1XFT92SQfhLFQpBMhzXyyqC295OaDghwlQ=="],
 
     "@rollup/rollup-android-arm-eabi": ["@rollup/rollup-android-arm-eabi@4.63.2", "", { "os": "android", "cpu": "arm" }, "sha512-Xa6RDoWa+hNiX6PgsljlH6W75RaONx3y6PVlbLhkEWW+GaPQ3dP5gwbL/erAzQHWwkvW5UxdD5l87Qx2FAQ/4A=="],
 
@@ -6233,6 +6241,8 @@
 
     "react-native-nitro-speech-recognition": ["react-native-nitro-speech-recognition@0.2.0", "", { "dependencies": { "eventemitter3": "^5.0.1" }, "peerDependencies": { "react": "*", "react-native": "*", "react-native-nitro-modules": "*" } }, "sha512-14mM+J9CnMOfF7T63Bq0J4SiZ1GvK8r7aAwZ1Gn2vMJdffD5rGR/fYm2mDafz1kELSJjaLMX26aPo3awAldiQQ=="],
 
+    "react-native-nitro-sync": ["react-native-nitro-sync@2.0.0", "", { "peerDependencies": { "@expo/config-plugins": ">=8", "@op-engineering/op-sqlite": ">=10", "react": ">=18", "react-native": ">=0.73", "react-native-mmkv": ">=2", "react-native-nitro-modules": ">=0.36.5" }, "optionalPeers": ["@expo/config-plugins", "@op-engineering/op-sqlite", "react-native-mmkv"] }, "sha512-Q80IE57hCOF56gy/A12zIbjp6Aqb4W0tlAmCjt5EyMIz97QBeExm0Z4jcls15UrKXFV+4G/e+yy9jd6wjoMmLg=="],
+
     "react-native-nitro-wakeword": ["react-native-nitro-wakeword@0.2.2", "", { "peerDependencies": { "react": "*", "react-native": "*", "react-native-nitro-modules": ">=0.35.0 <1.0.0" } }, "sha512-OvEC1/fmlJGBDNX8nw0rH3Ajhdahyc+3BM7MGw70l7WjXGFxOuFSivPkgcOoQPaTn9gKYJcR/u2C5BSP93/gzQ=="],
 
     "react-native-nitro-wallpaper": ["react-native-nitro-wallpaper@1.1.5", "", { "peerDependencies": { "react": "*", "react-native": "*", "react-native-nitro-modules": "^0.33.0" } }, "sha512-hY7sS3w8qZhR+nqbig+TcJWHbj+iQ4m+ky4u58O4qe3DDIR8QchTwZWK8qUsJ0S+x9WT43j61L2AUKjkmavj/g=="],
@@ -6276,6 +6286,8 @@
     "react-native-picker-select": ["react-native-picker-select@9.3.1", "", { "dependencies": { "lodash.isequal": "^4.5.0", "lodash.isobject": "^3.0.2" }, "peerDependencies": { "@react-native-picker/picker": "^2.4.0" } }, "sha512-o621HcsKJfJkpYeP/PZQiZTKbf8W7FT08niLFL0v1pGkIQyak5IfzfinV2t+/l1vktGwAH2Tt29LrP/Hc5fk3A=="],
 
     "react-native-platform-touchable": ["react-native-platform-touchable@1.1.1", "", {}, "sha512-0ZHv2DtJZHPfDY4ltd2WkeFs2SE7ROB31DbQx1163UdbfolqDpOYFAYOaOQKyQW0Z2TpV6zjhzTRGPmYH6TYcg=="],
+
+    "react-native-pose-detection": ["react-native-pose-detection@0.2.2", "", { "peerDependencies": { "expo": ">=56", "react": ">=19", "react-native": ">=0.85" }, "bin": { "react-native-pose-detection": "cli/index.js" } }, "sha512-qEFTjmjx6S2y9TFjOfAMbqjWpd0LL70R/cGstxkQl6YisWUaWdvHfD+NdxaLXYaUmRP0eqdbj2c1cq8Gu6TuEg=="],
 
     "react-native-promise-rejection-utils": ["react-native-promise-rejection-utils@0.0.1", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-ToQv5u8zzYf+c1TTBD18UwDozSWGkekSPJ44xovsWZMF5I21DzEbO3P9UStjMWiFuI24CZiRbOoZHlvgjMtP+A=="],
 
