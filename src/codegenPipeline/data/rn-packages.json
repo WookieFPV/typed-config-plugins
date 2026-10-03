@@ -215,6 +215,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/abtonc/klor-react",
+    "npmPkg": "@klor/react",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/abusalehfaysal/result-management-system-using-html-css-mysql-php/tree/main/edu-admin/js",
     "origin": "gitHub",
     "ignore": true
@@ -458,6 +464,12 @@
   {
     "githubUrl": "https://github.com/ahmed-elmaki/react-native-signal-scorer",
     "npmPkg": "react-native-signal-scorer",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/ahmed-elmaki/react-native-signal-scorer-lite",
+    "npmPkg": "react-native-signal-scorer-lite",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -1799,6 +1811,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/avas-app/agent-bridge",
+    "npmPkg": "@avasapp/agent-bridge",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/avas-app/react-native-android-otp-autofill",
     "npmPkg": "@avasapp/react-native-otp-autofill",
     "hasConfigPlugin": false,
@@ -2342,6 +2360,12 @@
   {
     "githubUrl": "https://github.com/bhargavkanda/react-native-image-stitcher",
     "npmPkg": "react-native-image-stitcher",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/bhavinpethani04/react-native-magic-tab-bar",
+    "npmPkg": "react-native-magic-tab-bar",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -3612,6 +3636,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/code-axolot-team/devreply-react-native",
+    "npmPkg": "@devreply/react-native",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@devreply/react-native/app.plugin",
+      "error": "Could not find a declaration file for module '@devreply/react-native/app.plugin'. 'node_modules/@devreply/react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/devreply__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@devreply/react-native/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/codearcade-io/expo-markdown",
     "npmPkg": "@codearcade/expo-markdown",
     "hasConfigPlugin": false,
@@ -4434,6 +4470,8 @@
   },
   {
     "githubUrl": "https://github.com/dcastil/tailwind-merge/tree/main/packages/tailwind-merge",
+    "npmPkg": "tailwind-merge",
+    "hasConfigPlugin": false,
     "origin": "directory"
   },
   {
@@ -8009,6 +8047,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/getsettalk/react-native-review-prompt",
+    "npmPkg": "react-native-review-prompt",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/getsettalk/react-native-smart-tooltip",
     "npmPkg": "react-native-smart-tooltip",
     "hasConfigPlugin": false,
@@ -8643,6 +8687,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/halilibrahimakyz/react-native-pdf-sdk",
+    "npmPkg": "react-native-pdf-sdk",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/hamzamekk/react-native-turbo-preferences",
     "npmPkg": "react-native-turbo-preferences",
     "hasConfigPlugin": true,
@@ -9125,6 +9175,12 @@
       "path": "expo-core-spotlight/plugin/build/index",
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/huextrat/expo-inline-video",
+    "npmPkg": "expo-inline-video",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/huextrat/expo-maps-routes",
@@ -11278,6 +11334,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/khalid999devs/react-native-pose-detection/tree/main/packages/core",
+    "npmPkg": "react-native-pose-detection",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-pose-detection/plugin/build/index",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/khalisafkari/react-native-bigimageviewer",
     "npmPkg": "react-native-bigimageviewer",
     "hasConfigPlugin": false,
@@ -12295,6 +12363,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/linktrail-io/react-native",
+    "npmPkg": "linktrail-react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/linusu/react-native-get-random-values",
     "npmPkg": "react-native-get-random-values",
     "hasConfigPlugin": false,
@@ -12860,6 +12934,18 @@
     "ignore": true
   },
   {
+    "githubUrl": "https://github.com/lvlrsajjad/react-native-blur-overlay",
+    "npmPkg": "react-native-blur-overlay",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/lvlrsajjad/react-native-masonry-brick-list",
+    "npmPkg": "react-native-masonry-brick-list",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/lwansbrough/react-native-ab",
     "npmPkg": "react-native-ab",
     "hasConfigPlugin": false,
@@ -13074,6 +13160,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/maikkkko1/rollbird/tree/main/packages/react-native",
+    "npmPkg": "@rollbird/react-native",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@rollbird/react-native/app.plugin",
+      "error": "Could not find a declaration file for module '@rollbird/react-native/app.plugin'. 'node_modules/@rollbird/react-native/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/rollbird__react-native` if it exists or add a new declaration (.d.ts) file containing `declare module '@rollbird/react-native/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/maitrungduc1410/react-native-loader-kit",
     "npmPkg": "react-native-loader-kit",
     "hasConfigPlugin": false,
@@ -13082,6 +13180,12 @@
   {
     "githubUrl": "https://github.com/maitrungduc1410/react-native-video-trim",
     "npmPkg": "react-native-video-trim",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/majornutcracker-dev/react-native-selectable-text",
+    "npmPkg": "@majornutcracker/react-native-selectable-text",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -13198,6 +13302,12 @@
   {
     "githubUrl": "https://github.com/manuelbieh/geolib",
     "npmPkg": "geolib",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/manuelrodmota/react-native-live-list",
+    "npmPkg": "react-native-live-list",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -13354,6 +13464,12 @@
   },
   {
     "githubUrl": "https://github.com/margelo/react-native-graph",
+    "npmPkg": "react-native-graph",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/margelo/react-native-graph/tree/main/package",
     "npmPkg": "react-native-graph",
     "hasConfigPlugin": false,
     "origin": "directory"
@@ -15005,6 +15121,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/mz-real/react-native-responsive-hook",
+    "npmPkg": "react-native-responsive-hook",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/n0ku/react-native-nitro-healthkit",
     "origin": "directory",
     "ignore": true
@@ -15623,6 +15745,26 @@
       "valid": true,
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/no1225/expo-media-control/tree/main/packages/expo-media-control",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/no1225/expo-media-control/tree/master/packages/expo-media-control",
+    "npmPkg": "expo-media-control",
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "expo-media-control/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/nobodywho-ooo/nobodywho/tree/main/nobodywho/react-native",
+    "npmPkg": "react-native-nobodywho",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/nodixo/expo-updates-standalone",
@@ -17939,6 +18081,17 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/raouldandresy/react-native-nitro-sync",
+    "npmPkg": "react-native-nitro-sync",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-nitro-sync/lib/typescript/plugin/src/index",
+      "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/rapsssito/react-native-background-actions",
     "npmPkg": "react-native-background-actions",
     "hasConfigPlugin": false,
@@ -19982,6 +20135,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/scriptx-com/everframe/tree/main/packages/sdk-react-native",
+    "npmPkg": "@everframe/react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/scrolldynasty/react-native-drum-picker",
     "npmPkg": "react-native-drum-picker",
     "hasConfigPlugin": false,
@@ -20363,6 +20522,12 @@
   {
     "githubUrl": "https://github.com/shtefanilie/react-native-age-signals",
     "npmPkg": "react-native-age-signals",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/shtefanilie/react-native-clamshell",
+    "npmPkg": "react-native-clamshell",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -22288,6 +22453,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/thiagobrez/react-native-arrangement-view",
+    "npmPkg": "react-native-arrangement-view",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/thinhkhang97/react-native-viewport-detector",
     "npmPkg": "react-native-viewport-detector",
     "hasConfigPlugin": false,
@@ -23305,6 +23476,12 @@
       "error": "Could not find a declaration file for module 'react-native-custom-splash/plugin/src/index'. 'node_modules/react-native-custom-splash/plugin/src/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-custom-splash` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-custom-splash/plugin/src/index';`",
       "exportName": "default"
     }
+  },
+  {
+    "githubUrl": "https://github.com/vijeshkr/react-native-biometric-auth",
+    "npmPkg": "@vijeshkr/react-native-biometric-auth",
+    "hasConfigPlugin": false,
+    "origin": "directory"
   },
   {
     "githubUrl": "https://github.com/vikeri/react-native-background-job",

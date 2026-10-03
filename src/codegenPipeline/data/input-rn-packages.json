@@ -3477,8 +3477,14 @@
   },
   {
     "githubUrl": "https://github.com/fjmorant/react-native-nested-listview",
+    "examples": [
+      "https://github.com/fjmorant/react-native-nested-listview-examples",
+      "https://github.com/fjmorant/-react-native-nested-listview-examples-expo"
+    ],
     "ios": true,
-    "android": true
+    "android": true,
+    "expoGo": true,
+    "newArchitecture": true
   },
   {
     "githubUrl": "https://github.com/kirillzyusko/react-native-wifi-p2p",
@@ -9560,7 +9566,8 @@
     "configPlugin": true
   },
   {
-    "githubUrl": "https://github.com/margelo/react-native-graph",
+    "githubUrl": "https://github.com/margelo/react-native-graph/tree/main/package",
+    "npmPkg": "react-native-graph",
     "examples": [
       "https://github.com/margelo/react-native-graph/tree/main/example"
     ],
@@ -16256,7 +16263,8 @@
       "https://github.com/raouldandresy/react-native-momentum-carousel/tree/main/example"
     ],
     "ios": true,
-    "android": true
+    "android": true,
+    "newArchitecture": true
   },
   {
     "githubUrl": "https://github.com/anday013/react-native-phone-entry",
@@ -19885,12 +19893,6 @@
     "vegaos": true
   },
   {
-    "githubUrl": "https://github.com/ursnj/nayan-ui/tree/main/packages/native",
-    "npmPkg": "@nayan-ui/native",
-    "android": true,
-    "ios": true
-  },
-  {
     "githubUrl": "https://github.com/sharathchandramg/react-native-formo",
     "npmPkg": "react-native-form0",
     "android": true,
@@ -21594,7 +21596,7 @@
     "newArchitecture": true
   },
   {
-    "githubUrl": "https://github.com/NO1225/expo-media-control",
+    "githubUrl": "https://github.com/NO1225/expo-media-control/tree/main/packages/expo-media-control",
     "examples": [
       "https://github.com/NO1225/expo-media-control/tree/main/example"
     ],
@@ -22359,14 +22361,6 @@
     "fireos": true
   },
   {
-    "githubUrl": "https://github.com/factorialco/f0/tree/main/packages/react-native",
-    "npmPkg": "@factorialco/f0-react-native",
-    "android": true,
-    "ios": true,
-    "expoGo": true,
-    "newArchitecture": true
-  },
-  {
     "githubUrl": "https://github.com/huextrat/expo-maps-routes",
     "android": true,
     "ios": true,
@@ -22943,6 +22937,7 @@
     "images": [
       "https://raw.githubusercontent.com/magrinj/expo-quick-look/main/.github/assets/demo-ios.gif"
     ],
+    "web": true,
     "ios": true,
     "android": true,
     "newArchitecture": true,
@@ -24198,7 +24193,8 @@
     ],
     "configPlugin": true,
     "ios": true,
-    "android": true
+    "android": true,
+    "newArchitecture": "new-arch-only"
   },
   {
     "githubUrl": "https://github.com/Th4nderG0d/clarion/tree/main/packages/recorder",
@@ -25079,7 +25075,8 @@
     "npmPkg": "react-native-nitro-google-signin",
     "configPlugin": true,
     "ios": true,
-    "android": true
+    "android": true,
+    "newArchitecture": true
   },
   {
     "githubUrl": "https://github.com/hamzamekk/react-native-turbo-preferences",
@@ -25575,7 +25572,7 @@
     "newArchitecture": true
   },
   {
-    "githubUrl": "https://github.com/AHMED-ELMAKI/react-native-signal-scorer",
+    "githubUrl": "https://github.com/AHMED-ELMAKI/react-native-signal-scorer-lite",
     "ios": true,
     "android": true,
     "newArchitecture": true
@@ -26162,6 +26159,241 @@
     ],
     "ios": true,
     "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/manuelrodmota/react-native-live-list",
+    "examples": [
+      "https://github.com/manuelrodmota/react-native-live-list/tree/main/example"
+    ],
+    "ios": true,
+    "android": true,
+    "expoGo": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/maikkkko1/rollbird/tree/main/packages/react-native",
+    "npmPkg": "@rollbird/react-native",
+    "ios": true,
+    "android": true
+  },
+  {
+    "githubUrl": "https://github.com/nobodywho-ooo/nobodywho/tree/main/nobodywho/react-native",
+    "npmPkg": "react-native-nobodywho",
+    "examples": [
+      "https://github.com/nobodywho-ooo/react-native-starter-example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/nobodywho-ooo/react-native-starter-example/main/preview.png"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/vijeshkr/react-native-biometric-auth",
+    "npmPkg": "@vijeshkr/react-native-biometric-auth",
+    "ios": true,
+    "android": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/majornutcracker-dev/react-native-selectable-text",
+    "npmPkg": "@majornutcracker/react-native-selectable-text",
+    "examples": [
+      "https://snack.expo.dev/@majornutcracker/selectabletext",
+      "https://github.com/majornutcracker-dev/react-native-selectable-text/tree/main/example"
+    ],
+    "images": [
+      "https://github.com/majornutcracker-dev/react-native-selectable-text/raw/main/assets/ios.gif"
+    ],
+    "ios": true,
+    "android": true,
+    "expoGo": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/mz-real/react-native-responsive-hook",
+    "ios": true,
+    "android": true,
+    "web": true,
+    "expoGo": true
+  },
+  {
+    "githubUrl": "https://github.com/thiagobrez/react-native-arrangement-view",
+    "examples": [
+      "https://github.com/thiagobrez/react-native-arrangement-view/tree/main/apps/example-expo"
+    ],
+    "images": [
+      "https://github.com/thiagobrez/react-native-arrangement-view/raw/main/docs/comparison/ios/half-portrait-split.jpg",
+      "https://github.com/thiagobrez/react-native-arrangement-view/raw/main/docs/comparison/android/half-portrait-split.jpg"
+    ],
+    "newArchitecture": "new-arch-only",
+    "ios": true,
+    "android": true
+  },
+  {
+    "githubUrl": "https://github.com/lvlrSajjad/react-native-blur-overlay",
+    "examples": [
+      "https://github.com/lvlrSajjad/react-native-blur-overlay/tree/master/example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/lvlrSajjad/react-native-blur-overlay/master/docs/liquid-glass-android-vs-ios.png",
+      "https://raw.githubusercontent.com/lvlrSajjad/react-native-blur-overlay/master/docs/android-live-blur.gif"
+    ],
+    "ios": true,
+    "android": true
+  },
+  {
+    "githubUrl": "https://github.com/linktrail-io/react-native",
+    "npmPkg": "linktrail-react-native",
+    "ios": true,
+    "android": true,
+    "newArchitecture": "new-arch-only"
+  },
+  {
+    "githubUrl": "https://github.com/khalid999devs/react-native-pose-detection/tree/main/packages/core",
+    "npmPkg": "react-native-pose-detection",
+    "examples": [
+      "https://github.com/khalid999devs/react-native-pose-detection/tree/main/example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/khalid999devs/react-native-pose-detection/main/ss/export-frame.png"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true,
+    "configPlugin": true
+  },
+  {
+    "githubUrl": "https://github.com/raouldandresy/react-native-nitro-sync",
+    "examples": [
+      "https://github.com/raouldandresy/react-native-nitro-sync/tree/main/example"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": "new-arch-only"
+  },
+  {
+    "githubUrl": "https://github.com/abtonc/klor-react",
+    "npmPkg": "@klor/react",
+    "examples": [
+      "https://github.com/abtonc/klor-react/tree/main/examples/expo",
+      "https://github.com/abtonc/klor-react/tree/main/examples/nextjs"
+    ],
+    "newArchitecture": true,
+    "ios": true,
+    "android": true,
+    "web": true,
+    "expoGo": true
+  },
+  {
+    "githubUrl": "https://github.com/avas-app/agent-bridge",
+    "npmPkg": "@avasapp/agent-bridge",
+    "examples": ["https://github.com/avas-app/agent-bridge/tree/main/example"],
+    "images": [
+      "https://github.com/avas-app/agent-bridge/blob/main/example/media/demo.gif",
+      "https://github.com/avas-app/agent-bridge/blob/main/example/media/demo-x.jpg"
+    ],
+    "newArchitecture": true,
+    "ios": true,
+    "android": true,
+    "expoGo": true,
+    "dev": true
+  },
+  {
+    "githubUrl": "https://github.com/lvlrSajjad/react-native-masonry-brick-list",
+    "examples": [
+      "https://github.com/lvlrSajjad/react-native-masonry-brick-list/tree/master/example",
+      "https://lvlrsajjad.github.io/react-native-masonry-brick-list/"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/lvlrSajjad/react-native-masonry-brick-list/master/screen.gif"
+    ],
+    "ios": true,
+    "android": true,
+    "web": true,
+    "expoGo": true,
+    "newArchitecture": true
+  },
+  {
+    "githubUrl": "https://github.com/getsettalk/react-native-review-prompt",
+    "examples": [
+      "https://github.com/getsettalk/react-native-review-prompt/tree/HEAD/example"
+    ],
+    "newArchitecture": true,
+    "ios": true,
+    "android": true
+  },
+  {
+    "githubUrl": "https://github.com/shtefanilie/react-native-clamshell",
+    "examples": [
+      "https://github.com/shtefanilie/react-native-clamshell/tree/main/example"
+    ],
+    "images": [
+      "https://github.com/shtefanilie/react-native-clamshell/blob/main/docs/assets/clamshell-demo.gif?raw=true",
+      "https://github.com/shtefanilie/react-native-clamshell/blob/main/docs/assets/clamshell-demo-android.gif?raw=true"
+    ],
+    "newArchitecture": "new-arch-only",
+    "configPlugin": true,
+    "ios": true,
+    "android": true
+  },
+  {
+    "githubUrl": "https://github.com/Bhavinpethani04/react-native-magic-tab-bar",
+    "examples": [
+      "https://github.com/Bhavinpethani04/react-native-magic-tab-bar/tree/main/example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/Bhavinpethani04/react-native-magic-tab-bar/main/assets/gifs/ios.gif",
+      "https://raw.githubusercontent.com/Bhavinpethani04/react-native-magic-tab-bar/main/assets/gifs/android.gif"
+    ],
+    "ios": true,
+    "android": true,
+    "expoGo": true
+  },
+  {
+    "githubUrl": "https://github.com/huextrat/expo-inline-video",
+    "examples": [
+      "https://github.com/huextrat/expo-inline-video/tree/main/example"
+    ],
+    "ios": true,
+    "tvos": true
+  },
+  {
+    "githubUrl": "https://github.com/Code-Axolot-Team/devreply-react-native",
+    "npmPkg": "@devreply/react-native",
+    "examples": [
+      "https://github.com/Code-Axolot-Team/devreply-react-native/tree/HEAD/example"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": true,
+    "configPlugin": true
+  },
+  {
+    "githubUrl": "https://github.com/Halilibrahimakyz/react-native-pdf-sdk",
+    "examples": [
+      "https://github.com/Halilibrahimakyz/react-native-pdf-sdk/tree/main/example"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/Halilibrahimakyz/react-native-pdf-sdk/main/docs/sheet-fitted-ios.png",
+      "https://raw.githubusercontent.com/Halilibrahimakyz/react-native-pdf-sdk/main/docs/sheet-detail-ios.png"
+    ],
+    "ios": true,
+    "android": true,
+    "newArchitecture": "new-arch-only"
+  },
+  {
+    "githubUrl": "https://github.com/scriptx-com/everframe/tree/main/packages/sdk-react-native",
+    "npmPkg": "@everframe/react-native",
+    "examples": [
+      "https://github.com/scriptx-com/everframe/tree/main/examples/react-native"
+    ],
+    "ios": true,
+    "android": true,
+    "web": true,
+    "tvos": true,
     "newArchitecture": true
   }
 ]

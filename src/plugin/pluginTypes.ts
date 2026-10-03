@@ -60,6 +60,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@deeplinknow/react-native": ConfigPluginOptions<typeof import("@deeplinknow/react-native/plugin/build/index")["default"]>;
     // This package doesn't ship types for its config plugin:
+    "@devreply/react-native": ConfigPluginOptions<unknown>;
+    // This package doesn't ship types for its config plugin:
     "@didomi/react-native": ConfigPluginOptions<unknown>;
     "@divvi/mobile": ConfigPluginOptions<typeof import("@divvi/mobile/plugin/build/index")["default"]>;
     // This package doesn't ship types for its config plugin:
@@ -194,6 +196,8 @@ export interface ThirdPartyAutomatedPlugins {
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "@rnmapbox/maps": ConfigPluginOptions<typeof import("@rnmapbox/maps/plugin/build/withMapbox")["default"]>;
     "@rokt/react-native-sdk": ConfigPluginOptions<typeof import("@rokt/react-native-sdk/plugin/build/withRoktSDK")["default"]>;
+    // This package doesn't ship types for its config plugin:
+    "@rollbird/react-native": ConfigPluginOptions<unknown>;
     // This package doesn't ship types for its config plugin:
     "@rownd/react-native": ConfigPluginOptions<unknown>;
     "@sd-tech/rn-camera-face-blur": ConfigPluginOptions<typeof import("@sd-tech/rn-camera-face-blur/lib/typescript/expo-plugin/withVisionCamera")["default"]>;
@@ -634,6 +638,7 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-nitro-screen-recorder": ConfigPluginOptions<typeof import("react-native-nitro-screen-recorder/lib/typescript/expo-plugin/withScreenRecorder")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nitro-speech-recognition": ConfigPluginOptions<typeof import("react-native-nitro-speech-recognition/plugin/build/withNitroSpeechRecognition")["default"]>;
+    "react-native-nitro-sync": ConfigPluginOptions<typeof import("react-native-nitro-sync/lib/typescript/plugin/src/index")["default"]>;
     // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
     "react-native-nitro-wakeword": ConfigPluginOptions<typeof import("react-native-nitro-wakeword/app.plugin")["default"]>;
     // This package doesn't ship types for its config plugin:
@@ -661,6 +666,8 @@ export interface ThirdPartyAutomatedPlugins {
     "react-native-package-checker": ConfigPluginOptions<unknown>;
     "react-native-pdf-jsi": ConfigPluginOptions<typeof import("react-native-pdf-jsi/plugin/build/index")["default"]>;
     "react-native-permissions": ConfigPluginOptions<typeof import("react-native-permissions/dist/typescript/expo")["default"]>;
+    // @ts-expect-error [Package uses `exports` in `package.json`, which breaks this import]
+    "react-native-pose-detection": ConfigPluginOptions<typeof import("react-native-pose-detection/plugin/build/index")["default"]>;
     // This package doesn't ship types for its config plugin:
     "react-native-quick-crypto": ConfigPluginOptions<unknown>;
     "react-native-radar": ConfigPluginOptions<typeof import("react-native-radar/plugin/build/withRadar")["default"]>;
@@ -771,6 +778,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@criipto/verify-expo",
       "@dahab-tech/react-native-media-editor",
       "@davotisolutions/expo-localization-utils",
+      "@devreply/react-native",
       "@didomi/react-native",
       "@evennit/notifee-expo-plugin",
       "@fingerprintjs/fingerprintjs-pro-react-native",
@@ -793,6 +801,7 @@ export interface ThirdPartyAutomatedPlugins {
       "@poilabs-dev/analysis-sdk-plugin",
       "@poilabs-dev/navigation-sdk-plugin",
       "@poilabs-dev/vd-navigation-sdk-plugin",
+      "@rollbird/react-native",
       "@rownd/react-native",
       "@siteed/audio-studio",
       "@siteed/expo-audio-studio",
@@ -980,6 +989,7 @@ export interface ThirdPartyAutomatedPlugins {
       "react-native-nitro-wakeword",
       "react-native-object-capture",
       "react-native-orientation-director",
+      "react-native-pose-detection",
       "react-native-tiktok",
       "react-native-tuner-engine",
       "react-native-turbo-preferences",
