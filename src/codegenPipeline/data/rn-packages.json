@@ -548,6 +548,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/ajibadedapo/agentfaces",
+    "npmPkg": "agentfaces",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/ajibadedapo/expo-video-encoder",
     "npmPkg": "expo-video-encoder",
     "hasConfigPlugin": false,
@@ -1463,6 +1469,12 @@
   {
     "githubUrl": "https://github.com/aptabase/aptabase-react-native",
     "npmPkg": "@aptabase/react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/aqeelkhokhar/react-native-highlight-text",
+    "npmPkg": "react-native-highlight-text-view",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -3262,6 +3274,18 @@
     }
   },
   {
+    "githubUrl": "https://github.com/cawrestler/react-native-duo",
+    "npmPkg": "@cawrestler/react-native-duo",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@cawrestler/react-native-duo/app.plugin",
+      "error": "Could not find a declaration file for module '@cawrestler/react-native-duo/app.plugin'. 'node_modules/@cawrestler/react-native-duo/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/cawrestler__react-native-duo` if it exists or add a new declaration (.d.ts) file containing `declare module '@cawrestler/react-native-duo/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/cbbfcd/react-native-lightbox",
     "npmPkg": "react-native-lightbox-v2",
     "hasConfigPlugin": false,
@@ -4809,6 +4833,18 @@
     "types": {
       "path": "expo-av/plugin/build/withAV",
       "valid": true,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/devonik/expo-saf-scan",
+    "npmPkg": "expo-saf-scan",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-saf-scan/app.plugin",
+      "error": "Could not find a declaration file for module 'expo-saf-scan/app.plugin'. 'node_modules/expo-saf-scan/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/expo-saf-scan` if it exists or add a new declaration (.d.ts) file containing `declare module 'expo-saf-scan/app.plugin';`",
+      "valid": false,
       "exportName": "default"
     }
   },
@@ -7690,6 +7726,18 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/fsstudio-org/google-credential-manager",
+    "npmPkg": "@fsstudio-org/google-credential-manager",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "@fsstudio-org/google-credential-manager/app.plugin.js",
+      "error": "Could not find a declaration file for module '@fsstudio-org/google-credential-manager/app.plugin.js'. 'node_modules/@fsstudio-org/google-credential-manager/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/fsstudio-org__google-credential-manager` if it exists or add a new declaration (.d.ts) file containing `declare module '@fsstudio-org/google-credential-manager/app.plugin.js';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/ftzi/pagescrollview",
     "npmPkg": "pagescrollview",
     "hasConfigPlugin": false,
@@ -8157,6 +8205,42 @@
   {
     "githubUrl": "https://github.com/ggunti/react-native-amazing-cropper",
     "npmPkg": "react-native-amazing-cropper",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/giabaojs/react-native-app-shortcuts",
+    "npmPkg": "@giabaojs/react-native-app-shortcuts",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/giabaojs/react-native-device-pulse",
+    "npmPkg": "react-native-device-pulse",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/giabaojs/react-native-image-analysis",
+    "npmPkg": "react-native-image-analysis",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/giabaojs/react-native-ios-controls",
+    "npmPkg": "react-native-ios-controls",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/giabaojs/react-native-shared-transition",
+    "npmPkg": "react-native-shared-transition",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/giabaojs/react-native-tipkit",
+    "npmPkg": "@giabaojs/react-native-tipkit",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -13118,6 +13202,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/magrinj/hermes-intl",
+    "npmPkg": "hermes-intl",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/mahdidavoodi7/bottom-sheet-stepper",
     "npmPkg": "bottom-sheet-stepper",
     "hasConfigPlugin": false,
@@ -14963,6 +15053,30 @@
     }
   },
   {
+    "githubUrl": "https://github.com/munimtechnologies/munim-location",
+    "npmPkg": "munim-location",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "munim-location/app.plugin",
+      "error": "Could not find a declaration file for module 'munim-location/app.plugin'. 'node_modules/munim-location/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/munim-location` if it exists or add a new declaration (.d.ts) file containing `declare module 'munim-location/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
+    "githubUrl": "https://github.com/munimtechnologies/munim-maps/tree/main/packages/munim-maps",
+    "npmPkg": "munim-maps",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "munim-maps/app.plugin",
+      "error": "Could not find a declaration file for module 'munim-maps/app.plugin'. 'node_modules/munim-maps/app.plugin.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/munim-maps` if it exists or add a new declaration (.d.ts) file containing `declare module 'munim-maps/app.plugin';`",
+      "valid": false,
+      "exportName": "default"
+    }
+  },
+  {
     "githubUrl": "https://github.com/munimtechnologies/munim-pencilkit",
     "npmPkg": "munim-pencilkit",
     "hasConfigPlugin": false,
@@ -15185,6 +15299,21 @@
     "npmPkg": "react-native-wheel-color-picker",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/nagarjunavs/nfclocatorreactnative/tree/main/packages/react-native-nfc-locator",
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/nagarjunavs/nfclocatorreactnative/tree/master/packages/react-native-nfc-locator",
+    "npmPkg": "react-native-nfc-locator",
+    "hasConfigPlugin": true,
+    "types": {
+      "path": "react-native-nfc-locator/plugin/withNfcLocator",
+      "error": "Could not find a declaration file for module 'react-native-nfc-locator/plugin/withNfcLocator'. 'node_modules/react-native-nfc-locator/plugin/withNfcLocator.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-nfc-locator` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-nfc-locator/plugin/withNfcLocator';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/nagasaicharan/react-native-store-age-signals-native-modules",
@@ -15589,6 +15718,12 @@
     }
   },
   {
+    "githubUrl": "https://github.com/nguyenduy1412/react-native-blur",
+    "npmPkg": "@nguyenduy1412/react-native-blur",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/nhiranz/react-native-kenburns-view",
     "npmPkg": "react-native-kenburns-view",
     "hasConfigPlugin": false,
@@ -15748,7 +15883,14 @@
   },
   {
     "githubUrl": "https://github.com/no1225/expo-media-control/tree/main/packages/expo-media-control",
-    "origin": "directory"
+    "npmPkg": "expo-media-control",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "expo-media-control/plugin/build/index",
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/no1225/expo-media-control/tree/master/packages/expo-media-control",
@@ -17463,6 +17605,18 @@
     "npmPkg": "@matter/react-native",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/prompt-agency/react-native-voice-activator",
+    "npmPkg": "react-native-voice-activator",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-voice-activator/lib/typescript/src/expo/config-plugin",
+      "packageExport": true,
+      "valid": true,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/proyecto26/react-native-inappbrowser",
@@ -21925,6 +22079,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/tadeumelembe/react-native-kanban-dnd",
+    "npmPkg": "react-native-kanban-dnd",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/tafsan-mahmud/react-native-modern-shimmer",
     "npmPkg": "react-native-modern-shimmer",
     "hasConfigPlugin": false,
@@ -22079,6 +22239,12 @@
   {
     "githubUrl": "https://github.com/tanstack/query/tree/main/packages/react-query-persist-client",
     "npmPkg": "@tanstack/react-query-persist-client",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/tapapplink/tapapplink-react-native",
+    "npmPkg": "@tapapplink/react-native",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
@@ -22283,6 +22449,18 @@
     "npmPkg": "@thatkid02/react-native-pdf-viewer",
     "hasConfigPlugin": false,
     "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/the-mysterious-kid/react-native-keys-next",
+    "npmPkg": "react-native-keys-next",
+    "hasConfigPlugin": true,
+    "origin": "directory",
+    "types": {
+      "path": "react-native-keys-next/plugin/build/index",
+      "error": "Could not find a declaration file for module 'react-native-keys-next/plugin/build/index'. 'node_modules/react-native-keys-next/plugin/build/index.js' implicitly has an 'any' type.   Try `npm i --save-dev @types/react-native-keys-next` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-keys-next/plugin/build/index';`",
+      "valid": false,
+      "exportName": "default"
+    }
   },
   {
     "githubUrl": "https://github.com/thebergamo/react-native-fbsdk-next",
@@ -23768,6 +23946,12 @@
     "origin": "directory"
   },
   {
+    "githubUrl": "https://github.com/warplinkapp/warplink-react-native-sdk",
+    "npmPkg": "@warplink/react-native",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
     "githubUrl": "https://github.com/wassgha/react-native-zoom-grid",
     "npmPkg": "react-native-zoom-grid",
     "hasConfigPlugin": false,
@@ -24546,6 +24730,12 @@
   {
     "githubUrl": "https://github.com/yash-dott/nexara-nativeflow",
     "npmPkg": "@nexara/nativeflow",
+    "hasConfigPlugin": false,
+    "origin": "directory"
+  },
+  {
+    "githubUrl": "https://github.com/yashnandha/react-native-nitro-biometrics",
+    "npmPkg": "react-native-nitro-biometrics",
     "hasConfigPlugin": false,
     "origin": "directory"
   },
