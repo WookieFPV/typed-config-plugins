@@ -60,7 +60,7 @@
     "@babel/types": "8.0.5",
     "@biomejs/biome": "2.5.12",
     "@changesets/cli": "3.0.2",
-    "@expo/config-plugins": "57.0.9",
+    "@expo/config-plugins": "57.0.11",
     "@octokit/rest": "22.0.1",
     "@types/bun": "1.4.1",
     "@types/npm-registry-fetch": "8.0.9",
