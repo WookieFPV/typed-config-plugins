@@ -57,7 +57,7 @@
   "devDependencies": {
     "@babel/parser": "8.0.5",
     "@babel/traverse": "8.0.5",
-    "@babel/types": "8.0.5",
+    "@babel/types": "8.0.8",
     "@biomejs/biome": "2.5.12",
     "@changesets/cli": "3.0.2",
     "@expo/config-plugins": "57.0.9",
@@ -82,7 +82,7 @@
     "expo-whisper@1.0.10": "patches/expo-whisper@1.0.10.patch"
   },
   "overrides": {
-    "@babel/types": "8.0.5",
+    "@babel/types": "8.0.8",
     "@types/node": "24.9.1",
     "esbuild": "0.28.2"
   }
