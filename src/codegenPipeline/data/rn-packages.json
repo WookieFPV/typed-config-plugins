@@ -11095,7 +11095,8 @@
     "origin": "gitHub",
     "types": {
       "path": "@jt-technologies/expo-idnow/plugin/build/index",
-      "valid": true,
+      "valid": false,
+      "error": "Cannot find module '@jt-technologies/expo-idnow/plugin/build/index' or its corresponding type declarations.",
       "exportName": "default"
     }
   },

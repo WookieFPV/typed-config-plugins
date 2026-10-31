@@ -104,7 +104,8 @@ export interface ThirdPartyAutomatedPlugins {
     "@iterable/expo-plugin": ConfigPluginOptions<typeof import("@iterable/expo-plugin/plugin/build/withIterable")["default"]>;
     // This package doesn't ship types for its config plugin:
     "@journeyapps/react-native-quick-sqlite": ConfigPluginOptions<unknown>;
-    "@jt-technologies/expo-idnow": ConfigPluginOptions<typeof import("@jt-technologies/expo-idnow/plugin/build/index")["default"]>;
+    // This package doesn't ship types for its config plugin:
+    "@jt-technologies/expo-idnow": ConfigPluginOptions<unknown>;
     "@kesha-antonov/react-native-background-downloader": ConfigPluginOptions<typeof import("@kesha-antonov/react-native-background-downloader/plugin/build/index")["default"]>;
     "@kickstartcrew/expo-financekit": ConfigPluginOptions<typeof import("@kickstartcrew/expo-financekit/build/plugin")["default"]>;
     // This package doesn't ship types for its config plugin:
@@ -1036,7 +1037,8 @@ export interface ThirdPartyAutomatedPlugins {
   [
     "Cannot find module or its corresponding type declarations",
     [
-      "@journeyapps/react-native-quick-sqlite"
+      "@journeyapps/react-native-quick-sqlite",
+      "@jt-technologies/expo-idnow"
     ]
   ],
   [
