@@ -44,7 +44,7 @@
     "@criipto/verify-expo": "3.0.4",
     "@crossmint/client-sdk-react-native-ui": "0.13.34",
     "@dahab-tech/react-native-media-editor": "^0.3.2",
-    "@daily-co/config-plugin-rn-daily-js": "0.0.12",
+    "@daily-co/config-plugin-rn-daily-js": "0.0.13",
     "@datadog/mobile-react-native": "*",
     "@davotisolutions/expo-localization-utils": "0.1.4",
     "@dbkable/react-native-speech-to-text": "*",
