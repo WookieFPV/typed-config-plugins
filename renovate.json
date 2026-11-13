@@ -1,0 +1,39 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Low-maintenance setup: few PRs, automerge when CI is green, majors wait for a human. packageList/ is a crawler-generated aggregate of untrusted third-party packages and must never be touched by Renovate.",
+  "extends": ["config:recommended", ":semanticCommits"],
+  "ignorePaths": ["packageList/**", "**/node_modules/**"],
+  "timezone": "Europe/Berlin",
+  "schedule": ["* 0-6 1 * *"],
+  "minimumReleaseAge": "7 days",
+  "prConcurrentLimit": 3,
+  "prHourlyLimit": 0,
+  "lockFileMaintenance": { "enabled": false },
+  "vulnerabilityAlerts": {
+    "schedule": ["at any time"],
+    "minimumReleaseAge": null,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "description": "One grouped PR for all non-major npm updates, merged automatically when CI passes.",
+      "matchManagers": ["npm", "bun"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "automerge": true
+    },
+    {
+      "description": "One grouped PR for all GitHub Actions updates (including majors, which are usually safe), merged automatically when CI passes.",
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions",
+      "automerge": true
+    },
+    {
+      "description": "Major npm updates need approval on the Dependency Dashboard, so they don't open PRs on their own.",
+      "matchManagers": ["npm", "bun"],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    }
+  ]
+}
